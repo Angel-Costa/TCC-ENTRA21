@@ -36,6 +36,6 @@ namespace Model
         public bool Forno { get; set; }
 
         [Column("lareira_interna")]
-        public bool LareiraInteran { get; set; }
+        public bool LareiraInterna { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Repository
 {
     public class SistemaContext : DbContext
     {
-        public SistemaContext(DbContextOptions<SistemaContext> options) : base(options)
+        public SistemaContext() : base("")
         {
 
         }
