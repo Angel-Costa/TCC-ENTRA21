@@ -1,10 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Model;
+﻿using Model;
 using Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
@@ -36,7 +36,7 @@ namespace Repository.Repositories
 
         public ClienteLogin ObterPeloId(int id)
         {
-            return (from clienteLogin in context.Clientes
+            return (from clienteLogin in context.ClientesLogins
                     where clienteLogin.Id == id
                     select clienteLogin).FirstOrDefault();
         }
@@ -44,7 +44,7 @@ namespace Repository.Repositories
         public List<ClienteLogin> ObterTodosPeloIdCliente(int idCliente)
         {
             return context.ClientesLogins
-                .Include(x => x.Login)
+                .Include(x => x.ClienteLogin)
                 .Where(x => x.IdCliente == idCliente).ToList();
         }
 

@@ -9,7 +9,7 @@ namespace Repository.Interfaces
     {
         int Relacionar(ClienteLogin clienteLogin);
 
-        bool Apagar(int idClienteLogin);
+        bool Apagar(int idClienteLogin, int id);
 
         List<ClienteLogin> ObterTodosPeloIdCliente(int idCliente);
 
