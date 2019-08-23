@@ -8,12 +8,7 @@ namespace Repository
 {
     public class SistemaContext : DbContext
     {
-        public SistemaContext()
-        {
-
-        }
-
-        public SistemaContext(DbContextOptions<SistemaContext> options) : base(options)
+        public SistemaContext() : base("")
         {
 
         }
@@ -31,15 +26,5 @@ namespace Repository
         public DbSet<ClienteLogin> ClienteLogins { get; set; }
                 
     }
-    public class DbContext
-    {
-    }
-
-    public class DbSet<T>
-    {
-    }
-
-    public class DbContextOptions<T>
-    {
-    }
+    
 }
