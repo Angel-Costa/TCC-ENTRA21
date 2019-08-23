@@ -18,9 +18,18 @@ namespace Repository.Repositories
 
         public bool Alterar(Hotel hotel)
         {
-            hotel.RegistroAtivo = true;
-            context.Hoteis.Update(hotel);
-            return context.SaveChanges() == 1;
+            Hotel hotelOriginal = context.Hoteis.FirstOrDefault(x => x.Id == hotel.Id);
+            if(hotelOriginal == null)
+            {
+                return false;
+            }
+
+            hotelOriginal.Nome = hotel.Nome;
+            hotelOriginal.QuantidadeQuartos = hotel.QuantidadeQuartos;
+            hotelOriginal.Tipo = hotel.Tipo;
+            hotelOriginal.ValorHospedagem = hotel.ValorHospedagem;
+            context.SaveChanges();
+            return true;
         }
 
         public bool Apagar(int id)

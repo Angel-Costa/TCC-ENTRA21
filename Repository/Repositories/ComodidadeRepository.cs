@@ -18,8 +18,20 @@ namespace Repository.Repositories
 
         public bool Alterar(Comodidade comodidade)
         {
-            context.Comodidades.Update(comodidade);
-            return context.SaveChanges() == 1;
+            Comodidade comodidadeOriginal = context.Comodidades.FirstOrDefault(x => x.Id == comodidade.Id);
+            if(comodidadeOriginal == null)
+            {
+                return false;
+            }
+
+            comodidadeOriginal.LareiraInterna = comodidade.LareiraInterna;
+            comodidadeOriginal.Microondas = comodidade.Microondas;
+            comodidadeOriginal.Regrigerador = comodidade.Regrigerador;
+            comodidadeOriginal.Tv = comodidade.Tv;
+            comodidadeOriginal.Wifi = comodidade.Wifi;
+            context.SaveChanges();
+            return true;
+
         }
 
         public bool Apagar(int id)
@@ -29,7 +41,6 @@ namespace Repository.Repositories
                 return false;
 
             comodidade.RegistroAtivo = false;
-            context.Comodidades.Update(comodidade);
             return context.SaveChanges() == 1;
 
         }
