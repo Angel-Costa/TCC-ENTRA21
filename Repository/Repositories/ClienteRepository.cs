@@ -19,7 +19,6 @@ namespace Repository.Repositories
         public bool Alterar(Cliente cliente)
         {
             cliente.RegistroAtivo = true;
-            context.Clientes.Update(cliente);
             return context.SaveChanges() == 1;
         }
 
@@ -30,7 +29,6 @@ namespace Repository.Repositories
                 return false;
 
             cliente.RegistroAtivo = false;
-            context.Clientes.Update(cliente);
             return context.SaveChanges() == 1;
         }
 

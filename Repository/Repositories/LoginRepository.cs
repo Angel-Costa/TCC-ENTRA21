@@ -18,9 +18,16 @@ namespace Repository.Repositories
 
         public bool Alterar(Login login)
         {
-            login.RegistroAtivo = true;
-            context.Logins.Update(login);
-            return context.SaveChanges() == 1;
+            Login loginOriginal = context.Logins.FirstOrDefault(x => x.Id == login.Id);
+            if(loginOriginal == null)
+            {
+                return false;
+            }
+
+            loginOriginal.Email = login.Email;
+            loginOriginal.Senha = login.Senha;
+            context.SaveChanges();
+            return true;
         }
 
         public bool Apagar(int id)

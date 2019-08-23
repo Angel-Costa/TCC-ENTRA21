@@ -18,8 +18,18 @@ namespace Repository.Repositories
 
         public bool Alterar(Avaliacao avaliacao)
         {
-            context.Avaliacaos.Update(avaliacao);
-            return context.SaveChanges() == 1;
+            Avaliacao avaliacaoOriginal = context.Avaliacaos.FirstOrDefault(x => x.Id == avaliacao.Id);
+            if(avaliacaoOriginal == null)
+            {
+                return false;
+            }
+
+            avaliacaoOriginal.FeedBack = avaliacao.FeedBack;
+            avaliacaoOriginal.Nota = avaliacao.Nota;
+            avaliacaoOriginal.Comentario = avaliacao.Comentario;
+            avaliacaoOriginal.Cliente = avaliacao.Cliente;
+            context.SaveChanges();
+            return true;
         }
 
         public bool Apagar(int id)
@@ -29,7 +39,6 @@ namespace Repository.Repositories
                 return false;
 
             avalicao.RegistroAtivo = false;
-            context.Avaliacaos.Update(avalicao);
             return context.SaveChanges() == 1;
         }
 
