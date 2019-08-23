@@ -16,17 +16,28 @@ namespace Repository.Repositories
             this.context = context;
         }
 
-        public bool Apagar(int idClienteLogin)
+        public bool Apagar(int idClienteLogin, int id)
         {
-            var clienteLogin = context.ClientesLogins.FirstOrDefault(x => x.IdCliente == idClienteLogin);
-            clienteLogin.RegistroAtivo = false;
-            context.Update(clienteLogin);
-            return context.SaveChanges() == 1;
+            Cliente cliente = (
+                from clientes in context.Clientes
+                where clientes.Id == id
+                select clientes).FirstOrDefault();
+            if(cliente == null)
+            {
+                return false;
+            }
+
+            cliente.RegistroAtivo = false;
+            context.SaveChanges();
+            return true;
+
         }
 
         public ClienteLogin ObterPeloId(int id)
         {
-            return context.ClientesLogins.FirstOrDefault(x => x.Id == id);
+            return (from clienteLogin in context.Clientes
+                    where clienteLogin.Id == id
+                    select clienteLogin).FirstOrDefault();
         }
 
         public List<ClienteLogin> ObterTodosPeloIdCliente(int idCliente)
