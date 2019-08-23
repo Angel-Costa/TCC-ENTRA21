@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 using Microsoft.AspNetCore.Mvc;
+using Model;
+using Repository.Interfaces;
 
 namespace View.Controllers
 {
@@ -15,7 +18,7 @@ namespace View.Controllers
             this.repository = repository;
         }
 
-        public IActionResult Index()
+        public ActionResult Index()
         {
             return View();
         }
@@ -26,8 +29,8 @@ namespace View.Controllers
             string busca = search["value"];
             if (busca == null)
                 busca = "";
-            List<Hotel> hotels = repository.ObterTodos();
-            return Json(new { data = hotels });
+            List<Hotel> hoteis = repository.ObterTodos();
+            return Json(new { data = hoteis });
         }
 
 

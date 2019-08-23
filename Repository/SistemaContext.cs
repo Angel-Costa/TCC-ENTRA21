@@ -24,7 +24,7 @@ namespace Repository
 
         public DbSet<Login> Logins { get; set; }
 
-        public DbSet<ClienteLogin> ClienteLogins { get; set; }
+        public DbSet<ClienteLogin> ClientesLogins { get; set; }
                 
     }
     

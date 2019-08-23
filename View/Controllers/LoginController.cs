@@ -19,7 +19,7 @@ namespace View.Controllers
             this.repository = repository;
         }
 
-        public IActionResult Index()
+        public ActionResult Index()
         {
             return View();
         }
@@ -48,13 +48,32 @@ namespace View.Controllers
         }
 
         [HttpGet, Route("obterpeloid")]
-        public ActionResult ObterPeloId(int id)
+        public JsonResult ObterPeloId(int id)
         {
             var login = repository.ObterPeloId(id);
-            if (login == null)
-                return NotFound();
+            
+            
 
             return Json(login);
+        }
+
+        [HttpGet, Route("obtertodosselect2")]
+        public JsonResult ObterTodosSelect2(string term = "")
+        {
+            term = term == null ? "" : term;
+
+            var registros = repository.ObterTodos();
+            var loginsSelect2 = new List<object>();
+
+            foreach(var login in registros)
+            {
+                loginsSelect2.Add(new
+                {
+                    id = login.Id,
+                    text = login.Email
+                });
+            }
+            return Json(new { result = loginsSelect2 });
         }
     }
 }            
