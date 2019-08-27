@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-
 using Model;
 using Repository.Interfaces;
 using Repository.Repositories;
@@ -57,9 +56,5 @@ namespace View.Controllers
 
             return RedirectToAction("Index");
         }
-
-
     }
-
-
 }

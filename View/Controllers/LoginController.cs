@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using Microsoft.AspNetCore.Mvc;
 using Model;
 using Repository.Interfaces;
+using Repository.Repositories;
 
 namespace View.Controllers
 {
-    [Route("login/")]
     public class LoginController : Controller
     {
-        private ILoginRepository repository;
+        private LoginRepository repository;
 
-        public LoginController(ILoginRepository repository)
+        public LoginController()
         {
-            this.repository = repository;
+            repository = new LoginRepository();
         }
 
         public ActionResult Index()
@@ -24,56 +23,40 @@ namespace View.Controllers
             return View();
         }
 
+        public ActionResult Cadastro()
+        {
+            return View();
+        }
+
         [HttpPost,Route ("inserir")]
-        public JsonResult Inserir(Login login)
+        public ActionResult Inserir(Login login)
         {
             var id = repository.Inserir(login);
-            var resultado = new { id = id };
-            return Json(resultado);
+            return RedirectToAction("Editar", new { id });
+        }
+
+        [HttpGet, Route("editar")]
+        public ActionResult Editar(int id)
+        {
+            var login = repository.ObterPeloId(id);
+            return View();
+        }
+
+
+        [HttpPost, Route("editar")]
+        public ActionResult Editar(Login login)
+        {
+            var alterado = repository.Alterar(login);
+            return RedirectToAction("Editar", new { login.Id });
         }
 
         [HttpGet, Route("apagar")]
-        public JsonResult Apagar(int id)
+        public ActionResult Apagar(int id)
         {
             var apagou = repository.Apagar(id);
-            var resultado = new { status = apagou };
-            return Json(resultado);
+
+            return RedirectToAction("index");
         }
 
-        [HttpGet, Route("obtertodos")]
-        public JsonResult ObterTodos()
-        {
-            var logins = repository.ObterTodos();
-            return Json(new { data = logins });
-        }
-
-        [HttpGet, Route("obterpeloid")]
-        public JsonResult ObterPeloId(int id)
-        {
-            var login = repository.ObterPeloId(id);
-            
-            
-
-            return Json(login);
-        }
-
-        [HttpGet, Route("obtertodosselect2")]
-        public JsonResult ObterTodosSelect2(string term = "")
-        {
-            term = term == null ? "" : term;
-
-            var registros = repository.ObterTodos();
-            var loginsSelect2 = new List<object>();
-
-            foreach(var login in registros)
-            {
-                loginsSelect2.Add(new
-                {
-                    id = login.Id,
-                    text = login.Email
-                });
-            }
-            return Json(new { result = loginsSelect2 });
-        }
     }
 }            
