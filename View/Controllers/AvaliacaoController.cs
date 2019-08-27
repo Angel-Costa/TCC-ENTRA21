@@ -1,5 +1,6 @@
 ﻿using Model;
 using Repository.Interfaces;
+using Repository.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,13 +9,13 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    [Route("avaliacoes")]
     public class AvaliacaoController : Controller
     {
-        private IAvaliacoesRepository repository;
-        public AvaliacaoController(IAvaliacoesRepository repository)
+        private AvaliacoesRepository repository;
+
+        public AvaliacaoController()
         {
-            this.repository = repository;
+            repository = new AvaliacoesRepository();
         }
 
         // GET: Avaliacao
@@ -30,27 +31,25 @@ namespace View.Controllers
             return Json(new { status = alterou });
         }
 
-        [HttpGet, Route("apagar")]
-        public JsonResult Apagou(int id)
+        [HttpGet, Route("apagar/{id}")]
+        public ActionResult Apagar(int id)
         {
-            var avaliacao = repository.Apagar(id);
-            return Json(new { status = avaliacao });
+            var apagou = repository.Apagar(id);
+            return RedirectToAction("Index");
         }
 
-        [HttpPost, Route("inserir")]
+        [HttpPost, Route("inserir/{id}")]
         public JsonResult Inserir(Avaliacao avaliacao)
         {
             var id = repository.Inserir(avaliacao);
-            var resultado = new { id = id };
-            return Json(resultado);
+            return RedirectToAction("Editar", new { id });
         }
 
         [HttpGet, Route("obterpeloid")]
         public JsonResult ObterPeloId(int id)
         {
-            var avaliacao = repository.ObterPeloId(id);
-            if (avaliacao == null) return NotFound();
-            return Json(avaliacao);
+            Avaliacao avaliacao = repository.ObterPeloId(id);
+            return Json(avaliacao, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet, Route("obtertodos")]

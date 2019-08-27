@@ -59,7 +59,8 @@ namespace Repository.Repositories
 
         public List<Comodidade> ObterTodos()
         {
-            return context.Comodidades.Where(x => x.RegistroAtivo).ToList();
+            return context.Comodidades
+                .Where(x => x.RegistroAtivo).ToList();
         }
     }
 }
