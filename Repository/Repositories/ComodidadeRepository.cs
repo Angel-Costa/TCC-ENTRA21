@@ -11,9 +11,9 @@ namespace Repository.Repositories
     {
         public SistemaContext context;
 
-        public ComodidadeRepository(SistemaContext context)
+        public ComodidadeRepository()
         {
-            this.context = context;
+            this.context = new SistemaContext();
         }
 
         public bool Alterar(Comodidade comodidade)

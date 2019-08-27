@@ -1,5 +1,6 @@
 ﻿using Model;
 using Repository.Interfaces;
+using Repository.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,54 +12,35 @@ namespace View.Controllers
     [Route("comodidade")]
     public class ComodidadeController : Controller
     {
-        private IComodidadeRepository repository;
-        public ComodidadeController(IComodidadeRepository repository)
+        private ComodidadeRepository repository;
+        public ComodidadeController()
         {
-            this.repository = repository;
+            repository = new ComodidadeRepository();
         }
 
-        // GET: Comodidade
         public ActionResult Index()
         {
             return View();
         }
 
-        [HttpPost, Route("alterar")]
-        public JsonResult Alterar( Comodidade comodidade)
+        public ActionResult Cadastro()
         {
-            var alterou = repository.Alterar(comodidade);
-            return Json(new { status = alterou });
+            return View();
         }
 
         [HttpGet, Route("apagar")]
-        public JsonResult Apagou(int id)
+        public ActionResult Apagou(int id)
         {
             var apagou = repository.Apagar(id);
-            return Json(new { status = apagou });
+            return RedirectToAction("Index");
         }
 
         [HttpPost, Route("inserir")]
-        public JsonResult Inserir(Comodidade comodidade)
+        public  ActionResult Inserir(Comodidade comodidade)
         {
             var id = repository.Inserir(comodidade);
-            var resultado = new { id = id };
-            return Json(resultado);
+            return RedirectToAction("Editar", new { id });
         }
 
-        [HttpGet, Route("obterpeloid")]
-        public JsonResult ObterPeloId(int id)
-        {
-            var comodidade = repository.ObterPeloId(id);
-            if (comodidade == null) return NotFound();
-
-            return Json(comodidade);
-        }
-
-        [HttpGet, Route("obtertodos")]
-        public JsonResult ObterTodos()
-        {
-            var comodidade = repository.ObterTodos();
-            return Json(new { data = comodidade });
-        }
     }
 }
