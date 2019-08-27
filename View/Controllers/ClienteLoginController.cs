@@ -25,23 +25,20 @@ namespace View.Controllers
         }
 
         [HttpPost, Route("relacionar")]
-        public JsonResult Relacionar(ClienteLogin clienteLogin)
+        public ActionResult Relacionar(ClienteLogin clienteLogin)
         {
             int id = repository.Relacionar(clienteLogin);
-            return Json(new { id });
+            return RedirectToAction("Relacionar", new { clienteLogin.IdCliente});
         }
 
         [HttpGet, Route("apagar")]
-        public JsonResult Apagar(int id)
+        public ActionResult Apagar(int id)
         {
-            bool apagou = repository.Apagar(int id);
-            return Json(new { status = apagou });
+            var apagou = repository.Apagar(id);
+
+            return RedirectToAction("Index");
         }
 
-        [HttpGet, Route("obtertodos")]
-        public JsonResult ObterTodosPeloIdCliente(int idCliente)
-        {
-            return Json(new { data = repository.ObterTodosPeloIdCliente(idCliente) });
-        }
+       
     }
 }

@@ -17,7 +17,7 @@ namespace Repository.Repositories
            this.context = new SistemaContext();
         }
 
-        public bool Apagar(int idClienteLogin, int id)
+        public bool Apagar(int id)
         {
             Cliente cliente = (
                 from clientes in context.Clientes
