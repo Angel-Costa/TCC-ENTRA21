@@ -23,7 +23,7 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpGet,Route("hotel/obterTodos")]
+        [HttpGet, Route("hotel/obterTodos")]
         public JsonResult ObterTodos(Dictionary<string, string> search)
         {
             string busca = search["value"];
