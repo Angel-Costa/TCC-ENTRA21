@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Repository.Interfaces
 {
-    public interface IClienteLogin
+    public interface IClienteLoginRepository
     {
         int Relacionar(ClienteLogin clienteLogin);
 

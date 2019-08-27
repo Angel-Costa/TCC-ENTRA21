@@ -12,7 +12,7 @@ namespace Repository.Interfaces
 
         bool Alterar(Cliente cliente);
 
-        List<Cliente> ObterTodos(int id);
+        List<Cliente> ObterTodos();
 
         Cliente ObterPeloId(int id);
 

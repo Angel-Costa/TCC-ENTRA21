@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
-    public class ClienteLoginRepository : IClienteLogin
+    public class ClienteLoginRepository : IClienteLoginRepository
     {
         private SistemaContext context;
 
-        public ClienteLoginRepository(SistemaContext context)
+        public ClienteLoginRepository()
         {
-            this.context = context;
+           this.context = new SistemaContext();
         }
 
         public bool Apagar(int idClienteLogin, int id)
@@ -34,6 +34,7 @@ namespace Repository.Repositories
 
         }
 
+       
         public ClienteLogin ObterPeloId(int id)
         {
             return (from clienteLogin in context.ClientesLogins
@@ -43,8 +44,7 @@ namespace Repository.Repositories
 
         public List<ClienteLogin> ObterTodosPeloIdCliente(int idCliente)
         {
-            return context.ClientesLogins
-                .Include(x => x.ClienteLogin)
+            return context.ClientesLogins                
                 .Where(x => x.IdCliente == idCliente).ToList();
         }
 

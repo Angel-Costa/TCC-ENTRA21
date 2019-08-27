@@ -15,15 +15,10 @@ namespace Repository
         }
 
         public DbSet<Avaliacao> Avaliacaos { get; set; }
-
         public DbSet<Cliente> Clientes { get; set; }
-
         public DbSet<Comodidade> Comodidades { get; set; }
-
         public DbSet<Hotel> Hoteis { get; set; }
-
         public DbSet<Login> Logins { get; set; }
-
         public DbSet<ClienteLogin> ClientesLogins { get; set; }
                 
     }

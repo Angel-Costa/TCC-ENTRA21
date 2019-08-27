@@ -57,9 +57,5 @@ namespace View.Controllers
 
             return RedirectToAction("Index");
         }
-
-
     }
-
-
 }
