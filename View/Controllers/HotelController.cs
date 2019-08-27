@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using Microsoft.AspNetCore.Mvc;
+
 using Model;
 using Repository.Interfaces;
+using Repository.Repositories;
 
 namespace View.Controllers
 {
     public class HotelController : Controller
     {
-        private IHotelRepository repository;
+        private HotelRepository repository;
 
-        public HotelController(IHotelRepository repository)
+        public HotelController()
         {
-            this.repository = repository;
+            repository = new HotelRepository();
         }
 
         public ActionResult Index()
@@ -23,17 +24,42 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpGet,Route("hotel/obterTodos")]
-        public JsonResult ObterTodos(Dictionary<string, string> search)
+        public ActionResult Cadastro()
         {
-            string busca = search["value"];
-            if (busca == null)
-                busca = "";
-            List<Hotel> hoteis = repository.ObterTodos();
-            return Json(new { data = hoteis });
+            return View();
+        }
+
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Hotel hotel)
+        {
+            var id = repository.Inserir(hotel);
+            return RedirectToAction("Editar", new { id });
+        }
+
+        [HttpGet, Route("editar")]
+        public ActionResult Editar(int id)
+        {
+            var hotel= repository.ObterPeloId(id);
+            return View();
+        }
+
+        [HttpPost, Route("editar")]
+        public ActionResult Editar(Hotel hotel)
+        {
+            var alterado = repository.Alterar(hotel);
+            return RedirectToAction("Editar", new { hotel.Id });
+        }
+
+        [HttpGet, Route("apagar")]
+        public ActionResult Apagar(int id)
+        {
+            var apagou = repository.Apagar(id);
+
+            return RedirectToAction("Index");
         }
 
 
-
     }
+
+
 }
