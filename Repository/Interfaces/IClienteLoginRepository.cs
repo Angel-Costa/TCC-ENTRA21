@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Repository.Interfaces
 {
-    public interface IClienteLogin
+    public interface IClienteLoginRepository
     {
         int Relacionar(ClienteLogin clienteLogin);
 
-        bool Apagar(int idClienteLogin, int id);
+        bool Apagar(int id);
 
         List<ClienteLogin> ObterTodosPeloIdCliente(int idCliente);
 

@@ -11,9 +11,9 @@ namespace Repository.Repositories
     {
         private SistemaContext context;
         
-        public HotelRepository(SistemaContext context)
+        public HotelRepository()
         {
-            this.context = context;
+            this.context = new SistemaContext();
         }
 
         public bool Alterar(Hotel hotel)

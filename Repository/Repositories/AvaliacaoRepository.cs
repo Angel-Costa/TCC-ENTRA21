@@ -7,13 +7,13 @@ using System.Text;
 
 namespace Repository.Repositories
 {
-    public class AvaliacoesRepository : IAvaliacoesRepository
+    public class AvaliacaoRepository : IAvaliacoesRepository
     {
-        public SistemaContext context;
+        private SistemaContext context;
 
-        public AvaliacoesRepository(SistemaContext context)
+        public AvaliacaoRepository()
         {
-            this.context = context;
+            this.context = new SistemaContext();
         }
 
         public bool Alterar(Avaliacao avaliacao)

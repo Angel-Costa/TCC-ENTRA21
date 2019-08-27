@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Avaliacoes.cs" />
+    <Compile Include="Avaliacao.cs" />
     <Compile Include="Base.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="ClienteLogin.cs" />

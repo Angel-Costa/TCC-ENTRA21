@@ -1,23 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web.Mvc;
-using Model;
+﻿using Model;
 using Repository.Interfaces;
 using Repository.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    public class HotelController : Controller
+    public class AvaliacaoController : Controller
     {
-        private HotelRepository repository;
+        private AvaliacaoRepository repository;
 
-        public HotelController()
+        public AvaliacaoController()
         {
-            repository = new HotelRepository();
+            repository = new AvaliacaoRepository();
         }
 
+        
         public ActionResult Index()
         {
             return View();
@@ -28,25 +29,26 @@ namespace View.Controllers
             return View();
         }
 
+
         [HttpPost, Route("inserir")]
-        public ActionResult Inserir(Hotel hotel)
+        public ActionResult Inserir(Avaliacao avaliacao)
         {
-            var id = repository.Inserir(hotel);
+            var id = repository.Inserir(avaliacao);
             return RedirectToAction("Editar", new { id });
         }
 
         [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
         {
-            var hotel= repository.ObterPeloId(id);
+            var hotel = repository.ObterPeloId(id);
             return View();
         }
 
         [HttpPost, Route("editar")]
-        public ActionResult Editar(Hotel hotel)
+        public ActionResult Editar(Avaliacao avaliacao)
         {
-            var alterado = repository.Alterar(hotel);
-            return RedirectToAction("Editar", new { hotel.Id });
+            var alterado = repository.Alterar(avaliacao);
+            return RedirectToAction("Editar", new { avaliacao.Id });
         }
 
         [HttpGet, Route("apagar")]
@@ -56,5 +58,6 @@ namespace View.Controllers
 
             return RedirectToAction("Index");
         }
+
     }
 }

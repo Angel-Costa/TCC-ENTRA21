@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Model;
-using Repository.Interfaces;
 using Repository.Repositories;
 
 namespace View.Controllers
 {
-    public class LoginController : Controller
+    [Route("cliente/")]
+    public class ClienteController : Controller
     {
-        private LoginRepository repository;
+        private ClienteRepository repository;
 
-        public LoginController()
+        public ClienteController()
         {
-            repository = new LoginRepository();
+            repository = new ClienteRepository();
         }
 
         public ActionResult Index()
@@ -28,35 +29,37 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpPost,Route ("inserir")]
-        public ActionResult Inserir(Login login)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Cliente cliente)
         {
-            var id = repository.Inserir(login);
+            var id = repository.Inserir(cliente);
             return RedirectToAction("Editar", new { id });
         }
 
         [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
         {
-            var login = repository.ObterPeloId(id);
+            var cliente = repository.ObterPeloId(id);
             return View();
         }
-
-
-        [HttpPost, Route("editar")]
-        public ActionResult Editar(Login login)
+        
+        [HttpGet,Route("editar")]
+        public ActionResult Editar(Cliente cliente)
         {
-            var alterado = repository.Alterar(login);
-            return RedirectToAction("Editar", new { login.Id });
+            var alterado = repository.Alterar(cliente);
+            return RedirectToAction("Editar", new { cliente.Id });
         }
 
         [HttpGet, Route("apagar")]
         public ActionResult Apagar(int id)
         {
             var apagou = repository.Apagar(id);
-
-            return RedirectToAction("index");
-        }
-
+            return RedirectToAction("Index");
+        }                
     }
-}            
+}
+
+        
+            
+        
+    

@@ -9,11 +9,12 @@ namespace Repository.Repositories
 {
     public class LoginRepository : ILoginRepository
     {
-        public SistemaContext context;
+        private SistemaContext context;
 
-        public LoginRepository(SistemaContext context)
+
+        public LoginRepository()
         {
-            this.context = context;
+            this.context = new SistemaContext();
         }
 
         public bool Alterar(Login login)
