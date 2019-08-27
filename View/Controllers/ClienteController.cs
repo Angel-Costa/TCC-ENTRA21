@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using Microsoft.AspNetCore.Mvc;
 using Model;
-using Repository.Interfaces;
+using Repository.Repositories;
 
 namespace View.Controllers
 {
     [Route("cliente/")]
     public class ClienteController : Controller
     {
-        private IClienteRepository repository;
+        private ClienteRepository repository;
 
-        public ClienteController(IClienteRepository repository)
+        public ClienteController()
         {
-            this.repository = repository;
+            repository = new ClienteRepository();
         }
 
         public ActionResult Index()
@@ -24,47 +24,38 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Cliente cliente)
-        {
-            var id = repository.Inserir(cliente);
-            return RedirectToAction("Editar", new { id = id });
-        }
-
-        [HttpPost, Route("alterar")]
-        public JsonResult Alterar([FromForm]Cliente cliente)
-        {
-            var alterou = repository.Alterar(cliente);
-            return Json(new { status = alterou });
-        }
-
-        [HttpGet, Route("apagar")]
-        public JsonResult Apagou(int id)
-        {
-            var apagaou = repository.Apagar(id);
-            return Json(new { status = apagaou });
-        }
-
-        [HttpGet, Route("obterpeloid")]
-        public ActionResult ObterPeloId(int id)
-        {
-            var cliente = repository.ObterPeloId(id);
-            if (cliente == null) return NotFound();
-            return Json(cliente);
-        }
-
-        [HttpGet, Route("obtertodos")]
-        public ActionResult ObterTodos()
-        {
-            return Json(new { data = repository.ObterTodos() });
-        }
-
-        [HttpGet, Route("cadastro")]
         public ActionResult Cadastro()
         {
             return View();
         }
 
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Cliente cliente)
+        {
+            var id = repository.Inserir(cliente);
+            return RedirectToAction("Editar", new { id });
+        }
+
+        [HttpGet, Route("editar")]
+        public ActionResult Editar(int id)
+        {
+            var cliente = repository.ObterPeloId(id);
+            return View();
+        }
+        
+        [HttpGet,Route("editar")]
+        public ActionResult Editar(Cliente cliente)
+        {
+            var alterado = repository.Alterar(cliente);
+            return RedirectToAction("Editar", new { cliente.Id });
+        }
+
+        [HttpGet, Route("apagar")]
+        public ActionResult Apagar(int id)
+        {
+            var apagou = repository.Apagar(id);
+            return RedirectToAction("Index");
+        }                
     }
 }
 

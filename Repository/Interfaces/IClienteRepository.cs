@@ -16,6 +16,6 @@ namespace Repository.Interfaces
 
         Cliente ObterPeloId(int id);
 
-        bool Apagar(int idCliente);
+        bool Apagar(int id);
     }
 }
