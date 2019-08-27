@@ -11,52 +11,53 @@ namespace View.Controllers
 {
     public class AvaliacaoController : Controller
     {
-        private AvaliacoesRepository repository;
+        private AvaliacaoRepository repository;
 
         public AvaliacaoController()
         {
-            repository = new AvaliacoesRepository();
+            repository = new AvaliacaoRepository();
         }
 
-        // GET: Avaliacao
+        
         public ActionResult Index()
         {
             return View();
         }
 
-        [HttpPost, Route("alterar")]
-        public JsonResult Alterar(Avaliacao avaliacao)
+        public ActionResult Cadastro()
         {
-            var alterou = repository.Alterar(avaliacao);
-            return Json(new { status = alterou });
+            return View();
         }
 
-        [HttpGet, Route("apagar/{id}")]
-        public ActionResult Apagar(int id)
-        {
-            var apagou = repository.Apagar(id);
-            return RedirectToAction("Index");
-        }
 
-        [HttpPost, Route("inserir/{id}")]
-        public JsonResult Inserir(Avaliacao avaliacao)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Avaliacao avaliacao)
         {
             var id = repository.Inserir(avaliacao);
             return RedirectToAction("Editar", new { id });
         }
 
-        [HttpGet, Route("obterpeloid")]
-        public JsonResult ObterPeloId(int id)
+        [HttpGet, Route("editar")]
+        public ActionResult Editar(int id)
         {
-            Avaliacao avaliacao = repository.ObterPeloId(id);
-            return Json(avaliacao, JsonRequestBehavior.AllowGet);
+            var hotel = repository.ObterPeloId(id);
+            return View();
         }
 
-        [HttpGet, Route("obtertodos")]
-        public JsonResult ObterTodos()
+        [HttpPost, Route("editar")]
+        public ActionResult Editar(Avaliacao avaliacao)
         {
-            var avaliacao = repository.ObterTodos();
-            return Json(new { data = avaliacao });
+            var alterado = repository.Alterar(avaliacao);
+            return RedirectToAction("Editar", new { avaliacao.Id });
         }
+
+        [HttpGet, Route("apagar")]
+        public ActionResult Apagar(int id)
+        {
+            var apagou = repository.Apagar(id);
+
+            return RedirectToAction("Index");
+        }
+
     }
 }
