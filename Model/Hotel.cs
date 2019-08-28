@@ -26,13 +26,5 @@ namespace Model
         [Column("quantidade_quartos")]
         public int QuantidadeQuartos { get; set; }
 
-        [Column("endereco")]
-        public string Endereco { get; set; }
-
-        [ForeignKey("id_avaliacoes")]
-        public Avaliacao Avaliacao { get; set; }
-
-        [Column("IdAvaliacoes")]
-        public int IdAvaliacao { get; set; }
     }
 }

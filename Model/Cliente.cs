@@ -20,5 +20,7 @@ namespace Model
 
         [Column("celular")]
         public string Celular { get; set; }
+
+        
     }
 }

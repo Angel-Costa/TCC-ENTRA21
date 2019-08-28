@@ -14,6 +14,12 @@ namespace Model
         [Column ("id_cliente")]
         public int IdCliente { get; set; }
 
+        [ForeignKey("IdHotel")]
+        public Hotel Hotel { get; set; }
+
+        [Column("id_hotel")]
+        public int IdHotel { get; set; }
+
         [Column ("nota")]
         public decimal Nota { get; set; }
 

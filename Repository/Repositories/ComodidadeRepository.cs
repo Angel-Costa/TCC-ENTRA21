@@ -24,11 +24,7 @@ namespace Repository.Repositories
                 return false;
             }
 
-            comodidadeOriginal.LareiraInterna = comodidade.LareiraInterna;
-            comodidadeOriginal.Microondas = comodidade.Microondas;
-            comodidadeOriginal.Regrigerador = comodidade.Regrigerador;
-            comodidadeOriginal.Tv = comodidade.Tv;
-            comodidadeOriginal.Wifi = comodidade.Wifi;
+            comodidadeOriginal.Nome = comodidade.Nome;
             context.SaveChanges();
             return true;
 
