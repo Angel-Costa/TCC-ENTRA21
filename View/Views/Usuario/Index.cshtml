@@ -3,31 +3,33 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Login</h2>
+<h2 align="center">Login</h2>
 
-<form>
-    <div class="form-group">
-        <label for="nomeusuario">Usuario</label>
-        <input type="text" class="form-control" id="nomeusuario" placeholder="Nome" />
+
+<form align="center">
+    <div class="col-md-6 offset-md-3">
+        <label for="nomeusuario"></label>
+        <input type="text" class="form-control" id="nomeusuario" placeholder="Usuario" />
 
     </div>
-    <div class="form-group">
-        <label for="exampleInputEmail1">Endereço de email</label>
+    <div class="col-md-6 offset-md-3">
+        <label for="exampleInputEmail1"></label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+        <small id="emailHelp" class="form-text text-muted"></small>
     </div>
-    <div class="form-group">
-        <label></label>
+    <div class="col-md-6 offset-md-3">
+        <label for="cpfusuario"></label>
+        <input type="text" class="form-control" id="cpfusuario" placeholder="CPF" />
     </div>
-    <div class="form-group">
-        <label for="exampleInputPassword1">Senha</label>
+    <div class="col-md-6 offset-md-3">
+        <label for="exampleInputPassword1"></label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
     </div>
-    <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Relembrar do usuario?</label>
+
+    <div>
+
+        <button type="submit" class="btn btn-success offset-md-0 mt-2">Cadastrar</button>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
 

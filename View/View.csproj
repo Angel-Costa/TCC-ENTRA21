@@ -5648,6 +5648,7 @@
     <Content Include="Views\Hotel\Index.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Comodidade\Index.cshtml" />
+    <Content Include="Views\Hotel\Cadastro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
