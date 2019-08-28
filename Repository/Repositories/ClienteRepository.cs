@@ -51,9 +51,6 @@ namespace Repository.Repositories
             return context.Clientes
              .Where(x => x.RegistroAtivo).ToList()
              .ToList();
-        }
-
-
-        
+        }        
     }
 }
