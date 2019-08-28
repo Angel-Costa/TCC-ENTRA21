@@ -5652,8 +5652,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Avaliacao\" />
-    <Folder Include="Views\ClienteLogin\" />
-    <Folder Include="Views\Comodidade\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
