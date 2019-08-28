@@ -13,6 +13,7 @@ namespace View.Controllers
     public class ComodidadeController : Controller
     {
         private ComodidadeRepository repository;
+
         public ComodidadeController()
         {
             repository = new ComodidadeRepository();
