@@ -34,12 +34,21 @@ namespace Repository.Repositories
 
         }
 
-       
+        public object Inserir(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
+
         public ClienteLogin ObterPeloId(int id)
         {
             return (from clienteLogin in context.ClientesLogins
                     where clienteLogin.Id == id
                     select clienteLogin).FirstOrDefault();
+        }
+
+        public object Alterar(Cliente cliente)
+        {
+            throw new NotImplementedException();
         }
 
         public List<ClienteLogin> ObterTodosPeloIdCliente(int idCliente)

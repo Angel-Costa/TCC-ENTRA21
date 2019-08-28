@@ -40,7 +40,7 @@ namespace View.Controllers
         [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
         {
-            var hotel = repository.ObterPeloId(id);
+            var avaliacao = repository.ObterPeloId(id);
             return View();
         }
 

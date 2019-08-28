@@ -9,7 +9,7 @@ using Repository.Repositories;
 
 namespace View.Controllers
 {
-    
+
     public class ClienteLoginController : Controller
     {
         private ClienteLoginRepository repository;
@@ -24,11 +24,30 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpPost, Route("relacionar")]
-        public ActionResult Relacionar(ClienteLogin clienteLogin)
+        public ActionResult Cadastro()
         {
-            int id = repository.Relacionar(clienteLogin);
-            return RedirectToAction("Relacionar", new { clienteLogin.IdCliente});
+            return View();
+        }
+
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Cliente cliente)
+        {
+            var id = repository.Inserir(cliente);
+            return RedirectToAction("Editar", new { id });
+        }
+
+        [HttpGet, Route("editar")]
+        public ActionResult Editar(int id)
+        {
+            var cliente = repository.ObterPeloId(id);
+            return View();
+        }
+
+        [HttpPost, Route("editar")]
+        public ActionResult Editar(Cliente cliente)
+        {
+            var alterado = repository.Alterar(cliente);
+            return RedirectToAction("Editar", new { cliente.Id });
         }
 
         [HttpGet, Route("apagar")]
@@ -37,8 +56,8 @@ namespace View.Controllers
             var apagou = repository.Apagar(id);
 
             return RedirectToAction("Index");
-        }
 
-       
+
+        }
     }
 }

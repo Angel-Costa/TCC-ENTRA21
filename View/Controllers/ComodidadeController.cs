@@ -28,18 +28,33 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpGet, Route("apagar")]
-        public ActionResult Apagou(int id)
-        {
-            var apagou = repository.Apagar(id);
-            return RedirectToAction("Index");
-        }
-
         [HttpPost, Route("inserir")]
-        public  ActionResult Inserir(Comodidade comodidade)
+        public ActionResult Inserir(Comodidade comodidade)
         {
             var id = repository.Inserir(comodidade);
             return RedirectToAction("Editar", new { id });
+        }
+
+        [HttpGet, Route("editar")]
+        public ActionResult Editar(int id)
+        {
+            var comodidade = repository.ObterPeloId(id);
+            return View();
+        }
+
+        [HttpPost, Route("editar")]
+        public ActionResult Editar(Comodidade comodidade)
+        {
+            var alterado = repository.Alterar(comodidade);
+            return RedirectToAction("Editar", new { comodidade.Id });
+        }
+
+        [HttpGet, Route("apagar")]
+        public ActionResult Apagar(int id)
+        {
+            var apagou = repository.Apagar(id);
+
+            return RedirectToAction("Index");
         }
 
     }
