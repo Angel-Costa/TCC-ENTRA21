@@ -19,8 +19,6 @@ namespace Model
         public string Rg { get; set; }
 
         [Column("celular")]
-        public string Celular { get; set; }
-
-        
+        public string Celular { get; set; }        
     }
 }
