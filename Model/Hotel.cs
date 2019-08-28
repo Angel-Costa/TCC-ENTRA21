@@ -16,15 +16,8 @@ namespace Model
 
         [Column("valor_hospedaegm")]
         public decimal ValorHospedagem { get; set; }
-
-        [Column("data_entrada")]
-        public DateTime DataEntrada { get; set; } 
-
-        [Column("data_saida")]
-        public DateTime DataSaida { get; set; }
-
+                                 
         [Column("quantidade_quartos")]
         public int QuantidadeQuartos { get; set; }
-
     }
 }
