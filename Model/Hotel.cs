@@ -11,13 +11,34 @@ namespace Model
         [Column("nome")]
         public string Nome { get; set; }
 
-        [Column("tipo")]
-        public string Tipo { get; set; }
+        [Column("descricao")]
+        public string Descricao { get; set; }
 
-        [Column("valor_hospedaegm")]
-        public decimal ValorHospedagem { get; set; }
-                                 
-        [Column("quantidade_quartos")]
-        public int QuantidadeQuartos { get; set; }
+        [Column("valor_noite")]
+        public decimal ValorNoite { get; set; }
+
+        [Column("estado")]
+        public string Estado { get; set; }
+
+        [Column("cidade")]
+        public string Cidade { get; set; }
+
+        [Column("cep")]
+        public string CEP { get; set; }
+
+        [Column("bairro")]
+        public string Bairro { get; set; }
+
+        [Column("numero")]
+        public string Numero { get; set; }
+
+        [Column("rua")]
+        public string Rua { get; set; }
+
+        [Column("complemento")]
+        public string Complemento { get; set; }
+
+
+       
     }
 }
