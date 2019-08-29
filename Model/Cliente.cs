@@ -8,8 +8,8 @@ namespace Model
 {
     [Table("clientes")]
     public class Cliente : Base
-    {                                                                
-        [Column ("nome")]
+    {
+        [Column("nome")]
         public string Nome { get; set; }
 
         [Column("celular")]
