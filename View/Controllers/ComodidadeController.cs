@@ -28,6 +28,8 @@ namespace View.Controllers
 
         public ActionResult Cadastro()
         {
+            List<Comodidade> comodidades = repository.ObterTodos();
+            ViewBag.Comodidade = comodidades;
             return View();
         }
 
