@@ -1,10 +1,4 @@
-﻿DROP TABLE IF EXISTS logins, clientes, avaliacoes, hoteis, comodidades;
-CREATE TABLE logins(
-	id INT PRIMARY KEY IDENTITY(1,1),
-	email VARCHAR(100),
-	senha VARCHAR(100),
-	registro_ativo BIT
-);
+﻿DROP TABLE IF EXISTS clientes, avaliacoes, hoteis, comodidades;
 
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
@@ -62,13 +56,16 @@ CREATE TABLE comodidades(
 	registro_ativo BIT
 );
 
-CREATE TABLE clientes_logins (
+CREATE TABLE Usuarios (
 	id INT PRIMARY KEY IDENTITY(1,1),
 
-	id_cliente INT,
-	FOREIGN KEY(id_cliente) REFERENCES clientes(id),
-
-	id_login INT,
-	FOREIGN KEY (id_login) REFERENCES logins(id),
+	nome VARCHAR (50),
+	cpf VARCHAR (11),
+	login VARCHAR (50),
+	senha VARCHAR (50),
+	
 	registro_ativo BIT
 );
+
+
+
