@@ -11,7 +11,7 @@ namespace Repository
     {
         public SistemaContext() 
         {
-
+            Database.SetInitializer<SistemaContext>(null);
         }
 
 
