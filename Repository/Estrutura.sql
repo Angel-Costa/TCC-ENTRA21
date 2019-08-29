@@ -7,6 +7,7 @@ CREATE TABLE clientes(
 	estado VARCHAR(100),
 	cidade VARCHAR(100),
 	cep VARCHAR(100),
+	login VARCHAR(100),
 	bairro VARCHAR(100),
 	numero VARCHAR(100),
 	rua VARCHAR(100),
@@ -14,7 +15,6 @@ CREATE TABLE clientes(
 	nome VARCHAR(100),
 	cpf VARCHAR(100),
 	rg VARCHAR(100),
-	login VARCHAR(100),
 	senha VARCHAR(100),
 	registro_ativo BIT
 );
