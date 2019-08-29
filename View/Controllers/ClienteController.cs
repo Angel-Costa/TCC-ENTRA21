@@ -21,18 +21,23 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Cliente> clientes = repository.ObterTodos();
+            ViewBag.Clientes = clientes;
             return View();
         }
 
         public ActionResult Cadastro()
         {
+            ClienteRepository clienteRepository = new ClienteRepository();
+            List<Cliente> clientes = clienteRepository.ObterTodos();
+            ViewBag.Cliente = clientes;
             return View();
         }
 
-        [HttpPost, Route("inserir")]
-        public ActionResult Inserir(Cliente cliente)
+        [HttpPost, Route("cadastro")]
+        public ActionResult Cadastro(Cliente cliente)
         {
-            var id = repository.Inserir(cliente);
+            var id = repository.Cadastro(cliente);
             return RedirectToAction("Editar", new { id });
         }
 

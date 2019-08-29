@@ -8,7 +8,7 @@ namespace Repository.Interfaces
     public interface IClienteRepository
     {
 
-        int Inserir(Cliente cliente);
+        int Cadastro(Cliente cliente);
 
         bool Alterar(Cliente cliente);
 
