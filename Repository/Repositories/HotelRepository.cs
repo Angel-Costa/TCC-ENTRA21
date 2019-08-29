@@ -9,7 +9,7 @@ namespace Repository.Repositories
 {
     public class HotelRepository : IHotelRepository
     {
-        public SistemaContext context;
+        private SistemaContext context;
         
         public HotelRepository()
         {
@@ -58,7 +58,7 @@ namespace Repository.Repositories
 
         public Hotel ObterPeloId(int id)
         {
-            return context.Hoteis.FirstOrDefault(x => x.Id == id);
+            return context.Hoteis.FirstOrDefault(x => x.Id == id && x.RegistroAtivo);
         }
 
         public List<Hotel> ObterTodos()

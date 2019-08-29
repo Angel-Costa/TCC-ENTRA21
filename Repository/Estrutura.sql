@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS usuarios, clientes, avaliacoes, hoteis, comodidades;
+﻿DROP TABLE IF EXISTS usuarios, comodidades, hoteis , avaliacoes, clientes;
 
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
@@ -51,7 +51,8 @@ CREATE TABLE comodidades(
 	id_hotel INT
 	FOREIGN KEY(id_hotel) REFERENCES hoteis(id),
 
-	nome VARCHAR(100)
+	nome VARCHAR(100),
+	registro_ativo BIT
 );
 
 CREATE TABLE usuarios (
