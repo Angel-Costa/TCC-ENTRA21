@@ -9,7 +9,7 @@ namespace Repository
 {
     public class SistemaContext : DbContext
     {
-        public SistemaContext() 
+        public SistemaContext() : base("DefaultConnection")
         {
             Database.SetInitializer<SistemaContext>(null);
         }
