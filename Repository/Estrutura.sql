@@ -51,24 +51,19 @@ CREATE TABLE comodidades(
 	id_hotel INT
 	FOREIGN KEY(id_hotel) REFERENCES hoteis(id),
 
-	wifi BIT,
-	tv BIT,
-	ar_condicionado BIT,
-	basico BIT,
-	microondas BIT,
-	refrigerador BIT,
-	forno BIT,
-	lareira_interna BIT,
-	registro_ativo BIT
+	nome VARCHAR(100)
 );
 
-CREATE TABLE clientes_logins (
+CREATE TABLE Usuarios (
 	id INT PRIMARY KEY IDENTITY(1,1),
 
-	id_cliente INT,
-	FOREIGN KEY(id_cliente) REFERENCES clientes(id),
-
-	id_login INT,
-	FOREIGN KEY (id_login) REFERENCES logins(id),
+	nome VARCHAR (50),
+	cpf VARCHAR (11),
+	login VARCHAR (50),
+	senha VARCHAR (50),
+	
 	registro_ativo BIT
 );
+
+INSERT INTO comodidades (nome) VALUES
+('PLAYGROUND');

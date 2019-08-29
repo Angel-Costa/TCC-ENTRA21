@@ -12,13 +12,36 @@ namespace Model
         [Column ("nome")]
         public string Nome { get; set; }
 
-        [Column("cpf")]
-        public string Cpf { get; set; }
-
-        [Column("rg")]
-        public string Rg { get; set; }
-
         [Column("celular")]
-        public string Celular { get; set; }        
+        public string Celular { get; set; }
+
+        [Column("estado")]
+        public string Estado { get; set; }
+
+        [Column("cidade")]
+        public string Cidade { get; set; }
+
+        [Column("cep")]
+        public int Cep { get; set; }
+
+        [Column("bairro")]
+        public string Bairro { get; set; }
+
+        [Column("numero")]
+        public int Numero { get; set; }
+
+        [Column("rua")]
+        public string Rua { get; set; }
+
+        [Column("complemento")]
+        public string Complemento { get; set; }
+
+        [Column("login")]
+        public string Login { get; set; }
+
+        [Column("senha")]
+        public string Senha { get; set; }
+
+        
     }
 }
