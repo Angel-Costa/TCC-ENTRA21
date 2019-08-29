@@ -9,7 +9,7 @@ namespace Repository.Repositories
 {
     public class HotelRepository : IHotelRepository
     {
-        private SistemaContext context;
+        public SistemaContext context;
         
         public HotelRepository()
         {
