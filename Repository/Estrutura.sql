@@ -32,18 +32,17 @@ CREATE TABLE avaliacoes(
 );
 
 CREATE TABLE hoteis(
-	nome VARCHAR(100),
-	tipo VARCHAR(100),
-	valor_hospedagem DECIMAL(8,2),
-	data_entrada DATETIME,
-	data_saida DATETIME,
-	quantidade_quartos INT PRIMARY KEY IDENTITY(1,1),
-	enderecos VARCHAR(100),
-
-	id_avaliacao INT
-	FOREIGN KEY(id_avaliacao) REFERENCES avaliacoes(id),
-
-	registro_ativo BIT
+	id INT PRIMARY KEY IDENTITY(1,1),
+	nome VARCHAR (50),
+	descricao VARCHAR (50),
+	valor_noite DECIMAL (9,2),
+	estado VARCHAR (50),
+	cidade VARCHAR (50),
+	cep VARCHAR (13),
+	bairro VARCHAR (50),
+	numero VARCHAR (10),
+	rua VARCHAR (50),
+	complemento VARCHAR (50)
 );
 
 CREATE TABLE comodidades(

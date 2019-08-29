@@ -25,9 +25,15 @@ namespace Repository.Repositories
             }
 
             hotelOriginal.Nome = hotel.Nome;
-            hotelOriginal.QuantidadeQuartos = hotel.QuantidadeQuartos;
-            hotelOriginal.Tipo = hotel.Tipo;
-            hotelOriginal.ValorHospedagem = hotel.ValorHospedagem;
+            hotelOriginal.Descricao = hotel.Descricao;
+            hotelOriginal.ValorNoite = hotel.ValorNoite;
+            hotelOriginal.Estado = hotel.Estado;
+            hotelOriginal.Cidade = hotel.Cidade;
+            hotelOriginal.CEP = hotel.CEP;
+            hotelOriginal.Bairro = hotel.Bairro;
+            hotelOriginal.Numero = hotel.Numero;
+            hotelOriginal.Rua = hotel.Rua;
+            hotelOriginal.Complemento = hotel.Complemento;
             context.SaveChanges();
             return true;
         }

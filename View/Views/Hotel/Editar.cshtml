@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Editar Hotel</h2>
+
+<form action="@Url.Action("Update")" method="post">
+    <input type="hidden" name="id" value="@ViewBag.Hotel.Id" />
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-nome">Nome</label>
+                <input type="text" name="nome"
+                       class="form-control"
+                       id="campo-nome"
+                       value="@ViewBag.Hotel.Nome" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-descricao">Descrição</label>
+                <input type="text" name="descricao"
+                       class="form-control"
+                       id="campo-descricao"
+                       value="@ViewBag.Hotel.Descricao" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-valor-noite">Valor por noite</label>
+                <input type="text" name="valorNoite"
+                       class="form-control"
+                       id="campo-nome"
+                       value="@ViewBag.Hotel.ValorNoite" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-estado">Estado</label>
+                <input type="text" name="estado"
+                       class="form-control"
+                       id="campo-estado"
+                       value="@ViewBag.Hotel.Estado" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-cidade">Cidade</label>
+                <input type="text" name="cidade"
+                       class="form-control"
+                       id="campo-cidade"
+                       value="@ViewBag.Hotel.Cidade" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-cep">CEP</label>
+                <input type="text" name="cep"
+                       class="form-control"
+                       id="campo-cep"
+                       value="@ViewBag.Hotel.CEP" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-bairro">Bairro</label>
+                <input type="text" name="bairro"
+                       class="form-control"
+                       id="campo-bairro"
+                       value="@ViewBag.Hotel.Bairro" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-numero">Número</label>
+                <input type="text" name="numero"
+                       class="form-control"
+                       id="campo-numero"
+                       value="@ViewBag.Hotel.Numero" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-rua">Rua</label>
+                <input type="text" name="rua"
+                       class="form-control"
+                       id="campo-rua"
+                       value="@ViewBag.Hotel.Rua" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-complemento">Complemento</label>
+                <input type="text" name="complemento"
+                       class="form-control"
+                       id="campo-complemento"
+                       value="@ViewBag.Hotel.Complemento" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button type="submit" class="btn btn-success float-right">
+                <i class="fas fa-save"></i> Salvar
+            </button>
+        </div>
+    </div>
+
+</form>
