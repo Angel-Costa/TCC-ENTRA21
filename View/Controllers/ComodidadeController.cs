@@ -22,14 +22,14 @@ namespace View.Controllers
         public ActionResult Index()
         {
             List<Comodidade> comodidades = repository.ObterTodos();
-            ViewBag.Comodidade = comodidades;
+            ViewBag.Comodidades = comodidades;
             return View();
         }
 
         public ActionResult Cadastro()
         {
             List<Comodidade> comodidades = repository.ObterTodos();
-            ViewBag.Comodidade = comodidades;
+            ViewBag.Comodidades = comodidades;
             return View();
         }
 
