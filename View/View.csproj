@@ -5650,6 +5650,8 @@
     <Content Include="Views\Comodidade\Index.cshtml" />
     <Content Include="Views\Hotel\Cadastro.cshtml" />
     <Content Include="Views\Hotel\Editar.cshtml" />
+    <Content Include="Views\Cliente\Cadastro.cshtml" />
+    <Content Include="Views\Cliente\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

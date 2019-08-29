@@ -32,7 +32,7 @@ namespace Repository.Repositories
             return context.SaveChanges() == 1;
         }
 
-        public int Inserir(Cliente cliente)
+        public int Cadastro(Cliente cliente)
         {
             cliente.RegistroAtivo = true;
             context.Clientes.Add(cliente);
