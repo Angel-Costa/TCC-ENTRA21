@@ -49,8 +49,8 @@ namespace Repository.Repositories
         public List<Cliente> ObterTodos()
         {
             return context.Clientes
-             .Where(x => x.RegistroAtivo).ToList()
-             .ToList();
+             .Where(x => x.RegistroAtivo).ToList();
+             
         }        
     }
 }

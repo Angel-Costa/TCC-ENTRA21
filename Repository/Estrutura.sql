@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS usuarios, clientes, avaliacoes, hoteis, comodidades;
+﻿DROP TABLE IF EXISTS usuarios, comodidades, hoteis , avaliacoes, clientes;
 
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),

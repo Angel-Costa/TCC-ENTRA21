@@ -27,7 +27,6 @@ namespace Repository.Repositories
             comodidadeOriginal.Nome = comodidade.Nome;
             context.SaveChanges();
             return true;
-
         }
 
         public bool Apagar(int id)
