@@ -124,7 +124,7 @@
     <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\ComodidadeRepository.cs" />
     <Compile Include="Repositories\HotelRepository.cs" />
-    <Compile Include="Repositories\IUsuarioRepository.cs" />
+    <Compile Include="Interfaces\IUsuarioRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="SistemaContext.cs" />
   </ItemGroup>

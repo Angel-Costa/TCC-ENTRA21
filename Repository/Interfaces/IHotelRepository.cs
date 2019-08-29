@@ -7,7 +7,7 @@ namespace Repository.Interfaces
 {
     public interface IHotelRepository
     {
-        int Cadastro(Hotel hotel);
+        int Inserir(Hotel hotel);
 
         bool Alterar(Hotel hotel);
 

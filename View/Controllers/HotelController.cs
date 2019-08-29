@@ -20,6 +20,8 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Hotel> hoteis = repository.ObterTodos();
+            ViewBag.Hotel = hoteis;
             return View();
         }
 
@@ -28,10 +30,10 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpPost, Route("cadastro")]
-        public ActionResult Cadastro(Hotel hotel)
+        [HttpPost, Route("inserir")]
+        public ActionResult Inserir(Hotel hotel)
         {
-            var id = repository.Cadastro(hotel);
+            var id = repository.Inserir(hotel);
             return RedirectToAction("Editar", new { id });
         }
 
