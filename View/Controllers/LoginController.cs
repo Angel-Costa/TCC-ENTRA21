@@ -10,7 +10,20 @@ namespace View.Controllers
 {
     public class LoginController : Controller
     {
+        private UsuarioRepository repository;
+
+        public LoginController()
+        {
+            repository = new UsuarioRepository();
+        }
+
+
         public ActionResult Cadastro()
+        {
+            return View();
+        }
+
+        public ActionResult Index()
         {
             return View();
         }
