@@ -1,4 +1,5 @@
-﻿DROP TABLE IF EXISTS logins, clientes, avaliacoes, hoteis, comodidades;
+﻿DROP TABLE IF EXISTS logins, clientes, avaliacoes, hoteis, ;
+DROP TABLE IF EXISTS comodidades
 CREATE TABLE logins(
 	id INT PRIMARY KEY IDENTITY(1,1),
 	email VARCHAR(100),
@@ -51,15 +52,7 @@ CREATE TABLE comodidades(
 	id_hotel INT
 	FOREIGN KEY(id_hotel) REFERENCES hoteis(id),
 
-	wifi BIT,
-	tv BIT,
-	ar_condicionado BIT,
-	basico BIT,
-	microondas BIT,
-	refrigerador BIT,
-	forno BIT,
-	lareira_interna BIT,
-	registro_ativo BIT
+	nome VARCHAR(100)
 );
 
 CREATE TABLE clientes_logins (
@@ -72,3 +65,6 @@ CREATE TABLE clientes_logins (
 	FOREIGN KEY (id_login) REFERENCES logins(id),
 	registro_ativo BIT
 );
+
+INSERT INTO comodidades (nome) VALUES
+('PLAYGROUND');

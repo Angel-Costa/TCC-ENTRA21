@@ -21,6 +21,8 @@ namespace View.Controllers
 
         public ActionResult Index()
         {
+            List<Comodidade> comodidades = repository.ObterTodos();
+            ViewBag.Comodidade = comodidades;
             return View();
         }
 
