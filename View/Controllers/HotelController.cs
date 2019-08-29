@@ -28,10 +28,10 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpPost, Route("inserir")]
-        public ActionResult Inserir(Hotel hotel)
+        [HttpPost, Route("cadastro")]
+        public ActionResult Cadastro(Hotel hotel)
         {
-            var id = repository.Inserir(hotel);
+            var id = repository.Cadastro(hotel);
             return RedirectToAction("Editar", new { id });
         }
 

@@ -48,7 +48,7 @@ namespace Repository.Repositories
             return context.SaveChanges() == 1;
         }
 
-        public int Inserir(Hotel hotel)
+        public int Cadastro(Hotel hotel)
         {
             hotel.RegistroAtivo = true;
             context.Hoteis.Add(hotel);
