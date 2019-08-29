@@ -50,7 +50,6 @@ namespace Repository.Repositories
 
         public int Inserir(Hotel hotel)
         {
-            hotel.RegistroAtivo = true;
             context.Hoteis.Add(hotel);
             context.SaveChanges();
             return hotel.Id;
@@ -58,13 +57,13 @@ namespace Repository.Repositories
 
         public Hotel ObterPeloId(int id)
         {
-            return context.Hoteis.FirstOrDefault(x => x.Id == id && x.RegistroAtivo);
+            return context.Hoteis.FirstOrDefault(x => x.Id == id);
         }
 
         public List<Hotel> ObterTodos()
         {
-            return context.Hoteis
-                .Where(x => x.RegistroAtivo).ToList();
+
+            return null;
         }
     }
 }

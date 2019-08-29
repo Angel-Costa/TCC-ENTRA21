@@ -9,6 +9,7 @@ using Repository.Repositories;
 
 namespace View.Controllers
 {
+    [Route("hotel")]
     public class HotelController : Controller
     {
         private HotelRepository repository;
