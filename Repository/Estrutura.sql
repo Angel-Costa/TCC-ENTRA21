@@ -51,7 +51,8 @@ CREATE TABLE comodidades(
 	id_hotel INT
 	FOREIGN KEY(id_hotel) REFERENCES hoteis(id),
 
-	nome VARCHAR(100)
+	nome VARCHAR(100),
+	registro_ativo BIT
 );
 
 CREATE TABLE usuarios (
