@@ -14,7 +14,6 @@ CREATE TABLE clientes(
 	nome VARCHAR(100),
 	cpf VARCHAR(100),
 	rg VARCHAR(100),
-	celular VARCHAR(100),
 	login VARCHAR(100),
 	senha VARCHAR(100),
 	registro_ativo BIT
