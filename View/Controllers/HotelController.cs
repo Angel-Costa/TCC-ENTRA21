@@ -21,7 +21,7 @@ namespace View.Controllers
         public ActionResult Index()
         {
             List<Hotel> hoteis = repository.ObterTodos();
-            ViewBag.Hotel = hoteis;
+            ViewBag.Hoteis = hoteis;
             return View();
         }
 
