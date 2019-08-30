@@ -23,8 +23,11 @@ namespace View.Controllers
             return View();
         }
 
-        public ActionResult Index()
+        [HttpPost]
+        public ActionResult Index(string Nome, string Senha)
         {
+            ViewData["Nome"] = Nome;
+            ViewData["Senha"] = Senha;
             return View();
         }
 
