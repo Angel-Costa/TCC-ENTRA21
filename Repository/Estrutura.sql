@@ -31,6 +31,8 @@ CREATE TABLE avaliacoes(
 	registro_ativo BIT
 );
 
+
+SELECT * FROM hoteis;
 CREATE TABLE hoteis(
 	id INT PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR (50),
@@ -43,8 +45,9 @@ CREATE TABLE hoteis(
 	numero VARCHAR (10),
 	rua VARCHAR (50),
 	complemento VARCHAR (50),
-	registro_ativvo BIT
+	registro_ativo BIT
 );
+
 
 CREATE TABLE comodidades(
 	id INT PRIMARY KEY IDENTITY(1,1),
