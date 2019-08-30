@@ -46,21 +46,17 @@
 
 <body>
 
-    
+    <h2 align="center">Cadastre-se</h2>
 
-    <h2 align="center">Login</h2>
-    
-
-
-    <form align="center" action="~/Views/Login/Index.cshtml" method="post">
+    <form align="center" action="/Login/Cadastro" method="post">
         <div class="col-md-6 offset-md-3">
             <label for="nomeusuario"></label>
-            <input type="text" class="form-control" id="nomeusuario" placeholder="Usuario" />
+            <input type="text" class="form-control" id="nomeusuario" placeholder="Usuario" name="nome" />
 
         </div>
         <div class="col-md-6 offset-md-3">
             <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="login">
             <small id="emailHelp" class="form-text text-muted"></small>
         </div>
         <div class="col-md-6 offset-md-3">
@@ -69,7 +65,7 @@
         </div>
         <div class="col-md-6 offset-md-3">
             <label for="exampleInputPassword1"></label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
         </div>
 
         <div>
