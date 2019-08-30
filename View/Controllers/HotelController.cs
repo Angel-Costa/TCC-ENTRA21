@@ -28,6 +28,8 @@ namespace View.Controllers
 
         public ActionResult Cadastro()
         {
+            List<Hotel> hoteis = repository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
             return View();
         }
 
