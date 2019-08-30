@@ -75,4 +75,4 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 (1,'PLAYGROUND', 1),
 (1, 'refrigerador', 1);
 
-SELECT * FROM hoteis ;
+SELECT * FROM comodidades ;
