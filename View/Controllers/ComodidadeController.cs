@@ -34,7 +34,12 @@ namespace View.Controllers
         {
             List<Comodidade> comodidades = repository.ObterTodos();
             ViewBag.Comodidades = comodidades;
+
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
             return View();
+
         }
 
         [HttpPost, Route("inserir")]

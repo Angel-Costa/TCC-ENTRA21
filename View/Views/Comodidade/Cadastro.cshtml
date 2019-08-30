@@ -18,9 +18,9 @@
                 <label form="campo-hotel">Hoteis</label>
                 <select class="form-control" name="hotel">
                     <option disabled="disabled" selected="selected">Selecione um Hotel</option>
-                    @foreach (Model.Comodidade comodidade in ViewBag.Comodidades)
+                    @foreach (Model.Hotel hotel in ViewBag.Hoteis)
                     {
-                        <option value="@comodidade.Id">@comodidade.Nome</option>
+                        <option value="@hotel.Id">@hotel.Nome</option>
                     }
                 </select>
 

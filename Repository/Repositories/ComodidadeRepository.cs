@@ -1,7 +1,9 @@
-﻿using Model;
+﻿using Microsoft.EntityFrameworkCore;
+using Model;
 using Repository.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 
@@ -16,8 +18,14 @@ namespace Repository.Repositories
             this.context = new SistemaContext();
         }
 
+        /* hotel.RegistroAtivo = true;
+            context.Hoteis.Add(hotel);
+            context.SaveChanges();
+            return hotel.Id;
+        */
         public int Inserir(Comodidade comodidade)
         {
+            comodidade.RegistroAtivo = true;
             context.Comodidades.Add(comodidade);
             context.SaveChanges();
             return comodidade.Id;
@@ -32,6 +40,7 @@ namespace Repository.Repositories
             }
 
             comodidadeOriginal.Nome = comodidade.Nome;
+            comodidadeOriginal.IdHotel = comodidade.IdHotel;
             context.SaveChanges();
             return true;
         }
@@ -39,7 +48,7 @@ namespace Repository.Repositories
         public List<Comodidade> ObterTodos()
         {
             return context.Comodidades
-                .Where(x => x.RegistroAtivo).ToList()
+                .Where(x => x.RegistroAtivo)                
                 .ToList();
         }
 
