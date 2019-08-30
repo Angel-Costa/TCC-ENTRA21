@@ -50,6 +50,7 @@ namespace Repository.Repositories
 
         public int Inserir(Hotel hotel)
         {
+            hotel.RegistroAtivo = true;
             context.Hoteis.Add(hotel);
             context.SaveChanges();
             return hotel.Id;
