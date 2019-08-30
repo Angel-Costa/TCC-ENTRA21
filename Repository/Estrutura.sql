@@ -42,7 +42,8 @@ CREATE TABLE hoteis(
 	bairro VARCHAR (50),
 	numero VARCHAR (10),
 	rua VARCHAR (50),
-	complemento VARCHAR (50)
+	complemento VARCHAR (50),
+	registro_ativvo BIT
 );
 
 CREATE TABLE comodidades(

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -60,6 +62,7 @@ namespace View.Controllers
         {
             var apagou = repository.Apagar(id);
             return RedirectToAction("Index");
+
         }                
     }
 }
