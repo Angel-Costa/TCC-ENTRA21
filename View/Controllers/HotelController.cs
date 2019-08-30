@@ -9,6 +9,7 @@ using Repository.Repositories;
 
 namespace View.Controllers
 {
+    [Route("hotel")]
     public class HotelController : Controller
     {
         private HotelRepository repository;
@@ -27,6 +28,8 @@ namespace View.Controllers
 
         public ActionResult Cadastro()
         {
+            List<Hotel> hoteis = repository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
             return View();
         }
 
