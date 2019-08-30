@@ -37,7 +37,7 @@ namespace View.Controllers
         public ActionResult Cadastro(Hotel hotel)
         {
             var id = repository.Inserir(hotel);
-            return RedirectToAction("Editar", new { id });
+            return RedirectToAction("Inserir", new { id });
         }
 
         [HttpGet, Route("editar")]
