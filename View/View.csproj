@@ -5668,6 +5668,7 @@
     <Content Include="Views\Cliente\Cadastro.cshtml" />
     <Content Include="Views\Cliente\Editar.cshtml" />
     <Content Include="Views\Usuario\Cadastro.cshtml" />
+    <Content Include="Views\Comodidade\Cadastro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
