@@ -16,6 +16,13 @@ namespace Repository.Repositories
             this.context = new SistemaContext();
         }
 
+        public int Inserir(Comodidade comodidade)
+        {
+            context.Comodidades.Add(comodidade);
+            context.SaveChanges();
+            return comodidade.Id;
+        }
+
         public bool Alterar(Comodidade comodidade)
         {
             Comodidade comodidadeOriginal = context.Comodidades.FirstOrDefault(x => x.Id == comodidade.Id);
@@ -29,6 +36,18 @@ namespace Repository.Repositories
             return true;
         }
 
+        public List<Comodidade> ObterTodos()
+        {
+            return context.Comodidades
+                .Where(x => x.RegistroAtivo).ToList()
+                .ToList();
+        }
+
+        public Comodidade ObterPeloId(int id)
+        {
+            return context.Comodidades.FirstOrDefault(x => x.Id == id);
+        }
+
         public bool Apagar(int id)
         {
             var comodidade = context.Comodidades.FirstOrDefault(x => x.Id == id);
@@ -38,25 +57,6 @@ namespace Repository.Repositories
             comodidade.RegistroAtivo = false;
             return context.SaveChanges() == 1;
 
-        }
-
-        public int Inserir(Comodidade comodidade)
-        {
-            context.Comodidades.Add(comodidade);
-            context.SaveChanges();
-            return comodidade.Id;
-        }
-
-        public Comodidade ObterPeloId(int id)
-        {
-            return context.Comodidades.FirstOrDefault(x => x.Id == id);
-        }
-
-        public List<Comodidade> ObterTodos()
-        {
-            return context.Comodidades
-                .Where(x => x.RegistroAtivo).ToList()
-                .ToList();
         }
     }
 }

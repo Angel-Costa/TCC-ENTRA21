@@ -69,6 +69,11 @@ CREATE TABLE usuarios (
 	
 	registro_ativo BIT
 );
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Dallas','profissional',12.0,'Santa Catarina', 'Blumenau',654541321,'Centro','654','por do sol','perto do shopping',1 );
 
-INSERT INTO comodidades (nome) VALUES
-('PLAYGROUND');
+INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
+(1,'PLAYGROUND', 1),
+(1, 'refrigerador', 1);
+
+SELECT * FROM comodidades ;
