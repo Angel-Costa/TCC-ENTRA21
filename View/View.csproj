@@ -5667,6 +5667,8 @@
     <Content Include="Views\Hotel\Editar.cshtml" />
     <Content Include="Views\Cliente\Cadastro.cshtml" />
     <Content Include="Views\Cliente\Editar.cshtml" />
+    <Content Include="Views\Usuario\Cadastro.cshtml" />
+    <Content Include="Views\Comodidade\Cadastro.cshtml" />
     <Content Include="Views\Login\Cadastro.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -5674,7 +5676,6 @@
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Avaliacao\" />
     <Folder Include="Views\ClienteLogin\" />
-    <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

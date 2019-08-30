@@ -33,11 +33,11 @@ namespace View.Controllers
             return View();
         }
 
-        [HttpPost, Route("inserir")]
-        public ActionResult Inserir(Hotel hotel)
+        [HttpPost, Route("cadastro")]
+        public ActionResult Cadastro(Hotel hotel)
         {
             var id = repository.Inserir(hotel);
-            return RedirectToAction("Editar", new { id });
+            return RedirectToAction("Inserir", new { id });
         }
 
         [HttpGet, Route("editar")]

@@ -40,7 +40,7 @@ namespace Repository.Repositories
 
         public bool Apagar(int id)
         {
-            var hotel = context.Hoteis.FirstOrDefault(y => y.Id == id);
+            var hotel = context.Hoteis.FirstOrDefault(x => x.Id == id);
             if (hotel == null)
                 return false;
 
@@ -50,7 +50,6 @@ namespace Repository.Repositories
 
         public int Inserir(Hotel hotel)
         {
-            hotel.RegistroAtivo = true;
             context.Hoteis.Add(hotel);
             context.SaveChanges();
             return hotel.Id;
@@ -58,13 +57,15 @@ namespace Repository.Repositories
 
         public Hotel ObterPeloId(int id)
         {
-            return context.Hoteis.FirstOrDefault(x => x.Id == id && x.RegistroAtivo);
+            return context.Hoteis.FirstOrDefault(x => x.Id == id);
         }
 
         public List<Hotel> ObterTodos()
         {
             return context.Hoteis
-                .Where(x => x.RegistroAtivo).ToList();
+                .Where(x => x.RegistroAtivo).ToList()
+                .ToList();
+            
         }
     }
 }

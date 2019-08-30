@@ -35,9 +35,9 @@ namespace View.Controllers
 
         [HttpPost, Route("inserir")]
         public ActionResult Inserir(Comodidade comodidade)
-        {
+        {            
             var id = repository.Inserir(comodidade);
-            return RedirectToAction("Editar", new { id });
+            return RedirectToAction("Inserir", new { id });
         }
 
         [HttpGet, Route("editar")]
