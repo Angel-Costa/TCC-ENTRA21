@@ -17,19 +17,27 @@ namespace View.Controllers
             repository = new UsuarioRepository();
         }
 
+        
+        public ActionResult Index()
+        {
+            return View();
+        }
+
 
         public ActionResult Cadastro()
         {
             return View();
         }
 
+        
         [HttpPost]
-        public ActionResult Index(string Nome, string Senha)
+        public ActionResult Cadastro(Usuario usuario)
         {
-            ViewData["Nome"] = Nome;
-            ViewData["Senha"] = Senha;
-            return View();
+            repository.Inserir(usuario);
+            return RedirectToAction("Index");
         }
+
+
 
     }
 }
