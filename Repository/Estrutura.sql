@@ -32,7 +32,7 @@ CREATE TABLE avaliacoes(
 );
 
 
-SELECT * FROM hoteis;
+
 CREATE TABLE hoteis(
 	id INT PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR (50),
@@ -76,4 +76,5 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 (1,'PLAYGROUND', 1),
 (1, 'refrigerador', 1);
 
-SELECT * FROM comodidades ;
+
+SELECT * FROM hoteis ;

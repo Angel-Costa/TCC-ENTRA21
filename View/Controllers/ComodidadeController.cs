@@ -25,6 +25,10 @@ namespace View.Controllers
             ViewBag.Comodidades = comodidades;
             return View();
         }
+        /* CategoriaRepository categoriaRepository = new CategoriaRepository();
+            List<Categoria> categorias = categoriaRepository.ObterTodos();
+            ViewBag.Categorias = categorias;
+        */
 
         public ActionResult Cadastro()
         {
@@ -57,8 +61,7 @@ namespace View.Controllers
         [HttpGet, Route("apagar")]
         public ActionResult Apagar(int id)
         {
-            var apagou = repository.Apagar(id);
-
+            var apagou = repository.Apagar(id); 
             return RedirectToAction("Index");
         }
 

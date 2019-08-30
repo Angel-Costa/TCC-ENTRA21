@@ -15,6 +15,15 @@
                 </label>
                 <input class="form-control" type="text" name="nome" id="campo-nome" />
 
+                <label form="campo-hotel">Hoteis</label>
+                <select class="form-control" name="hotel">
+                    <option disabled="disabled" selected="selected">Selecione um Hotel</option>
+                    @foreach (Model.Comodidade comodidade in ViewBag.Comodidades)
+                    {
+                        <option value="@comodidade.Id">@comodidade.Nome</option>
+                    }
+                </select>
+
                 <button class="form-control btn btn-success float-right mt-3" type="submit">
                     <i class="fas fa-plus"></i> Salvar
                 </button>

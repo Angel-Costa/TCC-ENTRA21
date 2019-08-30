@@ -17,9 +17,12 @@
         <tr>
             <th>Código</th>
             <th>Nome</th>
+            <th>Hotel</th>
             <th>Ação</th>
         </tr>
     </thead>
+    
+
 
     <tbody>
         @foreach (Model.Comodidade comodidade in ViewBag.Comodidades)
@@ -27,6 +30,7 @@
             <tr>
                 <td>@comodidade.Id</td>
                 <td>@comodidade.Nome</td>
+                <td>@comodidade.Id</td>
                 <td>
                     <a href="@Url.Action("Editar", new { id = comodidade.Id })"
                        class="btn btn-primary">
@@ -46,6 +50,7 @@
         <tr>
             <th>Código</th>
             <th>Nome</th>
+            <th>Hotel</th>
             <th>Ação</th>
         </tr>
     </tfoot>

@@ -25,10 +25,16 @@ namespace View.Controllers
             ViewBag.Hoteis = hoteis;
             return View();
         }
+        /* CategoriaRepository categoriaRepository = new CategoriaRepository();
+            List<Categoria> categorias = categoriaRepository.ObterTodos();
+            ViewBag.Categorias = categorias;
+        */
+
 
         public ActionResult Cadastro()
         {
-            List<Hotel> hoteis = repository.ObterTodos();
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
             ViewBag.Hoteis = hoteis;
             return View();
         }
@@ -37,7 +43,7 @@ namespace View.Controllers
         public ActionResult Cadastro(Hotel hotel)
         {
             var id = repository.Inserir(hotel);
-            return RedirectToAction("Inserir", new { id });
+            return RedirectToAction("index", new { id });
         }
 
         [HttpGet, Route("editar")]
