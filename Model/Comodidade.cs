@@ -10,5 +10,11 @@ namespace Model
     {
         [Column("nome")]
         public string Nome { get; set; }
+
+        [ForeignKey("IdHotel")]
+        public Hotel Hotel { get; set; }
+        
+        [Column("id_hotel")]
+        public int IdHotel { get; set; }
     }
 }
