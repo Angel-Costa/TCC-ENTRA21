@@ -3,105 +3,78 @@
     ViewBag.Title = "Cadastro";
 }
 
-<h2>Cadastro de Hoteis</h2>
+
+
 
 <form action="@Url.Action("Cadastro")" method="post">
 
-    <div class="d-flex justify-content-end">
-        <div class="col-12 d-flex justify-content-end">
-            <div class="form-group">
-                <label for="campo-nome">Nome</label>
+    <h2 style="color: #073763;">Informações do Hotel</h2>
+    <div class="form-group">
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-nome" style="color: #073763;">Nome</label>
                 <input class="form-control" type="text" name="nome" id="campo-nome" />
             </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-descricao">Descrição</label>
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-descricao" style="color: #073763;">Descrição</label>
                 <input class="form-control" type="text" name="descricao" id="campo-descricao" />
             </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-valor-noite">Valor por noite</label>
-                <input class="form-control" type="number" name="valoroNite" id="campo-valor-noite" />
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-valor-noite" style="color: #073763;">Valor por noite</label>
+                <input class="form-control" type="number" name="valorNoite" id="campo-valor-noite" />
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-estado">Estado</label>
+    <h2 style="color: #073763;">Endereço do Hotel</h2>
+    <div class="form-group">
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-estado" style="color: #073763;">Estado</label>
                 <input class="form-control" type="text" name="estado" id="campo-estado" />
             </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-cidade">Cidade</label>
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-cidade" style="color: #073763;">Cidade</label>
                 <input class="form-control" type="text" name="cidade" id="campo-cidade" />
             </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-cep">CEP</label>
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-cep" style="color: #073763;">CEP</label>
                 <input class="form-control" type="text" name="cep" id="campo-cep" />
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-bairro">Bairro</label>
+    <div class="form-group">
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-bairro" style="color: #073763;">Bairro</label>
                 <input class="form-control" type="text" name="bairro" id="campo-bairro" />
             </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-numero">Número</label>
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-numero" style="color: #073763;">Número</label>
                 <input class="form-control" type="number" name="numero" id="campo-numero" />
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-rua">Rua</label>
+    <div class="form-group">
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-rua" style="color: #073763;">Rua</label>
                 <input class="form-control" type="text" name="rua" id="campo-rua" />
             </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-complemento">Complemento</label>
+            <div class="form-group col-md-4 col-sm-4">
+                <label for="campo-complemento" style="color: #073763;">Complemento</label>
                 <input class="form-control" type="text" name="complemento" id="campo-complemento" />
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12">
-            <button class="btn btn-success float-right" type="submit">
-                <i class="fas fa-save"></i> Salvar
-            </button>
+        <div class="col-12" style="color: white;">           
+                <button class="btn float-right btn-lg btn-block" style="background-color: #00ae1b; color: white;" type="submit">
+                    <i class="ti-save" style="color: #FFFFFF;"></i> Salvar
+                </button>
         </div>
     </div>
 </form>
