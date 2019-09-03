@@ -3,79 +3,188 @@
     ViewBag.Title = "Cadastro";
 }
 
+<head>
+
+    <script src="https://kit.fontawesome.com/6c46833db4.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <style>
+
+        .left-inner-addon {
+            position: relative;
+        }
+
+            .left-inner-addon i {
+                position: absolute;
+                padding: 10px 12px;
+                pointer-events: none;
+                color: #666;
+            }
+
+            .left-inner-addon input.form-control {
+                padding-left: 30px;
+            }
+
+        input[type="text"] {
+            width: 100%;
+            border: 2px solid #aaa;
+            border-radius: 4px;
+            margin: 8px 0;
+            outline: none;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
 
 
 
-<form action="@Url.Action("Cadastro")" method="post">
+            input[type="text"]:focus {
+                border-color: dodgerBlue;
+                box-shadow: 0 0 8px 0 dodgerBlue;
+            }
 
-    <h2 style="color: #073763;">Informações do Hotel</h2>
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-nome" style="color: #073763;">Nome</label>
-                <input class="form-control" type="text" name="nome" id="campo-nome" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-descricao" style="color: #073763;">Descrição</label>
-                <input class="form-control" type="text" name="descricao" id="campo-descricao" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-valor-noite" style="color: #073763;">Valor por noite</label>
-                <input class="form-control" type="number" name="valorNoite" id="campo-valor-noite" />
+
+        .inputWithIcon input[type="text"] {
+            padding-left: 40px;
+        }
+
+        .inputWithIcon {
+            position: relative;
+        }
+
+
+
+            .inputWithIcon i {
+                position: absolute;
+                left: 0;
+                top: 8px;
+                padding: 9px 8px;
+                color: #aaa;
+                transition: 0.3s;
+            }
+
+
+            .inputWithIcon input[type="text"]:focus + i {
+                color: dodgerBlue;
+            }
+
+
+            .inputWithIcon.inputIconBg i {
+                background-color: #aaa;
+                color: #00ae1b;
+                padding: 9px 4px;
+                border-radius: 4px 0 0 4px;
+            }
+
+
+            .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+                color: #fff;
+                background-color: #073763;
+            }
+    </style>
+</head>
+
+<body>
+    <form action="@Url.Action("Cadastro")" method="post">
+
+        <h2 style="color: #073763;">Informações do Hotel</h2>
+
+
+        <div class="form-group">
+            <div class="row">
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-hotel" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="nome" id="campo-nome" placeholder="Nome do Hotel" />
+                    </div>
+                </div>
+
+
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="ti-view-list" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="descricao" id="campo-descricao" placeholder="Descrição" />
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-dollar-sign" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="valorNoite" id="campo-valor-noite" placeholder="Valor por Noite" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <h2 style="color: #073763;">Endereço do Hotel</h2>
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-estado" style="color: #073763;">Estado</label>
-                <input class="form-control" type="text" name="estado" id="campo-estado" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-cidade" style="color: #073763;">Cidade</label>
-                <input class="form-control" type="text" name="cidade" id="campo-cidade" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-cep" style="color: #073763;">CEP</label>
-                <input class="form-control" type="text" name="cep" id="campo-cep" />
+
+        <h2 style="color: #073763;">Endereço do Hotel</h2>
+
+
+        <div class="form-group">
+            <div class="row">
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-map-marked-alt" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="estado" id="campo-estado" placeholder="Estado" />
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-city" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="cidade" id="campo-cidade" placeholder="Cidade" />
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-map-marker-alt" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="cep" id="campo-cep" placeholder="CEP" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-bairro" style="color: #073763;">Bairro</label>
-                <input class="form-control" type="text" name="bairro" id="campo-bairro" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-numero" style="color: #073763;">Número</label>
-                <input class="form-control" type="number" name="numero" id="campo-numero" />
+        <div class="form-group">
+            <div class="row">
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-home" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="bairro" id="campo-bairro" placeholder="Bairro" />
+                    </div>
+                </div>
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-list-ol" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="numero" id="campo-numero" placeholder="Número" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-rua" style="color: #073763;">Rua</label>
-                <input class="form-control" type="text" name="rua" id="campo-rua" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-complemento" style="color: #073763;">Complemento</label>
-                <input class="form-control" type="text" name="complemento" id="campo-complemento" />
+        <div class="form-group">
+            <div class="row">
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-road" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="rua" id="campo-rua" placeholder="Rua" />
+                    </div>
+                </div>
+                <div class="form-group col-md-4 col-sm-4">
+                    <div class="form-group left-inner-addon">
+                        <i class="fas fa-plus" style="color: #073763;"></i>
+                        <input class="form-control" type="text" name="complemento" id="campo-complemento" placeholder="Complemento" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12" style="color: white;">           
+        <div class="row">
+            <div class="col-12" style="color: white;">
                 <button class="btn float-right btn-lg btn-block" style="background-color: #00ae1b; color: white;" type="submit">
                     <i class="ti-save" style="color: #FFFFFF;"></i> Salvar
                 </button>
+            </div>
         </div>
-    </div>
-</form>
-
+    </form>
+</body>
