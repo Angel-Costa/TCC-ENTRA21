@@ -51,6 +51,7 @@ namespace View.Controllers
         public ActionResult Editar(int id)
         {
             var hotel= repository.ObterPeloId(id);
+            ViewBag.Hotel = hotel;
             return View();
         }
 

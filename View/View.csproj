@@ -5678,6 +5678,7 @@
     <Content Include="Views\Cliente\Editar.cshtml" />
     <Content Include="Views\Comodidade\Cadastro.cshtml" />
     <Content Include="Views\Login\Cadastro.cshtml" />
+    <Content Include="Views\Comodidade\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
