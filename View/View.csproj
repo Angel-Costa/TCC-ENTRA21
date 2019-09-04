@@ -5705,6 +5705,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Comodidade\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

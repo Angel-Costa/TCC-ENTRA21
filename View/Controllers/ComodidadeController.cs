@@ -42,23 +42,29 @@ namespace View.Controllers
 
         }
 
-        [HttpPost, Route("inserir")]
-        public ActionResult Inserir(Comodidade comodidade)
+        [HttpPost, Route("cadastro")]
+        public ActionResult Cadastro(Comodidade comodidade)
         {            
             var id = repository.Inserir(comodidade);
-            return RedirectToAction("Inserir", new { id });
+            return RedirectToAction("Index", new { id });
         }
 
         [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
-        {
+        {            
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
             var comodidade = repository.ObterPeloId(id);
+            ViewBag.Comodidade = comodidade;
             return View();
         }
 
         [HttpPost, Route("editar")]
         public ActionResult Editar(Comodidade comodidade)
         {
+            List<Comodidade> comodidades = repository.ObterTodos();
+            ViewBag.Comodidades = comodidades;
             var alterado = repository.Alterar(comodidade);
             return RedirectToAction("Editar", new { comodidade.Id });
         }
@@ -69,6 +75,5 @@ namespace View.Controllers
             var apagou = repository.Apagar(id); 
             return RedirectToAction("Index");
         }
-
     }
 }
