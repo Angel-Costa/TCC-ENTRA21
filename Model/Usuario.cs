@@ -20,7 +20,7 @@ namespace Model
         public string Login { get; set; }
 
         [Column("senha")]
-        public int Senha { get; set; }
+        public string Senha { get; set; }
 
     }
 }
