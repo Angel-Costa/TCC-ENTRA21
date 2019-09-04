@@ -23,7 +23,7 @@ namespace View.Controllers
             return View();
         }
 
-
+        [HttpGet]
         public ActionResult Cadastro()
         {
             return View();

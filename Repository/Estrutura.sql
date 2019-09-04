@@ -64,7 +64,7 @@ CREATE TABLE usuarios (
 	nome VARCHAR (50),
 	cpf VARCHAR (11),
 	login VARCHAR (50),
-	senha VARCHAR (50),
+	senha VARCHAR(50),
 	
 	registro_ativo BIT
 );
@@ -75,4 +75,8 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 (1,'PLAYGROUND', 1),
 (1, 'refrigerador', 1);
 
-SELECT * FROM comodidades ;
+SELECT * FROM comodidades ;	
+
+
+SELECT * FROM usuarios ;	
+TRUNCATE TABLE usuarios;

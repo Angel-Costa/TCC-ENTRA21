@@ -59,66 +59,85 @@
             top: 0;
         }
 
+        .card-header{
+            background-color:black;
+        }
 
     </style>
 </head>
 
 <body>
 
-    <h2 align="center">Cadastre-se</h2>
+    <form action="@Url.Action("Cadastro")" method="post"/>
 
-    <form align="center" action="/Login/Cadastro" method="post">
-        <div class="col-md-6 offset-md-3">
-            <label for="nomeusuario"></label>
-            <input type="text" class="form-control" id="nomeusuario" placeholder="Usuario" name="nome" />
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="card" style=" width: 18rem; opacity: 1">
+                <div class="card-header">
+                    <h3 color: black >Cadastro</h3>
 
+                </div>
+                <div class="card-body text-dark">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend"></div>
+                            <input type="text"  class="form-control" id="nome" placeholder="Usuario" name="nome" required/>
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend"></div>
+                            <input type="text" class="form-control" id="login" placeholder="Email" name="login" required>
+                        </div>
+                        <div class="input-group form-group">
+                            <label for="cpfusuario"></label>
+                            <input type="text" class="form-control" id="cpfusuario" placeholder="CPF" name="cpf" required>
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Cadastrar" class="btn btn-dark float-right login_btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 offset-md-3">
-            <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="login">
-            <small id="emailHelp" class="form-text text-muted"></small>
-        </div>
-        <div class="col-md-6 offset-md-3">
-            <label for="cpfusuario"></label>
-            <input type="text" class="form-control" id="cpfusuario" placeholder="CPF" />
-        </div>
-        <div class="col-md-6 offset-md-3">
-            <label for="exampleInputPassword1"></label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
-        </div>
+    </div>
+    </div>
 
-        <div>
-
-            <button type="submit" class="btn btn-success offset-md-0 mt-2">Cadastrar</button>
-        </div>
-    </form>
+</body>
+</html>
 
 
-    <!-- Required Jquery -->
-    <script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
-    <script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
-    <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
-    <!-- jquery slimscroll js -->
-    <script type="text/javascript"
-            src="~/Content/tema/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
-    <!-- modernizr js -->
-    <script type="text/javascript" src="~/Content/tema/bower_components/modernizr/js/modernizr.js"></script>
-    <script type="text/javascript" src="~/Content/tema/bower_components/modernizr/js/css-scrollbars.js"></script>
+<!-- Required Jquery -->
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript"
+        src="~/Content/tema/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+<!-- modernizr js -->
+<script type="text/javascript" src="~/Content/tema/bower_components/modernizr/js/modernizr.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/modernizr/js/css-scrollbars.js"></script>
 
-    <!-- i18next.min.js -->
-    <script type="text/javascript" src="~/Content/tema/bower_components/i18next/js/i18next.min.js"></script>
-    <script type="text/javascript"
-            src="~/Content/tema/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
-    <script type="text/javascript"
-            src="~/Content/tema/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
-    <script type="text/javascript"
-            src="~/Content/tema/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
-    <script src="~/Content/tema/assets/js/pcoded.min.js"></script>
-    <script src="~/Content/tema/assets/js/demo-12.js"></script>
-    <script src="~/Content/tema/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <!-- Custom js -->
-    <script type="text/javascript" src="~/Content/tema/assets/js/script.js"></script>
+<!-- i18next.min.js -->
+<script type="text/javascript" src="~/Content/tema/bower_components/i18next/js/i18next.min.js"></script>
+<script type="text/javascript"
+        src="~/Content/tema/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+<script type="text/javascript"
+        src="~/Content/tema/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+<script type="text/javascript"
+        src="~/Content/tema/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+<script src="~/Content/tema/assets/js/pcoded.min.js"></script>
+<script src="~/Content/tema/assets/js/demo-12.js"></script>
+<script src="~/Content/tema/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Custom js -->
+<script type="text/javascript" src="~/Content/tema/assets/js/script.js"></script>
 
 
 
