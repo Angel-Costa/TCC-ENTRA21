@@ -52,11 +52,12 @@ namespace View.Controllers
         [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
         {            
+            var comodidade = repository.ObterPeloId(id);
+            ViewBag.Comodidade = comodidade;
+
             HotelRepository hotelRepository = new HotelRepository();
             List<Hotel> hoteis = hotelRepository.ObterTodos();
             ViewBag.Hoteis = hoteis;
-            var comodidade = repository.ObterPeloId(id);
-            ViewBag.Comodidade = comodidade;
             return View();
         }
 
@@ -66,7 +67,7 @@ namespace View.Controllers
             List<Comodidade> comodidades = repository.ObterTodos();
             ViewBag.Comodidades = comodidades;
             var alterado = repository.Alterar(comodidade);
-            return RedirectToAction("Editar", new { comodidade.Id });
+            return RedirectToAction("Index", new { comodidade.Id });
         }
 
         [HttpGet, Route("apagar")]

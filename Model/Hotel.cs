@@ -37,8 +37,6 @@ namespace Model
 
         [Column("complemento")]
         public string Complemento { get; set; }
-
-
        
     }
 }
