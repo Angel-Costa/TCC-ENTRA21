@@ -40,7 +40,7 @@ namespace View.Controllers
         public ActionResult Cadastro(Cliente cliente)
         {
             var id = repository.Cadastro(cliente);
-            return RedirectToAction("Editar", new { id });
+            return RedirectToAction("Index");
         }
 
         [HttpGet, Route("editar")]
