@@ -55,7 +55,7 @@ namespace View.Controllers
         public ActionResult Editar(Cliente cliente)
         {
             var alterado = repository.Alterar(cliente);
-            return RedirectToAction("Editar", new { cliente.Id });
+            return RedirectToAction("Index");
         }
 
         [HttpGet, Route("apagar")]

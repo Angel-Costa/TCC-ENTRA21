@@ -19,7 +19,27 @@ namespace Repository.Repositories
 
         public bool Alterar(Cliente cliente)
         {
-            cliente.RegistroAtivo = true;
+            var clienteAux = context.Clientes
+                .Where(x => x.Id == cliente.Id)
+                .FirstOrDefault();
+
+            if (clienteAux == null)
+                return false;
+
+            clienteAux.Nome = cliente.Nome;
+            clienteAux.Celular = cliente.Celular;
+
+            clienteAux.Login = cliente.Login;
+            clienteAux.Senha = cliente.Senha;
+
+            clienteAux.Rua = cliente.Rua;
+            clienteAux.Estado = cliente.Estado;
+            clienteAux.Complemento = cliente.Complemento;
+            clienteAux.Numero = cliente.Numero;
+            clienteAux.Cep = cliente.Cep;
+            clienteAux.Bairro = cliente.Bairro;
+            clienteAux.RegistroAtivo = true;
+
             return context.SaveChanges() == 1;
         }
 
