@@ -59,7 +59,7 @@ namespace View.Controllers
         public ActionResult Editar(Hotel hotel)
         {
             var alterado = repository.Alterar(hotel);
-            return RedirectToAction("Editar", new { hotel.Id });
+            return RedirectToAction("Index", new { hotel.Id });
         }
 
         [HttpGet, Route("apagar")]
