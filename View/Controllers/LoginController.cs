@@ -37,6 +37,19 @@ namespace View.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet, Route("esquecisenha")]
+        public ActionResult EsqueciSenha()
+        {   
+            return View();
+        }
+
+        [HttpPost, Route("esquecisenha")]
+        public ActionResult EsqueciSenha(Usuario usuario)
+        {
+            var alterado = repository.Alterar(usuario);
+            return RedirectToAction("Index");
+        }
+
 
 
     }

@@ -256,16 +256,11 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
-    <Content Include="Content\anoitecer.gif" />
     <Content Include="Content\ceu.jpg" />
-    <Content Include="Content\cidade.gif" />
-    <Content Include="Content\city.jpg" />
+    <Content Include="Content\cidadenoite.jpg" />
     <Content Include="Content\essa.jpg" />
     <Content Include="Content\floresta.jpg" />
     <Content Include="Content\HotelCadastro.jpg" />
-    <Content Include="Content\fundo.jpg" />
-    <Content Include="Content\noite.jpg" />
-    <Content Include="Content\nova.jpg" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
     <Content Include="Content\tema\assets\css\ionicons.css" />
@@ -5366,8 +5361,6 @@
     <Content Include="Content\tema\bower_components\typeahead.js\js\typeahead.bundle.min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore-min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore.js" />
-    <Content Include="Content\procura.jpg" />
-    <Content Include="Content\yes.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -5706,6 +5699,7 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Comodidade\Editar.cshtml" />
+    <Content Include="Views\Login\EsqueciSenha.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
