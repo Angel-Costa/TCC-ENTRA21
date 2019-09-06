@@ -256,6 +256,7 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\32officeicons-13_89724.png" />
     <Content Include="Content\ceu.jpg" />
     <Content Include="Content\cidadenoite.jpg" />
     <Content Include="Content\essa.jpg" />
