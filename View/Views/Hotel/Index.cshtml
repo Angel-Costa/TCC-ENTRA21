@@ -4,12 +4,12 @@
 }
 
 <style>
-    table, td, tr{
+    table, td, tr {
         min-height: 300px;
         min-width: 300px;
     }
 
-    .foo{
+    .foo {
         min-height: 300px;
     }
 </style>
@@ -39,7 +39,7 @@
                     <th>Valor por noite</th>
                     <th>Estado</th>
                     <th>Cidade</th>
-                    <th>Complemento</th>
+          
                 </tr>
             </thead>
             <tbody>
@@ -52,11 +52,8 @@
                         <td>@hotel.ValorNoite</td>
                         <td>@hotel.Estado</td>
                         <td>@hotel.Cidade</td>
-                        <td>@hotel.CEP</td>
-                        <td>@hotel.Bairro</td>
-                        <td>@hotel.Numero</td>
-                        <td>@hotel.Rua</td>
-                        <td>@hotel.Complemento</td>
+
+
                         <td>
 
                             <a href="@Url.Action("Editar", new { id = hotel.Id })"
