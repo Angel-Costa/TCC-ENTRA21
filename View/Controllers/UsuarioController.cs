@@ -18,6 +18,15 @@ namespace View.Controllers
             repository = new UsuarioRepository();
         }
 
+        public ActionResult Index()
+        {
+            UsuarioRepository usuarioRepository = new UsuarioRepository();
+            List<Usuario> usuarios = usuarioRepository.ObterTodos();
+            ViewBag.Usuarios = usuarios;
+            return View();
+        }
+
+
         public ActionResult Cadastro()
         {
             return View();
