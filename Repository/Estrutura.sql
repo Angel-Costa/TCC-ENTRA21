@@ -35,7 +35,7 @@ CREATE TABLE avaliacoes(
 CREATE TABLE hoteis(
 	id INT PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR (50),
-	descricao VARCHAR (50),
+	descricao VARCHAR (200),
 	valor_noite DECIMAL (9,2),
 	estado VARCHAR (17),
 	cidade VARCHAR (50),
