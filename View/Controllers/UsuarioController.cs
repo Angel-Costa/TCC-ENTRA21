@@ -64,6 +64,8 @@ namespace View.Controllers
         [HttpGet]
         public ActionResult Perfil()
         {
+            Usuario usuario = repository.ObterPeloId(1);
+            ViewBag.Usuario = usuario;
             return View();
         }
 
