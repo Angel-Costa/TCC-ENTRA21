@@ -61,6 +61,11 @@ namespace View.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult Perfil()
+        {
+            return View();
+        }
 
     }
 }

@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<h4>Cadastro de Sugestões</h4>
+
+<form action="@Url.Action("Cadastro de Sugestões")"method="post">
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-nome">Nome</label>
+                <input class="form-control" type="text"
+                       name="nome" id="campo-nome"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-descricao">Descrição</label>
+                <input type="text" name="descricao"
+                       class="form-control"
+                       id="campo-descricao"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-ponto-turistico">Ponto Turístico</label>
+                <input type="text" name="ponto-turistico"
+                       class="form-control"
+                       id="campo-ponto-turistico"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-control">
+                <label for="campo-local">Local</label>
+                <input type="text" name="local"
+                       class="form-control"
+                       id="campo-local"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-control">
+                <label for="campo-cidade">Cidade</label>
+                <input type="text" name="local"
+                       class="form-control"
+                       id="campo-cidade"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-control">
+                <label for="campo-endereco">Endereço</label>
+                <input type="text" name="local"
+                       class="form-control"
+                       id="campo-edereço"/>
+            </div>
+        </div>
+    </div>
+</form>
