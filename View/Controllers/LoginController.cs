@@ -48,11 +48,22 @@ namespace View.Controllers
             var alterado = repository.Alterar(usuario);
             return RedirectToAction("Index");
         }
+		
+		public ActionResult Select()
+		{
 
-        [HttpGet, Route("select")]
-        public ActionResult Select(Usuario usuario)
-        {
-            return View("Select");
-        }
+		}
+
+        [HttpGet,Route("administrador")]
+		public ActionResult Administrador()
+		{
+			return View("Home");
+		}
+
+		[HttpGet,Route("usuario")]
+		public ActionResult Usuario()
+		{
+			return View();
+		}
     }
 }

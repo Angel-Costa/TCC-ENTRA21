@@ -66,7 +66,8 @@ CREATE TABLE usuarios (
 	login VARCHAR (50),
 	senha VARCHAR(50),
 	
-	registro_ativo BIT
+	registro_ativo BIT,
+	privilegio VARCHAR
 );
 
 CREATE TABLE sugestoes(
