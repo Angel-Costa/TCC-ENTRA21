@@ -28,7 +28,6 @@ namespace View.Controllers
         {
             return View();
         }
-
         
         [HttpPost]
         public ActionResult Cadastro(Usuario usuario)
