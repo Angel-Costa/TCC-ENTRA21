@@ -28,18 +28,5 @@ namespace Model
         [Column("endereco")]
         public string Endereco { get; set; }
 
-
-
     }
-    /*
-     * Id int
-Local varchar
-Nome varchar
-Descrição varchar
-Registro ativo bit
-Ponto turístico
-Cidade varchar
-Endereço varchar
-
-     * */
 }

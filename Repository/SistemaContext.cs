@@ -14,8 +14,6 @@ namespace Repository
             Database.SetInitializer<SistemaContext>(null);
         }
 
-
-
         public DbSet<Avaliacao> Avaliacaos { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Comodidade> Comodidades { get; set; }
