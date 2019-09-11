@@ -5708,13 +5708,14 @@
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Home\Select.cshtml" />
     <Content Include="Views\Usuario\Perfil.cshtml" />
+    <Content Include="Views\Sugestao\Index.cshtml" />
+    <Content Include="Views\Sugestao\Cadastro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Avaliacao\" />
     <Folder Include="Views\ClienteLogin\" />
-    <Folder Include="Views\Sugestao\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

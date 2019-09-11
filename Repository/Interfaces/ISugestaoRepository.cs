@@ -18,5 +18,7 @@ namespace Repository.Interfaces
         Sugestao ObterPeloId(int id);
 
         bool Apagar(int id);
+
+        int Cadastro(Sugestao sugestao);
     }
 }
