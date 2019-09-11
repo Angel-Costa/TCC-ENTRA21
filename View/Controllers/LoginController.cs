@@ -51,7 +51,7 @@ namespace View.Controllers
 		
 		public ActionResult Select()
 		{
-
+            return View();
 		}
 
         [HttpGet,Route("administrador")]
