@@ -45,6 +45,14 @@ namespace Repository.Repositories
             return context.SaveChanges() == 1;
         }
 
+        public int Cadastro(Sugestao sugestao)
+        {
+            sugestao.RegistroAtivo = true;
+            context.Sugestoes.Add(sugestao);
+            context.SaveChanges();
+            return sugestao.Id;
+        }
+
         public int Inserir(Sugestao sugestao)
         {
             sugestao.RegistroAtivo = true;
