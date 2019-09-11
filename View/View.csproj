@@ -245,6 +245,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\SugestaoController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -5713,6 +5714,7 @@
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Avaliacao\" />
     <Folder Include="Views\ClienteLogin\" />
+    <Folder Include="Views\Sugestao\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
