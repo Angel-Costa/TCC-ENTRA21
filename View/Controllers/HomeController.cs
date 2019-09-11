@@ -13,8 +13,6 @@ namespace View.Controllers
         {
             return View();
         }
-
  
-
     }
 }

@@ -50,7 +50,10 @@ namespace View.Controllers
             return RedirectToAction("Index");
         }
 
-
-
+        [HttpGet, Route("select")]
+        public ActionResult Select(Usuario usuario)
+        {
+            return View("Select");
+        }
     }
 }
