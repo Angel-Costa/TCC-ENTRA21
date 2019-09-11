@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS usuarios, comodidades, hoteis , avaliacoes, clientes;
+﻿DROP TABLE IF EXISTS usuarios, comodidades, hoteis , avaliacoes, clientes, sugestao;
 
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
@@ -68,6 +68,18 @@ CREATE TABLE usuarios (
 	
 	registro_ativo BIT
 );
+
+CREATE TABLE sugestoes(
+	id INT PRIMARY KEY IDENTITY(1,1),
+	local VARCHAR(100),
+	nome VARCHAR(100),
+	descricao VARCHAR(100),
+	ponto_turistico VARCHAR(100),
+	cidade VARCHAR(100),
+	endereco VARCHAR(100)
+
+);
+
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
 ('Dallas','profissional',12.0,'Santa Catarina', 'Blumenau',654541321,'Centro','654','por do sol','perto do shopping', 1 );
 
