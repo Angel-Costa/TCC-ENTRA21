@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    [Table("sugestao")]
+    [Table("sugestoes")]
     public class Sugestao : Base
     {
         [Column("nome")]

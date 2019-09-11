@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS usuarios, comodidades, hoteis , avaliacoes, clientes, sugestao;
+﻿DROP TABLE IF EXISTS usuarios, comodidades, hoteis , avaliacoes, clientes, sugestoes;
 
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
@@ -76,7 +76,9 @@ CREATE TABLE sugestoes(
 	descricao VARCHAR(100),
 	ponto_turistico VARCHAR(100),
 	cidade VARCHAR(100),
-	endereco VARCHAR(100)
+	endereco VARCHAR(100),
+
+	registro_ativo BIT
 
 );
 
