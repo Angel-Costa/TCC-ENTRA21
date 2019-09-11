@@ -16,5 +16,6 @@ namespace Model
         
         [Column("id_hotel")]
         public int IdHotel { get; set; }
+
     }
 }

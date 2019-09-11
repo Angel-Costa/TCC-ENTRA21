@@ -13,5 +13,6 @@ namespace Model
 
         [Column ("registro_ativo")]
         public bool RegistroAtivo { get; set; }
+
     }
 }
