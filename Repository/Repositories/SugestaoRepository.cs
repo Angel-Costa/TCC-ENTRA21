@@ -69,9 +69,7 @@ namespace Repository.Repositories
         public List<Sugestao> ObterTodos()
         {
             return context.Sugestoes
-                .Include("Sugestão")
-                .Where(x => x.RegistroAtivo)
-                .ToList();
+                .Where(x => x.RegistroAtivo).ToList();
         }
     }
 }
