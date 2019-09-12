@@ -1,6 +1,6 @@
 ﻿namespace Repository.Repositories
 {
-    public interface IUsuarioRepository
+    public interface IAdministradorRepository
     {
     }
 }
