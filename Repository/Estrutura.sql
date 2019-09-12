@@ -39,7 +39,7 @@ CREATE TABLE hoteis(
 	valor_noite DECIMAL (9,2),
 	estado VARCHAR (17),
 	cidade VARCHAR (50),
-	cep VARCHAR (8),
+	cep VARCHAR (9),
 	bairro VARCHAR (50),
 	numero VARCHAR (15),
 	rua VARCHAR (50),
