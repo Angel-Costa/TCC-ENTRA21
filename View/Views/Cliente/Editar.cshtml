@@ -8,7 +8,7 @@
 <form action="@Url.Action("Editar")" method="post">
     <input type="hidden" name="id" value="@ViewBag.Cliente.Id" />
     <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <div class="form-group">
                 <label for="campo-nome">Nome</label>
                 <input type="text" name="nome"
@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <div class="form-group">
                 <label for="campo-cidade">Cidade</label>
                 <input type="text" name="cidade"
@@ -61,9 +61,7 @@
                        id="campo-cidade" value="@ViewBag.Cliente.Cidade" />
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <div class="form-group">
                 <label for="campo-cep">Cep</label>
                 <input type="text" name="cep"
@@ -71,9 +69,12 @@
                        id="campo-cep" value="@ViewBag.Cliente.Cep" />
             </div>
         </div>
+
     </div>
+
     <div class="row">
-        <div class="col-12">
+
+        <div class="col-6">
             <div class="form-group">
                 <label form="campo-bairro">Bairro</label>
                 <input type="text" name="bairro"
@@ -81,9 +82,7 @@
                        id="campo-bairro" value="@ViewBag.Cliente.Bairro" />
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <div class="form-group">
                 <label for="campo-numero">Número</label>
                 <input type="text" name="numero"
@@ -92,13 +91,15 @@
             </div>
         </div>
     </div>
+
     <div class="row">
-        <div class="col-12">
+
+        <div class="col-6">
             <div class="form-group">
                 <label form="campo-rua">Rua</label>
                 <input type="text" name="rua"
                        class="form-control"
-                       id="campo-rua" value="@ViewBag.Cliente.Rua" />
+                       id="campo-rua" value="@ViewBag.Cliente.Rua"/>
             </div>
         </div>
     </div>
@@ -112,13 +113,14 @@
             </div>
         </div>
     </div>
+
     <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <div class="form-group">
                 <label for="campo-login">Login</label>
                 <input type="text" name="login"
                        class="form-control"
-                       id="campo-login" value="@ViewBag.Cliente.Login" />
+                       id="campo-login" value="@ViewBag.Cliente.Login"/>
             </div>
         </div>
     </div>
@@ -132,10 +134,11 @@
             </div>
         </div>
     </div>
+
     <div class="row">
         <div class="col-12">
-            <button type="submit" class="btn btn-success float-right">
-                <i class="fa-fast-backward fa-save"></i> Salvar
+            <button type="submit" class="btn btn-outline-success float-right">
+                <i class="fas fa-save"></i> Salvar
             </button>
         </div>
     </div>
