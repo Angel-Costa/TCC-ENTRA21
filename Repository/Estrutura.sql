@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS usuarios, comodidades, hoteis , avaliacoes, clientes, sugestoes;
+﻿	DROP TABLE IF EXISTS adminstradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
 
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
@@ -39,7 +39,7 @@ CREATE TABLE hoteis(
 	valor_noite DECIMAL (9,2),
 	estado VARCHAR (17),
 	cidade VARCHAR (50),
-	cep VARCHAR (8),
+	cep VARCHAR (9),
 	bairro VARCHAR (50),
 	numero VARCHAR (15),
 	rua VARCHAR (50),
@@ -58,7 +58,7 @@ CREATE TABLE comodidades(
 	registro_ativo BIT
 );
 
-CREATE TABLE usuarios (
+CREATE TABLE adminstradores (
 	id INT PRIMARY KEY IDENTITY(1,1),
 
 	nome VARCHAR (50),
@@ -93,5 +93,5 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 SELECT * FROM comodidades ;	
 
 
-SELECT * FROM usuarios ;	
-TRUNCATE TABLE usuarios;
+SELECT * FROM adminstradores ;	
+TRUNCATE TABLE adminstradores;
