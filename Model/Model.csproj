@@ -49,7 +49,7 @@
     <Compile Include="Hotel.cs" />
     <Compile Include="Sugestao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Usuario.cs" />
+    <Compile Include="Administrador.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\fontawesome-webfont.eot" />
