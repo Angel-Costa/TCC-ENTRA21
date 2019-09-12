@@ -29,6 +29,8 @@ namespace View.Controllers
 
 		public ActionResult Cadastro()
 		{
+			List<Administrador> administradores = repository.ObterTodos();
+			ViewBag.Administradores = administradores;
 			return View();
 		}
 

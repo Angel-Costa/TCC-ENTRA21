@@ -17,14 +17,39 @@
                        value="@ViewBag.Cliente.Nome" />
             </div>
         </div>
-
-        <div class="col-6">
-            <div class="form-group">
-                <label for="campo-estado">Estado</label>
-                <input type="text" name="estado"
-                       class="form-control"
-                       id="campo-estado" value="@ViewBag.Cliente.Estado" />
-            </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <label for="campo-estado">Estado</label>
+            <select id="estado" name="idEstado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
         </div>
     </div>
     <div class="row">
@@ -74,10 +99,12 @@
                 <label form="campo-rua">Rua</label>
                 <input type="text" name="rua"
                        class="form-control"
-                       id="campo-rua" value="@ViewBag.Cliente.Rua" />
+                       id="campo-rua" value="@ViewBag.Cliente.Rua"/>
             </div>
         </div>
-        <div class="col-6">
+    </div>
+    <div class="row">
+        <div class="col-12">
             <div class="form-group">
                 <label for="campo-complemento">Complemento</label>
                 <input type="text" name="complemento"
@@ -93,12 +120,12 @@
                 <label for="campo-login">Login</label>
                 <input type="text" name="login"
                        class="form-control"
-                       id="campo-login" value="@ViewBag.Cliente.Login" />
+                       id="campo-login" value="@ViewBag.Cliente.Login"/>
             </div>
         </div>
-
-
-        <div class="col-6">
+    </div>
+    <div class="row">
+        <div class="col-12">
             <div class="form-group">
                 <label for="campo-senha">Senha</label>
                 <input type="text" name="senha"
