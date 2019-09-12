@@ -90,8 +90,16 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 (1,'PLAYGROUND', 1),
 (1, 'refrigerador', 1);
 
+
+INSERT INTO adminstradores(nome, cpf, 
+
+
+SELECT * FROM hoteis;
 SELECT * FROM comodidades ;	
+SELECT * FROM adminstradores ;
+SELECT * FROM avaliacoes;
+SELECT * FROM sugestoes;
+SELECT * FROM clientes;
 
 
-SELECT * FROM adminstradores ;	
 TRUNCATE TABLE adminstradores;
