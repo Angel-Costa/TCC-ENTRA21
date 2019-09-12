@@ -246,7 +246,7 @@
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\SugestaoController.cs" />
-    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\AdministradorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -5705,8 +5705,8 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Comodidade\Editar.cshtml" />
     <Content Include="Views\Login\EsqueciSenha.cshtml" />
-    <Content Include="Views\Usuario\Index.cshtml" />
-    <Content Include="Views\Usuario\Perfil.cshtml" />
+    <Content Include="Views\Administrador\Index.cshtml" />
+    <Content Include="Views\Administrador\Perfil.cshtml" />
     <Content Include="Views\Sugestao\Index.cshtml" />
     <Content Include="Views\Sugestao\Cadastro.cshtml" />
   </ItemGroup>
