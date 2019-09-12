@@ -66,6 +66,7 @@ namespace View.Controllers
         {
             Usuario usuario = repository.ObterPeloId(1);
             ViewBag.Usuario = usuario;
+            
             return View();
         }
 
