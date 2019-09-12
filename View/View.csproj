@@ -5709,6 +5709,7 @@
     <Content Include="Views\Administrador\Perfil.cshtml" />
     <Content Include="Views\Sugestao\Index.cshtml" />
     <Content Include="Views\Sugestao\Cadastro.cshtml" />
+    <Content Include="Views\Administrador\Cadastro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

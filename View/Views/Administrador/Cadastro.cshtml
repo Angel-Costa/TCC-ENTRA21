@@ -1,0 +1,45 @@
+﻿
+@{
+	ViewBag.Title = "Cadastro";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+
+<body>
+
+	<h2>Cadastro</h2>
+
+	<form action="@Url.Action("Cadastro")" method="post">
+		<div class="row">
+			<div class="col-12">
+				<div class="form-group">
+					<label for="campo-nome">Nome</label>
+					<input type="text" name="nome" id="campo-nome" class="form-control" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="form-group">
+					<label for="campo-cpf" class="text-danger">CPF *</label>
+					<input type="text" name="cpf" id="campo-cpf" class="form-control"
+						   data-mask="000.000.000-00"
+						   maxlength="11"
+						   autocomplete="off"
+						   data-mask-selectonfocus="true" />
+				</div>
+			</div>
+		</div>
+	</form>
+
+</body>
+</html>
+
+
+
+
+
