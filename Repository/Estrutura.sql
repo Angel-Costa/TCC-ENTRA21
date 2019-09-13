@@ -94,8 +94,8 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 INSERT INTO adminstradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Rafael', 12345678910, 'rafael@gmail.com', 'rafa123', 'cliente');
 
-INSERT INTO avaliacoes(id_cliente, nota, comentario, feedback, registro_ativo) VALUES
-(1, 10, 'Muito bom!', 'qualidade');
+INSERT INTO avaliacoes(nota, comentario, feedback, registro_ativo) VALUES
+(10, 'Muito bom!', 'qualidade');
 
 INSERT INTO sugestoes(nome, local, descricao, ponto_turistico, cidade, endereco, registro_ativo) VALUES
 ('Morada do mar', 'em beira mar', 'piscina exclusiva para clientes, ideal para viajem em dupla', 'praia da lagoinha', 'bombinhas', 'Avenida Leopoldo Zarling, 1221, Bombinhas, CEP 88215-000, Brasil');
