@@ -29,8 +29,6 @@ namespace View.Controllers
 
 		public ActionResult Cadastro()
 		{
-			List<Administrador> administradores = repository.ObterTodos();
-			ViewBag.Administradores = administradores;
 			return View();
 		}
 
@@ -45,6 +43,7 @@ namespace View.Controllers
 		public ActionResult Editar(int id)
 		{
 			var administrador = repository.ObterPeloId(id);
+            ViewBag.Administrador = administrador;
 			return View();
 		}
 
@@ -52,7 +51,8 @@ namespace View.Controllers
 		public ActionResult Editar(Administrador administrador)
 		{
 			var alterado = repository.Alterar(administrador);
-			return RedirectToAction("Editar", new { administrador.Id });
+            ViewBag.Administrador = administrador;
+            return RedirectToAction("Index", new { administrador.Id });
 		}
 
 		[HttpGet, Route("apagar")]

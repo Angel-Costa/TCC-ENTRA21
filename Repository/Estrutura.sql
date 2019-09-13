@@ -1,4 +1,4 @@
-﻿	DROP TABLE IF EXISTS adminstradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
+﻿DROP TABLE IF EXISTS adminstradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
 
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
@@ -92,7 +92,7 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 
 
 INSERT INTO adminstradores(nome, cpf, login, senha, privilegio) VALUES
-('Rafael', 12345678910, 'rafael@gmail.com', 'rafa123', 'cliente');
+('Rafael', '12345678910', 'rafael@gmail.com', 'rafa123', 'cliente');
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
 (10, 'Muito bom!', 'qualidade');
