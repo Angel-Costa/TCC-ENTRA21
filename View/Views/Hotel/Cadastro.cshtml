@@ -80,12 +80,7 @@
                 background-color: #073763;
             }
     </style>
-    <script type="text/javascript">
 
-        $("#campo-valor-noite").mask("R$000000000,00");
-        $("#campo-cep").mask("00000-000");
-
-    </script>
 </head>
 
 <body>
@@ -116,7 +111,7 @@
                 <div class="form-group col-md-4 col-sm-4">
                     <div class="form-group left-inner-addon">
                         <i class="fas fa-dollar-sign" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="valorNoite" id="campo-valor-noite" placeholder="Valor por Noite" />
+                        <input type="text" name="valornoite"  class="form-control telphone_whith_code" data-mask="9999.999.99" id="valornoite" placeholder="Valor por Noite" required />
                     </div>
                 </div>
             </div>
@@ -167,11 +162,10 @@
         <div class="form-group col-md-4 col-sm-4">
             <div class="form-group left-inner-addon">
                 <i class="fas fa-map-marker-alt" style="color: #073763;"></i>
-                <input class="form-control" type="text" required name="cep" id="campo-cep" placeholder="CEP" />
+                <input type="text" name="cep" class="form-control telphone_whith_code" data-mask="00.000-000" placeholder="CEP" required />
             </div>
         </div>
-        </div>
-        </div>
+
 
         <div class="form-group">
             <div class="row">
@@ -216,3 +210,10 @@
         </div>
     </form>
 </body>
+
+<!-- Required Jquery -->
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
