@@ -91,8 +91,17 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 (1, 'refrigerador', 1);
 
 
-INSERT INTO adminstradores(nome, cpf, 
+INSERT INTO adminstradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Rafael', 12345678910, 'rafael@gmail.com', 'rafa123', 'cliente');
 
+INSERT INTO avaliacoes(id_cliente, nota, comentario, feedback, registro_ativo) VALUES
+(1, 10, 'Muito bom!', 'qualidade');
+
+INSERT INTO sugestoes(nome, local, descricao, ponto_turistico, cidade, endereco, registro_ativo) VALUES
+('Morada do mar', 'em beira mar', 'piscina exclusiva para clientes, ideal para viajem em dupla', 'praia da lagoinha', 'bombinhas', 'Avenida Leopoldo Zarling, 1221, Bombinhas, CEP 88215-000, Brasil');
+
+INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, numero, rua, complemento, cpf,rg, registro_ativo) VALUES
+('Jose',997857239, 'SC', 'Blumenau',67130-170,'josefreitas@gmail.com', 'jose123', 'itoupava central', 201, 'proximo a weg', 12345678910, 12345678-9);
 
 SELECT * FROM hoteis;
 SELECT * FROM comodidades ;	
