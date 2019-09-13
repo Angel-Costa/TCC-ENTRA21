@@ -120,10 +120,18 @@
             vertical-align: middle
         }
 
-        i{
-            text-align: center;
+        .avatar{
+          
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-80px/2);
+            left: calc(50% - 40px);
         }
 
+       
     </style>
 </head>
 <body>
@@ -131,7 +139,7 @@
     <form action="@Url.Action("Index","Home")" method="post" />
     <div class="contact-form">
 
-        <i class="icon-ok"></i>
+        <img src="~/Content/user2.png" class="avatar">
 
         <p>Email</p>
         <input type="text" name="" placeholder="Email">
