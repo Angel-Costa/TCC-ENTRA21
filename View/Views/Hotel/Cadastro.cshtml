@@ -3,129 +3,31 @@
     ViewBag.Title = "Cadastro";
 }
 
-<head>
+<h4>Informações do Hotel</h4>
+<row>
 
-    <script src="https://kit.fontawesome.com/6c46833db4.js"></script>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+</row>
 
-    <style>
+<form action="@Url.Action("Cadastro")" method="post">
 
-        .left-inner-addon {
-            position: relative;
-        }
-
-            .left-inner-addon i {
-                position: absolute;
-                padding: 10px 12px;
-                pointer-events: none;
-                color: #666;
-            }
-
-            .left-inner-addon input.form-control {
-                padding-left: 30px;
-            }
-
-        input[type="text"] {
-            width: 100%;
-            border: 2px solid #073763;
-            border-radius: 4px;
-            margin: 2px 0;
-            outline: none;
-            padding: 6px;
-            box-sizing: border-box;
-            transition: 0.3s;
-        }
-
-            input[type="text"]:focus {
-                border-color: dodgerBlue;
-                box-shadow: 0 0 8px 0 dodgerBlue;
-            }
-
-
-        .inputWithIcon input[type="text"] {
-            padding-left: 40px;
-        }
-
-        .inputWithIcon {
-            position: relative;
-        }
-
-            .inputWithIcon i {
-                position: absolute;
-                left: 0;
-                top: 8px;
-                padding: 9px 8px;
-                color: #aaa;
-                transition: 0.3s;
-            }
-
-
-            .inputWithIcon input[type="text"]:focus + i {
-                color: dodgerBlue;
-            }
-
-
-            .inputWithIcon.inputIconBg i {
-                background-color: #aaa;
-                color: #00ae1b;
-                padding: 20px 20px;
-                border-radius: 20px 0 0 20px;
-            }
-
-
-            .inputWithIcon.inputIconBg input[type="text"]:focus + i {
-                color: #fff;
-                background-color: #073763;
-            }
-    </style>
-    <script type="text/javascript">
-
-        $("#campo-valor-noite").mask("R$000000000,00");
-        $("#campo-cep").mask("00000-000");
-
-    </script>
-</head>
-
-<body>
-
-    <form action="@Url.Action("Cadastro")" method="post">
-
-        <h2 style="color: #073763;">Informações do Hotel</h2>
-
-        <div class="form-group">
-            <div class="row">
-                <div class="form-group col-md-4 col-sm-4">
-                    <div class="form-group left-inner-addon">
-                        <span class="input-group-text">
-                            <i class="fas fa-hotel" style="color: #073763;"></i>
-                            <input class="form-control" type="text" required name="nome" id="campo-nome" placeholder="Nome do Hotel" size="10" maxlength="40" style="font-size: 13px" />
-                        </span>
-                    </div>
-                </div>
-
-
-                <div class="form-group col-md-4 col-sm-4">
-                    <div class="form-group left-inner-addon">
-                        <i class="ti-view-list" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="descricao" id="campo-descricao" placeholder="Descrição" />
-                    </div>
-                </div>
-
-                <div class="form-group col-md-4 col-sm-4">
-                    <div class="form-group left-inner-addon">
-                        <i class="fas fa-dollar-sign" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="valorNoite" id="campo-valor-noite" placeholder="Valor por Noite" />
-                    </div>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Nome do Hotel</h4>
+            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome do hotel" />
         </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Descrição</h4>
+            <input id="campo-descricao" class="form-control" type="text" placeholder="Faça aqui sua descrição" />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Valor por noite</h4>
+            <input id="campo-valor-noite" class="form-control" type="text" placeholder="Digite o valor" />
+        </div>
+    </div>
 
-        <h2 style="color: #073763;">Endereço do Hotel</h2>
-
-        <div class="form-group">
-            <label for="campo-estado">Estado</label>
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h6 class="sub-title">Estado</h6>
             <select id="estado" name="estado">
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -157,62 +59,57 @@
             </select>
         </div>
 
-        <div class="form-group col-md-4 col-sm-4">
-            <div class="form-group left-inner-addon">
-                <i class="fas fa-city" style="color: #073763;"></i>
-                <input class="form-control" type="text" required name="cidade" id="campo-cidade" placeholder="Cidade" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Cidade</h4>
+            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" />
         </div>
 
-        <div class="form-group col-md-4 col-sm-4">
-            <div class="form-group left-inner-addon">
-                <i class="fas fa-map-marker-alt" style="color: #073763;"></i>
-                <input class="form-control" type="text" required name="cep" id="campo-cep" placeholder="CEP" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">CEP</h4>
+            <input id="campo-cep" class="form-control" type="text" placeholder="Digite o cep" />
         </div>
-        </div>
-        </div>
+    </div>
 
-        <div class="form-group">
-            <div class="row">
-                <div class="form-group col-md-4 col-sm-4">
-                    <div class="form-group left-inner-addon">
-                        <i class="fas fa-home" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="bairro" id="campo-bairro" placeholder="Bairro" />
-                    </div>
-                </div>
-                <div class="form-group col-md-4 col-sm-4">
-                    <div class="form-group left-inner-addon">
-                        <i class="fas fa-list-ol" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="numero" id="campo-numero" placeholder="Número" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="row">
-                <div class="form-group col-md-4 col-sm-4">
-                    <div class="form-group left-inner-addon">
-                        <i class="fas fa-road" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="rua" id="campo-rua" placeholder="Rua" />
-                    </div>
-                </div>
-                <div class="form-group col-md-4 col-sm-4">
-                    <div class="form-group left-inner-addon">
-                        <i class="fas fa-plus" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="complemento" id="campo-complemento" placeholder="Complemento" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="form-group">
         <div class="row">
-            <div class="col-12" style="color: white;">
-                <button class="btn float-right btn-lg btn-block" style="background-color: #088f03; color: white;" type="submit">
-                    <i class="ti-save" style="color: #FFFFFF;"></i> Salvar
-                </button>
+            <div class="form-group col-md-4 col-sm-4">
+                <div class="form-group left-inner-addon">
+                    <i class="fas fa-home" style="color: #073763;"></i>
+                    <input class="form-control" type="text" required name="bairro" id="campo-bairro" placeholder="Bairro" />
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-4">
+                <div class="form-group left-inner-addon">
+                    <i class="fas fa-list-ol" style="color: #073763;"></i>
+                    <input class="form-control" type="text" required name="numero" id="campo-numero" placeholder="Número" />
+                </div>
             </div>
         </div>
-    </form>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-4">
+                <div class="form-group left-inner-addon">
+                    <i class="fas fa-road" style="color: #073763;"></i>
+                    <input class="form-control" type="text" required name="rua" id="campo-rua" placeholder="Rua" />
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-4">
+                <div class="form-group left-inner-addon">
+                    <i class="fas fa-plus" style="color: #073763;"></i>
+                    <input class="form-control" type="text" required name="complemento" id="campo-complemento" placeholder="Complemento" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="color: white;">
+            <button class="btn float-right btn-lg btn-block" style="background-color: #088f03; color: white;" type="submit">
+                <i class="ti-save" style="color: #FFFFFF;"></i> Salvar
+            </button>
+        </div>
+    </div>
+</form>
 </body>
