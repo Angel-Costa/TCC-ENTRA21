@@ -92,7 +92,7 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio) VALUES
-('Rafael', '123.456.789-10', 'rafael@gmail.com', 'rafa123', 'cliente');
+('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente');
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
 (10, 'Muito bom!', 'qualidade');
@@ -109,3 +109,5 @@ SELECT * FROM administradores;
 SELECT * FROM avaliacoes;
 SELECT * FROM sugestoes;
 SELECT * FROM clientes;
+
+
