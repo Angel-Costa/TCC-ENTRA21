@@ -3,11 +3,10 @@
     ViewBag.Title = "Cadastro";
 }
 
-    <h4>Cadastro de Cliente</h4>
+<h4>Cadastro de Cliente</h4>
+
 
 <form action="@Url.Action("Cadastro")" method="POST">
-
-
 
     <div class="row">
         <div class="col-12">
@@ -66,7 +65,7 @@
             <div class="form-group">
                 <label for="campo-cep">Cep</label>
                 <input type="text" name="cep"
-                       class="form-control"
+                       class="form-control telphone_whith_code" data-mask="00.000-000"
                        id="campo-cep" />
             </div>
         </div>
@@ -81,15 +80,15 @@
             </div>
         </div>
     </div>
-    <div  class="row">
-		<div class="col-12">
-			<div class="form-group">
-				<label for="campo-numero">Número</label>
-				<input type="text" name="numero"
-					   class="form-control"
-					   id="campo-numero" />
-			</div>
-		</div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-numero">Número</label>
+                <input type="text" name="numero"
+                       class="form-control"
+                       id="campo-numero" />
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-12">
@@ -138,3 +137,11 @@
         </div>
     </div>
 </form>
+
+<!-- Required Jquery -->
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
