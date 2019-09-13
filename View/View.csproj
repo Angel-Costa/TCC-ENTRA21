@@ -5735,7 +5735,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Views\Avaliacao\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

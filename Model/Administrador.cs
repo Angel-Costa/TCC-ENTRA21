@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Model
 {
-    [Table("adminstradores")]
+    [Table("administradores")]
     public class Administrador : Base
     {
         [Column ("nome")]
