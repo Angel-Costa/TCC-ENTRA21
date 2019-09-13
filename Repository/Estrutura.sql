@@ -65,6 +65,7 @@ CREATE TABLE administradores (
 	cpf VARCHAR (14),
 	login VARCHAR (50),
 	senha VARCHAR(50),
+	privilegio VARCHAR,
 	
 	privilegio VARCHAR(20),
 	registro_ativo BIT

@@ -95,7 +95,7 @@
                     <div class="form-group left-inner-addon">
                         <span class="input-group-text">
                             <i class="fas fa-hotel" style="color: #073763;"></i>
-                            <input class="form-control" type="text" required name="nome" id="campo-nome" placeholder="Nome do Hotel" size="10" maxlength="40" style="font-size: 13px" />
+                            <input class="form-control" type="text" required name="nome" id="campo-nome" placeholder="Nome do Hotel" size="10" maxlength="40" style="font-size: 13px" autocomplete="off"/>
                         </span>
                     </div>
                 </div>
@@ -104,14 +104,14 @@
                 <div class="form-group col-md-4 col-sm-4">
                     <div class="form-group left-inner-addon">
                         <i class="ti-view-list" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="descricao" id="campo-descricao" placeholder="Descrição" />
+                        <input class="form-control" type="text" required name="descricao" id="campo-descricao" placeholder="Descrição" autocomplete="off"/>
                     </div>
                 </div>
 
                 <div class="form-group col-md-4 col-sm-4">
                     <div class="form-group left-inner-addon">
                         <i class="fas fa-dollar-sign" style="color: #073763;"></i>
-                        <input type="text" name="valornoite"  class="form-control telphone_whith_code" data-mask="9999.999.99" id="valornoite" placeholder="Valor por Noite" required />
+                        <input class="form-control" type="text" required name="valorNoite" id="campo-valor-noite" placeholder="Valor por Noite" autocomplete="off"/>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
 
         <div class="form-group">
             <label for="campo-estado">Estado</label>
-            <select id="estado" name="estado">
+            <select id="estado" name="estado" class="form-control" >
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -155,14 +155,14 @@
         <div class="form-group col-md-4 col-sm-4">
             <div class="form-group left-inner-addon">
                 <i class="fas fa-city" style="color: #073763;"></i>
-                <input class="form-control" type="text" required name="cidade" id="campo-cidade" placeholder="Cidade" />
+                <input class="form-control" type="text" required name="cidade" id="campo-cidade" placeholder="Cidade" autocomplete="off"/>
             </div>
         </div>
 
         <div class="form-group col-md-4 col-sm-4">
             <div class="form-group left-inner-addon">
                 <i class="fas fa-map-marker-alt" style="color: #073763;"></i>
-                <input type="text" name="cep" class="form-control telphone_whith_code" data-mask="00.000-000" placeholder="CEP" required />
+                <input class="form-control" type="text" required name="cep" id="campo-cep" placeholder="CEP" autocomplete="off"/>
             </div>
         </div>
 
@@ -172,13 +172,13 @@
                 <div class="form-group col-md-4 col-sm-4">
                     <div class="form-group left-inner-addon">
                         <i class="fas fa-home" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="bairro" id="campo-bairro" placeholder="Bairro" />
+                        <input class="form-control" type="text" required name="bairro" id="campo-bairro" placeholder="Bairro" autocomplete="off"/>
                     </div>
                 </div>
                 <div class="form-group col-md-4 col-sm-4">
                     <div class="form-group left-inner-addon">
                         <i class="fas fa-list-ol" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="numero" id="campo-numero" placeholder="Número" />
+                        <input class="form-control" type="text" required name="numero" id="campo-numero" placeholder="Número" autocomplete="off"/>
                     </div>
                 </div>
             </div>
@@ -189,13 +189,13 @@
                 <div class="form-group col-md-4 col-sm-4">
                     <div class="form-group left-inner-addon">
                         <i class="fas fa-road" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="rua" id="campo-rua" placeholder="Rua" />
+                        <input class="form-control" type="text" required name="rua" id="campo-rua" placeholder="Rua" autocomplete="off"/>
                     </div>
                 </div>
                 <div class="form-group col-md-4 col-sm-4">
                     <div class="form-group left-inner-addon">
                         <i class="fas fa-plus" style="color: #073763;"></i>
-                        <input class="form-control" type="text" required name="complemento" id="campo-complemento" placeholder="Complemento" />
+                        <input class="form-control" type="text" required name="complemento" id="campo-complemento" placeholder="Complemento" autocomplete="off"/>
                     </div>
                 </div>
             </div>
