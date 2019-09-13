@@ -38,7 +38,7 @@ namespace View.Controllers
 		public ActionResult Inserir(Administrador administrador)
 		{
 			var id = repository.Inserir(administrador);
-			return RedirectToAction("Editar", new { id });
+			return RedirectToAction("Index", new { id });
 		}
 
 		[HttpGet, Route("editar")]
@@ -52,7 +52,7 @@ namespace View.Controllers
 		public ActionResult Editar(Administrador administrador)
 		{
 			var alterado = repository.Alterar(administrador);
-			return RedirectToAction("Editar", new { administrador.Id });
+			return RedirectToAction("Index", new { administrador.Id });
 		}
 
 		[HttpGet, Route("apagar")]

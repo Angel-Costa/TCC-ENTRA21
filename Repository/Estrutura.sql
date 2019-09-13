@@ -1,4 +1,4 @@
-﻿	DROP TABLE IF EXISTS adminstradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
+﻿	DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
 
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
@@ -58,16 +58,16 @@ CREATE TABLE comodidades(
 	registro_ativo BIT
 );
 
-CREATE TABLE adminstradores (
+CREATE TABLE administradores (
 	id INT PRIMARY KEY IDENTITY(1,1),
 
 	nome VARCHAR (50),
 	cpf VARCHAR (11),
 	login VARCHAR (50),
 	senha VARCHAR(50),
+	privilegio VARCHAR,
 	
-	registro_ativo BIT,
-	privilegio VARCHAR
+	registro_ativo BIT
 );
 
 CREATE TABLE sugestoes(
@@ -91,15 +91,12 @@ INSERT INTO comodidades (id_hotel,nome, registro_ativo) VALUES
 (1, 'refrigerador', 1);
 
 
-INSERT INTO adminstradores(nome, cpf, 
-
-
 SELECT * FROM hoteis;
 SELECT * FROM comodidades ;	
-SELECT * FROM adminstradores ;
+SELECT * FROM administradores ;
 SELECT * FROM avaliacoes;
 SELECT * FROM sugestoes;
 SELECT * FROM clientes;
 
-
 TRUNCATE TABLE adminstradores;
+
