@@ -60,9 +60,9 @@ namespace Repository.Repositories
         public List<Administrador> ObterTodos()
         {
             return context.Administradores
-                .Where(x => x.RegistroAtivo).ToList().ToList();
+                .Where(x => x.RegistroAtivo).ToList();
         }
     }
 
-    
+
 }

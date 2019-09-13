@@ -270,6 +270,9 @@
     <Content Include="Content\floresta.jpg" />
     <Content Include="Content\FOTO ZIIKA DO USUARIO ZIKA.jpg" />
     <Content Include="Content\HotelCadastro.jpg" />
+    <Content Include="Content\ImagemTeste.png" />
+    <Content Include="Content\Imagem[.png" />
+    <Content Include="Content\LoginImagem.png" />
     <Content Include="Content\Recepção01.jpg" />
     <Content Include="Content\Recepção02.jpg" />
     <Content Include="Content\tema\assets\css\component.css" />
@@ -5732,7 +5735,6 @@
     <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Avaliacao\" />
-    <Folder Include="Views\ClienteLogin\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
