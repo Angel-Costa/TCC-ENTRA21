@@ -35,8 +35,8 @@
         <div class="col-12">
             <div class="form-group">
                 <label for="campo-valor-noite">Valor por noite</label>
-                <input type="text" class="form-control autonumber" data-a-sign="R$" name="valorNoite" 
-                       id="campo-nome"
+                <input type="text" name="valornoite" id="valornoite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="9999.999.99" 
+                       
                        value="@ViewBag.Hotel.ValorNoite" />
             </div>
         </div>
@@ -93,7 +93,7 @@
             <div class="form-group">
                 <label for="campo-cep">CEP</label>
                 <input type="text" name="cep"
-                       class="form-control"
+                       class="form-control telphone_whith_code" data-mask="00.000-000"
                        id="campo-cep"
                        value="@ViewBag.Hotel.CEP" />
             </div>
@@ -156,3 +156,10 @@
     </div>
 
 </form>
+
+<!-- Required Jquery -->
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
