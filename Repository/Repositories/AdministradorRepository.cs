@@ -46,6 +46,7 @@ namespace Repository.Repositories
 
         public int Inserir(Administrador administrador)
         {
+            administrador.Privilegio = "Adminisrtador";
             administrador.RegistroAtivo = true;
             context.Administradores.Add(administrador);
             context.SaveChanges();

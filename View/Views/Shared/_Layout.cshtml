@@ -81,11 +81,11 @@
 		<div class="pcoded-container navbar-wrapper">
 
 			<nav class="navbar header-navbar pcoded-header"
-				 style="background-color: #7c0000;">
+				 style="background-color: #FF6A5C;">
 				<div class="navbar-wrapper">
 
 					<div class="navbar-logo"
-						 style="background-color: #7c0000;">
+						 style="background-color: #FF6A5C;">
 						<a class="mobile-menu" id="mobile-collapse" href="#!">
 							<i class="ti-menu"></i>
 						</a>
@@ -152,8 +152,16 @@
                             </div>
 
 
-							<ul class="pcoded-item pcoded-left-item">
-
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-rhasmenu">
+                                    <a href="/administrador">
+                                        <span class="pcoded-micon"><i class="fas fa-user-cog"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.gallery.advance-gallery" style="color: black;">
+                                            Administradores
+                                        </span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
                                 <li class="pcoded-hasmenu">
                                     <a href="/galeria">
                                         <span class="pcoded-micon"
@@ -193,15 +201,7 @@
                                     </a>
                                 </li>
 
-                                <li class="pcoded-hasmenu">
-                                    <a href="/usuario">
-                                        <span class="pcoded-micon"><i class="fas fa-user-cog"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.gallery.advance-gallery" style="color: black;">
-                                            Usuários
-                                        </span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
+
                                 <li class="">
                                     <a href="/usuario">
                                         <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
@@ -217,25 +217,26 @@
                     <div class="pcoded-content">
                         <div class="pcoded-inner-content">
 
-						
 
-							</ul>
-							</li>
-							</ul>
-						</div>
-					</nav>
-					<div class="pcoded-content">
-						<div class="pcoded-inner-content">
 
-							<div class="main-body">
-								<div class="page-wrapper">
-									<!-- Page-header start -->
-									@RenderBody()
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                            </ul>
+                            </li>
+                            </ul>
+                        </div>
+                        </nav>
+
+                        <div class="pcoded-content">
+                            <div class="pcoded-inner-content">
+
+                                <div class="main-body">
+                                    <div class="page-wrapper">
+                                        <!-- Page-header start -->
+                                        @RenderBody()
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 			</div>
 		</div>
 	</div>

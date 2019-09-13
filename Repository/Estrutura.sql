@@ -65,7 +65,6 @@ CREATE TABLE administradores (
 	cpf VARCHAR (14),
 	login VARCHAR (50),
 	senha VARCHAR(50),
-	privilegio VARCHAR,
 	
 	privilegio VARCHAR(20),
 	registro_ativo BIT
@@ -93,7 +92,7 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio) VALUES
-('Rafael', '123.456.789-10', 'rafael@gmail.com', 'rafa123', 'cliente');
+('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente');
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
 (10, 'Muito bom!', 'qualidade');
@@ -106,7 +105,9 @@ INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, n
 
 SELECT * FROM hoteis;
 SELECT * FROM comodidades ;	
-SELECT * FROM administradores ;
+SELECT * FROM administradores;
 SELECT * FROM avaliacoes;
 SELECT * FROM sugestoes;
 SELECT * FROM clientes;
+
+
