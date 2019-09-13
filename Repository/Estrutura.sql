@@ -65,7 +65,6 @@ CREATE TABLE administradores (
 	cpf VARCHAR (14),
 	login VARCHAR (50),
 	senha VARCHAR(50),
-	privilegio VARCHAR,
 	
 	privilegio VARCHAR(20),
 	registro_ativo BIT
@@ -106,7 +105,7 @@ INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, n
 
 SELECT * FROM hoteis;
 SELECT * FROM comodidades ;	
-SELECT * FROM administradores ;
+SELECT * FROM administradores;
 SELECT * FROM avaliacoes;
 SELECT * FROM sugestoes;
 SELECT * FROM clientes;
