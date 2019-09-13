@@ -3,140 +3,144 @@
     ViewBag.Title = "Cadastro";
 }
 
-    <h4>Cadastro de Cliente</h4>
+<h4>Cadastro de Cliente</h4>
 
-    <form action="@Url.Action("Cadastro")" method="POST">
+<form action="@Url.Action("Cadastro")" method="POST">
 
 
 
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-nome">Nome</label>
-                    <input class="form-control" type="text"
-                           name="nome" id="campo-nome" />
-                </div>
-            </div>
-        </div>
-        <div class="row">
+    <div class="row">
+        <div class="col-12">
             <div class="form-group">
-                <label for="campo-estado">Estado</label>
-                <select id="estado" name="estado">
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select>
+                <label for="campo-nome">Nome</label>
+                <input class="form-control" type="text"
+                       name="nome" id="campo-nome" />
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <label for="campo-estado">Estado</label>
+            <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+    </div>
 
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-cidade">Cidade</label>
-                    <input type="text" name="cidade"
-                           class="form-control"
-                           id="campo-cidade" />
-                </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-cidade">Cidade</label>
+                <input type="text" name="cidade"
+                       class="form-control"
+                       id="campo-cidade" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-cep">Cep</label>
-                    <input type="text" name="cep"
-                           class="form-control"
-                           id="campo-cep" />
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-cep">Cep</label>
+                <input type="text" name="cep"
+                       class="form-control"
+                       id="campo-cep" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label form="campo-bairro">Bairro</label>
-                    <input type="text" name="bairro"
-                           class="form-control"
-                           id="campo-bairro" />
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label form="campo-bairro">Bairro</label>
+                <input type="text" name="bairro"
+                       class="form-control"
+                       id="campo-bairro" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-numero">Número</label>
-                    <input type="text" name="numero"
-                           class="form-control"
-                           id="campo-numero" />
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-numero">Número</label>
+                <input type="text" name="numero"
+                       class="form-control"
+                       id="campo-numero" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label form="campo-rua">Rua</label>
-                    <input type="text" name="rua"
-                           class="form-control"
-                           id="campo-rua" />
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label form="campo-rua">Rua</label>
+                <input type="text" name="rua"
+                       class="form-control"
+                       id="campo-rua" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-complemento">Complemento</label>
-                    <input type="text" name="complemento"
-                           class="form-control"
-                           id="campo-complemento" />
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-complemento">Complemento</label>
+                <input type="text" name="complemento"
+                       class="form-control"
+                       id="campo-complemento" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="form-group">
-                    <label for="campo-login">Login</label>
-                    <input type="text" name="login"
-                           class="form-control"
-                           id="campo-login" />
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="form-group">
-                    <label for="campo-senha">Senha</label>
-                    <input type="text" name="senha"
-                           class="form-control"
-                           id="campo-senha" />
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="campo-login">Login</label>
+                <input type="text" name="login"
+                       class="form-control"
+                       id="campo-login" />
             </div>
         </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="campo-senha">Senha</label>
+                <input type="password"
+                       class="form-control"
+                       placeholder="Senha deve conter 6 caracteres"
+                       name="senha"
+                       autocomplete="off"
+                       id="campo-senha" />
+                </span>
+            </div>
+        </div>
+    </div>
 
-        <div class="row">
-            <div class="col-12">
-                <button class="btn btn-success float-right" type="submit">
-                    <i class="fas fa-save"></i> Salvar
-                </button>
-            </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="btn btn-success float-right" type="submit">
+                <i class="fas fa-save"></i> Salvar
+            </button>
         </div>
-    </form>
+    </div>
+</form>
