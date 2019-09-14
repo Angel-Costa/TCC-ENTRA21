@@ -23,73 +23,161 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         body {
-            background-image: url(/Content/cidadenoite.jpg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 10px;
+        }
+
+        body:before {
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("/Content/pordosol.jpg");
+            background-position: center center;
             background-repeat: no-repeat;
-            background-size: 100%;
-            bottom: 0;
-            color: black;
-            left: 0;
-            overflow: auto;
-            padding: 3em;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .contact-form {
             position: absolute;
-            right: 0;
-            text-align: center;
-            top: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            height: 500px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,.5);
         }
 
-        .card-header {
-            background-color: black;
+
+
+            .contact-form h2 {
+                margin: 0;
+                padding: 0 0 20px;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .contact-form p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .contact-form input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+                .contact-form input[type="text"],
+                .contact-form input[type="password"] {
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    background: transparent;
+                    outline: none;
+                    height: 40px;
+                    color: #fff;
+                    font-size: 16px;
+                }
+
+                .contact-form input[type="submit"] {
+                    height: 30px;
+                    color: #fff;
+                    font-size: 15px;
+                    background: #fcb100;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    border: none;
+                    outline: none;
+                    margin-top: 15%;
+                }
+
+            .contact-form a {
+                color: #fff;
+                font-size: 14px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+        input[type="checkbox"] {
+            width: 20%;
         }
 
-        .input-group-text {
-            background-color: black;
+        .container {
+            min-height: 10em;
+            display: table-cell;
+            vertical-align: middle
+        }
+
+        .avatar {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-80px/2);
+            left: calc(50% - 40px);
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="d-flex justify-content-center">
-            <div class="card" style="opacity: 0.8 ">
-                <div class="card-header">
-                    <h3 style=" color: white;">Mude sua senha</h3>
-
-                </div>
-                <div class="card-body text-dark">
-
-                    <form action="@Url.Action("EsqueciSenha")" method="post">
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Usuario" name="nome" required>
-
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-
-                            <input type="password" class="form-control" placeholder="Nova senha" name="senha" required>
-                        </div>
-
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-
-                            </div>
-                            <input type="password" class="form-control" placeholder="Repetir senha" name="senha" required>
+    <form action="@Url.Action("EsqueciSenha")" method="post">
+        <div class="contact-form">
 
 
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="submit" value="Salvar" class="btn btn-dark float-center login_btn">
+            <h3 style="color: white;">ESQUECI MINHA SENHA</h3>
 
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <p style="color: #fcb100;">Usuário</p>
+            <input type="text" placeholder="Usuario" name="nome" required>
+
+            <p style="color: #fcb100;">Nova senha</p>
+            <input type="password" placeholder="Nova senha" name="senha" required>
+
+            <p style="color: #fcb100;">Repetir senha</p>
+            <input type="password" placeholder="Repetir senha" name="senha" required>
+
+            <input type="submit" name="" value="Entrar">
+
         </div>
-    </div>
+    </form>
+
 </body>
 </html>
+
+<!-- Required Jquery -->
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript"
+        src="~/Content/tema/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+<!-- modernizr js -->
+<script type="text/javascript" src="~/Content/tema/bower_components/modernizr/js/modernizr.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/modernizr/js/css-scrollbars.js"></script>
+
+<!-- i18next.min.js -->
+<script type="text/javascript" src="~/Content/tema/bower_components/i18next/js/i18next.min.js"></script>
+<script type="text/javascript"
+        src="~/Content/tema/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+<script type="text/javascript"
+        src="~/Content/tema/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+<script type="text/javascript"
+        src="~/Content/tema/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+<script src="~/Content/tema/assets/js/pcoded.min.js"></script>
+<script src="~/Content/tema/assets/js/demo-12.js"></script>
+<script src="~/Content/tema/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Custom js -->
+<script type="text/javascript" src="~/Content/tema/assets/js/script.js"></script>
