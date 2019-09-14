@@ -14,6 +14,7 @@
     <!--[if lt IE 10]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
     <!-- Meta -->
     <meta charset="utf-8">
@@ -63,25 +64,25 @@
             background-color: black;
         }
     </style>
-    
+
 </head>
 
 <body>
 
-    <form action="@Url.Action("Cadastro")" method="post"/>
+    <form action="@Url.Action("Cadastro")" method="post" />
 
     <div class="container">
         <div class="d-flex justify-content-center">
             <div class="card" style=" width: 18rem; opacity: 1">
                 <div class="card-header">
-                    <h3 color: black >Cadastro</h3>
+                    <h3 color: black>Cadastro</h3>
 
                 </div>
                 <div class="card-body text-dark">
                     <form>
                         <div class="input-group form-group">
                             <div class="input-group-prepend"></div>
-                            <input type="text"  class="form-control" id="nome" placeholder="Usuario" name="nome" required/>
+                            <input type="text" class="form-control" id="nome" placeholder="Usuario" name="nome" required />
 
                         </div>
                         <div class="input-group form-group">
@@ -90,7 +91,7 @@
                         </div>
                         <div class="input-group form-group">
                             <label for="cpfusuario"></label>
-                            <input type="text" class="form-control" placeholder="CPF" data-mask="00/00/0000" maxlength="10" autocomplete="off"  name="cpf"  id="cpfusuario" required>
+                            <input type="text" class="form-control" placeholder="CPF" onkeypress="$(this).mask('000.000.000-00');" maxlength="11" name="cpf" required>
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
@@ -99,15 +100,17 @@
                             <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha" required>
                         </div>
 
+                      
                         <div class="form-group">
                             <input type="submit" value="Cadastrar" class="btn btn-dark float-right login_btn">
                         </div>
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
 
 </body>
 </html>
@@ -118,6 +121,7 @@
 <script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
 <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 <!-- jquery slimscroll js -->
 <script type="text/javascript"
         src="~/Content/tema/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
@@ -142,6 +146,5 @@
 
 
 
-</body>
 
-</html>
+

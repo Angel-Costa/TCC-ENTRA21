@@ -10,12 +10,15 @@ namespace View.Controllers
 {
     public class LoginController : Controller
     {
-        private UsuarioRepository repository;
+        private AdministradorRepository repositoryAdministrador;
+		private ClienteRepository reositoryCliente;
 
         public LoginController()
         {
-            repository = new UsuarioRepository();
-        }
+            repositoryAdministrador = new AdministradorRepository();
+			reositoryCliente = new ClienteRepository();
+
+		}
 
         
         public ActionResult Index()
@@ -28,12 +31,11 @@ namespace View.Controllers
         {
             return View();
         }
-
         
         [HttpPost]
-        public ActionResult Cadastro(Usuario usuario)
+        public ActionResult Cadastro(Cliente cliente)
         {
-            repository.Inserir(usuario);
+			reositoryCliente.Cadastro(cliente);
             return RedirectToAction("Index");
         }
 
@@ -44,13 +46,11 @@ namespace View.Controllers
         }
 
         [HttpPost, Route("esquecisenha")]
-        public ActionResult EsqueciSenha(Usuario usuario)
+        public ActionResult EsqueciSenha(Administrador usuario)
         {
-            var alterado = repository.Alterar(usuario);
+            var alterado = repositoryAdministrador.Alterar(usuario);
             return RedirectToAction("Index");
         }
-
-
-
+			        						
     }
 }

@@ -28,5 +28,6 @@ namespace Model
 
         [Column ("feedback")]
         public string FeedBack { get; set; }
+
     }
 }

@@ -119,13 +119,15 @@
     <Compile Include="Interfaces\IClienteRepository.cs" />
     <Compile Include="Interfaces\IComodidadeRepository.cs" />
     <Compile Include="Interfaces\IHotelRepository.cs" />
+    <Compile Include="Interfaces\ISugestaoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AvaliacaoRepository.cs" />
     <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\ComodidadeRepository.cs" />
     <Compile Include="Repositories\HotelRepository.cs" />
-    <Compile Include="Interfaces\IUsuarioRepository.cs" />
-    <Compile Include="Repositories\UsuarioRepository.cs" />
+    <Compile Include="Interfaces\IAdministradorRepository.cs" />
+    <Compile Include="Repositories\SugestaoRepository.cs" />
+    <Compile Include="Repositories\AdministradorRepository.cs" />
     <Compile Include="SistemaContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -135,18 +137,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Estrutura.sql" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Interfaces\Index.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
