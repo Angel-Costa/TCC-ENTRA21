@@ -674,6 +674,8 @@
     <Content Include="Content\tema\assets\images\logo-blue.png" />
     <Content Include="Content\tema\assets\images\logo-compact.png" />
     <Content Include="Content\tema\assets\images\logo.png" />
+    <Content Include="Content\tema\assets\images\logoinicio.png" />
+    <Content Include="Content\tema\assets\images\loooooooogo.png" />
     <Content Include="Content\tema\assets\images\mCSB_buttons.png" />
     <Content Include="Content\tema\assets\images\mega-menu\01.jpg" />
     <Content Include="Content\tema\assets\images\mega-menu\02.jpg" />
@@ -692,6 +694,8 @@
     <Content Include="Content\tema\assets\images\navbar\nav7.JPG" />
     <Content Include="Content\tema\assets\images\navbar\nav8.JPG" />
     <Content Include="Content\tema\assets\images\navbar\nav9.JPG" />
+    <Content Include="Content\tema\assets\images\nhamnham.png" />
+    <Content Include="Content\tema\assets\images\ohgod.png" />
     <Content Include="Content\tema\assets\images\pattern1.jpg" />
     <Content Include="Content\tema\assets\images\pattern2.jpg" />
     <Content Include="Content\tema\assets\images\pattern3.jpg" />
@@ -737,6 +741,7 @@
     <Content Include="Content\tema\assets\images\product\p2.jpg" />
     <Content Include="Content\tema\assets\images\product\p3.jpg" />
     <Content Include="Content\tema\assets\images\product\p4.jpg" />
+    <Content Include="Content\tema\assets\images\safari-logo.png" />
     <Content Include="Content\tema\assets\images\search-images\01.jpg" />
     <Content Include="Content\tema\assets\images\search-images\02.jpg" />
     <Content Include="Content\tema\assets\images\search-images\03.jpg" />
@@ -801,6 +806,7 @@
     <Content Include="Content\tema\assets\images\widget\user2.png" />
     <Content Include="Content\tema\assets\images\widget\user3.png" />
     <Content Include="Content\tema\assets\images\widget\user4.png" />
+    <Content Include="Content\tema\assets\images\yekaterinburg-metro-logo.png" />
     <Content Include="Content\tema\assets\js\animation.js" />
     <Content Include="Content\tema\assets\js\bootstrap-growl.min.js" />
     <Content Include="Content\tema\assets\js\classie.js" />
