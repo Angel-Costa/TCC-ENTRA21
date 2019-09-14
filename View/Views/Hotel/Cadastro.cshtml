@@ -58,7 +58,6 @@
                 <option value="TO">Tocantins</option>
             </select>
         </div>
-
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Cidade</h4>
             <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" />
@@ -70,49 +69,32 @@
         </div>
     </div>
 
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <div class="form-group left-inner-addon">
-                    <i class="fas fa-home" style="color: #073763;"></i>
-                    <input class="form-control" type="text" required name="bairro" id="campo-bairro" placeholder="Bairro" />
-                </div>
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <div class="form-group left-inner-addon">
-                    <i class="fas fa-list-ol" style="color: #073763;"></i>
-                    <input class="form-control" type="text" required name="numero" id="campo-numero" placeholder="Número" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <div class="form-group left-inner-addon">
-                    <i class="fas fa-road" style="color: #073763;"></i>
-                    <input class="form-control" type="text" required name="rua" id="campo-rua" placeholder="Rua" />
-                </div>
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <div class="form-group left-inner-addon">
-                    <i class="fas fa-plus" style="color: #073763;"></i>
-                    <input class="form-control" type="text" required name="complemento" id="campo-complemento" placeholder="Complemento" />
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="row">
-        <div class="col-12" style="color: white;">
-            <button class="btn float-right btn-lg btn-block" style="background-color: #088f03; color: white;" type="submit">
-                <i class="ti-save" style="color: #FFFFFF;"></i> Salvar
-            </button>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Bairro</h4>
+            <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Número</h4>
+            <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Nome da Rua</h4>
+            <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" />
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Complemento</h4>
+            <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" />
+        </div>
+            <div class="col-12" style="color: white;">
+            </div>
+        </div>
+    <button class="btn btn-success float-right" type="submit">
+        <i class="fas fa-save"></i> Salvar
+    </button>
 </form>
-</body>
 
 <!-- Required Jquery -->
 <script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
