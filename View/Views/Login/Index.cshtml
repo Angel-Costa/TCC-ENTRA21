@@ -14,7 +14,7 @@
 <head>
     <title>Login Page</title>
     <!--Made with love by Mutiullah Samim -->
-    <!--Bootsrap 4 CDN-->
+    <!--Bootsrap 4 CDN-->D
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!--Fontawesome CDN-->
@@ -39,7 +39,7 @@
             position: fixed;
             width: 100vw;
             height: 100vh;
-            background-image: url("/Content/FundoMontanhas.png");
+            background-image: url("/Content/pordosol.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -52,7 +52,7 @@
             left: 50%;
             transform: translate(-50%,-50%);
             width: 400px;
-            height: 500px;
+            height: 600px;
             padding: 80px 40px;
             box-sizing: border-box;
             background: rgba(0,0,0,.5);
@@ -95,9 +95,9 @@
                     height: 30px;
                     color: #fff;
                     font-size: 15px;
-                    background: #218838;
+                    background: #fcb100;
                     cursor: pointer;
-                    border-radius: 25px;
+                    border-radius: 3px;
                     border: none;
                     outline: none;
                     margin-top: 15%;
@@ -120,8 +120,7 @@
             vertical-align: middle
         }
 
-        .avatar{
-          
+        .avatar {
             position: relative;
             width: 80px;
             height: 80px;
@@ -131,7 +130,7 @@
             left: calc(50% - 40px);
         }
 
-       
+
     </style>
 </head>
 <body>
@@ -139,12 +138,14 @@
     <form action="@Url.Action("Index","Home")" method="post" />
     <div class="contact-form">
 
-        <img src="~/Content/user2.png" class="avatar">
+        <img src="~/Content/man-user.png" class="avatar" style="color: white;"/>
 
-        <p>Email</p>
+        <h2 style="color: white;">LOGIN</h2>
+
+        <p style="color: #fcb100;">Email</p>
         <input type="text" name="" placeholder="Email">
 
-        <p>Senha</p>
+        <p style="color: #fcb100;">Senha</p>
         <input type="password" name="" placeholder="Senha">
 
         <div>
@@ -157,7 +158,7 @@
 
         <div class="card-footer">
             <div class="d-flex justify-content-center links" style="color: white;">
-                Não tem uma conta? <a href="/login/cadastro">Cadastrar-se</a>
+                Não tem uma conta? <a href="/login/cadastro" style="color: #fcb100;">Cadastrar-se</a>
             </div>
         </div>
     </div>
