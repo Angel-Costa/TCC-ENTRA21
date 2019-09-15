@@ -250,10 +250,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\anoitecer.gif" />
     <Content Include="Content\ceu.jpg" />
     <Content Include="Content\cidade.gif" />
@@ -5679,6 +5675,7 @@
     <Content Include="Views\Login\Cadastro.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Avaliacao\" />
