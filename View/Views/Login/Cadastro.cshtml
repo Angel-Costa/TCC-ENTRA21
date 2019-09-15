@@ -7,13 +7,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+    <title>Login Page</title>
+    <!--Made with love by Mutiullah Samim -->
+    <!--Bootsrap 4 CDN-->D
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>GURU Able - Premium Admin Template </title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
     <!-- Meta -->
     <meta charset="utf-8">
@@ -43,86 +56,146 @@
 
     <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/css/jquery.mCustomScrollbar.css">
 
+
     <style>
         body {
-            background-image: url(/Content/essa.jpg) !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 10px;
+        }
+
+        body:before {
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("/Content/pordosol.jpg");
+            background-position: center center;
             background-repeat: no-repeat;
-            background-size: 100%;
-            bottom: 0;
-            color: black;
-            left: 0;
-            overflow: auto;
-            padding: 3em;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .contact-form {
             position: absolute;
-            right: 0;
-            text-align: center;
-            top: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            height: 550px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,.5);
         }
 
 
+
+            .contact-form h2 {
+                margin: 0;
+                padding: 0 0 20px;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .contact-form p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .contact-form input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+                .contact-form input[type="text"],
+                .contact-form input[type="password"] {
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    background: transparent;
+                    outline: none;
+                    height: 40px;
+                    color: #fff;
+                    font-size: 16px;
+                }
+
+                .contact-form input[type="submit"] {
+                    height: 30px;
+                    color: #fff;
+                    font-size: 15px;
+                    background: #fcb100;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    border: none;
+                    outline: none;
+                    margin-top: 15%;
+                }
+
+            .contact-form a {
+                color: #fff;
+                font-size: 14px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+        input[type="checkbox"] {
+            width: 20%;
+        }
+
+        .container {
+            min-height: 10em;
+            display: table-cell;
+            vertical-align: middle
+        }
+
+        .avatar {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-80px/2);
+            left: calc(50% - 40px);
+        }
     </style>
 </head>
-
 <body>
 
-    <h2 align="center">Cadastre-se</h2>
-
-    <form align="center" action="/Login/Cadastro" method="post">
-        <div class="col-md-6 offset-md-3">
-            <label for="nomeusuario"></label>
-            <input type="text" class="form-control" id="nomeusuario" placeholder="Usuario" name="nome" />
-
-        </div>
-        <div class="col-md-6 offset-md-3">
-            <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="login">
-            <small id="emailHelp" class="form-text text-muted"></small>
-        </div>
-        <div class="col-md-6 offset-md-3">
-            <label for="cpfusuario"></label>
-            <input type="text" class="form-control" id="cpfusuario" placeholder="CPF" />
-        </div>
-        <div class="col-md-6 offset-md-3">
-            <label for="exampleInputPassword1"></label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
-        </div>
-
-        <div>
-
-            <button type="submit" class="btn btn-success offset-md-0 mt-2">Cadastrar</button>
-        </div>
-    </form>
+    <form action="@Url.Action("Cadastro")" method="post" />
+    <div class="contact-form">
 
 
-    <!-- Required Jquery -->
-    <script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
-    <script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
-    <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
-    <!-- jquery slimscroll js -->
-    <script type="text/javascript"
-            src="~/Content/tema/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
-    <!-- modernizr js -->
-    <script type="text/javascript" src="~/Content/tema/bower_components/modernizr/js/modernizr.js"></script>
-    <script type="text/javascript" src="~/Content/tema/bower_components/modernizr/js/css-scrollbars.js"></script>
+        <h2 style="color: white;">CADASTRO</h2>
 
-    <!-- i18next.min.js -->
-    <script type="text/javascript" src="~/Content/tema/bower_components/i18next/js/i18next.min.js"></script>
-    <script type="text/javascript"
-            src="~/Content/tema/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
-    <script type="text/javascript"
-            src="~/Content/tema/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
-    <script type="text/javascript"
-            src="~/Content/tema/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
-    <script src="~/Content/tema/assets/js/pcoded.min.js"></script>
-    <script src="~/Content/tema/assets/js/demo-12.js"></script>
-    <script src="~/Content/tema/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <!-- Custom js -->
-    <script type="text/javascript" src="~/Content/tema/assets/js/script.js"></script>
+        <p style="color: #fcb100;">Usuário</p>
+        <input type="text" id="nome" placeholder="Usuario" name="nome" required />
 
+        <p style="color: #fcb100;">Email</p>
+        <input type="text" id="login" placeholder="Email" name="login" required>
 
+        <p style="color: #fcb100;">CPF</p>
+        <input type="text" placeholder="CPF" onkeypress="$(this).mask('000.000.000-00');" maxlength="11" name="cpf" required>
 
+        <p style="color: #fcb100;">Senha</p>
+        <input type="password" id="senha" placeholder="Senha" name="senha" required>
 
+        <input type="submit" name="" value="Entrar">
+
+    </div>
 </body>
-
 </html>
+
+
+
+
+
+
+
+

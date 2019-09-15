@@ -7,8 +7,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Model
 {
-    [Table("usuarios")]
-    public class Usuario : Base
+    [Table("administradores")]
+    public class Administrador : Base
     {
         [Column ("nome")]
         public string Nome { get; set; }
@@ -20,7 +20,9 @@ namespace Model
         public string Login { get; set; }
 
         [Column("senha")]
-        public int Senha { get; set; }
+        public string Senha { get; set; }
 
+		[Column("privilegio")]
+		public string Privilegio { get; set; }
     }
 }

@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h4>Editar Administrador</h4>
+
+<form action="@Url.Action("Editar")" method="post">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <input type="hidden" id="campo-id" value="@ViewBag.Administrador.Id" />
+                <label for="campo-nome">Nome</label>
+                <input class="form-control" type="text" name="nome"
+                       id="campo-nome" value="@ViewBag.Administrador.Nome" />
+
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="campo-cpf">Cpf</label>
+                <input type="text" name="cpf"
+                       class="form-control"
+                       id="campo-cpf" value="@ViewBag.Administrador.Cpf" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+
+        </div>
+    </div>
+
+</form>

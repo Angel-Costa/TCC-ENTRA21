@@ -4,7 +4,7 @@
     Layout = null;
 }
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="//amaxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -14,7 +14,7 @@
 <head>
     <title>Login Page</title>
     <!--Made with love by Mutiullah Samim -->
-    <!--Bootsrap 4 CDN-->
+    <!--Bootsrap 4 CDN-->D
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!--Fontawesome CDN-->
@@ -24,70 +24,144 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         body {
-            background-image: url(/Content/proway.jpg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            bottom: 0;
-            color: black;
-            left: 0;
-            overflow: auto;
-            padding: 3em;
-            position: absolute;
-            right: 0;
-            text-align: center;
-            top: 0;
+            margin: 0;
+            padding: 0;
         }
 
-        .card-header{
-            background-color:black;
+        .card {
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 10px;
         }
-        .input-group-text{
-            background-color:black;
+
+        body:before {
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("/Content/pordosol.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
         }
-       
+
+        .contact-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            height: 550px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,.5);
+        }
+
+
+
+            .contact-form h2 {
+                margin: 0;
+                padding: 0 0 20px;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .contact-form p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .contact-form input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+                .contact-form input[type="text"],
+                .contact-form input[type="password"] {
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    background: transparent;
+                    outline: none;
+                    height: 40px;
+                    color: #fff;
+                    font-size: 16px;
+                }
+
+                .contact-form input[type="submit"] {
+                    height: 30px;
+                    color: #fff;
+                    font-size: 15px;
+                    background: #fcb100;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    border: none;
+                    outline: none;
+                    margin-top: 15%;
+                }
+
+            .contact-form a {
+                color: #fff;
+                font-size: 14px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+        input[type="checkbox"] {
+            width: 20%;
+        }
+
+        .container {
+            min-height: 10em;
+            display: table-cell;
+            vertical-align: middle
+        }
+
+        .avatar {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-80px/2);
+            left: calc(50% - 40px);
+        }
+
+
     </style>
 </head>
 <body>
 
-    <div class="container" >
-        <div class="d-flex justify-content-center">
-            <div class="card" style="opacity: 0.8">
-                <div class="card-header">
-                    <h3 style=" color: white;">Login</h3>
+    <form action="@Url.Action("Index","Home")" method="post" />
+    <div class="contact-form">
 
-                </div>
-                <div class="card-body text-dark">
-                    <form>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Usuario">
+        <img src="~/Content/man-user.png" class="avatar" style="color: white;"/>
 
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="Senha">
-                        </div>
-                        <div class="row align-items-center remember">
-                            <input type="checkbox">Lembrar
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Login" class="btn btn-dark float-right login_btn">
-                        </div>
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <div class="d-flex justify-content-center links">
-                        Não tem uma conta?<a href="/login/cadastro">Cadastre-se</a>
-                    </div>
-                </div>
+        <h2 style="color: white;">LOGIN</h2>
+
+        <p style="color: #fcb100;">Email</p>
+        <input type="text" name="" placeholder="Email">
+
+        <p style="color: #fcb100;">Senha</p>
+        <input type="password" name="" placeholder="Senha">
+
+        <div>
+            <div>
+                <a href="/login/esquecisenha" style="margin-right:90px;" float="top">Esqueceu sua senha?</a>
+            </div>
+        </div>
+
+        <input type="submit" name="" value="Entrar">
+
+        <div class="card-footer">
+            <div class="d-flex justify-content-center links" style="color: white;">
+                Não tem uma conta? <a href="/login/cadastro" style="color: #fcb100;">Cadastrar-se</a>
             </div>
         </div>
     </div>
-
 </body>
 </html>
 

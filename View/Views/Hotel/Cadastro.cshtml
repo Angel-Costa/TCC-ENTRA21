@@ -3,79 +3,103 @@
     ViewBag.Title = "Cadastro";
 }
 
-
-
+<h4>Informações do Hotel</h4>
+<row>
+</row>
+<row>
+</row>
 
 <form action="@Url.Action("Cadastro")" method="post">
 
-    <h2 style="color: #073763;">Informações do Hotel</h2>
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-nome" style="color: #073763;">Nome</label>
-                <input class="form-control" type="text" name="nome" id="campo-nome" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-descricao" style="color: #073763;">Descrição</label>
-                <input class="form-control" type="text" name="descricao" id="campo-descricao" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-valor-noite" style="color: #073763;">Valor por noite</label>
-                <input class="form-control" type="number" name="valorNoite" id="campo-valor-noite" />
-            </div>
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Nome do Hotel</h4>
+            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome do hotel" />
         </div>
-    </div>
-
-    <h2 style="color: #073763;">Endereço do Hotel</h2>
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-estado" style="color: #073763;">Estado</label>
-                <input class="form-control" type="text" name="estado" id="campo-estado" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-cidade" style="color: #073763;">Cidade</label>
-                <input class="form-control" type="text" name="cidade" id="campo-cidade" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-cep" style="color: #073763;">CEP</label>
-                <input class="form-control" type="text" name="cep" id="campo-cep" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Descrição</h4>
+            <input id="campo-descricao" class="form-control" type="text" placeholder="Faça aqui sua descrição" />
         </div>
-    </div>
-
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-bairro" style="color: #073763;">Bairro</label>
-                <input class="form-control" type="text" name="bairro" id="campo-bairro" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-numero" style="color: #073763;">Número</label>
-                <input class="form-control" type="number" name="numero" id="campo-numero" />
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="row">
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-rua" style="color: #073763;">Rua</label>
-                <input class="form-control" type="text" name="rua" id="campo-rua" />
-            </div>
-            <div class="form-group col-md-4 col-sm-4">
-                <label for="campo-complemento" style="color: #073763;">Complemento</label>
-                <input class="form-control" type="text" name="complemento" id="campo-complemento" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Valor por noite</h4>
+            <input id="campo-valor-noite" class="form-control telphone_with_code" data-mask="R$9999.999.99" type="text" placeholder="Digite o valor" />
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12" style="color: white;">           
-                <button class="btn float-right btn-lg btn-block" style="background-color: #00ae1b; color: white;" type="submit">
-                    <i class="ti-save" style="color: #FFFFFF;"></i> Salvar
-                </button>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h6 class="sub-title">Estado</h6>
+            <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Cidade</h4>
+            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" />
+        </div>
+
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">CEP</h4>
+            <input id="campo-cep" class="form-control" type="text" placeholder="Digite o cep" />
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Bairro</h4>
+            <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Número</h4>
+            <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Nome da Rua</h4>
+            <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Complemento</h4>
+            <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" />
+        </div>
+            <div class="col-12" style="color: white;">
+            </div>
+        </div>
+    <button class="btn btn-success float-right" type="submit">
+        <i class="fas fa-save"></i> Salvar
+    </button>
 </form>
 
+<!-- Required Jquery -->
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="~/Content/tema/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>

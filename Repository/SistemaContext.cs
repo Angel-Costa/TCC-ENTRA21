@@ -14,13 +14,12 @@ namespace Repository
             Database.SetInitializer<SistemaContext>(null);
         }
 
-
-
         public DbSet<Avaliacao> Avaliacaos { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Comodidade> Comodidades { get; set; }
         public DbSet<Hotel> Hoteis { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Administrador> Administradores { get; set; }
+        public DbSet<Sugestao> Sugestoes { get; set; }
                 
     }
     

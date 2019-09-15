@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <!--Made with love by Mutiullah Samim -->
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-image: url(/Content/proway.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            bottom: 0;
+            color: black;
+            left: 0;
+            overflow: auto;
+            padding: 3em;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+        }
+
+        .card-header {
+            background-color: black;
+        }
+
+        .input-group-text {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="@Url.Action("Index","Home")" method="post" />
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="card" style="opacity: 0.8 ">
+                <div class="card-header">
+                    <h3 style=" color: white;">Login</h3>
+
+                </div>
+                <div class="card-body text-dark">
+                    <form action="@Url.Action("VerificarLogin")" method="post">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+
+                            <input type="text" class="form-control" placeholder="Usuario" name="nome" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+
+                            <input type="password" class="form-control" placeholder="Senha" name="senha" required>
+                        </div>
+
+                        <div >
+                            <div>
+                                <a href="/login/esquecisenha" style="margin-right:90px;" float="top" >Esqueceu sua senha?</a>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="btn btn-dark float-right login_btn">
+                        </div>
+
+                        <div class="row align-items-center remember">
+                            <input type="checkbox" style="margin-left:15px;">Lembrar
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        Não tem uma conta? <a href="/login/cadastro">Cadastre-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

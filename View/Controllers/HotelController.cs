@@ -51,6 +51,7 @@ namespace View.Controllers
         public ActionResult Editar(int id)
         {
             var hotel= repository.ObterPeloId(id);
+            ViewBag.Hotel = hotel;
             return View();
         }
 
@@ -58,7 +59,7 @@ namespace View.Controllers
         public ActionResult Editar(Hotel hotel)
         {
             var alterado = repository.Alterar(hotel);
-            return RedirectToAction("Editar", new { hotel.Id });
+            return RedirectToAction("Index");
         }
 
         [HttpGet, Route("apagar")]

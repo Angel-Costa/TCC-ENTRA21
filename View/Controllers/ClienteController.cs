@@ -40,21 +40,22 @@ namespace View.Controllers
         public ActionResult Cadastro(Cliente cliente)
         {
             var id = repository.Cadastro(cliente);
-            return RedirectToAction("Editar", new { id });
+            return RedirectToAction("Index");
         }
 
         [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
         {
             var cliente = repository.ObterPeloId(id);
+            ViewBag.Cliente = cliente;
             return View();
         }
         
-        [HttpGet,Route("editar")]
+        [HttpPost,Route("editar")]
         public ActionResult Editar(Cliente cliente)
         {
             var alterado = repository.Alterar(cliente);
-            return RedirectToAction("Editar", new { cliente.Id });
+            return RedirectToAction("Index");
         }
 
         [HttpGet, Route("apagar")]

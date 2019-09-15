@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.5</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -243,22 +245,42 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\SugestaoController.cs" />
+    <Compile Include="Controllers\AdministradorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\anoitecer.gif" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\32officeicons-13_89724.png" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\ceu.jpg" />
-    <Content Include="Content\cidade.gif" />
-    <Content Include="Content\city.jpg" />
+    <Content Include="Content\cidadenoite.jpg" />
     <Content Include="Content\essa.jpg" />
     <Content Include="Content\floresta.jpg" />
-    <Content Include="Content\fundo.jpg" />
-    <Content Include="Content\noite.jpg" />
-    <Content Include="Content\nova.jpg" />
+    <Content Include="Content\FOTO ZIIKA DO USUARIO ZIKA.jpg" />
+    <Content Include="Content\FundoMontanhas.png" />
+    <Content Include="Content\hawaii.png" />
+    <Content Include="Content\HotelCadastro.jpg" />
+    <Content Include="Content\ImagemTeste.png" />
+    <Content Include="Content\Imagem[.png" />
+    <Content Include="Content\LoginImagem.png" />
+    <Content Include="Content\man-user.png" />
+    <Content Include="Content\OOO.png" />
+    <Content Include="Content\PAISAGEM.png" />
+    <Content Include="Content\pordosol.jpg" />
+    <Content Include="Content\Recepção01.jpg" />
+    <Content Include="Content\Recepção02.jpg" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
     <Content Include="Content\tema\assets\css\ionicons.css" />
@@ -655,6 +677,8 @@
     <Content Include="Content\tema\assets\images\logo-blue.png" />
     <Content Include="Content\tema\assets\images\logo-compact.png" />
     <Content Include="Content\tema\assets\images\logo.png" />
+    <Content Include="Content\tema\assets\images\logoinicio.png" />
+    <Content Include="Content\tema\assets\images\loooooooogo.png" />
     <Content Include="Content\tema\assets\images\mCSB_buttons.png" />
     <Content Include="Content\tema\assets\images\mega-menu\01.jpg" />
     <Content Include="Content\tema\assets\images\mega-menu\02.jpg" />
@@ -673,6 +697,8 @@
     <Content Include="Content\tema\assets\images\navbar\nav7.JPG" />
     <Content Include="Content\tema\assets\images\navbar\nav8.JPG" />
     <Content Include="Content\tema\assets\images\navbar\nav9.JPG" />
+    <Content Include="Content\tema\assets\images\nhamnham.png" />
+    <Content Include="Content\tema\assets\images\ohgod.png" />
     <Content Include="Content\tema\assets\images\pattern1.jpg" />
     <Content Include="Content\tema\assets\images\pattern2.jpg" />
     <Content Include="Content\tema\assets\images\pattern3.jpg" />
@@ -718,6 +744,7 @@
     <Content Include="Content\tema\assets\images\product\p2.jpg" />
     <Content Include="Content\tema\assets\images\product\p3.jpg" />
     <Content Include="Content\tema\assets\images\product\p4.jpg" />
+    <Content Include="Content\tema\assets\images\safari-logo.png" />
     <Content Include="Content\tema\assets\images\search-images\01.jpg" />
     <Content Include="Content\tema\assets\images\search-images\02.jpg" />
     <Content Include="Content\tema\assets\images\search-images\03.jpg" />
@@ -782,6 +809,7 @@
     <Content Include="Content\tema\assets\images\widget\user2.png" />
     <Content Include="Content\tema\assets\images\widget\user3.png" />
     <Content Include="Content\tema\assets\images\widget\user4.png" />
+    <Content Include="Content\tema\assets\images\yekaterinburg-metro-logo.png" />
     <Content Include="Content\tema\assets\js\animation.js" />
     <Content Include="Content\tema\assets\js\bootstrap-growl.min.js" />
     <Content Include="Content\tema\assets\js\classie.js" />
@@ -5359,17 +5387,15 @@
     <Content Include="Content\tema\bower_components\typeahead.js\js\typeahead.bundle.min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore-min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore.js" />
-    <Content Include="Content\procura.jpg" />
-    <Content Include="Content\yes.jpg" />
+    <Content Include="Content\user.png" />
+    <Content Include="Content\user1.png" />
+    <Content Include="Content\user2.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="obj\Debug\View.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\View.dll" />
     <Content Include="obj\Debug\View.pdb" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\fontawesome-webfont.woff" />
@@ -5639,6 +5665,28 @@
     <Content Include="obj\Debug\View.csproj.CopyComplete" />
     <Content Include="obj\Debug\View.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\View.csprojAssemblyReference.cache" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -5651,6 +5699,14 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Content\proway.jpg" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -5673,20 +5729,30 @@
     <Content Include="Views\Cliente\Editar.cshtml" />
     <Content Include="Views\Comodidade\Cadastro.cshtml" />
     <Content Include="Views\Login\Cadastro.cshtml" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Comodidade\Editar.cshtml" />
+    <Content Include="Views\Login\EsqueciSenha.cshtml" />
+    <Content Include="Views\Administrador\Index.cshtml" />
+    <Content Include="Views\Administrador\Perfil.cshtml" />
+    <Content Include="Views\Sugestao\Index.cshtml" />
+    <Content Include="Views\Sugestao\Cadastro.cshtml" />
+    <Content Include="Views\Administrador\Cadastro.cshtml" />
+    <Content Include="Views\Administrador\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Views\Avaliacao\" />
-    <Folder Include="Views\ClienteLogin\" />
-    <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
@@ -5701,11 +5767,18 @@
       <Name>Repository</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
