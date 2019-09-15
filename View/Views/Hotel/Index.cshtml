@@ -15,9 +15,6 @@
     </div>
 </div>
 
-
-
-
 <div class="form-group mt-3">
     <div class="row">
 
@@ -33,17 +30,18 @@
                     <div class="sub-title">Cidade: @hotel.Cidade</div>
                     <div class="row">
 
-                            <a href="@Url.Action("Apagar", new {id = hotel.Id})"
-                               class="btn text-danger float-right">
-                                <i class="fas fa-trash"></i> Apagar
-                            </a>
+                        <a href="@Url.Action("Apagar", new {id = hotel.Id})"
+                           class="btn text-danger float-right">
+                            <i class="fas fa-trash"></i> Apagar
+                        </a>
 
-                            <a href="@Url.Action("Editar", new { id = hotel.Id })"
-                               class="btn text-primary float-right">
-                                <i class="fas fa-pen"></i> Editar
-                            </a>
-                        </div>
+                        <a href="@Url.Action("Editar", new { id = hotel.Id })"
+                           class="btn text-primary float-right">
+                            <i class="fas fa-pen"></i> Editar
+                        </a>
                     </div>
                 </div>
+            </div>
         }
     </div>
+</div>

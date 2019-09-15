@@ -4,23 +4,20 @@
 }
 
 <h4>Cadastro de Cliente</h4>
+<row>
+</row>
+<row>
+</row>
 
-<form action="@Url.Action("Cadastro")" method="POST">
-
-
+<form action="@Url.Action("Cadastro")" method="post">
 
     <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-nome">Nome</label>
-                <input class="form-control" type="text"
-                       name="nome" id="campo-nome" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Nome</h4>
+            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite seu nome completo" />
         </div>
-    </div>
-    <div class="row">
-        <div class="form-group">
-            <label for="campo-estado">Estado</label>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h6 class="sub-title">Estado</h6>
             <select id="estado" name="estado">
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -51,87 +48,59 @@
                 <option value="TO">Tocantins</option>
             </select>
         </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Cidade</h4>
+            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" />
+        </div>
     </div>
 
     <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-cidade">Cidade</label>
-                <input type="text" name="cidade"
-                       class="form-control"
-                       id="campo-cidade" />
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">CEP</h4>
+                <input id="campo-cep" class="form-control" type="text" placeholder="Digite o cep" />
             </div>
         </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Bairro</h4>
+            <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Número</h4>
+            <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" />
+        </div>
     </div>
+
     <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-cep">Cep</label>
-                <input type="text" name="cep" 
-                       class="form-control telphone_with_code" data-mask="99.999-999"
-                       id="campo-cep" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Nome da Rua</h4>
+            <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" />
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label form="campo-bairro">Bairro</label>
-                <input type="text" name="bairro"
-                       class="form-control"
-                       id="campo-bairro" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Complemento</h4>
+            <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" />
         </div>
+
     </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-numero">Número</label>
-                <input type="text" name="numero"
-                       class="form-control"
-                       id="campo-numero" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label form="campo-rua">Rua</label>
-                <input type="text" name="rua"
-                       class="form-control"
-                       id="campo-rua" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-complemento">Complemento</label>
-                <input type="text" name="complemento"
-                       class="form-control"
-                       id="campo-complemento" />
-            </div>
-        </div>
-    </div>
+
     <div class="row">
         <div class="col-6">
-            <div class="form-group">
-                <label for="campo-login">Login</label>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Login</h4>
                 <input type="text" name="login"
                        class="form-control"
                        id="campo-login" />
             </div>
         </div>
         <div class="col-6">
-            <div class="form-group">
-                <label for="campo-senha">Senha</label>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Senha</h4>
                 <input type="password"
                        class="form-control"
                        placeholder="Senha deve conter 6 caracteres"
                        name="senha"
                        autocomplete="off"
                        id="campo-senha" />
-                
             </div>
         </div>
     </div>
