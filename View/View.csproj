@@ -268,6 +268,8 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Canva - Orange Hotel Metal Lettering Signage.jpg" />
+    <Content Include="Content\Canva - White Orange Van Scale Model.jpg" />
     <Content Include="Content\ceu.jpg" />
     <Content Include="Content\cidadenoite.jpg" />
     <Content Include="Content\essa.jpg" />
@@ -279,6 +281,8 @@
     <Content Include="Content\HotelCadastro.jpg" />
     <Content Include="Content\ImagemTeste.png" />
     <Content Include="Content\Imagem[.png" />
+    <Content Include="Content\KombiLaranja.jpg" />
+    <Content Include="Content\KombiLaranjaTraz.jpg" />
     <Content Include="Content\LoginImagem.png" />
     <Content Include="Content\man-user %281%29.png" />
     <Content Include="Content\man-user.png" />
@@ -289,6 +293,7 @@
     <Content Include="Content\PraiaTop.png" />
     <Content Include="Content\Recepção01.jpg" />
     <Content Include="Content\Recepção02.jpg" />
+    <Content Include="Content\solLoko.jpg" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
     <Content Include="Content\tema\assets\css\ionicons.css" />
