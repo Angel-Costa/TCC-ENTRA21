@@ -100,9 +100,24 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (2,'Piscina', 2),
 (2, 'Lanchonete', 2);
 
+INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
+(2,'Frigobar', 2),
+(2, 'Karaoke', 2);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente', 1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Manoela', '16546135465' , 'Manoela@gmail.com', 'Manu5645', 'cliente', 1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('geovana', '32195461416' , 'geovana@gmail.com', 'ge024', 'cliente', 1);
+
+INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
+(10, 'Muito bom!', 'qualidade');
+
+INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
+(10, 'Muito bom!', 'qualidade');
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
 (10, 'Muito bom!', 'qualidade');
