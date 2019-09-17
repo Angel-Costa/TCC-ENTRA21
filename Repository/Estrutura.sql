@@ -46,7 +46,6 @@ CREATE TABLE hoteis(
 	registro_ativo BIT
 );
 
-
 CREATE TABLE comodidades(
 	id INT PRIMARY KEY IDENTITY(1,1),
 
@@ -71,7 +70,7 @@ CREATE TABLE administradores (
 
 CREATE TABLE sugestoes(
 	id INT PRIMARY KEY IDENTITY(1,1),
-	local VARCHAR(100),
+	local VARCHAR(100),	
 	nome VARCHAR(100),
 	descricao VARCHAR(100),
 	ponto_turistico VARCHAR(100),
