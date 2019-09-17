@@ -15,6 +15,7 @@
         <tr>
             <td>Código</td>
             <td>Nome</td>
+            <td>Login</td>
         </tr>
     </thead>
 
@@ -24,6 +25,16 @@
             <tr>
                 <td>@administrador.Id</td>
                 <td>@administrador.Nome</td>
+                <td>@administrador.Login</td>
+                <td>
+                    <a href="@Url.Action("Editar", new { Id = administrador.Id })"
+                       class="btn btn-primary">
+                        <i class="fas fa-pen"></i> Editar
+                    </a>
+                    <a href="@Url.Action("Apagar", new { Id = administrador.Id })" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Apagar
+                    </a>
+                </td>
             </tr>
         }
     </tbody>

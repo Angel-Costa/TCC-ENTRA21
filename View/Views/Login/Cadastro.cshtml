@@ -74,7 +74,7 @@
             position: fixed;
             width: 100vw;
             height: 100vh;
-            background-image: url("/Content/flores.jpg");
+            background-image: url("/Content/KombiLaranjaTraz.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -101,12 +101,13 @@
                 color: #fff;
                 text-align: center;
                 text-transform: uppercase;
+                font-weight: normal;
             }
 
             .contact-form p {
                 margin: 0;
                 padding: 0;
-                font-weight: bold;
+                font-weight: normal;
                 color: #fff;
             }
 
@@ -130,7 +131,7 @@
                     height: 30px;
                     color: #fff;
                     font-size: 15px;
-                    background: #9797ee;
+                    background: #007f8f;
                     cursor: pointer;
                     border-radius: 3px;
                     border: none;
@@ -141,7 +142,7 @@
             .contact-form a {
                 color: #fff;
                 font-size: 14px;
-                font-weight: bold;
+                font-weight: normal;
                 text-decoration: none;
             }
 
@@ -174,17 +175,17 @@
 
         <h2 style="color: white;">CADASTRO</h2>
 
-        <p style="color: #9797ee;">Usuário</p>
-        <input type="text" id="nome" placeholder="Usuario" name="nome" required />
+        <p style="color: white">Usuário</p>
+        <input type="text" id="nome" placeholder="Usuario" name="nome" autocomplete="off" required />
 
-        <p style="color: #9797ee;">Email</p>
-        <input type="text" id="login" placeholder="Email" name="login" required>
+        <p style="color: white">Email</p>
+        <input type="text" id="login" placeholder="Email" name="login" autocomplete="off" required>
 
-        <p style="color: #9797ee;">CPF</p>
-        <input type="text" placeholder="CPF" onkeypress="$(this).mask('000.000.000-00');" maxlength="11" name="cpf" required>
+        <p style="color: white">CPF</p>
+        <input type="text" placeholder="CPF" onkeypress="$(this).mask('000.000.000-00');" maxlength="11" name="cpf" autocomplete="off" required>
 
-        <p style="color: #9797ee;">Senha</p>
-        <input type="password" id="senha" placeholder="Senha" name="senha" required>
+        <p style="color: white">Senha</p>
+        <input type="password" id="senha" placeholder="Senha" name="senha" autocomplete="off" required>
 
         <input type="submit" name="" value="Entrar">
 

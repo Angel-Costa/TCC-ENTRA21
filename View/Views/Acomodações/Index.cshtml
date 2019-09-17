@@ -1,0 +1,41 @@
+﻿	
+@{
+    ViewBag.Title = "Index";
+}
+
+    <h2>Serviços oferecidos pelo hotel</h2>
+
+<div class="row">
+    <div class="col-12">
+        <a href="@Url.Action("Cadastro")"
+           class="btn btn-primary float-right"><i class="fas fa-plus"></i> Novo serviço</a>
+    </div>
+</div>
+
+    <div class="form-group mt-3">
+        <div class="row">
+
+            @foreach (Model.Comodidade comodidade in ViewBag.Comodidades)
+            {
+                <div class="card mr-3">
+                    <div class="card-body ">
+                        <div class="sub-title">Cadastro: @comodidade.Id</div>
+                        <div class="sub-title">Serviço: @comodidade.Nome</div>
+                        <div class="sub-title">Hotel: @comodidade.Hotel</div>
+                        <div class="row">
+
+                            <a href="@Url.Action("Apagar", new {id = comodidade.Id})"
+                               class="btn text-danger float-right">
+                                <i class="fas fa-trash"></i> Apagar
+                            </a>
+
+                            <a href="@Url.Action("Editar", new { id = comodidade.Id })"
+                               class="btn text-primary float-right">
+                                <i class="fas fa-pen"></i> Editar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>

@@ -1,7 +1,4 @@
 ﻿DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
-
-	DROP TABLE IF EXISTS administradores;
-
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
 
@@ -9,7 +6,7 @@ CREATE TABLE clientes(
 	estado VARCHAR(100),
 	cidade VARCHAR(100),
 	cep VARCHAR(10),
-	logim VARCHAR(100),
+	login VARCHAR(100),
 	bairro VARCHAR(100),
 	numero VARCHAR(20),
 	rua VARCHAR(100),
@@ -49,7 +46,6 @@ CREATE TABLE hoteis(
 	registro_ativo BIT
 );
 
-
 CREATE TABLE comodidades(
 	id INT PRIMARY KEY IDENTITY(1,1),
 
@@ -65,7 +61,7 @@ CREATE TABLE administradores (
 
 	nome VARCHAR (50),
 	cpf VARCHAR (14),
-	logim VARCHAR (50),
+	login VARCHAR (50),
 	senha VARCHAR(50),
 	
 	privilegio VARCHAR(20),
@@ -74,7 +70,7 @@ CREATE TABLE administradores (
 
 CREATE TABLE sugestoes(
 	id INT PRIMARY KEY IDENTITY(1,1),
-	local VARCHAR(100),
+	local VARCHAR(100),	
 	nome VARCHAR(100),
 	descricao VARCHAR(100),
 	ponto_turistico VARCHAR(100),
@@ -93,7 +89,7 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (1, 'refrigerador', 1);
 
 
-INSERT INTO administradores(nome, cpf, logim, senha, privilegio, registro_ativo) VALUES
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente', 1);
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
@@ -111,5 +107,3 @@ SELECT * FROM administradores;
 SELECT * FROM avaliacoes;
 SELECT * FROM sugestoes;
 SELECT * FROM clientes;
-
-

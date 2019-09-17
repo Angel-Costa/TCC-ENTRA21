@@ -3,13 +3,13 @@
     ViewBag.Title = "Editar";
 }
 
-<h4>Editar Administrador</h4>
+<h4 class="mb-5">Editar Administrador</h4>
 
 <form action="@Url.Action("Editar")" method="post">
     <div class="row">
         <div class="col-6">
             <div class="form-group">
-                <input type="hidden" id="campo-id" value="@ViewBag.Administrador.Id" />
+                <input type="hidden" id="campo-id" value="@ViewBag.Administrador.Id"/>
                 <label for="campo-nome">Nome</label>
                 <input class="form-control" type="text" name="nome"
                        id="campo-nome" value="@ViewBag.Administrador.Nome" />
@@ -18,17 +18,36 @@
         </div>
         <div class="col-6">
             <div class="form-group">
-                <label for="campo-cpf">Cpf</label>
+                <label for="campo-cpf">CPF</label>
                 <input type="text" name="cpf"
                        class="form-control"
-                       id="campo-cpf" value="@ViewBag.Administrador.Cpf" />
+                       data-mask="000.000.000-00"
+                       maxlength="11"
+                       autocomplete="off"
+                       id="campo-cpf" />
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-6">
-
+            <div class="form-group">
+                <label for="campo-login">Login</label>
+                <input type="text" name="login" id="campo-login" class="form-control border-danger" autocomplete="off" />
+            </div>
         </div>
     </div>
 
+    <div class="col-6">
+        <div class="form-group">
+            <label for="campo-senha"> Senha</label>
+            <input type="text" name="senha" id="campo-senha" class="form-control border-danger" autocomplete="off" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <button class="form-control btn btn-primary"><i class="fas fa-save"></i> Salvar</button>
+            </div>
+        </div>
+    </div>
 </form>
