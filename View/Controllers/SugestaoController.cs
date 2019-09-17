@@ -25,6 +25,11 @@ namespace View.Controllers
             return View();
         }
 
+        public ActionResult Galeria()
+        {
+            return View();
+        }
+
         public ActionResult Cadastro()
         {
             SugestaoRepository sugestaoRepository = new SugestaoRepository();
