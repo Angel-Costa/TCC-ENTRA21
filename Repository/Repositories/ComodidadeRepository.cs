@@ -51,6 +51,7 @@ namespace Repository.Repositories
         public int Inserir(Comodidade comodidade)
         {
             comodidade.RegistroAtivo = true;
+            
             context.Comodidades.Add(comodidade);
             context.SaveChanges();
             return comodidade.Id;

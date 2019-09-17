@@ -29,7 +29,7 @@ namespace Repository.Repositories
             clienteAux.Nome = cliente.Nome;
             clienteAux.Celular = cliente.Celular;
 
-            clienteAux.Logim = cliente.Logim;
+            clienteAux.Login = cliente.Login;
             clienteAux.Senha = cliente.Senha;
 
             clienteAux.Rua = cliente.Rua;
