@@ -14,14 +14,14 @@
                 <input type="text" name="nome"
                        class="form-control"
                        id="campo-nome"
-                       value="@ViewBag.Cliente.Nome" />
+                       value="@ViewBag.Cliente.Nome" autocomplete="off" required/>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="form-group">
             <label for="campo-estado">Estado</label>
-            <select id="estado" name="estado">
+            <select id="estado" name="estado" autocomplete="off" required>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -58,7 +58,7 @@
                 <label for="campo-cidade">Cidade</label>
                 <input type="text" name="cidade"
                        class="form-control"
-                       id="campo-cidade" value="@ViewBag.Cliente.Cidade" />
+                       id="campo-cidade" value="@ViewBag.Cliente.Cidade" autocomplete="off" required/>
             </div>
         </div>
         <div class="col-6">
@@ -66,7 +66,7 @@
                 <label for="campo-cep">Cep</label>
                 <input type="text" name="cep"
                        class="form-control telphone_whith_code" data-mask="00.000-000"
-                       id="campo-cep" value="@ViewBag.Cliente.Cep" />
+                       id="campo-cep" value="@ViewBag.Cliente.Cep" autocomplete="off" required/>
             </div>
         </div>
 
@@ -79,7 +79,7 @@
                 <label form="campo-bairro">Bairro</label>
                 <input type="text" name="bairro"
                        class="form-control"
-                       id="campo-bairro" value="@ViewBag.Cliente.Bairro" />
+                       id="campo-bairro" value="@ViewBag.Cliente.Bairro" autocomplete="off" required/>
             </div>
         </div>
         <div class="col-6">
@@ -87,7 +87,7 @@
                 <label for="campo-numero">Número</label>
                 <input type="text" name="numero"
                        class="form-control"
-                       id="campo-numero" value="@ViewBag.Cliente.Numero" />
+                       id="campo-numero" value="@ViewBag.Cliente.Numero" autocomplete="off" required/>
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@
                 <label form="campo-rua">Rua</label>
                 <input type="text" name="rua"
                        class="form-control"
-                       id="campo-rua" value="@ViewBag.Cliente.Rua" />
+                       id="campo-rua" value="@ViewBag.Cliente.Rua" autocomplete="off" required/>
             </div>
         </div>
     </div>
@@ -109,7 +109,7 @@
                 <label for="campo-complemento">Complemento</label>
                 <input type="text" name="complemento"
                        class="form-control"
-                       id="campo-complemento" value="@ViewBag.Cliente.Complemento" />
+                       id="campo-complemento" value="@ViewBag.Cliente.Complemento" autocomplete="off" required/>
             </div>
         </div>
     </div>
@@ -120,7 +120,7 @@
                 <label for="campo-login">Login</label>
                 <input type="text" name="login"
                        class="form-control"
-                       id="campo-login" value="@ViewBag.Cliente.Login" />
+                       id="campo-login" value="@ViewBag.Cliente.Login" autocomplete="off" required/>
             </div>
         </div>
     </div>
@@ -133,7 +133,7 @@
                        placeholder="Password"
                        name="senha"
                        autocomplete="off"
-                       id="campo-senha" value="@ViewBag.Cliente.Senha" />
+                       id="campo-senha" value="@ViewBag.Cliente.Senha" required/>
             </div>
         </div>
     </div>

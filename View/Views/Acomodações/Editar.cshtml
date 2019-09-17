@@ -13,10 +13,10 @@
                 <label for="campo-nome">
                     Nome
                 </label>
-                <input class="form-control" type="text" name="nome" id="campo-nome" value="@ViewBag.Comodidade.Nome" />
+                <input class="form-control" type="text" name="nome" id="campo-nome" value="@ViewBag.Comodidade.Nome" autocomplete="off" required/>
 
                 <label form="campo-hotel" class="mt-3">Hoteis</label>
-                <select class="form-control" name="idHotel">
+                <select class="form-control" name="idHotel" autocomplete="off" required>
                     <option disabled="disabled" selected="selected">Selecione um Hotel</option>
                     @foreach (Model.Hotel hotel in ViewBag.Hoteis)
                     {
