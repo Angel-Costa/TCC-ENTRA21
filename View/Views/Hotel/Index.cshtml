@@ -1,78 +1,47 @@
 ﻿
 @{
-	ViewBag.Title = "Index";
+    ViewBag.Title = "Index";
 }
 
-<style>
-	section ol {
-		display: flex;
-		flex-wrap: wrap;
-	}
 
-	.card {
-		flex-basis: 25%;
-	}
-
-	table, td, tr {
-		min-height: 300px;
-		min-width: 300px;
-	}
-
-	.foo {
-		min-height: 300px;
-	}
-</style>
 <h2 class="text-cen">Lista de Hoteis</h2>
 <div class="row">
-	<div class="col-10 offset-1 mb-3">
-		<a class="btn float-right"
-		   style="background-color: #00ae1b; color: white;"
-		   href="@Url.Action("Cadastro")">
-			<i class="ti-plus"></i> Novo Hotel
-		</a>
-	</div>
+    <div class="col-10 offset-1 mb-3">
+        <a class="btn float-right"
+           style="background-color: #00ae1b; color: white;"
+           href="@Url.Action("Cadastro")">
+            <i class="fas fa-plus"></i> Novo Hotel
+        </a>
+    </div>
 </div>
-
-
-
 
 <div class="form-group mt-3">
-	<div class="row">
+    <div class="row">
 
-		@foreach (Model.Hotel hotel in ViewBag.Hoteis)
-		{
-			<div class="card mr-3">
-				<div class="card-body ">
-					<div class="mt-3">@hotel.Id</div>
-					<div class="mt-3">@hotel.Nome</div>
-					<div class="mt-3">@hotel.Descricao</div>
-					<div class="mt-3">@hotel.ValorNoite</div>
-					<div class="mt-3">@hotel.Estado</div>
-					<div class="mt-3">@hotel.Cidade</div>
+        @foreach (Model.Hotel hotel in ViewBag.Hoteis)
+        {
+            <div class="card mr-3">
+                <div class="card-body ">
+                    <div class="sub-title">Cadastro: @hotel.Id</div>
+                    <div class="sub-title">Nome: @hotel.Nome</div>
+                    <div class="sub-title">Descrição: @hotel.Descricao</div>
+                    <div class="sub-title">Valor: @hotel.ValorNoite</div>
+                    <div class="sub-title">Estado: @hotel.Estado</div>
+                    <div class="sub-title">Cidade: @hotel.Cidade</div>
+                    <div class="row">
 
-					<div class="row">
-						<div class="col-12">
+                        <a href="@Url.Action("Apagar", new {id = hotel.Id})"
+                           class="btn text-danger float-right">
+                            <i class="fas fa-trash"></i> Apagar
+                        </a>
 
-
-
-							<a href="@Url.Action("Apagar", new {id = hotel.Id})"
-							   class="btn text-danger float-right">
-								<i class="fas fa-trash"></i> Apagar
-							</a>
-
-							<a href="@Url.Action("Editar", new { id = hotel.Id })"
-							   class="btn text-primary float-right">
-								<i class="fas fa-pen"></i> Editar
-							</a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		}
-
-
-	</div>
+                        <a href="@Url.Action("Editar", new { id = hotel.Id })"
+                           class="btn text-primary float-right">
+                            <i class="fas fa-pen"></i> Editar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
-</div>
-
