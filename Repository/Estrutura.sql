@@ -82,7 +82,7 @@ CREATE TABLE sugestoes(
 );
 
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Dallas','profissional',12.0,'Santa Catarina', 'Blumenau','65.454-132','Centro','654','por do sol','perto do shopping', 1 );
+('Dallas','profissional',120.0,'Santa Catarina', 'Blumenau','65.454-132','Centro','654','por do sol','perto do shopping', 1 );
 
 INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (1,'PLAYGROUND', 1),
