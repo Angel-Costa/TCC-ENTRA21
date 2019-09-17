@@ -19,6 +19,7 @@ namespace Model
         [Column("login")]
         public string Login { get; set; }
 
+
         [Column("senha")]
         public string Senha { get; set; }
 
