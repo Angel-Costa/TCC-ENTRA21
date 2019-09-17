@@ -9,7 +9,7 @@ CREATE TABLE clientes(
 	estado VARCHAR(100),
 	cidade VARCHAR(100),
 	cep VARCHAR(10),
-	logim VARCHAR(100),
+	login VARCHAR(100),
 	bairro VARCHAR(100),
 	numero VARCHAR(20),
 	rua VARCHAR(100),
@@ -65,7 +65,7 @@ CREATE TABLE administradores (
 
 	nome VARCHAR (50),
 	cpf VARCHAR (14),
-	logim VARCHAR (50),
+	login VARCHAR (50),
 	senha VARCHAR(50),
 	
 	privilegio VARCHAR(20),
@@ -93,7 +93,7 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (1, 'refrigerador', 1);
 
 
-INSERT INTO administradores(nome, cpf, logim, senha, privilegio, registro_ativo) VALUES
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente', 1);
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
@@ -111,5 +111,3 @@ SELECT * FROM administradores;
 SELECT * FROM avaliacoes;
 SELECT * FROM sugestoes;
 SELECT * FROM clientes;
-
-

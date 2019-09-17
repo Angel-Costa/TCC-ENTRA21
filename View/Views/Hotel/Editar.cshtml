@@ -18,144 +18,113 @@
                        value="@ViewBag.Hotel.Nome" autocomplete="off" required />
             </div>
         </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <div class="form-group">
+                <h4 class="sub-title">Descrição</h4>
+                <input type="text" name="descricao"
+                       class="form-control"
+                       id="campo-descricao"
+                       value="@ViewBag.Hotel.Descricao" autocomplete="off" required />
+            </div>
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <div class="form-group">
+                <h4 class="sub-title">Valor por noite</h4>
+                <input type="text" name="valornoite" id="valornoite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="9999.999.99" value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Estado</h4>
+            <select id="estado" name="estado" autocomplete="off" required>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Cidade</h4>
+            <input type="text" name="cidade"
+                   class="form-control"
+                   id="campo-cidade"
+                   value="@ViewBag.Hotel.Cidade" autocomplete="off" required />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <div class="form-group">
+                <h4 class="sub-title">CEP</h4>
+                <input type="text" name="cep"
+                       class="form-control telphone_whith_code" data-mask="00.000-000"
+                       id="campo-cep"
+                       value="@ViewBag.Hotel.CEP" autocomplete="off" required />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Bairro</h4>
+            <input type="text" name="bairro"
+                   class="form-control"
+                   id="campo-bairro"
+                   value="@ViewBag.Hotel.Bairro" autocomplete="off" required />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Número</h4>
+            <input type="text" name="numero"
+                   class="form-control"
+                   id="campo-numero"
+                   value="@ViewBag.Hotel.Numero" autocomplete="off" required />
+        </div>
+
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <div class="form-group">
+                <h4 class="sub-title">Rua</h4>
+                <input type="text" name="rua"
+                       class="form-control"
+                       id="campo-rua"
+                       value="@ViewBag.Hotel.Rua" autocomplete="off" required />
+            </div>
+        </div>
     </div>
 
-    
-
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-descricao">Descrição</label>
-                    <input type="text" name="descricao"
-                           class="form-control"
-                           id="campo-descricao"
-                           value="@ViewBag.Hotel.Descricao" autocomplete="off" required />
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-valor-noite">Valor por noite</label>
-                    <input type="text" name="valornoite" id="valornoite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="9999.999.99" value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
-                </div>
-            </div>
-        </div>
-        <div class="row">
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <label for="campo-estado">Estado</label>
-                <select id="estado" name="estado" autocomplete="off" required>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select>
+                <h4 class="sub-title">Complemento</h4>
+                <input type="text" name="complemento"
+                       class="form-control"
+                       id="campo-complemento"
+                       value="@ViewBag.Hotel.Complemento" autocomplete="off" required />
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-cidade">Cidade</label>
-                    <input type="text" name="cidade"
-                           class="form-control"
-                           id="campo-cidade"
-                           value="@ViewBag.Hotel.Cidade" autocomplete="off" required />
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-cep">CEP</label>
-                    <input type="text" name="cep"
-                           class="form-control telphone_whith_code" data-mask="00.000-000"
-                           id="campo-cep"
-                           value="@ViewBag.Hotel.CEP" autocomplete="off" required />
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-bairro">Bairro</label>
-                    <input type="text" name="bairro"
-                           class="form-control"
-                           id="campo-bairro"
-                           value="@ViewBag.Hotel.Bairro" autocomplete="off" required />
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-numero">Número</label>
-                    <input type="text" name="numero"
-                           class="form-control"
-                           id="campo-numero"
-                           value="@ViewBag.Hotel.Numero" autocomplete="off" required />
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-rua">Rua</label>
-                    <input type="text" name="rua"
-                           class="form-control"
-                           id="campo-rua"
-                           value="@ViewBag.Hotel.Rua" autocomplete="off" required />
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="campo-complemento">Complemento</label>
-                    <input type="text" name="complemento"
-                           class="form-control"
-                           id="campo-complemento"
-                           value="@ViewBag.Hotel.Complemento" autocomplete="off" required />
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <button type="submit" class="btn btn-success float-right">
-                    <i class="fas fa-save"></i> Salvar
-                </button>
-            </div>
-        </div>
-
+    </div>
+        <button class="btn btn-success float-right" type="submit">
+            <i class="fas fa-save"></i> Salvar
+        </button>
 </form>
 
 <!-- Required Jquery -->
