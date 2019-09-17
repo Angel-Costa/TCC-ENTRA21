@@ -7,47 +7,40 @@
 
 <form action="@Url.Action("Editar")" method="post">
     <div class="row">
-        <div class="col-6">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <input type="hidden" id="campo-id" value="@ViewBag.Administrador.Id"/>
-                <label for="campo-nome">Nome</label>
+                <input type="hidden" id="campo-id" value="@ViewBag.Administrador.Id" />
+                <h4 class="sub-title">Nome</h4>
                 <input class="form-control" type="text" name="nome"
                        id="campo-nome" value="@ViewBag.Administrador.Nome" />
-
             </div>
         </div>
-        <div class="col-6">
-            <div class="form-group">
-                <label for="campo-cpf">CPF</label>
-                <input type="text" name="cpf"
-                       class="form-control"
-                       data-mask="000.000.000-00"
-                       maxlength="11"
-                       autocomplete="off"
-                       id="campo-cpf" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">CPF</h4>S
+            <input type="text" name="cpf"
+                   class="form-control"
+                   data-mask="000.000.000-00"
+                   maxlength="11"
+                   autocomplete="off"
+                   id="campo-cpf" />
         </div>
     </div>
     <div class="row">
-        <div class="col-6">
-            <div class="form-group">
-                <label for="campo-login">Login</label>
-                <input type="text" name="login" id="campo-login" class="form-control border-danger" autocomplete="off" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Login</h4>
+            <input type="text" name="login" id="campo-login" autocomplete="off" />
+        </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Senha</h4>
+            <input type="password"
+                   class="form-control"
+                   placeholder="Senha deve conter 6 caracteres"
+                   name="senha"
+                   autocomplete="off"
+                   id="campo-senha" required />
         </div>
     </div>
-
-    <div class="col-6">
-        <div class="form-group">
-            <label for="campo-senha"> Senha</label>
-            <input type="text" name="senha" id="campo-senha" class="form-control border-danger" autocomplete="off" />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <button class="form-control btn btn-primary"><i class="fas fa-save"></i> Salvar</button>
-            </div>
-        </div>
-    </div>
+    <button class="btn btn-success float-right" type="submit">
+        <i class="fas fa-save"></i> Salvar
+    </button>
 </form>
