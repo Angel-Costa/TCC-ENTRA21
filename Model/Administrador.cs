@@ -17,7 +17,7 @@ namespace Model
         public string Cpf { get; set; }
 
         [Column("login")]
-        public string Login { get; set; }
+        public string Logim { get; set; }
 
         [Column("senha")]
         public string Senha { get; set; }

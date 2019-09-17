@@ -3,7 +3,7 @@
     ViewBag.Title = "Cadastro";
 }
 
-<h4>Informações do Hotel</h4>
+<h4 class="mb-5">Informações do Hotel</h4>
 <row>
 </row>
 <row>
@@ -14,22 +14,22 @@
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Nome do Hotel</h4>
-            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome do hotel" />
+            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome do hotel" autocomplete="off" required/>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Descrição</h4>
-            <input id="campo-descricao" class="form-control" type="text" placeholder="Faça aqui sua descrição" />
+            <input id="campo-descricao" class="form-control" type="text" placeholder="Faça aqui sua descrição" autocomplete="off" required/>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Valor por noite</h4>
-            <input id="campo-valor-noite" class="form-control telphone_with_code" data-mask="R$9999.999.99" type="text" placeholder="Digite o valor" />
+            <input id="campo-valor-noite" class="form-control telphone_with_code" data-mask="R$9999.999.99" type="text" placeholder="Digite o valor" autocomplete="off" required/>
         </div>
     </div>
 
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h6 class="sub-title">Estado</h6>
-            <select id="estado" name="estado">
+            <select id="estado" name="estado" autocomplete="off" required>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -61,33 +61,33 @@
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Cidade</h4>
-            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" />
+            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" autocomplete="off" required/>
         </div>
 
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">CEP</h4>
-            <input id="campo-cep" class="form-control" type="text" placeholder="Digite o cep" />
+            <input id="campo-cep" class="form-control" type="text" placeholder="Digite o cep" autocomplete="off" required/>
         </div>
     </div>
 
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Bairro</h4>
-            <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" />
+            <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" autocomplete="off" required/>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Número</h4>
-            <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" />
+            <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" autocomplete="off" required/>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Nome da Rua</h4>
-            <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" />
+            <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" autocomplete="off" required/>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Complemento</h4>
-            <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" />
+            <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" autocomplete="off" required/>
         </div>
             <div class="col-12" style="color: white;">
             </div>
