@@ -3,157 +3,158 @@
     ViewBag.Title = "Editar";
 }
 
-<h2>Editar Hotel</h2>
+<h4 class="mb-5">Editar Hotel</h4>
 
 <form action="@Url.Action("Editar")" method="post">
     <input type="hidden" name="id" value="@ViewBag.Hotel.Id" />
+
     <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <label for="campo-nome">Nome</label>
+                <h4 class="sub-title">Nome</h4>
                 <input type="text" name="nome"
                        class="form-control"
                        id="campo-nome"
-                       value="@ViewBag.Hotel.Nome" />
+                       value="@ViewBag.Hotel.Nome" autocomplete="off" required />
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-descricao">Descrição</label>
-                <input type="text" name="descricao"
-                       class="form-control"
-                       id="campo-descricao"
-                       value="@ViewBag.Hotel.Descricao" />
-            </div>
-        </div>
-    </div>
+    
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-valor-noite">Valor por noite</label>
-                <input type="text" name="valornoite" id="valornoite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="9999.999.99" 
-                       
-                       value="@ViewBag.Hotel.ValorNoite" />
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="campo-descricao">Descrição</label>
+                    <input type="text" name="descricao"
+                           class="form-control"
+                           id="campo-descricao"
+                           value="@ViewBag.Hotel.Descricao" autocomplete="off" required />
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="form-group">
-            <label for="campo-estado">Estado</label>
-            <select id="estado" name="estado">
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-cidade">Cidade</label>
-                <input type="text" name="cidade"
-                       class="form-control"
-                       id="campo-cidade"
-                       value="@ViewBag.Hotel.Cidade" />
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="campo-valor-noite">Valor por noite</label>
+                    <input type="text" name="valornoite" id="valornoite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="9999.999.99" value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
+                </div>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="campo-estado">Estado</label>
+                <select id="estado" name="estado" autocomplete="off" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-cep">CEP</label>
-                <input type="text" name="cep"
-                       class="form-control telphone_whith_code" data-mask="00.000-000"
-                       id="campo-cep"
-                       value="@ViewBag.Hotel.CEP" />
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="campo-cidade">Cidade</label>
+                    <input type="text" name="cidade"
+                           class="form-control"
+                           id="campo-cidade"
+                           value="@ViewBag.Hotel.Cidade" autocomplete="off" required />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-bairro">Bairro</label>
-                <input type="text" name="bairro"
-                       class="form-control"
-                       id="campo-bairro"
-                       value="@ViewBag.Hotel.Bairro" />
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="campo-cep">CEP</label>
+                    <input type="text" name="cep"
+                           class="form-control telphone_whith_code" data-mask="00.000-000"
+                           id="campo-cep"
+                           value="@ViewBag.Hotel.CEP" autocomplete="off" required />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-numero">Número</label>
-                <input type="text" name="numero"
-                       class="form-control"
-                       id="campo-numero"
-                       value="@ViewBag.Hotel.Numero" />
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="campo-bairro">Bairro</label>
+                    <input type="text" name="bairro"
+                           class="form-control"
+                           id="campo-bairro"
+                           value="@ViewBag.Hotel.Bairro" autocomplete="off" required />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-rua">Rua</label>
-                <input type="text" name="rua"
-                       class="form-control"
-                       id="campo-rua"
-                       value="@ViewBag.Hotel.Rua" />
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="campo-numero">Número</label>
+                    <input type="text" name="numero"
+                           class="form-control"
+                           id="campo-numero"
+                           value="@ViewBag.Hotel.Numero" autocomplete="off" required />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-complemento">Complemento</label>
-                <input type="text" name="complemento"
-                       class="form-control"
-                       id="campo-complemento"
-                       value="@ViewBag.Hotel.Complemento" />
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="campo-rua">Rua</label>
+                    <input type="text" name="rua"
+                           class="form-control"
+                           id="campo-rua"
+                           value="@ViewBag.Hotel.Rua" autocomplete="off" required />
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <button type="submit" class="btn btn-success float-right">
-                <i class="fas fa-save"></i> Salvar
-            </button>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="campo-complemento">Complemento</label>
+                    <input type="text" name="complemento"
+                           class="form-control"
+                           id="campo-complemento"
+                           value="@ViewBag.Hotel.Complemento" autocomplete="off" required />
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="submit" class="btn btn-success float-right">
+                    <i class="fas fa-save"></i> Salvar
+                </button>
+            </div>
+        </div>
 
 </form>
 

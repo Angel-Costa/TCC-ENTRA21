@@ -12,7 +12,7 @@
                 <input type="hidden" id="campo-id" value="@ViewBag.Administrador.Id" />
                 <label for="campo-nome">Nome</label>
                 <input class="form-control" type="text" name="nome"
-                       id="campo-nome" value="@ViewBag.Administrador.Nome" />
+                       id="campo-nome" value="@ViewBag.Administrador.Nome" autocomplete="off" required/>
 
             </div>
         </div>
@@ -21,7 +21,7 @@
                 <label for="campo-cpf">Cpf</label>
                 <input type="text" name="cpf"
                        class="form-control"
-                       id="campo-cpf" value="@ViewBag.Administrador.Cpf" />
+                       id="campo-cpf" value="@ViewBag.Administrador.Cpf" autocomplete="off" required/>
             </div>
         </div>
     </div>
