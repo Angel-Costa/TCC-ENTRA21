@@ -27,8 +27,9 @@ namespace Repository.Repositories
 
             administradorOriginal.Nome = administrador.Nome;
             administradorOriginal.Cpf = administrador.Cpf;
-            administradorOriginal.Login = administrador.Login;
+            administradorOriginal.Logim = administrador.Logim;
             administradorOriginal.Senha = administrador.Senha;
+            administradorOriginal.RegistroAtivo = true;
 
             context.SaveChanges();
             return true;
