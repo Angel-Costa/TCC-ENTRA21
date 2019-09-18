@@ -12,7 +12,7 @@
                 <input type="hidden" id="campo-id" value="@ViewBag.Administrador.Id" />
                 <h4 class="sub-title">Nome</h4>
                 <input class="form-control" type="text" name="nome"
-                       id="campo-nome" value="@ViewBag.Administrador.Nome" required/>
+                       id="campo-nome" value="@ViewBag.Administrador.Nome"  maxlength="50" autocomplete="off" required/>
             </div>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
@@ -37,6 +37,7 @@
                    class="form-control"
                    placeholder="Senha deve conter 6 caracteres"
                    name="senha"
+                    maxlength="30"
                    autocomplete="off"
                    id="campo-senha" value="@ViewBag.Administrador.Senha" />
         </div>
