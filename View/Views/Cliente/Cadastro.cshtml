@@ -3,22 +3,20 @@
     ViewBag.Title = "Cadastro";
 }
 
-<h4>Cadastro de Cliente</h4>
-<row>
-</row>
-<row>
-</row>
+<h4 class="mb-5">Cadastro de Cliente</h4>
+
 
 <form action="@Url.Action("Cadastro")" method="post">
 
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Nome</h4>
-            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite seu nome completo" />
+            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite seu nome completo" autocomplete="off" required />
         </div>
+
         <div class="col-sm-12 col-xl-4 m-b-30">
-            <h6 class="sub-title">Estado</h6>
-            <select id="estado" name="estado">
+            <h4 class="sub-title">Estado</h4>
+            <select id="estado" name="estado" autocomplete="off" required>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -50,7 +48,7 @@
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Cidade</h4>
-            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" />
+            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" autocomplete="off" required />
         </div>
     </div>
 
@@ -58,50 +56,46 @@
         <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="col-sm-12 col-xl-4 m-b-30">
                 <h4 class="sub-title">CEP</h4>
-                <input id="campo-cep" class="form-control" type="text" placeholder="Digite o cep" />
+                <input type="text" name="campocep" id="campocep" class="form-control telphone_whith_code" data-mask="99.999-999" placeholder="Digite o cep" autocomplete="off" required />
             </div>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Bairro</h4>
-            <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" />
+            <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Número</h4>
-            <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" />
+            <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" autocomplete="off" required />
         </div>
     </div>
 
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Nome da Rua</h4>
-            <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" />
+            <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Complemento</h4>
-            <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" />
+            <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" autocomplete="off" required />
         </div>
 
     </div>
 
     <div class="row">
-        <div class="col-6">
-            <div class="col-sm-12 col-xl-4 m-b-30">
-                <h4 class="sub-title">Login</h4>
-                <input type="text" name="login"
-                       class="form-control"
-                       id="campo-login" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Login</h4>
+            <input type="text" name="login"
+                   class="form-control"
+                   id="campo-login" autocomplete="off" required />
         </div>
-        <div class="col-6">
-            <div class="col-sm-12 col-xl-4 m-b-30">
-                <h4 class="sub-title">Senha</h4>
-                <input type="password"
-                       class="form-control"
-                       placeholder="Senha deve conter 6 caracteres"
-                       name="senha"
-                       autocomplete="off"
-                       id="campo-senha" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Senha</h4>
+            <input type="password"
+                   class="form-control"
+                   placeholder="Senha deve conter 6 caracteres"
+                   name="senha"
+                   autocomplete="off"
+                   id="campo-senha" required />
         </div>
     </div>
 

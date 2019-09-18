@@ -3,48 +3,41 @@
     ViewBag.Title = "Editar";
 }
 
-<h2>Editar Hotel</h2>
+<h4 class="mb-5">Editar Hotel</h4>
 
 <form action="@Url.Action("Editar")" method="post">
     <input type="hidden" name="id" value="@ViewBag.Hotel.Id" />
+
     <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <label for="campo-nome">Nome</label>
+                <h4 class="sub-title">Nome</h4>
                 <input type="text" name="nome"
                        class="form-control"
                        id="campo-nome"
-                       value="@ViewBag.Hotel.Nome" />
+                       value="@ViewBag.Hotel.Nome" autocomplete="off" required />
             </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <label for="campo-descricao">Descrição</label>
+                <h4 class="sub-title">Descrição</h4>
                 <input type="text" name="descricao"
                        class="form-control"
                        id="campo-descricao"
-                       value="@ViewBag.Hotel.Descricao" />
+                       value="@ViewBag.Hotel.Descricao" autocomplete="off" required />
             </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <label for="campo-valor-noite">Valor por noite</label>
-                <input type="text" name="valornoite" id="valornoite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="9999.999.99" 
-                       
-                       value="@ViewBag.Hotel.ValorNoite" />
+                <h4 class="sub-title">Valor por noite</h4>
+                <input type="text" name="valornoite" id="valornoite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="9999.999.99" value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="form-group">
-            <label for="campo-estado">Estado</label>
-            <select id="estado" name="estado">
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Estado</h4>
+            <select id="estado" name="estado" autocomplete="off" required>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -74,87 +67,64 @@
                 <option value="TO">Tocantins</option>
             </select>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-cidade">Cidade</label>
-                <input type="text" name="cidade"
-                       class="form-control"
-                       id="campo-cidade"
-                       value="@ViewBag.Hotel.Cidade" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Cidade</h4>
+            <input type="text" name="cidade"
+                   class="form-control"
+                   id="campo-cidade"
+                   value="@ViewBag.Hotel.Cidade" autocomplete="off" required />
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <label for="campo-cep">CEP</label>
+                <h4 class="sub-title">CEP</h4>
                 <input type="text" name="cep"
                        class="form-control telphone_whith_code" data-mask="00.000-000"
                        id="campo-cep"
-                       value="@ViewBag.Hotel.CEP" />
+                       value="@ViewBag.Hotel.CEP" autocomplete="off" required />
             </div>
         </div>
     </div>
-
     <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-bairro">Bairro</label>
-                <input type="text" name="bairro"
-                       class="form-control"
-                       id="campo-bairro"
-                       value="@ViewBag.Hotel.Bairro" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Bairro</h4>
+            <input type="text" name="bairro"
+                   class="form-control"
+                   id="campo-bairro"
+                   value="@ViewBag.Hotel.Bairro" autocomplete="off" required />
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <label for="campo-numero">Número</label>
-                <input type="text" name="numero"
-                       class="form-control"
-                       id="campo-numero"
-                       value="@ViewBag.Hotel.Numero" />
-            </div>
+        <div class="col-sm-12 col-xl-4 m-b-30">
+            <h4 class="sub-title">Número</h4>
+            <input type="text" name="numero"
+                   class="form-control"
+                   id="campo-numero"
+                   value="@ViewBag.Hotel.Numero" autocomplete="off" required />
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <label for="campo-rua">Rua</label>
+                <h4 class="sub-title">Rua</h4>
                 <input type="text" name="rua"
                        class="form-control"
                        id="campo-rua"
-                       value="@ViewBag.Hotel.Rua" />
+                       value="@ViewBag.Hotel.Rua" autocomplete="off" required />
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
-                <label for="campo-complemento">Complemento</label>
+                <h4 class="sub-title">Complemento</h4>
                 <input type="text" name="complemento"
                        class="form-control"
                        id="campo-complemento"
-                       value="@ViewBag.Hotel.Complemento" />
+                       value="@ViewBag.Hotel.Complemento" autocomplete="off" required />
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <button type="submit" class="btn btn-success float-right">
-                <i class="fas fa-save"></i> Salvar
-            </button>
-        </div>
-    </div>
-
+        <button class="btn btn-success float-right" type="submit">
+            <i class="fas fa-save"></i> Salvar
+        </button>
 </form>
 
 <!-- Required Jquery -->
