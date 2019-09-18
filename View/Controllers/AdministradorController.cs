@@ -19,16 +19,17 @@ namespace View.Controllers
         }
 
         public ActionResult Index()
-        {
-            AdministradorRepository administradorRepository = new AdministradorRepository();
-            List<Administrador> administradores = administradorRepository.ObterTodos();
+        {            
+            List<Administrador> administradores = repository.ObterTodos();
             ViewBag.Administradores = administradores;
             return View();
         }
 
 
         public ActionResult Cadastro()
-        {
+        {            
+            List<Administrador> administradores = repository.ObterTodos();
+            ViewBag.Administradores = administradores;
             return View();
         }
         
