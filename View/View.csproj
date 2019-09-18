@@ -693,10 +693,6 @@
     <Content Include="Content\tema\assets\images\logoinicio.png" />
     <Content Include="Content\tema\assets\images\loooooooogo.png" />
     <Content Include="Content\tema\assets\images\mCSB_buttons.png" />
-    <Content Include="Content\tema\assets\images\mega-menu\01.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\02.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\03.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\04.jpg" />
     <Content Include="Content\tema\assets\images\mega-menu\05.jpg" />
     <Content Include="Content\tema\assets\images\mega-menu\06.jpg" />
     <Content Include="Content\tema\assets\images\modal\overflow.jpg" />
@@ -758,10 +754,6 @@
     <Content Include="Content\tema\assets\images\product\p3.jpg" />
     <Content Include="Content\tema\assets\images\product\p4.jpg" />
     <Content Include="Content\tema\assets\images\safari-logo.png" />
-    <Content Include="Content\tema\assets\images\search-images\01.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\02.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\03.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\04.jpg" />
     <Content Include="Content\tema\assets\images\search-images\05.jpg" />
     <Content Include="Content\tema\assets\images\search-images\06.jpg" />
     <Content Include="Content\tema\assets\images\select-arrow.png" />
