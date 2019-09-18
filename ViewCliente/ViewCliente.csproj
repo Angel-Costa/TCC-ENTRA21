@@ -5195,6 +5195,9 @@
     <Content Include="Content\tema\bower_components\underscore\js\underscore-min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore.js" />
     <Content Include="Global.asax" />
+    <Content Include="obj\Debug\ViewCliente.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ViewCliente.dll" />
+    <Content Include="obj\Debug\ViewCliente.pdb" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -5470,6 +5473,10 @@
     <Content Include="Content\tema\bower_components\lightgallery\fonts\lg.eot" />
     <Content Include="Content\tema\bower_components\lightgallery\fonts\lg.ttf" />
     <Content Include="Content\tema\bower_components\lightgallery\fonts\lg.woff" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\ViewCliente.csproj.CopyComplete" />
+    <Content Include="obj\Debug\ViewCliente.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\ViewCliente.csprojAssemblyReference.cache" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -5485,10 +5492,10 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Acomodacao\" />
     <Folder Include="Views\Hotel\" />
     <Folder Include="Views\SobreNos\" />
-    <Folder Include="Views\SugestaoDestino\" />
     <Folder Include="Views\Sugestao\" />
   </ItemGroup>
   <ItemGroup>
