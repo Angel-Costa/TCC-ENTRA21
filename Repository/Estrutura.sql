@@ -77,7 +77,6 @@ CREATE TABLE sugestoes(
 	ponto_turistico VARCHAR(100),
 	cidade VARCHAR(100),
 	endereco VARCHAR(100),
-
 	registro_ativo BIT
 
 );

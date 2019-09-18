@@ -5,19 +5,19 @@
 
 
 
-<h2  class="mb-5">Cadastro</h2>
+<h2 class="mb-5">Cadastro</h2>
 
 <form action="@Url.Action("Index")" method="post">
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Nome</h4>
-            <input type="text" name="nome" id="campo-nome" class="form-control" placeholder="Digite o nome" autocomplete="off" required />
+            <input type="text" name="nome" id="campo-nome" class="form-control" placeholder="Digite o nome" maxlength="50" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">CPF</h4>
             <input type="text" name="cpf" id="campo-cpf" placeholder="Ex: 000.000.000-00" class="form-control"
                    data-mask="000.000.000-00"
-                   maxlength="11"
+                   maxlength="14"
                    autocomplete="off"
                    data-mask-selectonfocus="true" required />
         </div>
@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Login</h4>
-            <input  class="form-control" type="text" name="login" id="campo-login" placeholder="Digite o login" autocomplete="off" required />
+            <input class="form-control" type="text" name="login" id="campo-login" placeholder="Digite o login" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Senha</h4>
@@ -33,6 +33,7 @@
                    class="form-control"
                    placeholder="Senha deve conter 6 caracteres"
                    name="senha"
+                   maxlength="30"
                    autocomplete="off"
                    id="campo-senha" required />
         </div>

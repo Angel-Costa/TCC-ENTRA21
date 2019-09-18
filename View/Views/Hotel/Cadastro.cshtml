@@ -14,15 +14,15 @@
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Nome do Hotel</h4>
-            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome do hotel" autocomplete="off" required/>
+            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome do hotel" maxlength="40" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Descrição</h4>
-            <input id="campo-descricao" class="form-control" type="text" name="descricao" placeholder="Faça aqui sua descrição" autocomplete="off" required/>
+            <input id="campo-descricao" class="form-control" type="text" name="descricao" placeholder="Faça aqui sua descrição" maxlength="100" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Valor por noite</h4>
-            <input id="campo-valor-noite" class="form-control telphone_with_code" data-mask="R$9999.999.99" type="text" name="valorPorNoite" placeholder="Digite o valor" autocomplete="off" required/>
+            <input id="campo-valor-noite" class="form-control telphone_with_code" data-mask="R$9999.999.99" type="text" name="valornoite" placeholder="Digite o valor" autocomplete="off" required />
         </div>
     </div>
 
@@ -61,37 +61,37 @@
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Cidade</h4>
-            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" autocomplete="off" required/>
+            <input id="campo-cidade" class="form-control" name="cidade" type="text" placeholder="Digite a cidade" maxlength="50" autocomplete="off" required />
         </div>
 
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">CEP</h4>
-            <input id="campo-cep" class="form-control" type="text" placeholder="Digite o cep" autocomplete="off" required/>
+            <input id="campo-cep" class="form-control telphone_with_code" name="cep" type="text" placeholder="Digite o CEP" data-mask="00000-000" autocomplete="off" required />
         </div>
     </div>
 
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Bairro</h4>
-            <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" autocomplete="off" required/>
+            <input id="campo-bairro" class="form-control" name="bairro" type="text" placeholder="Digite o bairro" maxlength="50" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Número</h4>
-            <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" autocomplete="off" required/>
+            <input id="campo-numero" class="form-control" name="numero" type="text" placeholder="Digite o número" maxlength="20" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Nome da Rua</h4>
-            <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" autocomplete="off" required/>
+            <input id="campo-nome-rua" class="form-control" name="rua" type="text" placeholder="Digite o nome da rua" maxlength="50" autocomplete="off" required />
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Complemento</h4>
-            <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" autocomplete="off" required/>
+            <input id="campo-complemento" class="form-control" name="complemento" type="text" placeholder="Digite um complemento" maxlength="50" autocomplete="off" required />
         </div>
-            <div class="col-12" style="color: white;">
-            </div>
+        <div class="col-12" style="color: white;">
         </div>
+    </div>
     <button class="btn btn-success float-right" type="submit">
         <i class="fas fa-save"></i> Salvar
     </button>

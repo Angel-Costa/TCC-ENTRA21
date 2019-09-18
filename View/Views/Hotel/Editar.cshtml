@@ -15,7 +15,7 @@
                 <input type="text" name="nome"
                        class="form-control"
                        id="campo-nome"
-                       value="@ViewBag.Hotel.Nome" autocomplete="off" required />
+                       value="@ViewBag.Hotel.Nome" placeholder="Digite o nome do hotel" maxlength="40" autocomplete="off" required />
             </div>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
@@ -24,13 +24,13 @@
                 <input type="text" name="descricao"
                        class="form-control"
                        id="campo-descricao"
-                       value="@ViewBag.Hotel.Descricao" autocomplete="off" required />
+                       value="@ViewBag.Hotel.Descricao" placeholder="Faça aqui sua descrição" maxlength="100" autocomplete="off" required />
             </div>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
                 <h4 class="sub-title">Valor por noite</h4>
-                <input type="text" name="valornoite" id="valornoite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="9999.999.99" value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
+                <input type="text" name="valornoite" id="valor-noite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="R$9999.999.99" value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
             </div>
         </div>
     </div>
@@ -72,15 +72,15 @@
             <input type="text" name="cidade"
                    class="form-control"
                    id="campo-cidade"
-                   value="@ViewBag.Hotel.Cidade" autocomplete="off" required />
+                   value="@ViewBag.Hotel.Cidade" placeholder="Digite a cidade" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <div class="form-group">
                 <h4 class="sub-title">CEP</h4>
                 <input type="text" name="cep"
-                       class="form-control telphone_whith_code" data-mask="00.000-000"
+                       class="form-control telphone_whith_code" data-mask="00000-000"
                        id="campo-cep"
-                       value="@ViewBag.Hotel.CEP" autocomplete="off" required />
+                       value="@ViewBag.Hotel.CEP" placeholder="Digite o CEP" autocomplete="off" required />
             </div>
         </div>
     </div>
@@ -90,14 +90,14 @@
             <input type="text" name="bairro"
                    class="form-control"
                    id="campo-bairro"
-                   value="@ViewBag.Hotel.Bairro" autocomplete="off" required />
+                   value="@ViewBag.Hotel.Bairro" placeholder="Digite o bairro" maxlength="50" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Número</h4>
             <input type="text" name="numero"
                    class="form-control"
                    id="campo-numero"
-                   value="@ViewBag.Hotel.Numero" autocomplete="off" required />
+                   value="@ViewBag.Hotel.Numero" placeholder="Digite o número" maxlength="20" autocomplete="off" required />
         </div>
 
         <div class="col-sm-12 col-xl-4 m-b-30">
@@ -106,7 +106,7 @@
                 <input type="text" name="rua"
                        class="form-control"
                        id="campo-rua"
-                       value="@ViewBag.Hotel.Rua" autocomplete="off" required />
+                       value="@ViewBag.Hotel.Rua" placeholder="Digite o nome da rua" maxlength="50" autocomplete="off" required />
             </div>
         </div>
     </div>
@@ -118,13 +118,13 @@
                 <input type="text" name="complemento"
                        class="form-control"
                        id="campo-complemento"
-                       value="@ViewBag.Hotel.Complemento" autocomplete="off" required />
+                       value="@ViewBag.Hotel.Complemento" placeholder="Digite um complemento" maxlength="50" autocomplete="off" required />
             </div>
         </div>
     </div>
-        <button class="btn btn-success float-right" type="submit">
-            <i class="fas fa-save"></i> Salvar
-        </button>
+    <button class="btn btn-success float-right" type="submit">
+        <i class="fas fa-save"></i> Salvar
+    </button>
 </form>
 
 <!-- Required Jquery -->
