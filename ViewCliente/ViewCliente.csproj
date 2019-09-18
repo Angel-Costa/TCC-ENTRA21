@@ -5474,6 +5474,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Comodidade\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5488,7 +5489,6 @@
     <Folder Include="Views\Acomodacao\" />
     <Folder Include="Views\Hotel\" />
     <Folder Include="Views\SobreNos\" />
-    <Folder Include="Views\SugestaoDestino\" />
     <Folder Include="Views\Sugestao\" />
   </ItemGroup>
   <ItemGroup>
