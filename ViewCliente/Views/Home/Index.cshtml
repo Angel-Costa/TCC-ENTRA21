@@ -3,5 +3,54 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 class="mb-5"> </h2>
 
+
+<div class="col-lg-12 col-xl-6">
+    <!-- Owl corousel style 1 card start -->
+    <div class="card">
+        <div class="card-header">
+            <h5>Owl carousel style 1</h5>
+            <div class="card-header-right">                                                             <i class="icofont icofont-spinner-alt-5"></i>                                                         </div>
+        </div>
+        <div class="card-block">
+            <div class="owl-carousel carousel-nav owl-theme">
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/Blumenau.jpg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/garopaba.jpeg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/Lagoinha-do-Leste-Florianópolis.jpg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/porto belo.jpeg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/praia do rosa.jpg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/sao-francisco-do-sul-sc.jpeg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/Serra-rio-do-rastro.jpg" alt="Third slide">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Owl corousel style 1 card end -->
+</div>
+
+@section css {
+    <!-- owl carousel css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/owl.carousel/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/owl.carousel/css/owl.theme.default.css">
+}
+
+@section scripts{
+    <!-- owl carousel 2 js -->
+    <script type="text/javascript" src="~/Content/tema/bower_components/owl.carousel/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/Content/tema/assets/js/owl-custom.js"></script>
+}

@@ -16,29 +16,30 @@
             </div>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">CPF</h4>S
+            <h4 class="sub-title">CPF</h4>
             <input type="text" name="cpf"
                    class="form-control"
                    data-mask="000.000.000-00"
                    maxlength="14"
                    autocomplete="off"
-                   id="campo-cpf" required/>
+                   id="campo-cpf" required
+                   value="@ViewBag.Administrador.Cpf"/>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Login</h4>
-            <input type="text" name="login" id="campo-login" autocomplete="off" required/>
+            <input type="text" name="login" id="campo-login" autocomplete="off" class="form-control" value="@ViewBag.Administrador.Login"/>
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
             <h4 class="sub-title">Senha</h4>
-            <input type="password"
+            <input type="text"
                    class="form-control"
                    placeholder="Senha deve conter 6 caracteres"
                    name="senha"
                     maxlength="30"
                    autocomplete="off"
-                   id="campo-senha" required />
+                   id="campo-senha" value="@ViewBag.Administrador.Senha" />
         </div>
     </div>
     <button class="btn btn-success float-right" type="submit">

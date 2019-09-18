@@ -13,9 +13,9 @@
             <input id="campo-comodidade" class="form-control" type="text" name="nome" placeholder="Digite aqui o serviço" maxlength="40" autocomplete="off" required />
         </div>
         <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Hotel</h4>
-            <select class="form-control" name="hotel" required>
-                @foreach (Model.Hotel hotel in ViewBag.Hoteis)
+            <h4 class="sub-title" >Hotel</h4>
+            <select class="form-control" name="IdHotel" required>
+                @foreach (Model.Hotel hotel in ViewBag.Hoteis)                    
                 {
                     <option value="@hotel.Id">@hotel.Nome</option>
                 }

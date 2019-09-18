@@ -88,6 +88,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\01.jpg" />
+    <Content Include="Content\02.jpg" />
+    <Content Include="Content\03.jpg" />
+    <Content Include="Content\04.jpg" />
+    <Content Include="Content\Blumenau.jpg" />
+    <Content Include="Content\garopaba.jpeg" />
+    <Content Include="Content\Lagoinha-do-Leste-Florianópolis.jpg" />
+    <Content Include="Content\porto belo.jpeg" />
+    <Content Include="Content\praia do rosa.jpg" />
+    <Content Include="Content\sao-francisco-do-sul-sc.jpeg" />
+    <Content Include="Content\Serra-rio-do-rastro.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
@@ -486,10 +497,6 @@
     <Content Include="Content\tema\assets\images\logo-compact.png" />
     <Content Include="Content\tema\assets\images\logo.png" />
     <Content Include="Content\tema\assets\images\mCSB_buttons.png" />
-    <Content Include="Content\tema\assets\images\mega-menu\01.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\02.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\03.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\04.jpg" />
     <Content Include="Content\tema\assets\images\mega-menu\05.jpg" />
     <Content Include="Content\tema\assets\images\mega-menu\06.jpg" />
     <Content Include="Content\tema\assets\images\modal\overflow.jpg" />
@@ -548,10 +555,6 @@
     <Content Include="Content\tema\assets\images\product\p2.jpg" />
     <Content Include="Content\tema\assets\images\product\p3.jpg" />
     <Content Include="Content\tema\assets\images\product\p4.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\01.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\02.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\03.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\04.jpg" />
     <Content Include="Content\tema\assets\images\search-images\05.jpg" />
     <Content Include="Content\tema\assets\images\search-images\06.jpg" />
     <Content Include="Content\tema\assets\images\select-arrow.png" />
@@ -5194,12 +5197,16 @@
     <Content Include="Content\tema\bower_components\typeahead.js\js\typeahead.bundle.min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore-min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore.js" />
+    <Content Include="Content\unipraias.jpeg" />
     <Content Include="Global.asax" />
+    <Content Include="obj\Debug\ViewCliente.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ViewCliente.dll" />
+    <Content Include="obj\Debug\ViewCliente.pdb" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AcomodacaoController.cs" />
+    <Compile Include="Controllers\ComodidadeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\SugestaoController.cs" />
@@ -5470,10 +5477,15 @@
     <Content Include="Content\tema\bower_components\lightgallery\fonts\lg.eot" />
     <Content Include="Content\tema\bower_components\lightgallery\fonts\lg.ttf" />
     <Content Include="Content\tema\bower_components\lightgallery\fonts\lg.woff" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\ViewCliente.csproj.CopyComplete" />
+    <Content Include="obj\Debug\ViewCliente.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\ViewCliente.csprojAssemblyReference.cache" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Comodidade\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5485,10 +5497,10 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Acomodacao\" />
     <Folder Include="Views\Hotel\" />
     <Folder Include="Views\SobreNos\" />
-    <Folder Include="Views\SugestaoDestino\" />
     <Folder Include="Views\Sugestao\" />
   </ItemGroup>
   <ItemGroup>
