@@ -88,6 +88,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\01.jpg" />
+    <Content Include="Content\02.jpg" />
+    <Content Include="Content\03.jpg" />
+    <Content Include="Content\04.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
@@ -486,10 +490,6 @@
     <Content Include="Content\tema\assets\images\logo-compact.png" />
     <Content Include="Content\tema\assets\images\logo.png" />
     <Content Include="Content\tema\assets\images\mCSB_buttons.png" />
-    <Content Include="Content\tema\assets\images\mega-menu\01.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\02.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\03.jpg" />
-    <Content Include="Content\tema\assets\images\mega-menu\04.jpg" />
     <Content Include="Content\tema\assets\images\mega-menu\05.jpg" />
     <Content Include="Content\tema\assets\images\mega-menu\06.jpg" />
     <Content Include="Content\tema\assets\images\modal\overflow.jpg" />
@@ -548,10 +548,6 @@
     <Content Include="Content\tema\assets\images\product\p2.jpg" />
     <Content Include="Content\tema\assets\images\product\p3.jpg" />
     <Content Include="Content\tema\assets\images\product\p4.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\01.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\02.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\03.jpg" />
-    <Content Include="Content\tema\assets\images\search-images\04.jpg" />
     <Content Include="Content\tema\assets\images\search-images\05.jpg" />
     <Content Include="Content\tema\assets\images\search-images\06.jpg" />
     <Content Include="Content\tema\assets\images\select-arrow.png" />
@@ -5199,7 +5195,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AcomodacaoController.cs" />
+    <Compile Include="Controllers\ComodidadeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\SugestaoController.cs" />

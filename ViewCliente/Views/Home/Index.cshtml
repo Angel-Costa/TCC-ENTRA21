@@ -5,3 +5,56 @@
 
 <h2>Index</h2>
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {
+        width: 480px;
+        height: auto;
+        margin: 150px auto;
+        background-color: #808080;
+    }
+
+    .principal {
+        width: 480px;
+        height: 270px;
+        border: solid 1px #000000;
+    }
+
+    .slide {
+        display: flex;
+        width: 400%;
+        overflow: hidden;
+    }
+
+    label img {
+        width: 120px;
+        cursor: pointer;
+        float: left
+    }
+    #foto2:checked ~ .principal.slide{
+        margin-left: -100%;
+    }
+</style>
+
+<div id="container">
+    <div class="principal">
+        <input type="radio" id="foto1" name="gupo" checked="checked"/>
+        <label for="foto1"><img src="~/Content/01.jpg" /></label>
+        <input type="radio" id="foto2" name="gupo" />
+        <label for="foto2"><img src="~/Content/02.jpg" /></label>
+        <input type="radio" id="foto3" name="gupo" />
+        <label for="foto3"><img src="~/Content/03.jpg" /></label>
+        <input type="radio" id="foto4" name="gupo" />
+        <label for="foto4"><img src="~/Content/04.jpg" /></label>
+        <div class="slide">
+            <img src="~/Content/01.jpg" />
+            <img src="~/Content/02.jpg" />
+            <img src="~/Content/03.jpg" />
+            <img src="~/Content/04.jpg" />
+        </div>
+    </div>
+</div>
