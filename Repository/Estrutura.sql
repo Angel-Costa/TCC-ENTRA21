@@ -108,25 +108,37 @@ INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo)
 ('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente', 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Manoela', '16546135465' , 'Manoela@gmail.com', 'Manu5645', 'cliente', 1);
+('Jorel', '356871545454' , 'Jorel@gmail.com', 'Jojo6987', 'cliente', 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('geovana', '32195461416' , 'geovana@gmail.com', 'ge024', 'cliente', 1);
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
-(10, 'Muito bom!', 'qualidade');
+(10, 'Excelente', 'conforto');
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
-(10, 'Muito bom!', 'qualidade');
+(10, 'Surpreendente', 'qualidade');
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
-(10, 'Muito bom!', 'qualidade');
+(10, 'Muito bom!', 'barato e de qualidade');
 
 INSERT INTO sugestoes(nome, local, descricao, ponto_turistico, cidade, endereco) VALUES
-('Morada do mar', 'em beira mar', 'piscina exclusiva para clientes, ideal para viajem em dupla', 'praia da lagoinha', 'bombinhas', 'Avenida Leopoldo Zarling, 1221, Bombinhas, CEP 88215-000, Brasil');
+('Por do sol', 'Na avenida', 'Piscinas termicas', 'Lagoa da conceição', 'Florianópolis', 'Av. das Rendeiras, 200 - Lagoa da Conceição, Florianópolis - SC, 88062-400');
+
+INSERT INTO sugestoes(nome, local, descricao, ponto_turistico, cidade, endereco) VALUES
+('Morada do mar', 'Em beira mar', 'Piscina exclusiva para clientes, ideal para viajem em dupla', 'Praia da lagoinha', 'Bombinhas', 'Avenida Leopoldo Zarling, 1221, Bombinhas, CEP 88215-000, Brasil');
+
+INSERT INTO sugestoes(nome, local, descricao, ponto_turistico, cidade, endereco) VALUES
+('Zimbra', 'próximo ao Ramiro Ruediger', 'Vista para o centro de Blumenau', 'Vila Germânica', 'Blumenau', 'Rua Alberto Stein, 199 | Velha, Blumenau, Santa Catarina 89036-900, Brasil');
 
 INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, numero, rua, complemento, cpf,rg) VALUES
 ('Jose','997857239', 'SC', 'Blumenau','67.130-170','josefreitas@gmail.com', 'jose123', 'itoupava central', '201','alex borchardt', 'proximo a weg', '123.456.789-10', '12.345.678-9');
+
+INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, numero, rua, complemento, cpf,rg) VALUES
+('Matheus','997965820', 'SC', 'Blumenau','00.208-325','matheus@gmail.com', '0504879', 'Vila Itoupava', '456','Rua Alwin Wachholz', 'Proximo ao Hospital Misericórdia', '803.484.620-18', '20.939.373-7');
+
+INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, numero, rua, complemento, cpf,rg) VALUES
+('Camilly','324584321', 'SC', 'Balneário Camboriú','88336-015','camy@gmail.com', 'milly123', 'Nova Esperança', '397','Rua Belmiro Diogo Cordeiro', 'proximo a praia', '101.251.560-57', '24.608.995-7');
 
 SELECT * FROM hoteis;
 SELECT * FROM comodidades ;	
