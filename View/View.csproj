@@ -5764,9 +5764,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Views\ViewCliente\HomeCliente\" />
-    <Folder Include="Views\ViewCliente\HotelCliente\" />
-    <Folder Include="Views\ViewCliente\SobreNos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

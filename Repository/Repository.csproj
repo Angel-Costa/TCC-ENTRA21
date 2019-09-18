@@ -141,7 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Content Include="Interfaces\Index.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
