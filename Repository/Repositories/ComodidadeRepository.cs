@@ -65,7 +65,7 @@ namespace Repository.Repositories
         {
             return context.Comodidades
                 .Include("Hotel")
-                .Where(x => x.RegistroAtivo)                
+                .Where(x => x.RegistroAtivo)
                 .ToList();
         }
     }
