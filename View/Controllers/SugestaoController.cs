@@ -33,8 +33,8 @@ namespace View.Controllers
         public ActionResult Cadastro()
         {
             SugestaoRepository sugestaoRepository = new SugestaoRepository();
-            List<Sugestao> sugestaos = repository.ObterTodos();
-            ViewBag.Sugestao = sugestaos;
+            List<Sugestao> sugestoes = repository.ObterTodos();
+            ViewBag.Sugestao = sugestoes;
             return View();
         }
 
