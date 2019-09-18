@@ -115,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Hotel\" />
+    <Folder Include="Views\SobreNos\" />
+    <Folder Include="Views\SugestaoDestino\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
