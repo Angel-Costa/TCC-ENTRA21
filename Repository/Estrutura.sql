@@ -89,7 +89,7 @@ INSERT INTO hoteis(nome, descricao , valor_noite , estado, cidade, cep, bairro, 
 ('Romance', 'profissional', 200.0, 'Santa Catarina', 'Bombinhas', '85.654-328', 'Ponta Aguda','32', 'Frederico Jensen', 'Perto do aeroporto regional', 2);
 
 INSERT INTO hoteis(nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Bela Vista', 'profissional', 250.0, 'Santa Catarina', 'Florienopolis', '85.654-055', 'Itoupava Seca','3652', 'Alex Robe', 'Perto da escola leoberto leal', 3);
+('Bela Vista', 'profissional', 250.0, 'Santa Catarina', 'Florianópolis', '85.654-055', 'Itoupava Seca','3652', 'Alex Robe', 'Perto da escola leoberto leal', 3);
 
 
 INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
@@ -101,8 +101,8 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (2, 'Lanchonete', 2);
 
 INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
-(2,'Frigobar', 2),
-(2, 'Karaoke', 2);
+(3,'Frigobar', 3),
+(3, 'Karaoke', 3);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente', 1);
