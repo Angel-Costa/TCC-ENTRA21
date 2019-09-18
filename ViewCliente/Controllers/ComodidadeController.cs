@@ -14,7 +14,7 @@ namespace View.Controllers
     {
         private ComodidadeRepository repository;
 
-        public ComodidadeController()
+        public ComodidadeController() 
         {
             repository = new ComodidadeRepository();
         }
@@ -25,10 +25,6 @@ namespace View.Controllers
             ViewBag.Comodidades = comodidades;
             return View();
         }
-        /* CategoriaRepository categoriaRepository = new CategoriaRepository();
-            List<Categoria> categorias = categoriaRepository.ObterTodos();
-            ViewBag.Categorias = categorias;
-        */
 
         public ActionResult Cadastro()
         {

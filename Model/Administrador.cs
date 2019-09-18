@@ -24,5 +24,6 @@ namespace Model
 
 		[Column("privilegio")]
 		public string Privilegio { get; set; }
+
     }
 }
