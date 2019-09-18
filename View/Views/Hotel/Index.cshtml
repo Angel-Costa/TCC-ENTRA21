@@ -3,15 +3,29 @@
     ViewBag.Title = "Index";
 }
 
+<div class="page-header card">
+    <div class="row align-items-end">
+        <div class="col-lg-8">
+            <div class="page-header-title">
+                <i class="icofont icofont icofont icofont-hotel" style="background-color: #171d2b;"></i>
+                <div class="d-inline">
+                    <h4>Lista de Hoteis</h4>
+                    <span>Encontre os melhores hoteis, em um só lugar!</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
 
-<h2 class="text-cen">Lista de Hoteis</h2>
-<div class="row">
-    <div class="col-10 offset-1 mb-3">
-        <a class="btn float-right"
-           style="background-color: #00ae1b; color: white;"
-           href="@Url.Action("Cadastro")">
-            <i class="fas fa-plus"></i> Novo Hotel
-        </a>
+            <ul class="breadcrumb-title">
+                <li>
+                    <a class="btn float-right"
+                       style="background-color: #00ae1b; color: white;"
+                       href="@Url.Action("Cadastro")">
+                        <i class="fas fa-plus"></i> Novo Hotel
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
@@ -22,6 +36,7 @@
         {
             <div class="card mr-3">
                 <div class="card-body ">
+                    <div class=""></div>
                     <div class="sub-title">Cadastro: @hotel.Id</div>
                     <div class="sub-title">Nome: @hotel.Nome</div>
                     <div class="sub-title">Descrição: @hotel.Descricao</div>
