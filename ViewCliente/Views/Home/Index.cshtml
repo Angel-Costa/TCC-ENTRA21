@@ -5,56 +5,52 @@
 
 <h2>Index</h2>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
 
-    #container {
-        width: 480px;
-        height: auto;
-        margin: 150px auto;
-        background-color: #808080;
-    }
+<div class="col-lg-12 col-xl-6">
+    <!-- Owl corousel style 1 card start -->
+    <div class="card">
+        <div class="card-header">
+            <h5>Owl carousel style 1</h5>
+            <div class="card-header-right">                                                             <i class="icofont icofont-spinner-alt-5"></i>                                                         </div>
+        </div>
+        <div class="card-block">
+            <div class="owl-carousel carousel-nav owl-theme">
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/Blumenau.jpg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/garopaba.jpeg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/Lagoinha-do-Leste-Florianópolis.jpg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/porto belo.jpeg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/praia do rosa.jpg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/sao-francisco-do-sul-sc.jpeg" alt="Third slide">
+                </div>
+                <div>
+                    <img class="d-block img-fluid" src="~/Content/Serra-rio-do-rastro.jpg" alt="Third slide">
+                </div>
 
-    .principal {
-        width: 480px;
-        height: 270px;
-        border: solid 1px #000000;
-    }
-
-    .slide {
-        display: flex;
-        width: 400%;
-        overflow: hidden;
-    }
-
-    label img {
-        width: 120px;
-        cursor: pointer;
-        float: left
-    }
-    #foto2:checked ~ .principal.slide{
-        margin-left: -100%;
-    }
-</style>
-
-<div id="container">
-    <div class="principal">
-        <input type="radio" id="foto1" name="gupo" checked="checked"/>
-        <label for="foto1"><img src="~/Content/01.jpg" /></label>
-        <input type="radio" id="foto2" name="gupo" />
-        <label for="foto2"><img src="~/Content/02.jpg" /></label>
-        <input type="radio" id="foto3" name="gupo" />
-        <label for="foto3"><img src="~/Content/03.jpg" /></label>
-        <input type="radio" id="foto4" name="gupo" />
-        <label for="foto4"><img src="~/Content/04.jpg" /></label>
-        <div class="slide">
-            <img src="~/Content/01.jpg" />
-            <img src="~/Content/02.jpg" />
-            <img src="~/Content/03.jpg" />
-            <img src="~/Content/04.jpg" />
+            </div>
         </div>
     </div>
+    <!-- Owl corousel style 1 card end -->
 </div>
+
+@section css {
+    <!-- owl carousel css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/owl.carousel/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/owl.carousel/css/owl.theme.default.css">
+}
+
+@section scripts{
+    <!-- owl carousel 2 js -->
+    <script type="text/javascript" src="~/Content/tema/bower_components/owl.carousel/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/Content/tema/assets/js/owl-custom.js"></script>
+}
