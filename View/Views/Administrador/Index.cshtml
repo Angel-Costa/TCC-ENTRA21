@@ -3,39 +3,57 @@
     ViewBag.Title = "Index";
 }
 
-<h4 class="text-center">Administradores	</h4>
 
-<div class="row">
-    <div class="col-12">
-        <a href="@Url.Action("Cadastro")" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Novo Administrador</a>
+
+<div class="page-header card">
+    <div class="row align-items-end">
+        <div class="col-lg-8">
+            <div class="page-header-title">
+                <i class="fas fa-users-cog" style="background-color: #171d2b;"></i>
+                <div class="d-inline">
+                    <h4>Lista de Administradores</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+
+            <ul class="breadcrumb-title">
+                <li>
+                    <a class="btn float-right"
+                       style="background-color: #00ae1b; color: white;"
+                       href="@Url.Action("Cadastro")">
+                        <i class="fas fa-plus"></i> Novo Administrador
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
-<table class="table table-striped table-hover table-bordered mt-3">
-    <thead>
-        <tr>
-            <td>Código</td>
-            <td>Nome</td>
-            <td>Login</td>
-        </tr>
-    </thead>
 
-    <tbody>
+<div class="form-group mt-3">
+    <div class="row">
+
         @foreach (Model.Administrador administrador in ViewBag.Administradores)
         {
-            <tr>
-                <td>@administrador.Id</td>
-                <td>@administrador.Nome</td>
-                <td>@administrador.Login</td>
-                <td>
-                    <a href="@Url.Action("Editar", new { Id = administrador.Id })"
-                       class="btn btn-primary">
-                        <i class="fas fa-pen"></i> Editar
-                    </a>
-                    <a href="@Url.Action("Apagar", new { Id = administrador.Id })" class="btn btn-danger">
-                        <i class="fas fa-trash"></i> Apagar
-                    </a>
-                </td>
-            </tr>
+            <div class="card mr-3">
+                <div class="card-body ">
+                    <div class="sub-title">Cadastro: @administrador.Id</div>
+                    <div class="sub-title">Nome: @administrador.Nome</div>
+                    <div class="sub-title">Descrição: @administrador.Login</div>
+                    <div class="row">
+
+                        <a href="@Url.Action("Apagar", new {id = administrador.Id})"
+                           class="btn text-danger float-right">
+                            <i class="fas fa-trash"></i> Apagar
+                        </a>
+
+                        <a href="@Url.Action("Editar", new { id = administrador.Id })"
+                           class="btn text-primary float-right">
+                            <i class="fas fa-pen"></i> Editar
+                        </a>
+                    </div>
+                </div>
+            </div>
         }
-    </tbody>
-</table>
+    </div>
+</div>
