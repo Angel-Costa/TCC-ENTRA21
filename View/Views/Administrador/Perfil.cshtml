@@ -1,6 +1,7 @@
 ﻿@{
     ViewBag.Title = "Perfil";
 }
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -73,13 +74,23 @@
             width: 50px;
             height: 50px;
         }
+
+
 </style>
+
+
 <form action="javascript:void(0)" method="post">
     <div class="personal-image">
         <label class="label">
             <input type="file" />
             <figure class="personal-figure">
-                <img src="~/Content/FOTO ZIIKA DO USUARIO ZIKA.jpg" class="personal-avatar" alt="avatar">
+                <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+                <div class="img-overlay img-radius">
+                    <span>
+                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                    </span>
+                </div>
                 <figcaption class="personal-figcaption">
                 </figcaption>
             </figure>
