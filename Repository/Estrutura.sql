@@ -3,18 +3,18 @@
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
 
-	celular VARCHAR(12),
+	celular VARCHAR(15),
 	estado VARCHAR(100),
 	cidade VARCHAR(100),
 	cep VARCHAR(10),
-	logim VARCHAR(100),
+	login VARCHAR(100),
 	bairro VARCHAR(100),
 	numero VARCHAR(20),
 	rua VARCHAR(100),
 	complemento VARCHAR(100),
 	nome VARCHAR(100),
-	cpf VARCHAR(14),
-	rg VARCHAR(12),
+	cpf VARCHAR(15),
+	rg VARCHAR(15),
 	senha VARCHAR(100),
 	registro_ativo BIT
 );
@@ -61,8 +61,8 @@ CREATE TABLE administradores (
 	id INT PRIMARY KEY IDENTITY(1,1),
 
 	nome VARCHAR (50),
-	cpf VARCHAR (14),
-	logim VARCHAR (50),
+	cpf VARCHAR (15),
+	login VARCHAR (50),
 	senha VARCHAR(50),
 	
 	privilegio VARCHAR(20),
@@ -86,10 +86,10 @@ INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro,
 ('Dallas','profissional',120.0,'Santa Catarina', 'Blumenau','65.454-132','Centro','654','por do sol','perto do shopping', 1 );
 
 INSERT INTO hoteis(nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Romance', 'proficional', 200.0, 'Santa Catarina', 'Bombinhas', '85.654-328', 'Ponta Aguda','32', 'Frederico Jensen', 'Perto do aeroporto regional', 2);
+('Romance', 'profissional', 200.0, 'Santa Catarina', 'Bombinhas', '85.654-328', 'Ponta Aguda','32', 'Frederico Jensen', 'Perto do aeroporto regional', 2);
 
 INSERT INTO hoteis(nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Bela Vista', 'proficional', 250.0, 'Santa Catarina', 'Florienopolis', '85.654-055', 'Itoupava Seca','3652', 'Alex Robe', 'Perto da escola leoberto leal', 3);
+('Bela Vista', 'profissional', 250.0, 'Santa Catarina', 'Florienopolis', '85.654-055', 'Itoupava Seca','3652', 'Alex Robe', 'Perto da escola leoberto leal', 3);
 
 
 INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
@@ -104,7 +104,7 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (2,'Frigobar', 2),
 (2, 'Karaoke', 2);
 
-INSERT INTO administradores(nome, cpf, logim, senha, privilegio, registro_ativo) VALUES
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente', 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES

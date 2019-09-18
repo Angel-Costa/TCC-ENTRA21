@@ -36,7 +36,7 @@ namespace Model
         [Column("complemento")]
         public string Complemento { get; set; }
 
-        [Column("logim")]
+        [Column("login")]
         public string Login { get; set; }
 
         [Column("senha")]
