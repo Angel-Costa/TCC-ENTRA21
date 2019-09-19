@@ -93,13 +93,16 @@
     <Content Include="Content\03.jpg" />
     <Content Include="Content\04.jpg" />
     <Content Include="Content\Blumenau.jpg" />
+    <Content Include="Content\Estadio do Sesi.jpg" />
     <Content Include="Content\garopaba.jpeg" />
     <Content Include="Content\Lagoinha-do-Leste-Florianópolis.jpg" />
+    <Content Include="Content\Parque Ramiro Ruediguer.jpg" />
     <Content Include="Content\porto belo.jpeg" />
     <Content Include="Content\praia do rosa.jpg" />
     <Content Include="Content\sao-francisco-do-sul-sc.jpeg" />
     <Content Include="Content\Serra-rio-do-rastro.jpg" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Teatro Carlos Gomes.jpg" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
     <Content Include="Content\tema\assets\css\ionicons.css" />
