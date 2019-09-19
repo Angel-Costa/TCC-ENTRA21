@@ -86,10 +86,10 @@ INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro,
 ('Dallas','Profissional',120.0,'Santa Catarina', 'Blumenau','88215-971','Itoupava Central','654','Por do sol','Próximo a associação da weg', 1 );
 
 INSERT INTO hoteis(nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Romance', 'Profissional', 200.0, 'Santa Catarina', 'Bombinhas', '88215-970', 'Centro','32', 'Avenida Falcão 1001', 'Romulo terraplanagem', 2);
+('Romance', 'Profissional', 200.0, 'Santa Catarina', 'Bombinhas', '88215-970', 'Centro','32', 'Avenida Falcão 1001', 'Próximo a Romulo terraplanagem', 2);
 
 INSERT INTO hoteis(nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Bela Vista', 'Profissional', 250.0, 'Santa Catarina', 'Florianópolis', '88215-970', 'Campeche','3652', 'Alex Robe', 'Moura car', 3);
+('Bela Vista', 'Profissional', 250.0, 'Santa Catarina', 'Florianópolis', '88215-970', 'Campeche','3652', 'Alex Robe', 'Próximo a Moura car', 3);
 
 INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (1,'PLAYGROUND', 1),
