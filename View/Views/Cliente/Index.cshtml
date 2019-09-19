@@ -29,7 +29,7 @@
     </div>
 </div>
 
-<div class="form-group mt-3">
+<div class="form-group col-lg-12">
     <div class="row">
 
         @foreach (Model.Cliente cliente in ViewBag.Clientes)
@@ -38,10 +38,10 @@
                 <div class="card-body ">
                     <div class="sub-title">Cadastro: @cliente.Id</div>
                     <div class="sub-title">Nome: @cliente.Nome</div>
-                    <div class="sub-title">Descrição: @cliente.Estado</div>
-                    <div class="sub-title">Valor: @cliente.Cidade</div>
-                    <div class="sub-title">Estado: @cliente.Login</div>
-                    <div class="sub-title">Cidade: @cliente.Senha</div>
+                    <div class="sub-title">Estado: @cliente.Estado</div>
+                    <div class="sub-title">Cidade: @cliente.Cidade</div>
+                    <div class="sub-title">Login: @cliente.Login</div>
+                    <div class="sub-title">Senha: @cliente.Senha</div>
                     <div class="row">
 
                         <a href="@Url.Action("Apagar", new {id = cliente.Id})"
