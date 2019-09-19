@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Mvc;
 using Model;
 using Repository.Interfaces;
@@ -9,7 +11,7 @@ using Repository.Repositories;
 
 namespace View.Controllers
 {
-    public class AdministradorController : Controller
+    public class AdministradorController : BaseController
     {
         private AdministradorRepository repository;
 
@@ -19,7 +21,7 @@ namespace View.Controllers
         }
 
         public ActionResult Index()
-        {            
+        {
             List<Administrador> administradores = repository.ObterTodos();
             ViewBag.Administradores = administradores;
             return View();
@@ -27,15 +29,9 @@ namespace View.Controllers
 
 
         public ActionResult Cadastro()
-        {            
+        {
             List<Administrador> administradores = repository.ObterTodos();
             ViewBag.Administradores = administradores;
-            return View();
-        }
-        
-        [HttpGet, Route("editarperfil")]
-        public ActionResult EditarPerfil()
-        {
             return View();
         }
 
@@ -73,10 +69,24 @@ namespace View.Controllers
         [HttpGet, Route("perfil")]
         public ActionResult Perfil()
         {
-            Administrador administrador = repository.ObterPeloId(1);
-            ViewBag.administrador = administrador;
+            var usuarioLogado = (Administrador) Session["Usuario"];
+
+            Administrador administrador = repository.ObterPeloId(usuarioLogado.Id);
+            ViewBag.Administrador = administrador;
             return View();
         }
+
+
+        [HttpGet, Route("editarperfil")]
+        public ActionResult EditarPerfil()
+        {
+            var usuarioLogado = (Administrador)Session["Usuario"];
+
+            Administrador administrador = repository.ObterPeloId(usuarioLogado.Id);
+            ViewBag.Administrador = administrador;
+            return View();
+        }
+
 
         [HttpPost, Route("editarxd")]
         public ActionResult EditarPerfil(Administrador administrador)
@@ -85,6 +95,36 @@ namespace View.Controllers
             ViewBag.Administrador = administrador;
 
             return RedirectToAction("Perfil", new { administrador.Id });
+        }
+
+        public ActionResult Upload()
+        {
+
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+
+                string caminhoArquivo = Path.Combine(@uploadPath,nomeImagem);
+
+                arquivo.SaveAs(caminhoArquivo);
+
+                var usuarioLogado = (Administrador)Session["Usuario"];
+
+                Administrador administrador = repository.ObterPeloId(usuarioLogado.Id);
+                administrador.Imagem = nomeImagem;
+                repository.Alterar(administrador);
+                Session["Usuario"] = administrador;
+            }
+
+
+            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
+            return RedirectToAction("EditarPerfil");
         }
 
     }

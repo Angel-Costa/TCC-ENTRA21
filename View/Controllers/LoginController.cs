@@ -17,13 +17,31 @@ namespace View.Controllers
         {
             repositoryAdministrador = new AdministradorRepository();
 			reositoryCliente = new ClienteRepository();
-
+      
 		}
 
         
         public ActionResult Index()
         {
+            if(Session["Usuario"] != null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(string login, string senha)
+        {
+            var administrador = repositoryAdministrador.VerificarLoginSenha(login, senha);
+            if(administrador == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            Session["Usuario"] = administrador;
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]

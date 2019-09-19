@@ -25,5 +25,7 @@ namespace Model
 		[Column("privilegio")]
 		public string Privilegio { get; set; }
 
+        [Column("imagem")]
+        public string Imagem { get; set; }
     }
 }

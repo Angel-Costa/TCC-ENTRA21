@@ -4,11 +4,6 @@
     Layout = null;
 }
 
-<link href="//amaxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,119 +17,14 @@
 
     <!--Custom styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .card {
-            margin: 0 auto;
-            float: none;
-            margin-bottom: 10px;
-        }
-
-        body:before {
-            content: '';
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-image: url("/Content/KombiLaranjaTraz.jpg");
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        .contact-form {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            width: 400px;
-            height: 550px;
-            padding: 80px 40px;
-            box-sizing: border-box;
-            background: rgba(0,0,0,.5);
-        }
-
-
-
-            .contact-form h2 {
-                margin: 0;
-                padding: 0 0 20px;
-                color: #fff;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: normal;
-            }
-
-            .contact-form p {
-                margin: 0;
-                padding: 0;
-                font-weight: normal;
-                color: #fff;
-            }
-
-            .contact-form input {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-                .contact-form input[type="text"],
-                .contact-form input[type="password"] {
-                    border: none;
-                    border-bottom: 1px solid #fff;
-                    background: transparent;
-                    outline: none;
-                    height: 40px;
-                    color: #fff;
-                    font-size: 16px;
-                }
-
-                .contact-form input[type="submit"] {
-                    height: 30px;
-                    color: #fff;
-                    font-size: 15px;
-                    background-color: #007f8f;
-                    cursor: pointer;
-                    border-radius: 3px;
-                    border: none;
-                    outline: none;
-                    margin-top: 15%;
-                }
-
-            .contact-form a {
-                color: #fff;
-                font-size: 14px;
-                font-weight: normal;
-                text-decoration: none;
-            }
-
-        input[type="checkbox"] {
-            width: 20%;
-        }
-
-        .container {
-            min-height: 10em;
-            display: table-cell;
-            vertical-align: middle
-        }
-
-        .avatar {
-            position: relative;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            overflow: hidden;
-            top: calc(-80px/2);
-            left: calc(50% - 40px);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="~/Content/css/login.css">
+    <link href="//amaxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <form action="@Url.Action("Index","Home")" method="post" />
+    <form action="@Url.Action("Login")" method="post" />
     <div class="contact-form">
 
         <img src="~/Content/man-user (1).png" class="avatar" style="color: white;" />
@@ -142,10 +32,10 @@
         <h2 style="color: white;">LOGIN</h2>
 
         <p style="color: white;">Email</p>
-        <input type="text" name="" placeholder="Email" autocomplete="off" required>
+        <input type="text" name="login" placeholder="Email" autocomplete="off" required>
 
         <p style="color: white;">Senha</p>
-        <input type="password" name="" placeholder="Senha" autocomplete="off" required>
+        <input type="password" name="senha" placeholder="Senha" autocomplete="off" required>
 
         <div>
             <div>
@@ -161,6 +51,7 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
 

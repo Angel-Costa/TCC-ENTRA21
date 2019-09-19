@@ -10,7 +10,7 @@ using System.Web.Mvc;
 namespace View.Controllers
 {
     [Route("comodidade")]
-    public class ComodidadeController : Controller
+    public class ComodidadeController : BaseController
     {
         private ComodidadeRepository repository;
 

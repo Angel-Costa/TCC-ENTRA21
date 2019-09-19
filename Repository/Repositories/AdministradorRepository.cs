@@ -64,6 +64,12 @@ namespace Repository.Repositories
             return context.Administradores
                 .Where(x => x.RegistroAtivo).ToList();
         }
+
+
+        public Administrador VerificarLoginSenha(string login, string senha)
+        {
+            return context.Administradores.FirstOrDefault(x => x.Login == login && x.Senha == senha && x.RegistroAtivo);
+        }
     }
 
 
