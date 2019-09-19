@@ -240,6 +240,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AvaliacaoController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\ComodidadeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -263,16 +264,13 @@
     <Content Include="Content\animais-cavalos-por-do-sol-wallpaper.jpg" />
     <Content Include="Content\beach.png" />
     <Content Include="Content\Blumenau.jpg" />
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Canva - Orange Hotel Metal Lettering Signage.jpg" />
     <Content Include="Content\Canva - White Orange Van Scale Model.jpg" />
     <Content Include="Content\ceu.jpg" />
     <Content Include="Content\cidadenoite.jpg" />
+    <Content Include="Content\css\administrador\editar-perfil.css" />
+    <Content Include="Content\css\administrador\perfil.css" />
+    <Content Include="Content\css\login.css" />
     <Content Include="Content\essa.jpg" />
     <Content Include="Content\flores.jpg" />
     <Content Include="Content\floresta.jpg" />
@@ -5678,10 +5676,6 @@
     <Content Include="obj\Debug\View.csproj.CopyComplete" />
     <Content Include="obj\Debug\View.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\View.csprojAssemblyReference.cache" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -5690,16 +5684,6 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -5763,7 +5747,9 @@
     <Content Include="Views\Sugestao\Galeria.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\Uploads\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

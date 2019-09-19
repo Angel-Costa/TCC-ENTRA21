@@ -12,7 +12,7 @@ using Repository.Repositories;
 namespace View.Controllers
 {
     [Route("cliente/")]
-    public class ClienteController : Controller
+    public class ClienteController : BaseController
     {
         private ClienteRepository repository;
 

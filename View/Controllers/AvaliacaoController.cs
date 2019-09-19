@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace View.Controllers
 {
-    public class AvaliacaoController : Controller
+    public class AvaliacaoController : BaseController
     {
         private AvaliacaoRepository repository;
 

@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var usuario = (Model.Administrador)Session["Usuario"];
+}
+
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -39,7 +44,7 @@
     <!-- hover-effect.css -->
     <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/pages/hover-effect/normalize.css">
     <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/pages/hover-effect/set2.css">
-
+    @RenderSection("css", false)
 
 </head>
 
@@ -135,10 +140,10 @@
                             <div class="">
                                 <div class="main-menu-header"
                                      style="background-color: white;">
-                                    <img class="img-40 img-radius" src="~/Content/FOTO ZIIKA DO USUARIO ZIKA.jpg"
+                                    <img class="img-40 img-radius" src="~/Content/Uploads/@usuario.Imagem"
                                          alt="User-Profile-Image">
                                     <div class="user-details">
-                                        <span>Usuário</span>
+                                        <span>@usuario.Nome</span>
                                         <span id="more-details"><i class="ti-angle-down"></i></span>
                                     </div>
                                 </div>
@@ -147,7 +152,7 @@
                                     <ul>
                                         <li class="more-details">
                                             <a href="/Administrador/Perfil"><i class="far fa-user"></i>Ver Perfil</a>
-                                            <a href="~/Login">
+                                            <a href="~/">
                                                 <i class="fas fa-door-open"></i>Sair
                                             </a>
                                         </li>
@@ -287,7 +292,7 @@
         <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
 
-
+        @RenderSection("js", false)
 
     </div>
 

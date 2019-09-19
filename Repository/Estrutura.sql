@@ -61,6 +61,7 @@ CREATE TABLE comodidades(
 CREATE TABLE administradores (
 	id INT PRIMARY KEY IDENTITY(1,1),
 
+	imagem VARCHAR (50),
 	nome VARCHAR (50),
 	cpf VARCHAR (15),
 	login VARCHAR (50),
