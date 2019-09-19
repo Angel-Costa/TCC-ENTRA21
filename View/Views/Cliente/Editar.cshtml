@@ -3,120 +3,135 @@
     ViewBag.Title = "Editar";
 }
 
-<h2 class="mb-5">Editar Cliente</h2>
+<div class="page-header card">
+    <div class="row align-items-end">
+        <div class="col-lg-8">
+            <div class="page-header-title">
+                <i class="icofont icofont icofont icofont-user-alt-3" style="background-color: #171d2b;"></i>
+                <div class="d-inline">
+                    <h4 style="text-transform: capitalize">Editar cliente</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <form action="@Url.Action("Editar")" method="post">
     <input type="hidden" name="id" value="@ViewBag.Cliente.Id" />
 
-    <div class="row">
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Nome</h4>
-            <input type="text" name="nome"
-                   class="form-control"
-                   id="campo-nome"
-                   value="@ViewBag.Cliente.Nome" placeholder="Digite seu nome completo" maxlength="50" autocomplete="off" required />
-        </div>
-        <div class="form-group">
-            <h4 class="sub-title">Estado</h4>
-            <select class="form-control" id="estado" name="estado" autocomplete="off" required>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select>
-        </div>
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Cidade</h4>
-            <input type="text" name="cidade"
-                   class="form-control"
-                   id="campo-cidade" value="@ViewBag.Cliente.Cidade" placeholder="Digite a cidade" maxlength="60" autocomplete="off" required />
-        </div>
-    </div>
+    <div class="card">
+        <div class="card-body ">
+            <div class="row">
+                <div class="col-sm-12 col-xl-5 m-b-30">
+                    <h4 class="sub-title">Nome</h4>
+                    <input type="text" name="nome"
+                           class="form-control"
+                           id="campo-nome"
+                           value="@ViewBag.Cliente.Nome" placeholder="Digite seu nome completo" maxlength="50" autocomplete="off" required />
+                </div>
+                <div class="col-sm-12 col-xl-3 m-b-30">
+                    <h4 class="sub-title">Estado</h4>
+                    <select class="form-control" id="estado" name="estado" autocomplete="off" required>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="col-sm-12 col-xl-4 m-b-30">
+                    <h4 class="sub-title">Cidade</h4>
+                    <input type="text" name="cidade"
+                           class="form-control"
+                           id="campo-cidade" value="@ViewBag.Cliente.Cidade" placeholder="Digite a cidade" maxlength="60" autocomplete="off" required />
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">CEP</h4>
-            <input type="text" name="cep"
-                   class="form-control telphone_whith_code" data-mask="00000-000" placeholder="Digite o CEP"
-                   id="campo-cep" value="@ViewBag.Cliente.Cep" autocomplete="off" required />
-        </div>
+            <div class="row">
+                <div class="col-sm-12 col-xl-3 m-b-30">
+                    <h4 class="sub-title">CEP</h4>
+                    <input type="text" name="cep"
+                           class="form-control telphone_whith_code" data-mask="00000-000" placeholder="Digite o CEP"
+                           id="campo-cep" value="@ViewBag.Cliente.Cep" autocomplete="off" required />
+                </div>
 
 
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Bairro</h4>
-            <input type="text" name="bairro"
-                   class="form-control"
-                   id="campo-bairro" value="@ViewBag.Cliente.Bairro" maxlength="50" placeholder="Digite " autocomplete="off" required />
-        </div>
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Número</h4>
-            <input type="text" name="numero"
-                   id="campo-numero" value="@ViewBag.Cliente.Numero" maxlength="20" autocomplete="off" required />
-        </div>
-    </div>
+                <div class="col-sm-12 col-xl-7 m-b-30">
+                    <h4 class="sub-title">Bairro</h4>
+                    <input type="text" name="bairro"
+                           class="form-control"
+                           id="campo-bairro" value="@ViewBag.Cliente.Bairro" maxlength="50" placeholder="Digite " autocomplete="off" required />
+                </div>
+                <div class="col-sm-12 col-xl-2 m-b-30">
+                    <h4 class="sub-title">Número</h4>
+                    <input type="text" name="numero"
+                           class="form-control" id="campo-numero" value="@ViewBag.Cliente.Numero" maxlength="20" autocomplete="off" required />
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Nome da Rua</h4>
-            <input type="text" name="rua"
-                   class="form-control"
-                   id="campo-rua" value="@ViewBag.Cliente.Rua" maxlength="50" autocomplete="off" required />
-        </div>
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Complemento</h4>
-            <input type="text" name="complemento"
-                   class="form-control"
-                   id="campo-complemento" value="@ViewBag.Cliente.Complemento" maxlength="50" autocomplete="off" required />
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-sm-12 col-xl-5 m-b-30">
+                    <h4 class="sub-title">Nome da Rua</h4>
+                    <input type="text" name="rua"
+                           class="form-control"
+                           id="campo-rua" value="@ViewBag.Cliente.Rua" maxlength="50" autocomplete="off" required />
+                </div>
+                <div class="col-sm-12 col-xl-7 m-b-30">
+                    <h4 class="sub-title">Complemento</h4>
+                    <input type="text" name="complemento"
+                           class="form-control"
+                           id="campo-complemento" value="@ViewBag.Cliente.Complemento" maxlength="50" autocomplete="off" required />
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Login</h4>
-            <input type="text" name="login"
-                   class="form-control"
-                   id="campo-login" value="@ViewBag.Cliente.Login" maxlength="50" autocomplete="off" required />
-        </div>
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Senha</h4>
-            <input type="password"
-                   class="form-control"
-                   placeholder="Senha deve conter 6 caracteres"
-                   name="senha"
-                   maxlength="50"
-                   autocomplete="off"
-                   id="campo-senha" value="@ViewBag.Cliente.Senha" required />
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-sm-12 col-xl-7 m-b-30">
+                    <h4 class="sub-title">Login</h4>
+                    <input type="text" name="login"
+                           class="form-control"
+                           id="campo-login" value="@ViewBag.Cliente.Login" maxlength="50" autocomplete="off" required />
+                </div>
+                <div class="col-sm-12 col-xl-5 m-b-30">
+                    <h4 class="sub-title">Senha</h4>
+                    <input type="password"
+                           class="form-control"
+                           placeholder="Senha deve conter 6 caracteres"
+                           name="senha"
+                           maxlength="50"
+                           autocomplete="off"
+                           id="campo-senha" value="@ViewBag.Cliente.Senha" required />
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col-12">
-            <button type="submit" class="btn btn-outline-success float-right">
-                <i class="fas fa-save"></i> Salvar
-            </button>
+            <div class="row">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-outline-success float-right">
+                        <i class="fas fa-save"></i> Salvar
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </form>

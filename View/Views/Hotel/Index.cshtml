@@ -2,15 +2,16 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<div class="page-header card">
+<head>
+</head>
+<div class="page-header card" style="width: 1198px;">
     <div class="row align-items-end">
         <div class="col-lg-8">
             <div class="page-header-title">
                 <i class="icofont icofont icofont icofont-hotel" style="background-color: #171d2b;"></i>
                 <div class="d-inline">
                     <h4>Lista de Hoteis</h4>
-                    <span>Encontre os melhores hoteis, em um só lugar!</span>
+                  
                 </div>
             </div>
         </div>
@@ -29,17 +30,16 @@
     </div>
 </div>
 
-<div class="form-group mt-3">
+<div class="form-group col-lg-12">
     <div class="row">
 
         @foreach (Model.Hotel hotel in ViewBag.Hoteis)
         {
             <div class="card mr-3">
-                <div class="card-body ">
+                <div class="card-body">
                     <div class=""></div>
                     <div class="sub-title">Cadastro: @hotel.Id</div>
                     <div class="sub-title">Nome: @hotel.Nome</div>
-                    <div class="sub-title">Descrição: @hotel.Descricao</div>
                     <div class="sub-title">Valor: @hotel.ValorNoite</div>
                     <div class="sub-title">Estado: @hotel.Estado</div>
                     <div class="sub-title">Cidade: @hotel.Cidade</div>
