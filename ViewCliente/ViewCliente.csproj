@@ -96,6 +96,10 @@
     <Content Include="Content\04.jpg" />
     <Content Include="Content\Blumenau.jpg" />
     <Content Include="Content\garopaba.jpeg" />
+    <Content Include="Content\imagem\LOGO.png" />
+    <Content Include="Content\imagem\Logo123.png" />
+    <Content Include="Content\imagem\Logo2.png" />
+    <Content Include="Content\imagem\LUX Logo.png" />
     <Content Include="Content\Lagoinha-do-Leste-Florianópolis.jpg" />
     <Content Include="Content\porto belo.jpeg" />
     <Content Include="Content\praia do rosa.jpg" />
