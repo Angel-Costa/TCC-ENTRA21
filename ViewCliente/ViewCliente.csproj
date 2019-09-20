@@ -5203,7 +5203,6 @@
     <Content Include="Content\tema\bower_components\typeahead.js\js\typeahead.bundle.min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore-min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore.js" />
-    <Content Include="Content\unipraias.jpeg" />
     <Content Include="Global.asax" />
     <Content Include="obj\Debug\ViewCliente.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ViewCliente.dll" />
@@ -5216,6 +5215,7 @@
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
     <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="obj\Debug\Tsc.out" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -5242,6 +5242,7 @@
     <Compile Include="Controllers\ComodidadeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
+    <Compile Include="Controllers\SobreNosController.cs" />
     <Compile Include="Controllers\SugestaoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -5538,6 +5539,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Views\SobreNos\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5550,9 +5552,7 @@
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Views\Acomodacao\" />
     <Folder Include="Views\Hotel\" />
-    <Folder Include="Views\SobreNos\" />
     <Folder Include="Views\Sugestao\" />
   </ItemGroup>
   <ItemGroup>
