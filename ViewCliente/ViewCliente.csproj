@@ -90,17 +90,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\01.jpg" />
-    <Content Include="Content\02.jpg" />
-    <Content Include="Content\03.jpg" />
-    <Content Include="Content\04.jpg" />
-    <Content Include="Content\Blumenau.jpg" />
-    <Content Include="Content\garopaba.jpeg" />
-    <Content Include="Content\Lagoinha-do-Leste-Florianópolis.jpg" />
-    <Content Include="Content\porto belo.jpeg" />
-    <Content Include="Content\praia do rosa.jpg" />
-    <Content Include="Content\sao-francisco-do-sul-sc.jpeg" />
-    <Content Include="Content\Serra-rio-do-rastro.jpg" />
+    <Content Include="Content\Blumenau\Blumenau.jpg" />
+    <Content Include="Content\Blumenau\Estadio do Sesi.jpg" />
+    <Content Include="Content\Blumenau\Teatro Carlos Gomes.jpg" />
+    <Content Include="Content\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
+    <Content Include="Content\Florianopolis\Mercado-Florianopolis.jpg" />
+    <Content Include="Content\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\PortoBelo\piscina-com-bar-molhado.jpg" />
+    <Content Include="Content\PortoBelo\ponta-do-estaleiro.jpg" />
+    <Content Include="Content\PortoBelo\univali-ecomuseum.jpg" />
+    <Content Include="Content\SaoFrancisco\museu-nacional-do-mar.jpg" />
+    <Content Include="Content\SaoFrancisco\praia-do-forte-tem-o.jpg" />
+    <Content Include="Content\SaoFrancisco\vista-de-dentro-do-barco.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
@@ -5199,7 +5200,6 @@
     <Content Include="Content\tema\bower_components\typeahead.js\js\typeahead.bundle.min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore-min.js" />
     <Content Include="Content\tema\bower_components\underscore\js\underscore.js" />
-    <Content Include="Content\unipraias.jpeg" />
     <Content Include="Global.asax" />
     <Content Include="obj\Debug\ViewCliente.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ViewCliente.dll" />
@@ -5212,6 +5212,7 @@
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
     <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="obj\Debug\Tsc.out" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
