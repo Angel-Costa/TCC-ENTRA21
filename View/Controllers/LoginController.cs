@@ -11,19 +11,19 @@ namespace View.Controllers
     public class LoginController : Controller
     {
         private AdministradorRepository repositoryAdministrador;
-		private ClienteRepository reositoryCliente;
+        private ClienteRepository reositoryCliente;
 
         public LoginController()
         {
             repositoryAdministrador = new AdministradorRepository();
-			reositoryCliente = new ClienteRepository();
-      
-		}
+            reositoryCliente = new ClienteRepository();
 
-        
+        }
+
+
         public ActionResult Index()
         {
-            if(Session["Usuario"] != null)
+            if (Session["Usuario"] != null)
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -35,7 +35,7 @@ namespace View.Controllers
         public ActionResult Login(string login, string senha)
         {
             var administrador = repositoryAdministrador.VerificarLoginSenha(login, senha);
-            if(administrador == null)
+            if (administrador == null)
             {
                 return RedirectToAction("Index");
             }
@@ -49,17 +49,17 @@ namespace View.Controllers
         {
             return View();
         }
-        
+
         [HttpPost]
         public ActionResult Cadastro(Cliente cliente)
         {
-			reositoryCliente.Cadastro(cliente);
+            reositoryCliente.Cadastro(cliente);
             return RedirectToAction("Index");
         }
 
         [HttpGet, Route("esquecisenha")]
         public ActionResult EsqueciSenha()
-        {   
+        {
             return View();
         }
 
@@ -69,6 +69,12 @@ namespace View.Controllers
             var alterado = repositoryAdministrador.Alterar(usuario);
             return RedirectToAction("Index");
         }
-			        						
+
+        [HttpGet]
+        public ActionResult Sair()
+        {
+            Session["Usuario"] = null;
+            return RedirectToAction("Index");
+        }
     }
 }
