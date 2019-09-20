@@ -90,21 +90,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\01.jpg" />
-    <Content Include="Content\02.jpg" />
-    <Content Include="Content\03.jpg" />
-    <Content Include="Content\04.jpg" />
-    <Content Include="Content\Blumenau.jpg" />
-    <Content Include="Content\garopaba.jpeg" />
-    <Content Include="Content\imagem\LOGO.png" />
-    <Content Include="Content\imagem\Logo123.png" />
-    <Content Include="Content\imagem\Logo2.png" />
-    <Content Include="Content\imagem\LUX Logo.png" />
-    <Content Include="Content\Lagoinha-do-Leste-Florianópolis.jpg" />
-    <Content Include="Content\porto belo.jpeg" />
-    <Content Include="Content\praia do rosa.jpg" />
-    <Content Include="Content\sao-francisco-do-sul-sc.jpeg" />
-    <Content Include="Content\Serra-rio-do-rastro.jpg" />
+    <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
+    <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
+    <Content Include="Content\imagem\Blumenau\Parque Ramiro Ruediguer.jpg" />
+    <Content Include="Content\imagem\Blumenau\Teatro Carlos Gomes.jpg" />
+    <Content Include="Content\imagem\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
+    <Content Include="Content\imagem\Florianopolis\Mercado-Florianopolis.jpg" />
+    <Content Include="Content\imagem\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
+    <Content Include="Content\imagem\PortoBelo\piscina-com-bar-molhado.jpg" />
+    <Content Include="Content\imagem\PortoBelo\ponta-do-estaleiro.jpg" />
+    <Content Include="Content\imagem\PortoBelo\univali-ecomuseum.jpg" />
+    <Content Include="Content\imagem\SaoFrancisco\museu-nacional-do-mar.jpg" />
+    <Content Include="Content\imagem\SaoFrancisco\praia-do-forte-tem-o.jpg" />
+    <Content Include="Content\imagem\SaoFrancisco\vista-de-dentro-do-barco.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
@@ -5542,6 +5544,7 @@
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Views\MelhorHotel\Index.cshtml" />
     <Content Include="Views\SobreNos\Index.cshtml" />
+    <Content Include="Views\Sugestao\Galeria.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5555,7 +5558,6 @@
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Hotel\" />
-    <Folder Include="Views\Sugestao\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
