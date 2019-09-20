@@ -44,7 +44,13 @@
 
     <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/css/pcoded-horizontal.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/pages/hover-effect/normalize.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/pages/hover-effect/set2.css">
     @RenderSection("css", false)
+
+  
+
 </head>
 <!-- Menu horizontal static layout -->
 
@@ -73,7 +79,7 @@
         <div class="pcoded-container">
 
             <!-- Menu header start -->
-            <nav class="navbar header-navbar pcoded-header" style="height: 150px;">
+            <nav class="navbar header-navbar pcoded-header" style="height: 92px;">
                 <div class="navbar-wrapper">
                     <div class="navbar-logo offset-lg-5">
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
@@ -83,7 +89,7 @@
                             <i class="ti-search"></i>
                         </a>
                         <a href="index.html">
-                            <img class="img-fluid mt-3" src="~/Content/imagem/Logo2.png" alt="Theme-Logo" />
+                            <img class="img-fluid mt-3" src="~/Content/imagem/Logo7.png" alt="Theme-Logo" />
                         </a>
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -94,25 +100,25 @@
 
             <!-- Menu header end -->
             <div class="pcoded-main-container">
-                <nav class="pcoded-navbar">
+                <nav class="pcoded-navbar" style="background-color: #0b7f8f;">
                     <div class="pcoded-inner-navbar">
                         <ul class="pcoded-item pcoded-left-item">
                             <li class="pcoded-hasmenu">
                                 <a href="javascript:void(0)">
-                                    <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>H</b></span>
-                                    <span class="pcoded-mtext">Melhores hotéis</span>
+                                    <span class="pcoded-micon" style="background-color: #303548;"><b>H</b></span>
+                                    <span class="pcoded-mtext" style="color: white;">Melhores hotéis</span>
                                 </a>
                             </li>
                             <li class="pcoded-hasmenu">
                                 <a href="@Url.Action("Galeria","Sugestao")">
-                                    <span class="pcoded-micon"><i class="ti-gift "></i><b>SD</b></span>
-                                    <span class="pcoded-mtext">Sugestões de destinos</span>
+                                    <span class="pcoded-micon" style="background-color: #303548;"><b>SD</b></span>
+                                    <span class="pcoded-mtext" style="color: white;">Sugestões de destinos</span>
                                 </a>
                             </li>
                             <li class="pcoded-hasmenu">
                                 <a href="@Url.Action("Index","SobreNos")">
-                                    <span class="pcoded-micon"><i class="ti-pencil-alt"></i><b>LUX</b></span>
-                                    <span class="pcoded-mtext">Sobre Nós</span>
+                                    <span class="pcoded-micon" style="background-color: #303548;"><b>LUX</b></span>
+                                    <span class="pcoded-mtext" style="color: white;">Sobre Nós</span>
                                 </a>
                             </li>
                         </ul>
