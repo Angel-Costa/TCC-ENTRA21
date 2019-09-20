@@ -5545,6 +5545,7 @@
     <Content Include="Views\MelhorHotel\Index.cshtml" />
     <Content Include="Views\SobreNos\Index.cshtml" />
     <Content Include="Views\Sugestao\Galeria.cshtml" />
+    <Content Include="Views\Destinos\Blumenau.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
