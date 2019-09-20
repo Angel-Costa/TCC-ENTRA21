@@ -53,6 +53,7 @@
     <div class="theme-loader">
         <div class="ball-scale">
             <div class='contain'>
+
                 <div class="ring"><div class="frame"></div></div>
                 <div class="ring"><div class="frame"></div></div>
                 <div class="ring"><div class="frame"></div></div>
@@ -63,6 +64,7 @@
                 <div class="ring"><div class="frame"></div></div>
                 <div class="ring"><div class="frame"></div></div>
                 <div class="ring"><div class="frame"></div></div>
+
             </div>
         </div>
     </div>
@@ -71,9 +73,9 @@
         <div class="pcoded-container">
 
             <!-- Menu header start -->
-            <nav class="navbar header-navbar pcoded-header">
+            <nav class="navbar header-navbar pcoded-header" style="height: 150px;">
                 <div class="navbar-wrapper">
-                    <div class="navbar-logo">
+                    <div class="navbar-logo offset-lg-5">
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
                             <i class="ti-menu"></i>
                         </a>
@@ -81,7 +83,7 @@
                             <i class="ti-search"></i>
                         </a>
                         <a href="index.html">
-                            <img class="img-fluid" src="~/Content/tema/assets/images/logo.png" alt="Theme-Logo" />
+                            <img class="img-fluid mt-3" src="~/Content/imagem/Logo2.png" alt="Theme-Logo" />
                         </a>
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -102,7 +104,7 @@
                                 </a>
                             </li>
                             <li class="pcoded-hasmenu">
-                                <a href="javascript:void(0)">
+                                <a href="@Url.Action("Galeria","Sugestao")">
                                     <span class="pcoded-micon"><i class="ti-gift "></i><b>SD</b></span>
                                     <span class="pcoded-mtext">Sugestões de destinos</span>
                                 </a>
@@ -225,6 +227,12 @@
     <script src="~/Content/tema/assets/js/demo-10.js"></script>
     <script src="~/Content/tema/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="~/Content/tema/assets/js/script.js"></script>
+
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/demo-12.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
     @RenderSection("scripts", false)
 </body>
 
