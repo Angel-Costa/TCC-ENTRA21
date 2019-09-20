@@ -5534,6 +5534,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Views\Sugestao\Galeria.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5549,7 +5550,6 @@
     <Folder Include="Views\Acomodacao\" />
     <Folder Include="Views\Hotel\" />
     <Folder Include="Views\SobreNos\" />
-    <Folder Include="Views\Sugestao\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">

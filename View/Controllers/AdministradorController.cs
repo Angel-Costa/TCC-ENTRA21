@@ -69,7 +69,7 @@ namespace View.Controllers
         [HttpGet, Route("perfil")]
         public ActionResult Perfil()
         {
-            var usuarioLogado = (Administrador) Session["Usuario"];
+            var usuarioLogado = (Administrador)Session["Usuario"];
 
             Administrador administrador = repository.ObterPeloId(usuarioLogado.Id);
             ViewBag.Administrador = administrador;
@@ -110,7 +110,7 @@ namespace View.Controllers
                 var uploadPath = Server.MapPath("~/Content/Uploads");
                 var nomeImagem = Path.GetFileName(arquivo.FileName);
 
-                string caminhoArquivo = Path.Combine(@uploadPath,nomeImagem);
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
 
                 arquivo.SaveAs(caminhoArquivo);
 
@@ -126,6 +126,8 @@ namespace View.Controllers
             ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
             return RedirectToAction("EditarPerfil");
         }
+
+        
 
     }
 }
