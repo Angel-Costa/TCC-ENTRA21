@@ -288,6 +288,10 @@
     <Content Include="Content\LoginImagem.png" />
     <Content Include="Content\man-user %281%29.png" />
     <Content Include="Content\man-user.png" />
+    <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
+    <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
+    <Content Include="Content\melhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
+    <Content Include="Content\melhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
     <Content Include="Content\OOO.png" />
     <Content Include="Content\PAISAGEM.png" />
     <Content Include="Content\pordosol.jpg" />
