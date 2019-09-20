@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Model;
+using Repository.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +13,14 @@ namespace ViewCliente.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult Blumenau()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis= hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
             return View();
         }
     }
