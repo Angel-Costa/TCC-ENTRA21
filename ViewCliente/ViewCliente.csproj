@@ -103,8 +103,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\Perfil\Index.css" />
+    <Content Include="Content\imagem\Administradores\Angel admin.jpg" />
     <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
     <Content Include="Content\imagem\Administradores\Nicollas.jpg" />
+    <Content Include="Content\imagem\Administradores\Paulo Admin.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
     <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
     <Content Include="Content\imagem\Blumenau\Parque Ramiro Ruediguer.jpg" />
