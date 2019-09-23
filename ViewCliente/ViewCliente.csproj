@@ -96,14 +96,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Blumenau\Blumenau.jpg" />
-    <Content Include="Content\Blumenau\Estadio do Sesi.jpg" />
-    <Content Include="Content\Blumenau\Parque Ramiro Ruediguer.jpg" />
-    <Content Include="Content\Blumenau\Teatro Carlos Gomes.jpg" />
     <Content Include="Content\css\Perfil\Index.css" />
-    <Content Include="Content\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
-    <Content Include="Content\Florianopolis\Mercado-Florianopolis.jpg" />
-    <Content Include="Content\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
     <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
     <Content Include="Content\imagem\Blumenau\Parque Ramiro Ruediguer.jpg" />
@@ -121,16 +115,6 @@
     <Content Include="Content\imagem\SaoFrancisco\museu-nacional-do-mar.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\praia-do-forte-tem-o.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\vista-de-dentro-do-barco.jpg" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
-    <Content Include="Content\melhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
-    <Content Include="Content\melhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
-    <Content Include="Content\PortoBelo\piscina-com-bar-molhado.jpg" />
-    <Content Include="Content\PortoBelo\ponta-do-estaleiro.jpg" />
-    <Content Include="Content\PortoBelo\univali-ecomuseum.jpg" />
-    <Content Include="Content\SaoFrancisco\museu-nacional-do-mar.jpg" />
-    <Content Include="Content\SaoFrancisco\praia-do-forte-tem-o.jpg" />
-    <Content Include="Content\SaoFrancisco\vista-de-dentro-do-barco.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
