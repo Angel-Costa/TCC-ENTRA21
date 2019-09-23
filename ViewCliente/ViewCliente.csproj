@@ -102,14 +102,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Blumenau\Blumenau.jpg" />
-    <Content Include="Content\Blumenau\Estadio do Sesi.jpg" />
-    <Content Include="Content\Blumenau\Parque Ramiro Ruediguer.jpg" />
-    <Content Include="Content\Blumenau\Teatro Carlos Gomes.jpg" />
     <Content Include="Content\css\Perfil\Index.css" />
-    <Content Include="Content\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
-    <Content Include="Content\Florianopolis\Mercado-Florianopolis.jpg" />
-    <Content Include="Content\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
+    <Content Include="Content\imagem\Administradores\Nicollas.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
     <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
     <Content Include="Content\imagem\Blumenau\Parque Ramiro Ruediguer.jpg" />
