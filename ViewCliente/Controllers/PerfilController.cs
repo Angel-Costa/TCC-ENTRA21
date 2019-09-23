@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace FileUpload.Controllers
+namespace ViewCliente.Controllers
 {
-    public class UploadController : Controller
+    public class PerfilController : Controller
     {
-        // GET: Upload
+        // GET: Perfil
         public ActionResult Index()
         {
             return View();

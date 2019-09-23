@@ -23,5 +23,10 @@ namespace ViewCliente.Controllers
             ViewBag.Hoteis = hoteis;
             return View();
         }
+
+        public ActionResult Perfil()
+        {
+            return View();
+        }
     }
 }
