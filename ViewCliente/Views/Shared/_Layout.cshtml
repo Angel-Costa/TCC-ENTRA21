@@ -88,17 +88,19 @@
             <!-- Menu header start -->
             <nav class="navbar header-navbar pcoded-header" style="height: 80px;">
                 <div class="navbar-wrapper">
-                    <a href="index.html">
-                        <i class="fa-fast-backward fa-user"></i>
-                    </a>
-                    <div class="navbar-logo offset-lg-5 float-right">
-                        <div class="pcoded-search">
-                            <span class="searchbar-toggle">  </span>
-                            <div class="pcoded-search-box ">
-                                <input type="text" placeholder="Busca..." style="color: white;">
-                                <span class="search-icon"><i class="ti-search" aria-hidden="true" style="color: white;"></i></span>
-                            </div>
-                        </div>
+                    <div class="navbar-logo offset-lg-5">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <a class="mobile-search morphsearch-search" href="#">
+                            <i class="ti-search"></i>
+                        </a>
+                        <a href="@Url.Action("Index","Home")">
+                            <img class="img-fluid mt-3" src="~/Content/imagem/Logo7.png" alt="Theme-Logo" />
+                        </a>
+                        <a class="mobile-options">
+                            <i class="ti-more"></i>
+                        </a>
                     </div>
                 </div>
             </nav>
