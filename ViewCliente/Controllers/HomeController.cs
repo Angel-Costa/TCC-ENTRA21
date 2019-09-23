@@ -23,5 +23,18 @@ namespace ViewCliente.Controllers
             ViewBag.Hoteis = hoteis;
             return View();
         }
+
+        public ActionResult Florianopolis()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
+
+        public ActionResult Perfil()
+        {
+            return View();
+        }
     }
 }

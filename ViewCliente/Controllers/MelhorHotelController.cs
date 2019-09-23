@@ -13,5 +13,17 @@ namespace ViewCliente.Controllers
         {
             return View();
         }
+
+
+        public ActionResult Teste()
+        {
+            return View();
+        }
+
+        public ActionResult Teste01()
+        {
+            return View();
+        }
+
     }
 }
