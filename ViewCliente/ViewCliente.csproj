@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdvancedStringBuilder, Version=0.1.0.0, Culture=neutral, PublicKeyToken=e818a2fc08933ddb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvancedStringBuilder.0.1.0\lib\net45\AdvancedStringBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -52,6 +55,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Buffers, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.0.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -96,14 +102,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Blumenau\Blumenau.jpg" />
-    <Content Include="Content\Blumenau\Estadio do Sesi.jpg" />
-    <Content Include="Content\Blumenau\Parque Ramiro Ruediguer.jpg" />
-    <Content Include="Content\Blumenau\Teatro Carlos Gomes.jpg" />
     <Content Include="Content\css\Perfil\Index.css" />
-    <Content Include="Content\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
-    <Content Include="Content\Florianopolis\Mercado-Florianopolis.jpg" />
-    <Content Include="Content\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\imagem\Administradores\Angel admin.jpg" />
+    <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
+    <Content Include="Content\imagem\Administradores\Nicollas.jpg" />
+    <Content Include="Content\imagem\Administradores\Paulo Admin.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
     <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
     <Content Include="Content\imagem\Blumenau\Parque Ramiro Ruediguer.jpg" />
@@ -111,16 +114,24 @@
     <Content Include="Content\imagem\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
     <Content Include="Content\imagem\Florianopolis\Mercado-Florianopolis.jpg" />
     <Content Include="Content\imagem\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\animal-aquarium-aquatic-2166927.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\logoferre.png" />
+    <Content Include="Content\imagem\ImagensPerfil\rXSpuOYw3H.jpg" />
+    <Content Include="Content\imagem\ImagensPerfil\source.gif" />
     <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\paisagem01.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\urubici.jpg" />
     <Content Include="Content\imagem\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\imagem\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\imagem\PortoBelo\univali-ecomuseum.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\museu-nacional-do-mar.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\praia-do-forte-tem-o.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\vista-de-dentro-do-barco.jpg" />
+    <Content Include="Content\js\Layout.js" />
+    <Content Include="Content\js\Teste01.js" />
     <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
     <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
     <Content Include="Content\melhoresHoteis\noite03.jpg" />
@@ -5574,6 +5585,8 @@
     <Content Include="Views\Sugestao\Galeria.cshtml" />
     <Content Include="Views\Home\Blumenau.cshtml" />
     <Content Include="Views\Perfil\Index.cshtml" />
+    <Content Include="Views\MelhorHotel\Teste.cshtml" />
+    <Content Include="Views\MelhorHotel\Teste01.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
