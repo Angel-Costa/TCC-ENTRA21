@@ -98,6 +98,7 @@
   <ItemGroup>
     <Content Include="Content\css\Perfil\Index.css" />
     <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
+    <Content Include="Content\imagem\Administradores\Nicollas.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
     <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
     <Content Include="Content\imagem\Blumenau\Parque Ramiro Ruediguer.jpg" />
@@ -5556,6 +5557,7 @@
     <Content Include="Views\Sugestao\Galeria.cshtml" />
     <Content Include="Views\Home\Blumenau.cshtml" />
     <Content Include="Views\Perfil\Index.cshtml" />
+    <Content Include="Views\Home\Florianopolis.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
