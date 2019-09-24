@@ -160,9 +160,9 @@
     <Content Include="Content\js\conhecalux.js" />
     <Content Include="Content\js\Layout.js" />
     <Content Include="Content\js\Teste01.js" />
+    <Content Include="Content\melhoresHoteis\dallas.jpg" />
+    <Content Include="Content\melhoresHoteis\images-7.jpg" />
     <Content Include="Content\melhoresHoteis\Opala.jpg" />
-    <Content Include="Content\melhoresHoteis\Dallas.jpg" />
-    <Content Include="Content\melhoresHoteis\Romance.jpg" />
     <Content Include="Content\melhoresHoteis\noite03.jpg" />
     <Content Include="Content\melhoresHoteis\Oi.jpg" />
     <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
