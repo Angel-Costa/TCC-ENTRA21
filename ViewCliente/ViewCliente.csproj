@@ -134,8 +134,6 @@
     <Content Include="Content\imagem\Home\Scrapbook-de-viagem-Album-de-viagem.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\animal-aquarium-aquatic-2166927.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\logoferre.png" />
-    <Content Include="Content\imagem\ImagensPerfil\rXSpuOYw3H.jpg" />
-    <Content Include="Content\imagem\ImagensPerfil\source.gif" />
     <Content Include="Content\imagem\MelhoresHoteis\LuxDefinitivo.png" />
     <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
@@ -5619,6 +5617,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\imagem\ImagensPerfil\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />

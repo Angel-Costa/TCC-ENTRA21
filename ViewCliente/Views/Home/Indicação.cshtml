@@ -3,6 +3,14 @@
     ViewBag.Title = "Indicação";
 }
 
+<script>
+
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Enviado com Sucesso!";
+    }
+</script>
+
+
 
 
 <h4><center><strong><i>Bem vindo Viagante.</i></strong></center> </h4>
@@ -24,5 +32,9 @@
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 
-<button class="btn btn-outline-dark col-4 offset-4">Enviar</button>
+<div class="alert alert-success">
+    
+<button onclick="myFunction()" class="btn btn-outline-dark col-4 offset-4">Enviar</button>
+<p id="demo"></p>
 
+</div>
