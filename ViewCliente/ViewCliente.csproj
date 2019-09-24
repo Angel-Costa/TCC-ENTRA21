@@ -142,8 +142,6 @@
     <Content Include="Content\imagem\Logo\opcao4.png" />
     <Content Include="Content\imagem\MelhoresHoteis\animal-aquarium-aquatic-2166927.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\logoferre.png" />
-    <Content Include="Content\imagem\ImagensPerfil\rXSpuOYw3H.jpg" />
-    <Content Include="Content\imagem\ImagensPerfil\source.gif" />
     <Content Include="Content\imagem\MelhoresHoteis\LuxDefinitivo.png" />
     <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
@@ -168,9 +166,9 @@
     <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
     <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
     <Content Include="Content\js\Teste01.js" />
+    <Content Include="Content\melhoresHoteis\dallas.jpg" />
+    <Content Include="Content\melhoresHoteis\images-7.jpg" />
     <Content Include="Content\melhoresHoteis\Opala.jpg" />
-    <Content Include="Content\melhoresHoteis\Dallas.jpg" />
-    <Content Include="Content\melhoresHoteis\Romance.jpg" />
     <Content Include="Content\melhoresHoteis\noite03.jpg" />
     <Content Include="Content\melhoresHoteis\Oi.jpg" />
     <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
@@ -5630,6 +5628,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\imagem\ImagensPerfil\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />
