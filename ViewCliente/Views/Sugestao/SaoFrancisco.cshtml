@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "SaoFrancisco";
+}
+
+<h2>São Francisco</h2>
+
+<div class="row">
+    <div class="col-lg-12 col-xl-6">
+        <div class="card mr-5">
+            <div class="card-body ">
+                <div>
+                    <img src="~/Content/imagem/SaoFrancisco/museu-nacional-do-mar.jpg" alt="museu" />
+                    <p>
+                        Museu Nacional de São Francisco
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@foreach (Model.Hotel hotel in ViewBag.Hoteis)
+{
+    if (hotel.Cidade == "São Francisco")
+    {
+        <div class="row">
+            <div class="col-lg-12 col-xl-6">
+                <div class="card mr-5">
+                    <div class="card-body card-blue">
+                        <div>
+                            <img src="~/Content/imagem/MelhoresHoteis/shangri-la-hotel-tailandia-hoteis-kangaroo-tours (8).jpg" alt="" />
+                        </div>
+                        <div class="sub-title">Hotel: @hotel.Nome</div>
+                        <div class="sub-title">Valor por Noite: @hotel.ValorNoite</div>
+                        <div class="sub-title">Bairro: @hotel.Bairro</div>
+                        <div class="sub-title">Rua: @hotel.Rua</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}

@@ -21,13 +21,7 @@ namespace ViewCliente.Controllers
             return View();
         }
 
-        public ActionResult Blumenau()
-        {
-            HotelRepository hotelRepository = new HotelRepository();
-            List<Hotel> hoteis= hotelRepository.ObterTodos();
-            ViewBag.Hoteis = hoteis;
-            return View();
-        }
+        
 
         public ActionResult Florianopolis()
         {

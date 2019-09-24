@@ -102,6 +102,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\css\ConhecaSite\conhecalux.css" />
     <Content Include="Content\css\ConhecaSite\conhecasite.css" />
     <Content Include="Content\css\Perfil\Index.css" />
@@ -147,6 +151,7 @@
     <Content Include="Content\imagem\MelhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\urubici.jpg" />
+    <Content Include="Content\imagem\PortoBelo\520352301-MOB.jpg" />
     <Content Include="Content\imagem\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\imagem\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\imagem\PortoBelo\univali-ecomuseum.jpg" />
@@ -157,12 +162,13 @@
     <Content Include="Content\js\conhecalux.js" />
     <Content Include="Content\js\Layout.js" />
     <Content Include="Content\js\Teste01.js" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
+    <Content Include="Content\melhoresHoteis\Opala.jpg" />
+    <Content Include="Content\melhoresHoteis\Dallas.jpg" />
+    <Content Include="Content\melhoresHoteis\Romance.jpg" />
     <Content Include="Content\melhoresHoteis\noite03.jpg" />
     <Content Include="Content\melhoresHoteis\Oi.jpg" />
-    <Content Include="Content\melhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
-    <Content Include="Content\melhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
+    <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
+    <Content Include="Content\melhoresHoteis\LaMassion.jpg" />
     <Content Include="Content\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\PortoBelo\univali-ecomuseum.jpg" />
@@ -5607,13 +5613,16 @@
     <Content Include="Views\MelhorHotel\Index.cshtml" />
     <Content Include="Views\SobreNos\Index.cshtml" />
     <Content Include="Views\Sugestao\Galeria.cshtml" />
-    <Content Include="Views\Home\Blumenau.cshtml" />
+    <Content Include="Views\Sugestao\Blumenau.cshtml" />
     <Content Include="Views\Perfil\Index.cshtml" />
     <Content Include="Views\MelhorHotel\Teste.cshtml" />
     <Content Include="Views\MelhorHotel\Teste01.cshtml" />
     <Content Include="Views\Home\Indicação.cshtml" />
     <Content Include="Views\MelhorHotel\ConhecaSite.cshtml" />
     <Content Include="Views\MelhorHotel\ConhecaLux.cshtml" />
+    <Content Include="Views\Sugestao\Florianopolis.cshtml" />
+    <Content Include="Views\Sugestao\SaoFrancisco.cshtml" />
+    <Content Include="Views\Sugestao\PortoBelo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5622,7 +5631,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />

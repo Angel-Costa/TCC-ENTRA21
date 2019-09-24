@@ -66,5 +66,37 @@ namespace View.Controllers
             var apagou = repository.Apagar(id);
             return RedirectToAction("Index");
         }
+
+        public ActionResult Blumenau()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodosPelaCidade("Blumenau");
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
+
+        public ActionResult Florianopolis()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
+
+        public ActionResult SaoFrancisco()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
+
+        public ActionResult PortoBelo()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
     }
 }
