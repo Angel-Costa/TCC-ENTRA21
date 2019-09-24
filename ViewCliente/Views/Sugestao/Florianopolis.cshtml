@@ -1,0 +1,54 @@
+﻿
+
+@{
+    ViewBag.Title = "Florianopolis";
+}
+
+<h2>Florianopolis</h2>
+
+<div class="row">
+    <div class="col-lg-12 col-xl-6">
+        <div class="card mr-5">
+            <div class="card-body">
+                <div>
+                    <img src="~/Content/imagem/Florianopolis/Ponte Hercilio Luz.jpg" alt="Ponte Hercílio Luz" />
+                    <p>
+                        É a maior ponte pênsil do Brasil e possui o 132º maior vão pênsil do mundo.
+                        Teve sua construção iniciada em 14 de novembro de 1922 e foi inaugurada em 13 de maio de 1926.
+                        A ponte tem 821,005 m de comprimento total, sendo formada pelos viadutos de acesso do continente
+                        , com 222,504 m, da ilha, com 259,08 m, e pelo vão central pênsil, que tem 339,471 m de extensão.
+
+                        A estrutura de aço tem o peso aproximado de cinco mil toneladas,
+                        e os alicerces e pilares consumiram 14 250 m³ de concreto. As duas torres principais têm 74,21 m de altura.
+                        O vão pênsil tem uma altura média de 30,86 m em relação ao nível do mar
+                        e a carga total nas cadeias de barras de olhal é de 4 000 toneladas-força.
+                        O mirante situado à cabeceira insular proporciona uma das mais belas vistas panorâmicas do centro da cidade.
+                        Na área também estão situados o museu da Ponte e o Parque da Luz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@foreach (Model.Hotel hotel in ViewBag.Hoteis)
+{
+    if (hotel.Cidade == "Floranopolis")
+    {
+        <div class="row">
+            <div class="col-lg-12 col-xl-6">
+                <div class="card mr-3">
+                    <div class="card-body ">
+                        <div>
+                            <img src="~/Content/imagem/MelhoresHoteis/melhores-hoteis-na-tailandia-premiados-code.jpg" alt="Alternate Text" />
+                        </div>
+                        <div class="sub-title">Hotel: @hotel.Nome</div>
+                        <div class="sub-title">Valor por Noite: @hotel.ValorNoite</div>
+                        <div class="sub-title">Bairro: @hotel.Bairro</div>
+                        <div class="sub-title">Rua: @hotel.Rua</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}

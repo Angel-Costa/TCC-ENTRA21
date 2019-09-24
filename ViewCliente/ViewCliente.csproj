@@ -5604,13 +5604,14 @@
     <Content Include="Views\MelhorHotel\Index.cshtml" />
     <Content Include="Views\SobreNos\Index.cshtml" />
     <Content Include="Views\Sugestao\Galeria.cshtml" />
-    <Content Include="Views\Home\Blumenau.cshtml" />
+    <Content Include="Views\Sugestao\Blumenau.cshtml" />
     <Content Include="Views\Perfil\Index.cshtml" />
     <Content Include="Views\MelhorHotel\Teste.cshtml" />
     <Content Include="Views\MelhorHotel\Teste01.cshtml" />
     <Content Include="Views\Home\Indicação.cshtml" />
     <Content Include="Views\MelhorHotel\ConhecaSite.cshtml" />
     <Content Include="Views\MelhorHotel\ConhecaLux.cshtml" />
+    <Content Include="Views\Sugestao\Florianopolis.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
