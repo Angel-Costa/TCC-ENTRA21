@@ -15,12 +15,12 @@ namespace ViewCliente.Controllers
         }
 
 
-        public ActionResult Teste()
+        public ActionResult ConhecaSite()
         {
             return View();
         }
 
-        public ActionResult Teste01()
+        public ActionResult ConhecaLux()
         {
             return View();
         }
