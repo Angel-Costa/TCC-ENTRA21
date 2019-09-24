@@ -16,6 +16,11 @@ namespace ViewCliente.Controllers
             return View();
         }
 
+        public ActionResult Indicação()
+        {
+            return View();
+        }
+
         public ActionResult Blumenau()
         {
             HotelRepository hotelRepository = new HotelRepository();

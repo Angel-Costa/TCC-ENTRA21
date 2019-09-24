@@ -114,6 +114,22 @@
     <Content Include="Content\imagem\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
     <Content Include="Content\imagem\Florianopolis\Mercado-Florianopolis.jpg" />
     <Content Include="Content\imagem\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\imagem\Home\312c4515169c802c40ec992495033fd6.jpg" />
+    <Content Include="Content\imagem\Home\3d01bd15837ac4d49a472b3350c5fe1a.jpg" />
+    <Content Include="Content\imagem\Home\70f71cc8ac254c006b8fa006f2a182b4.jpg" />
+    <Content Include="Content\imagem\Home\82ddfc1f4f0e24e1d4496d6f85c74fd6.jpg" />
+    <Content Include="Content\imagem\Home\album-scrapbook-nossas-viagens-2-lua-de-mel.jpg" />
+    <Content Include="Content\imagem\Home\avidaeumaviagem.jpg" />
+    <Content Include="Content\imagem\Home\b95e69e310bccb4f935693196be8dc9510db753b.jpg" />
+    <Content Include="Content\imagem\Home\como-fazer-um-diario-de-viagem-travel-journal-3.jpg" />
+    <Content Include="Content\imagem\Home\frases-para-planejar-uma-viagem.jpg" />
+    <Content Include="Content\imagem\Home\fundo-do-curso-com-a-mao-apontando-para-o-mapa_23-2147607759.jpg" />
+    <Content Include="Content\imagem\Home\ideias-cofres-para-viagem.jpg" />
+    <Content Include="Content\imagem\Home\images.jpg" />
+    <Content Include="Content\imagem\Home\mapa.jpg" />
+    <Content Include="Content\imagem\Home\monte-um-scrapbook-dos-seus-melhores-momentos.jpg" />
+    <Content Include="Content\imagem\Home\Sabrina-Mix-festa-mundo9.jpg" />
+    <Content Include="Content\imagem\Home\Scrapbook-de-viagem-Album-de-viagem.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\animal-aquarium-aquatic-2166927.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\logoferre.png" />
     <Content Include="Content\imagem\ImagensPerfil\rXSpuOYw3H.jpg" />
@@ -130,6 +146,7 @@
     <Content Include="Content\imagem\SaoFrancisco\museu-nacional-do-mar.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\praia-do-forte-tem-o.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\vista-de-dentro-do-barco.jpg" />
+    <Content Include="Content\js\Indicação\Enviado.js" />
     <Content Include="Content\js\Layout.js" />
     <Content Include="Content\js\Teste01.js" />
     <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
@@ -5587,6 +5604,7 @@
     <Content Include="Views\Perfil\Index.cshtml" />
     <Content Include="Views\MelhorHotel\Teste.cshtml" />
     <Content Include="Views\MelhorHotel\Teste01.cshtml" />
+    <Content Include="Views\Home\Indicação.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
