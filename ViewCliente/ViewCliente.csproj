@@ -136,6 +136,10 @@
     <Content Include="Content\imagem\Home\monte-um-scrapbook-dos-seus-melhores-momentos.jpg" />
     <Content Include="Content\imagem\Home\Sabrina-Mix-festa-mundo9.jpg" />
     <Content Include="Content\imagem\Home\Scrapbook-de-viagem-Album-de-viagem.jpg" />
+    <Content Include="Content\imagem\Logo\opcao 5.png" />
+    <Content Include="Content\imagem\Logo\opcao1.png" />
+    <Content Include="Content\imagem\Logo\opcao2.png" />
+    <Content Include="Content\imagem\Logo\opcao4.png" />
     <Content Include="Content\imagem\MelhoresHoteis\animal-aquarium-aquatic-2166927.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\logoferre.png" />
     <Content Include="Content\imagem\ImagensPerfil\rXSpuOYw3H.jpg" />
@@ -158,9 +162,9 @@
     <Content Include="Content\js\conhecalux.js" />
     <Content Include="Content\js\Layout.js" />
     <Content Include="Content\js\Teste01.js" />
+    <Content Include="Content\melhoresHoteis\dallas.jpg" />
+    <Content Include="Content\melhoresHoteis\images-7.jpg" />
     <Content Include="Content\melhoresHoteis\Opala.jpg" />
-    <Content Include="Content\melhoresHoteis\Dallas.jpg" />
-    <Content Include="Content\melhoresHoteis\Romance.jpg" />
     <Content Include="Content\melhoresHoteis\noite03.jpg" />
     <Content Include="Content\melhoresHoteis\Oi.jpg" />
     <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
