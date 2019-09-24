@@ -143,6 +143,7 @@
     <Content Include="Content\imagem\MelhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\urubici.jpg" />
+    <Content Include="Content\imagem\PortoBelo\520352301-MOB.jpg" />
     <Content Include="Content\imagem\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\imagem\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\imagem\PortoBelo\univali-ecomuseum.jpg" />
@@ -5611,6 +5612,8 @@
     <Content Include="Views\MelhorHotel\ConhecaSite.cshtml" />
     <Content Include="Views\MelhorHotel\ConhecaLux.cshtml" />
     <Content Include="Views\Sugestao\Florianopolis.cshtml" />
+    <Content Include="Views\Sugestao\SaoFrancisco.cshtml" />
+    <Content Include="Views\Sugestao\PortoBelo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
