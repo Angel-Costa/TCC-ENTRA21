@@ -102,6 +102,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\css\ConhecaSite\conhecalux.css" />
     <Content Include="Content\css\ConhecaSite\conhecasite.css" />
     <Content Include="Content\css\Perfil\Index.css" />
@@ -5623,7 +5627,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />

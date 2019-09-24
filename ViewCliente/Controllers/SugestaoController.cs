@@ -70,7 +70,7 @@ namespace View.Controllers
         public ActionResult Blumenau()
         {
             HotelRepository hotelRepository = new HotelRepository();
-            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            List<Hotel> hoteis = hotelRepository.ObterTodosPelaCidade("Blumenau");
             ViewBag.Hoteis = hoteis;
             return View();
         }
