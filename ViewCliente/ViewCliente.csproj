@@ -153,12 +153,13 @@
     <Content Include="Content\js\conhecalux.js" />
     <Content Include="Content\js\Layout.js" />
     <Content Include="Content\js\Teste01.js" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
+    <Content Include="Content\melhoresHoteis\Opala.jpg" />
+    <Content Include="Content\melhoresHoteis\Dallas.jpg" />
+    <Content Include="Content\melhoresHoteis\Romance.jpg" />
     <Content Include="Content\melhoresHoteis\noite03.jpg" />
     <Content Include="Content\melhoresHoteis\Oi.jpg" />
-    <Content Include="Content\melhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
-    <Content Include="Content\melhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
+    <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
+    <Content Include="Content\melhoresHoteis\LaMassion.jpg" />
     <Content Include="Content\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\PortoBelo\univali-ecomuseum.jpg" />
