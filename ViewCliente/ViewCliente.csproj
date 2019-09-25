@@ -110,7 +110,10 @@
     <Content Include="Content\css\ConhecaSite\conhecasite.css" />
     <Content Include="Content\css\Perfil\Index.css" />
     <Content Include="Content\imagem\Administradores\Angel admin.jpg" />
+    <Content Include="Content\imagem\CapaPerfil\lua.jpg" />
+    <Content Include="Content\imagem\UsuarioPerfil\LeeNicollas.jpg" />
     <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
+    <Content Include="Content\imagem\Administradores\Naiara.adm.png" />
     <Content Include="Content\imagem\Administradores\Nicollas.jpg" />
     <Content Include="Content\imagem\Administradores\Paulo Admin.jpg" />
     <Content Include="Content\imagem\Balneario\balneario.jpg" />
@@ -5634,7 +5637,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\imagem\ImagensPerfil\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />
