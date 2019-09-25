@@ -163,6 +163,9 @@
     <Content Include="Content\imagem\SobreNos\Sobrenos05.jpg" />
     <Content Include="Content\js\Indicação\Enviado.js" />
     <Content Include="Content\js\Layout.js" />
+    <Content Include="Content\melhoresHoteis\0004_HotelCosteiro_fotoHome1.jpg" />
+    <Content Include="Content\melhoresHoteis\home-slide-05.jpg" />
+    <Content Include="Content\melhoresHoteis\images %281%29.jpg" />
     <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
     <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
     <Content Include="Content\js\Teste01.js" />
@@ -173,6 +176,7 @@
     <Content Include="Content\melhoresHoteis\Oi.jpg" />
     <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
     <Content Include="Content\melhoresHoteis\LaMassion.jpg" />
+    <Content Include="Content\melhoresHoteis\PortoZarpaHotel-PraiadoForte-LitoralNorte.jpg" />
     <Content Include="Content\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\PortoBelo\univali-ecomuseum.jpg" />
@@ -5628,7 +5632,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\imagem\ImagensPerfil\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
