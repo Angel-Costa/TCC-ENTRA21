@@ -14,5 +14,10 @@ namespace ViewCliente.Controllers
         {
             return View();
         }
+
+        public ActionResult Editar()
+        {
+            return View();
+        }
     }
 }

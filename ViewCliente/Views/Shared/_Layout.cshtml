@@ -57,7 +57,14 @@
     <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/jquery-bar-rating/css/css-stars.css">
     <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/jquery-bar-rating/css/fontawesome-stars-o.css">
 
-    
+
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/pages/advance-elements/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/bootstrap-daterangepicker/css/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/datedropper/css/datedropper.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+
+
+
 
     @RenderSection("css", false)
 
@@ -270,7 +277,22 @@
     <script type="text/javascript" src="~/Content/tema/bower_components/jquery-bar-rating/js/jquery.barrating.js"></script>
     <script type="text/javascript" src="~/Content/tema/assets/js/rating.js"></script>
 
-    @RenderSection("scripts", false)
+    <!-- Date js -->
+    <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap-daterangepicker/js/daterangepicker.js"></script>
+    <script type="text/javascript" src="~/Content/tema/bower_components/datedropper/js/datedropper.min.js"></script>
+
+    <script type="text/javascript" src="~/Content/tema/assets/pages/advance-elements/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="~/Content/tema/assets/pages/advance-elements/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="~/Content/tema/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+
+
+    @RenderSection("js", false)
 </body>
 
 </html>
