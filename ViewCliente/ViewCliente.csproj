@@ -113,6 +113,7 @@
     <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
     <Content Include="Content\imagem\Administradores\Nicollas.jpg" />
     <Content Include="Content\imagem\Administradores\Paulo Admin.jpg" />
+    <Content Include="Content\imagem\Balneario\balneario.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
     <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
     <Content Include="Content\imagem\Blumenau\Parque Ramiro Ruediguer.jpg" />
@@ -120,6 +121,7 @@
     <Content Include="Content\imagem\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
     <Content Include="Content\imagem\Florianopolis\Mercado-Florianopolis.jpg" />
     <Content Include="Content\imagem\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\imagem\Garopaba\garuBanner.jpg" />
     <Content Include="Content\imagem\Home\312c4515169c802c40ec992495033fd6.jpg" />
     <Content Include="Content\imagem\Home\3d01bd15837ac4d49a472b3350c5fe1a.jpg" />
     <Content Include="Content\imagem\Home\70f71cc8ac254c006b8fa006f2a182b4.jpg" />
@@ -153,9 +155,11 @@
     <Content Include="Content\imagem\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\imagem\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\imagem\PortoBelo\univali-ecomuseum.jpg" />
+    <Content Include="Content\imagem\Praia do Rosa\praia.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\museu-nacional-do-mar.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\praia-do-forte-tem-o.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\vista-de-dentro-do-barco.jpg" />
+    <Content Include="Content\imagem\Serra do Rio do rastro\serra.jpg" />
     <Content Include="Content\imagem\SobreNos\Sobrenos.jpg" />
     <Content Include="Content\imagem\SobreNos\SobreNos02.jpg" />
     <Content Include="Content\imagem\SobreNos\Sobrenos03.jpg" />
@@ -165,15 +169,13 @@
     <Content Include="Content\js\Layout.js" />
     <Content Include="Content\melhoresHoteis\0004_HotelCosteiro_fotoHome1.jpg" />
     <Content Include="Content\melhoresHoteis\home-slide-05.jpg" />
-    <Content Include="Content\melhoresHoteis\images %281%29.jpg" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
+    <Content Include="Content\melhoresHoteis\hoteis-brasileiros-1.jpg" />
     <Content Include="Content\js\Teste01.js" />
     <Content Include="Content\melhoresHoteis\dallas.jpg" />
     <Content Include="Content\melhoresHoteis\images-7.jpg" />
+    <Content Include="Content\melhoresHoteis\melhores-hoteis-de-luxo-do-brasil-1.jpg" />
     <Content Include="Content\melhoresHoteis\Opala.jpg" />
     <Content Include="Content\melhoresHoteis\noite03.jpg" />
-    <Content Include="Content\melhoresHoteis\Oi.jpg" />
     <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
     <Content Include="Content\melhoresHoteis\LaMassion.jpg" />
     <Content Include="Content\melhoresHoteis\PortoZarpaHotel-PraiadoForte-LitoralNorte.jpg" />
