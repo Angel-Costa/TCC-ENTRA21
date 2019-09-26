@@ -6,36 +6,44 @@
 <h4>Cadastro de Sugestões</h4>
 
 <form action="@Url.Action("Cadastro de Sugestões")" method="post">
+    <div>
+        <div class="row">
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Nome</h4>
+                <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite seu nome" 
+                       maxlength="50" autocomplete="off" required />
+            </div>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Descrição</h4>
+                <input id="campo-descricao" class="form-control" type="text" placeholder="Faça aqui sua descrição" 
+                       maxlength="100" autocomplete="off" required />
+            </div>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Ponto Turístico</h4>
+                <input id="campo-ponto-turistico" class="form-control" type="text" placeholder="Descreva pontos turísticos"
+                       maxlength="100" autocomplete="off" required />
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Nome</h4>
-            <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite seu nome" maxlength="50" autocomplete="off" required/>
+        <div class="row">
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Local</h4>
+                <input id="campo-local" class="form-control" type="text" placeholder="Digite o local" 
+                       autocomplete="off" required />
+            </div>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Cidade</h4>
+                <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" 
+                       autocomplete="off" required />
+            </div>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Endereço</h4>
+                <input id="campo-endereco" class="form-control" type="text" placeholder="Digite o endereço" 
+                       autocomplete="off" required />
+            </div>
         </div>
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Descrição</h4>
-            <input id="campo-descricao" class="form-control" type="text" placeholder="Faça aqui sua descrição" maxlength="100" autocomplete="off" required/>
-        </div>
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Ponto Turístico</h4>
-            <input id="campo-ponto-turistico" class="form-control" type="text" placeholder="Descreva pontos turísticos" maxlength="100" autocomplete="off" required/>
-        </div>
+        <button class="btn btn-outline-success float-right" type="submit">
+            <i class="fas fa-save"></i> Salvar
+        </button>
     </div>
-
-    <div class="row">
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Local</h4>
-            <input id="campo-local" class="form-control" type="text" placeholder="Digite o local" autocomplete="off" required/>
-        </div>
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Cidade</h4>
-            <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade" autocomplete="off" required/>
-        </div>
-        <div class="col-sm-12 col-xl-4 m-b-30">
-            <h4 class="sub-title">Endereço</h4>
-            <input id="campo-endereco" class="form-control" type="text" placeholder="Digite o endereço" autocomplete="off" required/>
-        </div>
-    </div>
-
-
 </form>

@@ -274,8 +274,8 @@
     <Content Include="Content\imagem\Logo do projeto\opcao2.png" />
     <Content Include="Content\imagem\Logo do projeto\opcao3.png" />
     <Content Include="Content\imagem\Logo do projeto\opcao4.png" />
-    <Content Include="Content\imagem\Tela de login\KombiLaranjaTraz.jpg" />
-    <Content Include="Content\imagem\Tela de login\man-user %281%29.png" />
+    <Content Include="Content\imagem\TeladeLogin\KombiLaranjaTraz.jpg" />
+    <Content Include="Content\imagem\TeladeLogin\man-user %281%29.png" />
     <Content Include="Content\tema\assets\css\component.css" />
     <Content Include="Content\tema\assets\css\font-awesome.min.css" />
     <Content Include="Content\tema\assets\css\ionicons.css" />

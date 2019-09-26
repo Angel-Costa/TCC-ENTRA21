@@ -102,16 +102,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\css\ConhecaSite\conhecalux.css" />
     <Content Include="Content\css\ConhecaSite\conhecasite.css" />
     <Content Include="Content\css\Perfil\Index.css" />
     <Content Include="Content\css\Teste\teste.css" />
     <Content Include="Content\imagem\Administradores\Angel admin.jpg" />
     <Content Include="Content\imagem\CapaPerfil\lua.jpg" />
+    <Content Include="Content\imagem\Nova Trento\Nova Trento.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\1.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\2.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\3.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\4.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\7.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\5.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\8.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\9.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\10.jpg" />
     <Content Include="Content\imagem\UsuarioPerfil\LeeNicollas.jpg" />
     <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
     <Content Include="Content\imagem\Administradores\Naiara.adm.png" />
@@ -10997,6 +11003,9 @@
     <Content Include="Views\Home\Indicação.cshtml" />
     <Content Include="Views\Perfil\Editar.cshtml" />
     <Content Include="Scripts\style.scss" />
+    <Content Include="Views\Sugestao\Florianopolis.cshtml" />
+    <Content Include="Views\Sugestao\PortoBelo.cshtml" />
+    <Content Include="Views\Sugestao\SaoFrancisco.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -11005,6 +11014,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="Content\Uploads\" />
