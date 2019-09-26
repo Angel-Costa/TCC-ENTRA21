@@ -28,5 +28,6 @@ namespace Model
         [Column("endereco")]
         public string Endereco { get; set; }
 
+        //<add name="DefaultConnection" connectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\65982\Desktop\GitGit\TCC-ENTRA21\View\App_Data\Database.mdf;Integrated Security=True;Connect Timeout=30" providerName="System.Data.SqlClient" />
     }
 }
