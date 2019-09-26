@@ -112,6 +112,7 @@
     <Content Include="Content\css\Teste\teste.css" />
     <Content Include="Content\imagem\Administradores\Angel admin.jpg" />
     <Content Include="Content\imagem\CapaPerfil\lua.jpg" />
+    <Content Include="Content\imagem\Home\icons8-sugestão-32.png" />
     <Content Include="Content\imagem\UsuarioPerfil\LeeNicollas.jpg" />
     <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
     <Content Include="Content\imagem\Administradores\Naiara.adm.png" />
