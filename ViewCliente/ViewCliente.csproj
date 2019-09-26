@@ -113,7 +113,11 @@
     <Content Include="Content\imagem\Home\sugestoes\2.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\3.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\4.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\7.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\5.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\8.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\9.jpg" />
+    <Content Include="Content\imagem\Home\sugestoes\10.jpg" />
     <Content Include="Content\imagem\UsuarioPerfil\LeeNicollas.jpg" />
     <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
     <Content Include="Content\imagem\Administradores\Naiara.adm.png" />
