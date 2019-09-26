@@ -1,0 +1,190 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+}
+
+@section css{
+
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/pages/advance-elements/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/bootstrap-daterangepicker/css/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/datedropper/css/datedropper.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+}
+
+
+<div class="card bg-dark text-white">
+
+    <div class="page-body">
+        <!--profile cover start-->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cover-profile">
+                    <div class="profile-bg-img">
+
+                        <img class="profile-bg-img img-responsive" src="~/Content/imagem/CapaPerfil/lua.jpg" alt="Imagem Redonda" width=400 height=400>
+
+
+                        <div class="card-block user-info">
+                            <div class="col-md-12">
+                                <div class="media-left">
+                                    <a href="#" class="profile-image">
+                                        <img class="user-img img-circle" src="~/Content/imagem/UsuarioPerfil/LeeNicollas.jpg" alt="user-img">
+                                    </a>
+                                </div>
+                                <div class="media-body row">
+                                    <div class="col-lg-12">
+                                        <div class="user-title">
+                                            <h2>Nícollas R. Lee</h2>
+                                            <span class="text-white">Programador</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="pull-right cover-btn">
+                                            <a href="" type="button" class="btn btn-primary"><i class="icofont icofont-ui-messaging"></i> Mensagem</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--profile cover end-->
+<div class="row">
+    <div class="col-lg-12">
+        <!-- tab header start -->
+        <div class="tab-header card col-lg-12">
+            <ul class="nav nav-tabs md-tabs tab-timeline" role="tablist" id="mytab">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#personal" role="tab">Informações Pessoais</a>
+                    <div class="slide"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- tab header end -->
+        <!-- tab content start -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="personal" role="tabpanel">
+                <div class="card">
+                    <div class="edit-info">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="general-info">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
+                                                                <input type="text" class="form-control" placeholder="Nome Completo">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <input id="dropper-default" class="form-control" type="text" placeholder="Data de aniversário" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <select id="hello-single" class="form-control">
+                                                                <option value="">Status</option>
+                                                                <option value="married">Casado</option>
+                                                                <option value="unmarried">Solteiro</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><i class="icofont icofont-location-pin"></i></span>
+                                                                <input type="text" class="form-control" placeholder="Localização">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- end of table col-lg-6 -->
+                                        <div class="col-lg-6">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><i class="icofont icofont-mobile-phone"></i></span>
+                                                                <input type="text" class="form-control" placeholder="Número">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- end of table col-lg-6 -->
+                                    </div>
+                                    <!-- end of row -->
+                                    <div class="text-center">
+                                        <a href="@Url.Action("Index","Perfil")" class="btn btn-primary waves-effect waves-light m-r-20">Salvar</a>
+                                        <a href="@Url.Action("Index","Perfil")" class="btn btn-default waves-effect">Cancelar</a>
+                                    </div>
+                                </div>
+                                <!-- end of edit info -->
+                            </div>
+                            <!-- end of col-lg-12 -->
+                        </div>
+                        <!-- end of row -->
+                    </div>
+                </div>
+            </div>
+            <!-- end of edit-info -->
+        </div>
+    </div>
+    <!-- end of card-block -->
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+
+            <div class="card-block user-desc">
+                <div class="view-desc">
+                    <p>
+                        Meu lugar para sonhar.
+
+                        Queria poder acordar de manhã ouvindo o som das árvores balançando, pássaros cantando, em um lugar onde não se chega andando. Longe da agitação , do barulho das pessoas brigando. E então abrir a janela e sentir o sol que quase não aparece em meio as nuvens , o vento indo e vindo , apenas balançando alguns fios de cabelo trazendo apenas tranquilidade e pensamentos bons acompanhado de uma bela xícara de café. Pode até parecer clichê mas é o lugar onde eu sonho viver , é o meu lugar para sonhar.
+                    </p>
+                </div>
+                <div class="edit-desc">
+                    <div class="text-center">
+                        <a href="@Url.Action("Index","Perfil")" class="btn btn-primary waves-effect waves-light m-r-20 m-t-20">Salvar</a>
+                        <a href="@Url.Action("Index","Perfil")" class="btn btn-default waves-effect m-t-20">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap-daterangepicker/js/daterangepicker.js"></script>
+    <script type="text/javascript" src="~/Content/tema/bower_components/datedropper/js/datedropper.min.js"></script>
+
+    <script type="text/javascript" src="~/Content/tema/assets/pages/advance-elements/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="~/Content/tema/assets/pages/advance-elements/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="~/Content/tema/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+}
