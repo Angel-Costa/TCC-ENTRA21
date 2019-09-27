@@ -103,6 +103,9 @@ namespace View.Controllers
         {
             HotelRepository hotelrepository = new HotelRepository();
             List<Hotel> hoteis = hotelrepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
         public ActionResult Garopaba()
         {
             HotelRepository hotelRepository = new HotelRepository();
