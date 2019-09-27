@@ -42,5 +42,8 @@ namespace Model
         [Column("senha")]
         public string Senha { get; set; }
 
+        [Column("imagem")]
+        public string Imagem { get; set; }
+
     }
 }

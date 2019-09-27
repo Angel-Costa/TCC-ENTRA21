@@ -14,14 +14,14 @@
             <button class="btn btn-outline-success mt-3" type="submit"> <i class="fas fa-file-import"></i>Enviar Imagem</button>
         </form>
 
-        <form action="@Url.Action("EditarPerfil")" method="post">
+        <form action="@Url.Action("EditarPerfil","Perfil")" method="post">
 
 
 
             <div class="personal-image">
                 <label class="label">
                     <figure class="personal-figure">
-                        <img src="~/Content/FOTO ZIIKA DO USUARIO ZIKA.jpg" class="personal-avatar" alt="avatar">
+                        <img src="~/Content/Uploads/@ViewBag.Administrador.Imagem" class="personal-avatar" alt="avatar">
                         <figcaption class="personal-figcaption">
                         </figcaption>
                     </figure>

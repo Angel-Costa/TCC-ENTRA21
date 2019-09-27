@@ -37,6 +37,9 @@ namespace Model
 
         [Column("complemento")]
         public string Complemento { get; set; }
-       
+
+        [Column("imagem")]
+        public string Imagem { get; set; }
+
     }
 }

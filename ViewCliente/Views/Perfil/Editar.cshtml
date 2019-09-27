@@ -21,15 +21,19 @@
                 <div class="cover-profile">
                     <div class="profile-bg-img">
 
-                        <img class="profile-bg-img img-responsive" src="~/Content/imagem/CapaPerfil/lua.jpg" alt="Imagem Redonda" width=400 height=400>
+                        <img class="profile-bg-img img-responsive" src="~/Content/Uploads/@ViewBag.Cliente.Imagem" alt="Imagem Redonda" width=400 height=400>
 
 
                         <div class="card-block user-info">
                             <div class="col-md-12">
                                 <div class="media-left">
                                     <a href="#" class="profile-image">
-                                        <img class="user-img img-circle" src="~/Content/imagem/UsuarioPerfil/LeeNicollas.jpg" alt="user-img">
+                                        <img class="user-img img-circle" src="~/Content/Uploads/@ViewBag.Cliente.Imagem" alt="user-img">
                                     </a>
+                                    <form class="form-group col-5 offset-4 mt-lg-3" action="Upload" method="post" enctype="multipart/form-data">
+                                        <input type="file" name="file" />
+                                        <button class="btn btn-outline-success mt-3" type="submit"> <i class="fas fa-file-import"></i>Enviar Imagem</button>
+                                    </form>
                                 </div>
                                 <div class="media-body row">
                                     <div class="col-lg-12">
@@ -173,6 +177,8 @@
         </div>
     </div>
 </div>
+
+
 
 @section scripts{
     <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap-daterangepicker/js/daterangepicker.js"></script>

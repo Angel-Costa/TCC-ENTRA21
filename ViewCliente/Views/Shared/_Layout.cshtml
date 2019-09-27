@@ -64,6 +64,8 @@
     <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
 
 
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/icon/icofont/css/icofont.css">
 
 
     @RenderSection("css", false)
@@ -111,7 +113,7 @@
                             <i class="ti-search"></i>
                         </a>
                         <a href="@Url.Action("Index","Home")">
-                            <img class="img-fluid col-10" src="https://img.icons8.com/ios/50/ffffff/around-the-globe.png"> Lux
+                            <img class="img-fluid" src="https://img.icons8.com/ios/50/ffffff/around-the-globe.png" alt="Theme-Logo"> Lux
                         </a>
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -121,6 +123,9 @@
             </nav>
 
             <!-- Menu header end -->
+
+
+
 
             <div class="pcoded-main-container">
                 <nav class="pcoded-navbar" style="background-color: #e5e3e3;">
@@ -152,8 +157,8 @@
                             </li>
                             <li class="pcoded-hasmenu float-right">
                                 <a href="@Url.Action("Index","Perfil")">
-                                    <span class="pcoded-micon" style="background-color: #171d2b;"><i class="icofont icofont icofont icofont-ui-user"></i></span>
-                                    <span style="font-size: 14px;">Perfil</span>
+                                    <span class="pcoded-micon" style="background-color: #303548;"><b>P</b></span>
+                                    <span class="pcoded-mtext" style="color: black;">Perfil</span>
                                 </a>
                             </li>
                         </ul>
@@ -290,6 +295,9 @@
     <script src="~/Content/tema/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
     <script src="~/Content/tema/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
     <script src="~/front/assets/scss/partials/"></script>
+
+
+    <script src="~/Content/tema/assets/pages/ckeditor/ckeditor.js"></script>
 
 
     @RenderSection("scripts", false)
