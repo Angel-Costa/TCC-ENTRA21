@@ -64,6 +64,8 @@
     <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
 
 
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/icon/icofont/css/icofont.css">
 
 
     @RenderSection("css", false)
@@ -122,6 +124,9 @@
 
             <!-- Menu header end -->
 
+
+
+
             <div class="pcoded-main-container">
                 <nav class="pcoded-navbar" style="background-color: #e5e3e3;">
                     <div class="pcoded-inner-navbar">
@@ -152,10 +157,11 @@
                             </li>
                             <li class="pcoded-hasmenu float-right">
                                 <a href="@Url.Action("Index","Perfil")">
-                                    <span class="pcoded-micon" style="background-color: #171d2b;"><i class="icofont icofont icofont icofont-ui-user"></i></span>
-                                    <span style="font-size: 14px;">Perfil</span>
+                                    <span class="pcoded-micon" style="background-color: #303548;"><b>P</b></span>
+                                    <span class="pcoded-mtext" style="color: black;">Perfil</span>
+                                    <a href="@Url.Action("Index","Login")"><i class="ti-layout-sidebar-left"></i>Sair</a>
                                 </a>
-                            </li>
+
                         </ul>
                     </div>
                 </nav>
@@ -290,6 +296,9 @@
     <script src="~/Content/tema/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
     <script src="~/Content/tema/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
     <script src="~/front/assets/scss/partials/"></script>
+
+
+    <script src="~/Content/tema/assets/pages/ckeditor/ckeditor.js"></script>
 
 
     @RenderSection("scripts", false)

@@ -1,4 +1,5 @@
 ﻿using Model;
+using Repository.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,12 @@ namespace ViewCliente.Controllers
 {
     public class PerfilController : Controller
     {
+        private ClienteRepository repositoryCliente;
+
+        public PerfilController()
+        {
+            repositoryCliente = new ClienteRepository();
+        }
         // GET: Perfil
         public ActionResult Index()
         {
@@ -19,5 +26,13 @@ namespace ViewCliente.Controllers
         {
             return View();
         }
+
+        public ActionResult Upload()
+        {
+
+
+        }
+
+
     }
 }
