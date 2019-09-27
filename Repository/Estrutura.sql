@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
+﻿DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes, contatos;
 
 DROP TABLE IF EXISTS hoteis;
 
@@ -24,6 +24,7 @@ CREATE TABLE clientes(
 
 CREATE TABLE avaliacoes(
 	id INT PRIMARY KEY IDENTITY(1,1),
+
 
 	id_cliente INT 
 	FOREIGN KEY(id_cliente) REFERENCES clientes(id),
@@ -69,7 +70,7 @@ CREATE TABLE administradores (
 	nome VARCHAR (50),
 	cpf VARCHAR (15),
 	login VARCHAR (50),
-	senha VARCHAR(50),
+	senha VARCHAR(100),
 	
 	privilegio VARCHAR(20),
 	registro_ativo BIT
@@ -86,6 +87,14 @@ CREATE TABLE sugestoes(
 	cidade VARCHAR(100),
 	endereco VARCHAR(100),
 	registro_ativo BIT
+
+);
+
+CREATE TABLE contatos(
+	nome VARCHAR(100),
+	email VARCHAR(100),
+	celular VARCHAR(15),
+	mensagem VARCHAR(100)
 
 );
 
@@ -111,13 +120,25 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (3, 'Karaoke', 3);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente', 1);
+('Loene', '12345678910' , 'loene@gmail.com', 'loene0504', 'cliente', 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Jorel', '356871545454' , 'Jorel@gmail.com', 'Jojo6987', 'cliente', 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('geovana', '32195461416' , 'geovana@gmail.com', 'ge024', 'cliente', 1);
+('Angel', '32195461416' , 'angelcosta@gmail.com', 'fimose000', 'administrador', 1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Paulo','123.123.123-12', 'camargopaulohenrique2@gmail.com', 'paulin','administrador', 1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Loene','323.323.232-44', 'loene@gmail.com', 'loene', 'administrador' , 1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Naiara', '111.111.111-21', 'naiara@gmail.com','naiara','administrador',1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Nicollas', '555.555.555-45', 'nicolas@gmail.com', 'nicollas','administrador', 1)
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
 (10, 'Excelente', 'conforto');
@@ -152,3 +173,4 @@ SELECT * FROM administradores;
 SELECT * FROM avaliacoes;
 SELECT * FROM sugestoes;
 SELECT * FROM clientes;
+SELECT * FROM contatos;
