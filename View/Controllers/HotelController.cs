@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Mvc;
 using Model;
 using Repository.Interfaces;
@@ -68,6 +70,36 @@ namespace View.Controllers
             var apagou = repository.Apagar(id);
 
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Upload()
+        {
+
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+
+                arquivo.SaveAs(caminhoArquivo);
+
+                var usuarioLogado = (Hotel)Session["Usuario"];
+
+                Hotel hotel = repository.ObterPeloId(usuarioLogado.Id);
+                hotel.Imagem = nomeImagem;
+                repository.Alterar(hotel);
+                Session["Usuario"] = hotel;
+            }
+
+
+            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
+            return RedirectToAction("cadastro");
         }
     }
 }

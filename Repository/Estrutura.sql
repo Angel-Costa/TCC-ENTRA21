@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS hoteis;
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
 
+	imagem VARCHAR (50),
 	celular VARCHAR(15),
 	estado VARCHAR(100),
 	cidade VARCHAR(100),
@@ -35,6 +36,8 @@ CREATE TABLE avaliacoes(
 
 
 CREATE TABLE hoteis(
+
+	imagem VARCHAR (50),
 	id INT PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR (50),
 	descricao VARCHAR (200),
@@ -73,6 +76,8 @@ CREATE TABLE administradores (
 );
 
 CREATE TABLE sugestoes(
+	
+	imagem VARCHAR (50),
 	id INT PRIMARY KEY IDENTITY(1,1),
 	local VARCHAR(100),	
 	nome VARCHAR(100),
