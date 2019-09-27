@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
+﻿DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes, contatos;
 
 DROP TABLE IF EXISTS hoteis;
 
@@ -24,6 +24,7 @@ CREATE TABLE clientes(
 
 CREATE TABLE avaliacoes(
 	id INT PRIMARY KEY IDENTITY(1,1),
+
 
 	id_cliente INT 
 	FOREIGN KEY(id_cliente) REFERENCES clientes(id),
@@ -69,7 +70,7 @@ CREATE TABLE administradores (
 	nome VARCHAR (50),
 	cpf VARCHAR (15),
 	login VARCHAR (50),
-	senha VARCHAR(50),
+	senha VARCHAR(100),
 	
 	privilegio VARCHAR(20),
 	registro_ativo BIT
@@ -86,6 +87,14 @@ CREATE TABLE sugestoes(
 	cidade VARCHAR(100),
 	endereco VARCHAR(100),
 	registro_ativo BIT
+
+);
+
+CREATE TABLE contatos(
+	nome VARCHAR(100),
+	email VARCHAR(100),
+	celular VARCHAR(15),
+	mensagem VARCHAR(100)
 
 );
 
@@ -111,7 +120,7 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (3, 'Karaoke', 3);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Rafael', '12345678910' , 'rafael@gmail.com', 'rafa123', 'cliente', 1);
+('Loene', '12345678910' , 'loene@gmail.com', 'loene0504', 'cliente', 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Jorel', '356871545454' , 'Jorel@gmail.com', 'Jojo6987', 'cliente', 1);
@@ -152,3 +161,4 @@ SELECT * FROM administradores;
 SELECT * FROM avaliacoes;
 SELECT * FROM sugestoes;
 SELECT * FROM clientes;
+SELECT * FROM contatos;
