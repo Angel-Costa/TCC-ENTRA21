@@ -28,6 +28,8 @@ namespace View.Controllers
 
         public ActionResult Galeria()
         {
+            List<Sugestao> sugestaos = repository.ObterTodos();
+            ViewBag.Sugestoes = sugestaos;  
             return View();
         }
 
@@ -85,7 +87,7 @@ namespace View.Controllers
 
                 arquivo.SaveAs(caminhoArquivo);
 
-                var usuarioLogado = (Administrador)Session["Usuario"];
+                var usuarioLogado = (Sugestao)Session["Usuario"];
 
                 Sugestao sugestao = repository.ObterPeloId(usuarioLogado.Id);
                 sugestao.Imagem = nomeImagem;
