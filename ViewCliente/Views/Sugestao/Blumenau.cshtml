@@ -10,7 +10,7 @@
         <div class="card mr-5">
             <div class="card-body">
                 <div>
-                    <img src="~/Content/imagem/Blumenau/Teatro Carlos Gomes.jpg" />
+                    <img class="container img" src="~/Content/imagem/Blumenau/Teatro Carlos Gomes.jpg" />
                     <p>
                         Teatro Carlos Gomes
                     </p>
@@ -22,7 +22,7 @@
 
 @foreach (Model.Hotel hotel in ViewBag.Hoteis)
 {
-    if(hotel.Cidade == "Porto Belo")
+    if(hotel.Cidade == "Blumenau")
     {
 
     <div class="row">

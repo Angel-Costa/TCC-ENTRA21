@@ -98,5 +98,13 @@ namespace View.Controllers
             ViewBag.Hoteis = hoteis;
             return View();
         }
+
+        public ActionResult Balneario()
+        {
+            HotelRepository hotelrepository = new HotelRepository();
+            List<Hotel> hoteis = hotelrepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
     }
 }

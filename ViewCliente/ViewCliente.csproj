@@ -107,6 +107,7 @@
     <Content Include="Content\css\Perfil\Index.css" />
     <Content Include="Content\css\Teste\teste.css" />
     <Content Include="Content\imagem\Administradores\Angel admin.jpg" />
+    <Content Include="Content\imagem\Balneario\morro do careca.jpg" />
     <Content Include="Content\imagem\CapaPerfil\lua.jpg" />
     <Content Include="Content\imagem\Nova Trento\Nova Trento.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\1.jpg" />
@@ -11006,6 +11007,7 @@
     <Content Include="Views\Sugestao\Florianopolis.cshtml" />
     <Content Include="Views\Sugestao\PortoBelo.cshtml" />
     <Content Include="Views\Sugestao\SaoFrancisco.cshtml" />
+    <Content Include="Views\Sugestao\Balneario.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
