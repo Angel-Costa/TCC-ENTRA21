@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "NovaTrento";
+}
+
+<h2>Nova Trento</h2>
+<div class="col-lg-12 col-xl-6">
+    <div class="card mr-5">
+        <div class="card-body">
+            <div>
+                <img src="~/Content/imagem/Nova Trento/Nova Trento.jpg" />
+                <p align='justify'>
+                        O Santuário Santa Paulina é um parque ecológico, onde o visitante pode passear, orar,
+                        contemplar a natureza através doS verde da paisagem, bem como pela beleza das flores,
+                        cachoeiras, animais, pássaros e belas trilhas. Em cada espaço você sentirá a presença
+                        de Santa Paulina, através de cada marco histórico dedicado a ela e aos seus antepassados.
+                        O Complexo oferece ao devoto uma estrutura de qualidade com restaurante próprio,
+                        hospedagem e loja de lembranças que possibilitam a todos aqueles que visitam o Santuário
+                        desfrutar de ricos momentos e ainda levar uma lembrança.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@foreach (Model.Hotel hotel in ViewBag.Hoteis)
+{
+    if (hotel.Cidade == "Nova Trento")
+    {
+        <div class="row">
+            <div class="col-lg-12 col-xl-6">
+                <div class="card mr-3">
+                    <div class="card-body ">
+                        <div>
+                            <img class="d-block img-fluid" src="~/Content/imagem/MelhoresHoteis/shangri-la-hotel-tailandia-hoteis-kangaroo-tours (8).jpg" />
+                        </div>
+                        <div class="sub-title">Hotel: @hotel.Nome</div>
+                        <div class="sub-title">Valor por noite: @hotel.ValorNoite</div>
+                        <div class="sub-title">Bairro: @hotel.Bairro</div>
+                        <div class="sub-title">Rua: @hotel.Rua</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
