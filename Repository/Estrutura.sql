@@ -1,4 +1,5 @@
-﻿DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
+﻿
+DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes;
 
 DROP TABLE IF EXISTS hoteis;
 
@@ -117,7 +118,19 @@ INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo)
 ('Jorel', '356871545454' , 'Jorel@gmail.com', 'Jojo6987', 'cliente', 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('geovana', '32195461416' , 'geovana@gmail.com', 'ge024', 'cliente', 1);
+('Angel', '32195461416' , 'angelcosta@gmail.com', 'fimose000', 'administrador', 1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Paulo','123.123.123-12', 'camargopaulohenrique2@gmail.com', 'paulin','administrador', 1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Loene','323.323.232-44', 'loene@gmail.com', 'loene', 'administrador' , 1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Naiara', '111.111.111-21', 'naiara@gmail.com','naiara','administrador',1);
+
+INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
+('Nicollas', '555.555.555-45', 'nicolas@gmail.com', 'nicollas','administrador', 1)
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
 (10, 'Excelente', 'conforto');
