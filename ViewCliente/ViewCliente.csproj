@@ -11001,11 +11001,11 @@
     <Content Include="Views\Sugestao\Blumenau.cshtml" />
     <Content Include="Views\Perfil\Index.cshtml" />
     <Content Include="Views\Home\Indicação.cshtml" />
-    <Content Include="Views\Perfil\Editar.cshtml" />
     <Content Include="Scripts\style.scss" />
     <Content Include="Views\Sugestao\Florianopolis.cshtml" />
     <Content Include="Views\Sugestao\PortoBelo.cshtml" />
     <Content Include="Views\Sugestao\SaoFrancisco.cshtml" />
+    <Content Include="Views\Perfil\Editar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
