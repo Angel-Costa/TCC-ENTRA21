@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdvancedStringBuilder, Version=0.1.0.0, Culture=neutral, PublicKeyToken=e818a2fc08933ddb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvancedStringBuilder.0.1.0\lib\net45\AdvancedStringBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -52,6 +55,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Buffers, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.0.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -96,13 +102,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Blumenau\Blumenau.jpg" />
-    <Content Include="Content\Blumenau\Estadio do Sesi.jpg" />
-    <Content Include="Content\Blumenau\Parque Ramiro Ruediguer.jpg" />
-    <Content Include="Content\Blumenau\Teatro Carlos Gomes.jpg" />
-    <Content Include="Content\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
-    <Content Include="Content\Florianopolis\Mercado-Florianopolis.jpg" />
-    <Content Include="Content\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\css\ConhecaSite\conhecalux.css" />
+    <Content Include="Content\css\ConhecaSite\conhecasite.css" />
+    <Content Include="Content\css\Perfil\Index.css" />
+    <Content Include="Content\imagem\Administradores\Angel admin.jpg" />
+    <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
+    <Content Include="Content\imagem\Administradores\Nicollas.jpg" />
+    <Content Include="Content\imagem\Administradores\Paulo Admin.jpg" />
+    <Content Include="Content\imagem\Balneario\balneario.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
     <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
     <Content Include="Content\imagem\Blumenau\Parque Ramiro Ruediguer.jpg" />
@@ -110,20 +121,64 @@
     <Content Include="Content\imagem\Florianopolis\Lagoinha-do-Leste-Florianópolis.jpg" />
     <Content Include="Content\imagem\Florianopolis\Mercado-Florianopolis.jpg" />
     <Content Include="Content\imagem\Florianopolis\Ponte Hercilio Luz.jpg" />
+    <Content Include="Content\imagem\Garopaba\garuBanner.jpg" />
+    <Content Include="Content\imagem\Home\312c4515169c802c40ec992495033fd6.jpg" />
+    <Content Include="Content\imagem\Home\3d01bd15837ac4d49a472b3350c5fe1a.jpg" />
+    <Content Include="Content\imagem\Home\70f71cc8ac254c006b8fa006f2a182b4.jpg" />
+    <Content Include="Content\imagem\Home\82ddfc1f4f0e24e1d4496d6f85c74fd6.jpg" />
+    <Content Include="Content\imagem\Home\album-scrapbook-nossas-viagens-2-lua-de-mel.jpg" />
+    <Content Include="Content\imagem\Home\avidaeumaviagem.jpg" />
+    <Content Include="Content\imagem\Home\b95e69e310bccb4f935693196be8dc9510db753b.jpg" />
+    <Content Include="Content\imagem\Home\como-fazer-um-diario-de-viagem-travel-journal-3.jpg" />
+    <Content Include="Content\imagem\Home\frases-para-planejar-uma-viagem.jpg" />
+    <Content Include="Content\imagem\Home\fundo-do-curso-com-a-mao-apontando-para-o-mapa_23-2147607759.jpg" />
+    <Content Include="Content\imagem\Home\ideias-cofres-para-viagem.jpg" />
+    <Content Include="Content\imagem\Home\images.jpg" />
+    <Content Include="Content\imagem\Home\mapa.jpg" />
+    <Content Include="Content\imagem\Home\monte-um-scrapbook-dos-seus-melhores-momentos.jpg" />
+    <Content Include="Content\imagem\Home\Sabrina-Mix-festa-mundo9.jpg" />
+    <Content Include="Content\imagem\Home\Scrapbook-de-viagem-Album-de-viagem.jpg" />
+    <Content Include="Content\imagem\Logo\opcao 5.png" />
+    <Content Include="Content\imagem\Logo\opcao1.png" />
+    <Content Include="Content\imagem\Logo\opcao2.png" />
+    <Content Include="Content\imagem\Logo\opcao4.png" />
+    <Content Include="Content\imagem\MelhoresHoteis\animal-aquarium-aquatic-2166927.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\logoferre.png" />
+    <Content Include="Content\imagem\MelhoresHoteis\LuxDefinitivo.png" />
     <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\paisagem01.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
     <Content Include="Content\imagem\MelhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
+    <Content Include="Content\imagem\MelhoresHoteis\urubici.jpg" />
+    <Content Include="Content\imagem\PortoBelo\520352301-MOB.jpg" />
     <Content Include="Content\imagem\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\imagem\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\imagem\PortoBelo\univali-ecomuseum.jpg" />
+    <Content Include="Content\imagem\Praia do Rosa\praia.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\museu-nacional-do-mar.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\praia-do-forte-tem-o.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\vista-de-dentro-do-barco.jpg" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
-    <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
-    <Content Include="Content\melhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
-    <Content Include="Content\melhoresHoteis\solucoes-em-fornecimento-de-gas-lp-para-hoteis-e-pousadas.jpg" />
+    <Content Include="Content\imagem\Serra do Rio do rastro\serra.jpg" />
+    <Content Include="Content\imagem\SobreNos\Sobrenos.jpg" />
+    <Content Include="Content\imagem\SobreNos\SobreNos02.jpg" />
+    <Content Include="Content\imagem\SobreNos\Sobrenos03.jpg" />
+    <Content Include="Content\imagem\SobreNos\Sobrenos04.jpg" />
+    <Content Include="Content\imagem\SobreNos\Sobrenos05.jpg" />
+    <Content Include="Content\js\Indicação\Enviado.js" />
+    <Content Include="Content\js\Layout.js" />
+    <Content Include="Content\melhoresHoteis\0004_HotelCosteiro_fotoHome1.jpg" />
+    <Content Include="Content\melhoresHoteis\home-slide-05.jpg" />
+    <Content Include="Content\melhoresHoteis\hoteis-brasileiros-1.jpg" />
+    <Content Include="Content\js\Teste01.js" />
+    <Content Include="Content\melhoresHoteis\dallas.jpg" />
+    <Content Include="Content\melhoresHoteis\images-7.jpg" />
+    <Content Include="Content\melhoresHoteis\melhores-hoteis-de-luxo-do-brasil-1.jpg" />
+    <Content Include="Content\melhoresHoteis\Opala.jpg" />
+    <Content Include="Content\melhoresHoteis\noite03.jpg" />
+    <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
+    <Content Include="Content\melhoresHoteis\LaMassion.jpg" />
+    <Content Include="Content\melhoresHoteis\PortoZarpaHotel-PraiadoForte-LitoralNorte.jpg" />
     <Content Include="Content\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\PortoBelo\ponta-do-estaleiro.jpg" />
     <Content Include="Content\PortoBelo\univali-ecomuseum.jpg" />
@@ -5232,15 +5287,18 @@
     <Content Include="obj\Debug\ViewCliente.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ViewCliente.dll" />
     <Content Include="obj\Debug\ViewCliente.pdb" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
     <Content Include="Scripts\esm\popper.min.js" />
     <Content Include="obj\Debug\Tsc.out" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -5268,6 +5326,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\MelhorHotelController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\SobreNosController.cs" />
     <Compile Include="Controllers\SugestaoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -5546,10 +5605,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Comodidade\Index.cshtml" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper.js.map" />
@@ -5568,7 +5623,9 @@
     <Content Include="Views\MelhorHotel\Index.cshtml" />
     <Content Include="Views\SobreNos\Index.cshtml" />
     <Content Include="Views\Sugestao\Galeria.cshtml" />
-    <Content Include="Views\Home\Blumenau.cshtml" />
+    <Content Include="Views\Sugestao\Blumenau.cshtml" />
+    <Content Include="Views\Perfil\Index.cshtml" />
+    <Content Include="Views\Home\Indicação.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5577,11 +5634,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Content\imagem\ImagensPerfil\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Views\Hotel\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">

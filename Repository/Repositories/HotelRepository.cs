@@ -64,8 +64,13 @@ namespace Repository.Repositories
         public List<Hotel> ObterTodos()
         {
             return context.Hoteis
-                .Where(x => x.RegistroAtivo).ToList();
-            
+                .Where(x => x.RegistroAtivo).ToList();            
+        }
+
+        public List<Hotel> ObterTodosPelaCidade(string cidade)
+        {
+            return context.Hoteis
+                .Where(x => x.RegistroAtivo && x.Cidade == cidade).ToList();
         }
     }
 }

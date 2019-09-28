@@ -270,6 +270,10 @@
     <Content Include="Content\imagem\Galeria Admin\Serra-rio-do-rastro.jpg" />
     <Content Include="Content\imagem\Galeria Admin\unipraias.jpeg" />
     <Content Include="Content\imagem\Logo do projeto\LOGO.png" />
+    <Content Include="Content\imagem\Logo do projeto\opcao1.png" />
+    <Content Include="Content\imagem\Logo do projeto\opcao2.png" />
+    <Content Include="Content\imagem\Logo do projeto\opcao3.png" />
+    <Content Include="Content\imagem\Logo do projeto\opcao4.png" />
     <Content Include="Content\imagem\Tela de login\KombiLaranjaTraz.jpg" />
     <Content Include="Content\imagem\Tela de login\man-user %281%29.png" />
     <Content Include="Content\tema\assets\css\component.css" />

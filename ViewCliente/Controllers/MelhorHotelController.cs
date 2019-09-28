@@ -13,5 +13,17 @@ namespace ViewCliente.Controllers
         {
             return View();
         }
+
+
+        public ActionResult ConhecaSite()
+        {
+            return View();
+        }
+
+        public ActionResult ConhecaLux()
+        {
+            return View();
+        }
+
     }
 }
