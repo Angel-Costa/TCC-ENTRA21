@@ -3,7 +3,18 @@
     ViewBag.Title = "Editar";
 }
 
-<h2>Editar</h2>
+    <div class="page-header card">
+        <div class="row align-items-end">
+            <div class="col-lg-8">
+                <div class="page-header-title">
+                    <i class="icofont icofont icofont icofont-user-alt-3" style="background-color: #171d2b;"></i>
+                    <div class="d-inline">
+                        <h4 style="text-transform: capitalize">Editar informações do perfil</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <form action="@Url.Action("Editar")" method="post">
@@ -20,7 +31,22 @@
                 </div>
                 <div class="col-sm-12 col-xl-3 m-b-30">
                     <h4 class="sub-title">Estado Civil</h4>
-                    <input id="campo-estado" class="form-control" type="text" name="estadoCivil" placeholder="Digite o seu estado civil" autocomplete="off" required />
+                    <input id="campo-estado-civil" class="form-control" type="text" name="estadoCivil" placeholder="Digite o seu estado civil" autocomplete="off" required />
+                </div>
+                <div class="col-sm-12 col-xl-4 m-b-30">
+                    <h4 class="sub-title">Localização</h4>
+                    <input id="campo-localizacao" class="form-control" type="text" name="localizacao" placeholder="Digite a sua localização" autocomplete="off" required />
+                </div>
+                <div class="col-sm-12 col-xl-4 m-b-30">
+                    <h4 class="sub-title">Email</h4>
+                    <input id="campo-email" class="form-control" type="text" name="email" placeholder="Digite o seu email" autocomplete="off" required />
+                </div>
+                <div class="col-sm-12 col-xl-4 m-b-30">
+                    <h4 class="sub-title">Celular</h4>
+                    <input id="campo-celular" class="form-control" type="text" name="celular" placeholder="Digite o seu celular" autocomplete="off" required />
+                </div>
+                <div class="col-sm-12 col-xl-2 m-b-30">
+                    <a href="@Url.Action("")" class="btn btn-outline-primary">Editar</a>
                 </div>
             </div>
         </div>
