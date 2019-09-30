@@ -108,9 +108,15 @@
     </Content>
     <Content Include="Content\css\ConhecaSite\conhecalux.css" />
     <Content Include="Content\css\ConhecaSite\conhecasite.css" />
+    <Content Include="Content\css\Login\Login.css" />
     <Content Include="Content\css\Perfil\Index.css" />
     <Content Include="Content\css\Teste\teste.css" />
-    <Content Include="Content\imagem\Administradores\Angel.jpg" />
+    <Content Include="Content\imagem\Administradores\Angel-2.jpg" />
+    <Content Include="Content\imagem\Administradores\Loene..jpg" />
+    <Content Include="Content\imagem\Administradores\Loene2.jpg" />
+    <Content Include="Content\imagem\Administradores\Naiara %281%29.jpg" />
+    <Content Include="Content\imagem\Administradores\Nicollas %281%29.jpg" />
+    <Content Include="Content\imagem\Administradores\Paulo.jpg" />
     <Content Include="Content\imagem\Balneario\morro do careca.jpg" />
     <Content Include="Content\imagem\CapaPerfil\lua.jpg" />
     <Content Include="Content\imagem\Florianopolis\Hercilio Luz Florianópolis.jpg" />
@@ -124,13 +130,20 @@
     <Content Include="Content\imagem\Home\sugestoes\8.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\9.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\10.jpg" />
+    <Content Include="Content\imagem\Sugestão02\BalnearioCamboriu.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Blumenau.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Florianopolis.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Garopaba.jpg" />
+    <Content Include="Content\imagem\Sugestão02\NovaTrento.jpg" />
+    <Content Include="Content\imagem\Sugestão02\PortoBelo.jpg" />
+    <Content Include="Content\imagem\Sugestão02\SaoFranciscodoSul.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\São Francisco do Sul.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\São Francisco do Sul_3.jpg" />
+    <Content Include="Content\imagem\TeladeLogin\como-planejar-uma-viagem.jpg" />
+    <Content Include="Content\imagem\TeladeLogin\KombiLaranjaTraz.jpg" />
+    <Content Include="Content\imagem\TeladeLogin\man-user %281%29.png" />
+    <Content Include="Content\imagem\TeladeLogin\seguro-viagem-o-que-e-740x360.jpg" />
     <Content Include="Content\imagem\UsuarioPerfil\LeeNicollas.jpg" />
-    <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
-    <Content Include="Content\imagem\Administradores\Naiara.adm.png" />
-    <Content Include="Content\imagem\Administradores\Nicollas.jpg" />
-    <Content Include="Content\imagem\Administradores\Paulo Admin.jpg" />
     <Content Include="Content\imagem\Balneario\balneario.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
     <Content Include="Content\imagem\Blumenau\Estadio do Sesi.jpg" />
@@ -10709,6 +10722,7 @@
     <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MelhorHotelController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\SobreNosController.cs" />
@@ -11019,6 +11033,8 @@
     <Content Include="Views\Sugestao\Garopaba.cshtml" />
     <Content Include="Views\Sugestao\PraiaDoRosa.cshtml" />
     <Content Include="Views\Sugestao\NovaTrento.cshtml" />
+    <Content Include="Views\Login\Cadastro.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -11027,6 +11043,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\imagem\Bandeiras\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="Content\Uploads\" />

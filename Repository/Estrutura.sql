@@ -140,7 +140,7 @@ INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo)
 ('Naiara', '111.111.111-21', 'naiara@gmail.com','naiara','administrador',1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Nicollas', '555.555.555-45', 'nicolas@gmail.com', 'nicollas','administrador', 1)
+('Nicollas', '555.555.555-45', 'nicollasleeribeiro@gmail.com', 'jhtjht','administrador', 1)
 
 INSERT INTO avaliacoes(nota, comentario, feedback) VALUES
 (10, 'Excelente', 'conforto');

@@ -45,7 +45,7 @@ namespace View.Controllers
                     Console.WriteLine("Senha ou login está errado");
                 }
 
-                    return RedirectToAction("Index","ViewCliente");
+                    return RedirectToAction("Index","Home");
             }
 
             Session["Usuario"] = administrador;
