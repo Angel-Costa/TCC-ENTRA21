@@ -72,6 +72,11 @@ namespace Repository.Repositories
             return context.Clientes
                 .Where(x => x.RegistroAtivo).ToList();
              
-        }        
+        }
+
+        public Cliente VerificarLoginSenha(string login, string senha)
+        {
+            return context.Clientes.FirstOrDefault(x => x.Login == login && x.Senha == senha && x.RegistroAtivo);
+        }
     }
 }

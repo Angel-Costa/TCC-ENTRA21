@@ -37,7 +37,15 @@ namespace View.Controllers
             var administrador = repositoryAdministrador.VerificarLoginSenha(login, senha);
             if (administrador == null)
             {
-                return RedirectToAction("Index");
+                var usuario = reositoryCliente.VerificarLoginSenha(login, senha);
+                // if (usuario == null)
+                // enviar mensagem para o usuário que a senha ou login incorreto
+                if (usuario == null)
+                {
+                    Console.WriteLine("Senha ou login está errado");
+                }
+
+                    return RedirectToAction("Index","ViewCliente");
             }
 
             Session["Usuario"] = administrador;
