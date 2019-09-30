@@ -123,6 +123,13 @@
     <Content Include="Content\imagem\Home\sugestoes\8.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\9.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\10.jpg" />
+    <Content Include="Content\imagem\Sugestão02\BalnearioCamboriu.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Blumenau.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Florianopolis.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Garopaba.jpg" />
+    <Content Include="Content\imagem\Sugestão02\NovaTrento.jpg" />
+    <Content Include="Content\imagem\Sugestão02\PortoBelo.jpg" />
+    <Content Include="Content\imagem\Sugestão02\SaoFranciscodoSul.jpg" />
     <Content Include="Content\imagem\UsuarioPerfil\LeeNicollas.jpg" />
     <Content Include="Content\imagem\Administradores\Loene admin.jpg" />
     <Content Include="Content\imagem\Administradores\Naiara.adm.png" />
@@ -11023,6 +11030,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\imagem\Bandeiras\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="Content\Uploads\" />

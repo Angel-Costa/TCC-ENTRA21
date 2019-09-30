@@ -3,23 +3,43 @@
     ViewBag.Title = "PortoBelo";
 }
 
-<h2>PortoBelo</h2>
+<head>
 
-<div class="row">
-    <div class="col-lg-12 col-xl-6">
-        <div class="card mr-5">
-            <div class="card-body">
-                <div>
-                    <img src="~/Content/Uploads/@ViewBag.Hotel.Imagem" />
-                    <p>
-                        Nas praias de Porto Belo você pode admirar as mais belas praias, 
-                        restaurantes na beira mar com preços especiais, todas as praias são 
-                        traquilas, lugar perfeito para tirar lindas fotos, lugar ótimo para levar
-                        crianças pelo fato das ondas serem calmas e sem ondas, navios de porte grande
-                        estão sempre por ali, paia segura e super indicada.
-                    </p>
-                </div>
-            </div>
+    <style>
+
+        .card {
+            background-color: #343a40;
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 10px;
+            width: 1100px;
+            height: 800px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<div class="page-body">
+    <div class="card">
+        <img src="~/Content/imagem/Sugestão02/PortoBelo.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h2>Porto Belo</h2>
+            <p class="card-text">
+                Nas praias de Porto Belo você pode admirar as mais belas praias,
+                restaurantes na beira mar com preços especiais, todas as praias são
+                traquilas, lugar perfeito para tirar lindas fotos, lugar ótimo para levar
+                crianças pelo fato das ondas serem calmas e sem ondas, navios de porte grande
+                estão sempre por ali, paia segura e super indicada.
+            </p>
         </div>
     </div>
 </div>
@@ -33,15 +53,15 @@
                 <div class="card mr-5">
                     <div class="card-body">
                         <div>
-                            <img src="~/Content/Uploads/@ViewBag.Hotel.Imagem" />                            
+                            <img src="~/Content/Uploads/@ViewBag.Hotel.Imagem" />
                         </div>
                         <div class="sub-title">Hotel: @hotel.Nome</div>
                         <div class="sub-title">Valor por Noite: @hotel.ValorNoite</div>
                         <div class="sub-title">Bairro: @hotel.Bairro</div>
-                        <div class="sub-title">Rua: @hotel.Rua</div>    
-                        <div class="sub-title">Cidade: @hotel.Cidade</div>    
-                        <div class="sub-title">Descrição: @hotel.Descricao</div>    
-                    </div>  
+                        <div class="sub-title">Rua: @hotel.Rua</div>
+                        <div class="sub-title">Cidade: @hotel.Cidade</div>
+                        <div class="sub-title">Descrição: @hotel.Descricao</div>
+                    </div>
                 </div>
             </div>
         </div>
