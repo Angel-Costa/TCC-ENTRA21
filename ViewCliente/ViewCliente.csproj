@@ -117,6 +117,7 @@
     <Content Include="Content\imagem\Administradores\Paulo.jpg" />
     <Content Include="Content\imagem\Balneario\morro do careca.jpg" />
     <Content Include="Content\imagem\CapaPerfil\lua.jpg" />
+    <Content Include="Content\imagem\Florianopolis\Hercilio Luz Florianópolis.jpg" />
     <Content Include="Content\imagem\Nova Trento\Nova Trento.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\1.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\2.jpg" />
@@ -127,6 +128,8 @@
     <Content Include="Content\imagem\Home\sugestoes\8.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\9.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\10.jpg" />
+    <Content Include="Content\imagem\SaoFrancisco\São Francisco do Sul.jpg" />
+    <Content Include="Content\imagem\SaoFrancisco\São Francisco do Sul_3.jpg" />
     <Content Include="Content\imagem\UsuarioPerfil\LeeNicollas.jpg" />
     <Content Include="Content\imagem\Balneario\balneario.jpg" />
     <Content Include="Content\imagem\Blumenau\Blumenau.jpg" />
