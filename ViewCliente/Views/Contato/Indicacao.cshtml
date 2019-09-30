@@ -60,30 +60,30 @@
                 <p>
             </div>
             <p></p>
-            <div class="row"></div>
+            <form action="/Contato/Cadastro" method="post">
+                <div class="row"></div>
+                <div class="form-group col-4 offset-4 mt-3">
+                    <h4 class="sub-title">Nome</h4>
+                    <input type="text" class="form-control" id="Qual seu nome completo" name="Nome" placeholder="Digite seu nome completo">
+                </div>
 
-            <div class="form-group col-4 offset-4 mt-3">
-                <h4 class="sub-title">Nome</h4>
-                <input type="text" class="form-control" id="Qual seu nome completo" name="Nome" placeholder="Digite seu nome completo">
-            </div>
+                <div class="form-group col-4 offset-4">
+                    <h4 class="sub-title">Digite seu e-mail</h4>
+                    <input type="text" class="form-control" id="Email" name="Email" placeholder="E-mail">
+                </div>
+                <div class="form-group col-4 offset-4">
+                    <h4 class="sub-title">Telefone para contato</h4>
+                    <input type="text" class="form-control" id="Telefone" name="Telefone" placeholder="Digite o DDD e telefone">
+                </div>
 
-            <div class="form-group col-4 offset-4">
-                <h4 class="sub-title">Digite seu e-mail</h4>
-                <input type="text" class="form-control" id="Email" name="Email" placeholder="E-mail">
-            </div>
-            <div class="form-group col-4 offset-4">
-                <h4 class="sub-title">Telefone para contato</h4>
-                <input type="text" class="form-control" id="Telefone" name="Telefone" placeholder="Digite o DDD e telefone">
-            </div>
+                <div class="form-group col-4 offset-4">
+                    <h4 class="sub-title">Digite aqui sua mensagem</h4>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="mensagem" rows="8"></textarea>
+                </div>
 
-            <div class="form-group col-4 offset-4">
-                <h4 class="sub-title">Digite aqui sua mensagem</h4>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
-            </div>
-
-            <button onclick="myFunction()" class="btn btn-outline-success float-none">Enviar</button>
-            <p id="demo"></p>
-
+                <button type="submit" class="btn btn-outline-success float-none">Enviar</button>
+                <p id="demo"></p>
+            </form>
         </div>
     </div>
 </body>

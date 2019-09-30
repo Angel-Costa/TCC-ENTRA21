@@ -91,10 +91,12 @@ CREATE TABLE sugestoes(
 );
 
 CREATE TABLE contatos(
+	id int PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR(100),
 	email VARCHAR(100),
 	celular VARCHAR(15),
-	mensagem VARCHAR(100)
+	mensagem VARCHAR(100),
+	registro_ativo BIT
 
 );
 
