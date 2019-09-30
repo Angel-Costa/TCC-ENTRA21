@@ -48,74 +48,22 @@
                 </div>
                 <div class="card-block">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="row">
                             <div class="grid">
-                                <figure class="effect-julia">
-                                    <img src="~/Content/melhoresHoteis/dallas.jpg" alt="img21" class="img-fluid" />
-                                    <figcaption>
-                                        <h2>Dallas<span></span></h2>
-                                        <div>
-                                            <p>Aproveite essa oportunidade.</p>
-                                            <p>Estamos esperando viajante.</p>
-                                            <p>Venha conhecer agora.</p>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia">
-                                    <img src="~/Content/melhoresHoteis/melhores-hoteis-de-luxo-do-brasil-1.jpg" alt="img21" class="img-fluid" />
-                                    <figcaption>
-                                        <h2>Romance<span></span></h2>
-                                        <div>
-                                            <p>Um ótimo lugar para casais.</p>
-                                            <p>Para ficar com seu amor aqui.</p>
-                                            <p>Um tempo para namorar.</p>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia">
-                                    <img src="~/Content/melhoresHoteis/home-slide-05.jpg" alt="img21" class="img-fluid" />
-                                    <figcaption>
-                                        <h2>La Massion<span></span></h2>
-                                        <div>
-                                            <p>Perfeito para famílias.</p>
-                                            <p>Um lugar Seguro para todos.</p>
-                                            <p>Para fica bem relaxado.</p>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia">
-                                    <img src="~/Content/melhoresHoteis/noite03.jpg" alt="img21" class="img-fluid" />
-                                    <figcaption>
-                                        <h2>Amon<span></span></h2>
-                                        <div>
-                                            <p>Perfeito para fazer aventuras.</p>
-                                            <p>Contar Histórias quando voltar.</p>
-                                            <p>Explorar com os amigos.</p>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia">
-                                    <img src="~/Content/melhoresHoteis/Opala.jpg" alt="img21" class="img-fluid" />
-                                    <figcaption>
-                                        <h2>Porto Belo<span></span></h2>
-                                        <div>
-                                            <p>Um paraíso de tirar o folego.</p>
-                                            <p>Para quem ama forografar tudo.</p>
-                                            <p>Se lembrar para sempre.</p>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia">
-                                    <img src="~/Content/melhoresHoteis/hoteis-brasileiros-1.jpg" alt="img21" class="img-fluid" />
-                                    <figcaption>
-                                        <h2>Bela Vista<span></span></h2>
-                                        <div>
-                                            <p>Perfeito para ficar com os amigos.</p>
-                                            <p>Dar muita risada nesse lugar.</p>
-                                            <p>Para fazer memórias.</p>
-                                        </div>
-                                    </figcaption>
-                                </figure>
+                                @foreach (Model.Hotel hotel in ViewBag.Hoteis)
+                                {
+                                    <figure class="effect-julia">
+                                        <img src="~/Content/Uploads/Hoteis/@hotel.Imagem" alt="img21" class="img-fluid" />
+                                        <figcaption>
+                                            <h2>@hotel.Nome<span></span></h2>
+                                            <div>
+                                                <p>Aproveite essa oportunidade.</p>
+                                                <p>Estamos esperando viajante.</p>
+                                                <p>Venha conhecer agora.</p>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                }
                             </div>
                         </div>
                     </div>
