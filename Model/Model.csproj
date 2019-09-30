@@ -47,6 +47,7 @@
     <Compile Include="Base.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Comodidade.cs" />
+    <Compile Include="Contato.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="Sugestao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
