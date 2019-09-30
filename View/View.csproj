@@ -5731,6 +5731,7 @@
     <Content Include="Views\Administrador\Perfil.cshtml" />
     <Content Include="Views\Administrador\EditarPerfil.cshtml" />
     <Content Include="Views\Sugestao\Galeria.cshtml" />
+    <Content Include="Views\Sugestao\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />

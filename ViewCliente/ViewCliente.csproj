@@ -130,6 +130,13 @@
     <Content Include="Content\imagem\Home\sugestoes\8.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\9.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\10.jpg" />
+    <Content Include="Content\imagem\Sugestão02\BalnearioCamboriu.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Blumenau.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Florianopolis.jpg" />
+    <Content Include="Content\imagem\Sugestão02\Garopaba.jpg" />
+    <Content Include="Content\imagem\Sugestão02\NovaTrento.jpg" />
+    <Content Include="Content\imagem\Sugestão02\PortoBelo.jpg" />
+    <Content Include="Content\imagem\Sugestão02\SaoFranciscodoSul.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\São Francisco do Sul.jpg" />
     <Content Include="Content\imagem\SaoFrancisco\São Francisco do Sul_3.jpg" />
     <Content Include="Content\imagem\TeladeLogin\como-planejar-uma-viagem.jpg" />
@@ -10712,6 +10719,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ComodidadeController.cs" />
+    <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -11015,7 +11023,7 @@
     <Content Include="Views\Sugestao\Galeria.cshtml" />
     <Content Include="Views\Sugestao\Blumenau.cshtml" />
     <Content Include="Views\Perfil\Index.cshtml" />
-    <Content Include="Views\Home\Indicação.cshtml" />
+    <Content Include="Views\Contato\Indicacao.cshtml" />
     <Content Include="Scripts\style.scss" />
     <Content Include="Views\Sugestao\Florianopolis.cshtml" />
     <Content Include="Views\Sugestao\PortoBelo.cshtml" />
@@ -11035,6 +11043,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\imagem\Bandeiras\" />
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="Content\Uploads\" />

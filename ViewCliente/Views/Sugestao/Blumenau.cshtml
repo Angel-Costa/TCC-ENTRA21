@@ -3,28 +3,61 @@
     ViewBag.Title = "Blumenau";
 }
 
-<h2>Blumenau</h2>
+<head>
 
-<div class="row">
-    <div class="col-lg-12 col-xl-6">
-        <div class="card mr-5">
-            <div class="card-body">
-                <div>
-                    <img class="container img" src="~/Content/imagem/Blumenau/Teatro Carlos Gomes.jpg" />
-                    <p>
-                        
-                    </p>
-                </div>
-            </div>
+    <style>
+
+
+
+        .card {
+            background-color: #343a40;
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 10px;
+            width: 1100px;
+            height: 800px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<div class="page-body">
+    <div class="card">
+        <img src="~/Content/imagem/Sugestão02/Blumenau.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h2>Blumenau</h2>
+            <p class="card-text">
+                A cidade Blumenau possui uma agenda cultural focada nas festas baseadas na cultura dos imigrantes europeus, destacando-se a colonização alemã, especificamente a Oktoberfest, a segunda maior festa sobre cerveja do mundo e que acontece durante dezoito dias do mês de outubro, e o stammtisch, tradicional reunião de associações na rua XV de Novembro. O núcleo italiano da população realiza a Festitália, além de ocorrerem reuniões de CTG e diversas outras manifestações das culturas europeia e brasileira. Apesar de ser minoritário, o turismo comercial acha seu nicho na Texfair, feira têxtil reconhecida mundialmente.
+            </p>
         </div>
     </div>
 </div>
 
+
 @foreach (Model.Hotel hotel in ViewBag.Hoteis)
 {
-    if(hotel.Cidade == "Blumenau")
+    if (hotel.Cidade == "Blumenau")
     {
 
+        <div class="row">
+            <div class="col-lg-12 col-xl-6">
+                <div class="card mr-3">
+                    <div class="card-body ">
+                        <div>
+                            <img class="d-block img-fluid" src="~/Content/imagem/MelhoresHoteis/melhores-hoteis-centro-cancun.jpg" />
+                        </div>
+                        <div class="sub-title">Hotel: @hotel.Nome</div>
+                        <div class="sub-title">Valor por noite: @hotel.ValorNoite</div>
+                        <div class="sub-title">Bairro: @hotel.Bairro</div>
+                        <div class="sub-title">Rua: @hotel.Rua</div>
     <div class="row">
         <div class="col-lg-12 col-xl-6">
             <div class="card mr-3">
@@ -32,13 +65,8 @@
                     <div>
                         <img class="d-block img-fluid" src="@hotel.Imagem" />
                     </div>
-                    <div class="sub-title">Hotel: @hotel.Nome</div>
-                    <div class="sub-title">Valor por noite: @hotel.ValorNoite</div>
-                    <div class="sub-title">Bairro: @hotel.Bairro</div>
-                    <div class="sub-title">Rua: @hotel.Rua</div>
                 </div>
             </div>
         </div>
-    </div>
     }
 }

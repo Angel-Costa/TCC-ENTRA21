@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Indicação";
+}
+
+<head>
+
+    <style>
+
+        .card {
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 10px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 550px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, .5);
+        }
+    </style>
+
+    <script>
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Sua mensagem foi enviada com sucesso!";
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="card text-center">
+        <div class="card-user">
+            <div>
+                <img src="~/Content/imagem/UsuarioPerfil/Placa.png" style="height: 75px; width: 75px;" class="mt-3" />
+            </div>
+            <p></p>
+            <h4 class="card-title">Bem vindo viajante! Quer entrar em contato conosco?</h4>
+            <div>
+                <p></p>
+                <p class="card-text">
+                    Deixe aqui seu comentário, a sugestão de algo especial ou quem sabe até perguntar o que vier a cabeça!
+                    É só preencher e clicar em enviar!
+                </p>
+                <p>
+            </div>
+            <p></p>
+            <form action="/Contato/Cadastro" method="post">
+                <div class="row"></div>
+                <div class="form-group col-4 offset-4 mt-3">
+                    <h4 class="sub-title">Nome</h4>
+                    <input type="text" class="form-control" id="Qual seu nome completo" name="Nome" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="form-group col-4 offset-4">
+                    <h4 class="sub-title">Digite seu e-mail</h4>
+                    <input type="text" class="form-control" id="Email" name="Email" placeholder="E-mail">
+                </div>
+                <div class="form-group col-4 offset-4">
+                    <h4 class="sub-title">Telefone para contato</h4>
+                    <input type="text" class="form-control" id="Telefone" name="Telefone" placeholder="Digite o DDD e telefone">
+                </div>
+
+                <div class="form-group col-4 offset-4">
+                    <h4 class="sub-title">Digite aqui sua mensagem</h4>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="mensagem" rows="8"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-success float-none">Enviar</button>
+                <p id="demo"></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
