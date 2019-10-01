@@ -40,6 +40,7 @@ namespace ViewCliente.Controllers
             using (var smtp = new SmtpClient("smtp.gmail.com"))
             {
                 smtp.Port = 587;       // porta para SSL
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network; // Modo de envio
                 smtp.UseDefaultCredentials = false; // vamos utilizar credencias especificas
                 // seu usuário e senha para autenticação
                 smtp.Credentials = new NetworkCredential("gerenciamentolux@gmail.com", "sislux123");
@@ -48,7 +49,7 @@ namespace ViewCliente.Controllers
                 // envia o e-mail
                 smtp.Send(mail);
             }
-            return RedirectToAction("Index", new { id });
+            return RedirectToAction("Indicacao", new { id });
         }
     }
 }

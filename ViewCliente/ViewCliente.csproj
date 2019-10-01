@@ -102,9 +102,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="Content\css\ConhecaSite\conhecalux.css" />
     <Content Include="Content\css\ConhecaSite\conhecasite.css" />
@@ -11035,6 +11035,7 @@
     <Content Include="Views\Sugestao\NovaTrento.cshtml" />
     <Content Include="Views\Login\Cadastro.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Hotel\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
