@@ -43,15 +43,15 @@
         </div>
         <input id="Imagem" type="file" name="file" title="Selecionar imagem" />
 
-        <button class="btn btn-outline-success float-right mr-4" type="submit">
-            <i href="@Url.Action("Galeria","Sugestao")" class="fas fa-save"></i> Salvar
+        <button class="btn btn-outline-success float-right mt-4 mr-4" type="submit">
+            <i href="@Url.Action("Cadastro","Sugestao")" class="fas fa-save"></i> Salvar
         </button>
     </div>
 
 </form>
 
 <a href="@Url.Action("Apagar","Sugestao", new {id = @ViewBag.Sugestao.Id})"
-   class="btn text-danger float-right">
+   class="btn btn-outline-danger float-right mr-3 ">
     <i class="fas fa-trash"></i> Apagar
 </a>
 

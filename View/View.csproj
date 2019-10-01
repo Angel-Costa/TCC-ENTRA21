@@ -5724,7 +5724,6 @@
     <Content Include="Views\Comodidade\Editar.cshtml" />
     <Content Include="Views\Login\EsqueciSenha.cshtml" />
     <Content Include="Views\Administrador\Index.cshtml" />
-    <Content Include="Views\Sugestao\Index.cshtml" />
     <Content Include="Views\Sugestao\Cadastro.cshtml" />
     <Content Include="Views\Administrador\Cadastro.cshtml" />
     <Content Include="Views\Administrador\Editar.cshtml" />

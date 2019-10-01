@@ -17,7 +17,7 @@
 </div>
 
 
-<form action="@Url.Action("Editar")" method="post">
+<form action="@Url.Action("Editar")" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="@ViewBag.Hotel.Id" />
 
     <div class="card">
@@ -135,10 +135,7 @@
                                value="@ViewBag.Hotel.Complemento" placeholder="Digite um complemento" maxlength="50" autocomplete="off" required />
                     </div>
                 </div>
-                <form class="form-group col-5 offset-4 mt-lg-3" action="Upload" method="post" enctype="multipart/form-data">
-                    <input type="file" name="file" />
-                    <button class="btn btn-outline-success mt-3" type="submit"> <i class="fas fa-file-import"></i>Enviar Imagem</button>
-                </form>
+                <input id="Imagem" type="file" name="file" title="Selecionar Imagem" />
             </div>
             <button class="btn btn-outline-success float-right" type="submit">
                 <i class="fas fa-save"></i> Salvar

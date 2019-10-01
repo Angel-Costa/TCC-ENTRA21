@@ -22,40 +22,36 @@
 
                 <div class="card-block">
 
-                    <div class="card">
-                        <div class="card-header">
-                            <h5></h5>
-                            <span>Explore com as melhores fotos e descubra para a onde quer ir!</span>
-                            <div class="card-header-right">
-                                <i class="icofont icofont-spinner-alt-5"></i>
-                            </div>
-                            <a class="btn btn-outline-success mt-3" href="@Url.Action("Cadastro","Sugestao")">Cadastrar</a>
+                    <div class="card-header">
+                        <span>Explore com as melhores fotos e descubra para a onde quer ir!</span>
+                        <h5></h5>
+                        <div class="card-header-right">
+                            <i class="icofont icofont-spinner-alt-5"></i>
                         </div>
-                        <div class="grid">
-                            @foreach (Model.Sugestao sugestao in ViewBag.Sugestoes)
-                            {
-
-                                <a href="@Url.Action("Apagar","Sugestao") new {id = sugestao.Id})"
-                                   class="btn text-danger float-right">
-                                    <i class="fas fa-trash"></i> Apagar
-                                </a>
-
-                                <figure class="effect-julia">
-                                    <img src="~/Content/Uploads/@sugestao.Imagem" alt="img21" class="img-fluid" />
-                                    <figcaption>
-                                        <h2>@sugestao.Nome<span></span></h2>
-                                        <div>
-                                            <p>A Lux tira as melhores fotos</p>
-                                            <p>Com as melhores qualidades</p>
-                                            <p>Para te ajudar da melhor forma possivel</p>
-                                        </div>
-                                        <a href="@Url.Action("Editar","Sugestao", new { id = sugestao.Id})">Ver mais</a>
-                                    </figcaption>
-                                </figure>
+                        <a class="btn btn-outline-success mt-3" href="@Url.Action("Cadastro","Sugestao")">Cadastrar</a>
+                    </div>
+                    <div class="grid">
+                        @foreach (Model.Sugestao sugestao in ViewBag.Sugestoes)
+                        {
 
 
-                            }
-                        </div>
+
+
+                            <figure class="effect-julia">
+                                <img src="~/Content/Uploads/@sugestao.Imagem" alt="img21" class="img-fluid" />
+                                <figcaption>
+                                    <h2>@sugestao.Nome<span></span></h2>
+                                    <div>
+                                        <p>A Lux tira as melhores fotos</p>
+                                        <p>Com as melhores qualidades</p>
+                                        <p>Para te ajudar da melhor forma possivel</p>
+                                    </div>
+                                    <a href="@Url.Action("Editar","Sugestao", new { id = sugestao.Id})">Ver mais</a>
+                                </figcaption>
+                            </figure>
+
+
+                        }
                     </div>
                 </div>
             </div>
