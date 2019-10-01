@@ -277,7 +277,6 @@
     <Content Include="Content\imagem\Logo do projeto\opcao4.png" />
     <Content Include="Content\imagem\TeladeLogin\KombiLaranjaTraz.jpg" />
     <Content Include="Content\imagem\TeladeLogin\man-user %281%29.png" />
-    <Content Include="Content\imagem\TeladeLogin\seguro-viagem-o-que-e-740x360.jpg" />
     <Content Include="Content\melhoresHoteis\melhores-hoteis-centro-cancun.jpg" />
     <Content Include="Content\melhoresHoteis\melhores-hoteis-na-tailandia-premiados-code.jpg" />
     <Content Include="Content\melhoresHoteis\shangri-la-hotel-tailandia-hoteis-kangaroo-tours %288%29.jpg" />
@@ -5722,15 +5721,14 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Comodidade\Editar.cshtml" />
-    <Content Include="Views\Login\EsqueciSenha.cshtml" />
     <Content Include="Views\Administrador\Index.cshtml" />
+    <Content Include="Views\Sugestao\Index.cshtml" />
     <Content Include="Views\Sugestao\Cadastro.cshtml" />
     <Content Include="Views\Administrador\Cadastro.cshtml" />
     <Content Include="Views\Administrador\Editar.cshtml" />
     <Content Include="Views\Administrador\Perfil.cshtml" />
     <Content Include="Views\Administrador\EditarPerfil.cshtml" />
     <Content Include="Views\Sugestao\Galeria.cshtml" />
-    <Content Include="Views\Sugestao\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
