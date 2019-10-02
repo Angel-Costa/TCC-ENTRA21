@@ -11017,7 +11017,6 @@
     <Content Include="Views\Perfil\Editar.cshtml" />
     <Content Include="Views\Sugestao\Balneario.cshtml" />
     <Content Include="Views\Sugestao\Garopaba.cshtml" />
-    <Content Include="Views\Sugestao\PraiaDoRosa.cshtml" />
     <Content Include="Views\Sugestao\NovaTrento.cshtml" />
     <Content Include="Views\Login\Cadastro.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
