@@ -34,11 +34,12 @@ namespace ViewCliente.Controllers
             mail.From = new MailAddress("gerenciamentolux@gmail.com");
             mail.To.Add("gerenciamentolux@gmail.com"); // para
             mail.IsBodyHtml = true;
-            mail.Subject = "Teste"; // assunto
-            mail.Body = "Seu email foi enviado!"; // mensagem
+            mail.Subject = "Feedback"; // assunto
+            mail.Body = ""; // mensagem
 
             using (var smtp = new SmtpClient("smtp.gmail.com"))
             {
+
                 smtp.Port = 587;       // porta para SSL
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network; // Modo de envio
                 smtp.UseDefaultCredentials = false; // vamos utilizar credencias especificas

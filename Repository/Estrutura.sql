@@ -101,13 +101,27 @@ CREATE TABLE contatos(
 );
 
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Dallas','Profissional',120.0,'Santa Catarina', 'Blumenau','88215-971','Itoupava Central','654','Por do sol','Próximo a associação da weg', 1 );
+('Filipinas','QUEM NÃO GOSTA DE UMA VISTA INCRÍVEL PARA A PRAIA? COM UM CONFORTO E UM LOCAL FORA DE SÉRIE.',250.0,'Santa Catarina', 'Florianopolis','33658-445','Meia Praia','321','Builin 63','Final da praia', 1 );
 
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Romance', 'Profissional', 200.0, 'Santa Catarina', 'Bombinhas', '88215-970', 'Centro','32', 'Avenida Falcão 1001', 'Próximo a Romulo terraplanagem', 2);
+('Fransisco','Uma ótima hospedagem com um preço bom, ótima experiencias para se passar aqui.',70.0,'Santa Catarina', 'São Francisco','65589-712','Fernandão','3664','Fransisco','Geral', 1 );
 
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Bela Vista', 'Profissional', 250.0, 'Santa Catarina', 'Florianópolis', '88215-970', 'Campeche','3652', 'Alex Robe', 'Próximo a Moura car', 3);
+('New','PARA PASSAR COM A FAMÍLIA, UM LUGAR TRANQUILO LONGE DE QUALQUER ESTRESSE DO DIA-DIA.',120.0,'Santa Catarina', 'Nova Trento','65487-321','Trento','985','Nova','Fazenda', 1 );
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Amon',' UM ÓTIMO HOTEL PARA PASSAR COM SUA COMPANHEIRA (O) UM LUGAR PERFEITO PARA RELAXAR E CONSTRUIR MEMÓRIAS.',150.0,'Santa Catarina', 'Balneário Camboriú','89110-456','Stande 65','654','Palmeiras ','interior', 1 );
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Dallas','PERFEITO PARA PASSAR SUAS FÉRIAS, PARA TOMAR UM ÓTIMO BANHO DE PISCINA COM ACOMODAÇÕES PERFEITAS PARA O CONFORTO.',200.0,'Santa Catarina', 'Blumenau','89884-562','Pioneiros','963','Regular','Geral', 1 );
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Garou',' UM LUGAR PERFEITO PARA FICAR COM OS AMIGOS E CONSTRUIR HISTÓRIAS INCRÍVEIS!',200.0,'Santa Catarina', 'Garopaba','65423-165','Synai','654','piexes','Perto da costa', 1 );
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Toomy','PARA QUEM NÃO GOSTA DE PASSAR AS FÉRIAS SOZINHO, AQUI É UM ÓTIMO LUGAR PARA SE HOSPEDAR COM QUEM DESEJAR!',90.0,'Santa Catarina', 'Porto Belo','78862-465','Belo','1112','Porto','Ao lado de um porto', 1 );
+
+
 
 INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (1,'PLAYGROUND', 1),
