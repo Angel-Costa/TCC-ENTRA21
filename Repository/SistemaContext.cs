@@ -20,7 +20,7 @@ namespace Repository
         public DbSet<Hotel> Hoteis { get; set; }
         public DbSet<Administrador> Administradores { get; set; }
         public DbSet<Sugestao> Sugestoes { get; set; }
-        /*public DbSet<Contato> Contatos { get; set; }*/
+        public DbSet<Contato> Contatos { get; set; }
                 
     }
     

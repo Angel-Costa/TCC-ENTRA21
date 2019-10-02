@@ -10705,6 +10705,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ComodidadeController.cs" />
+    <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -11008,7 +11009,6 @@
     <Content Include="Views\Sugestao\Galeria.cshtml" />
     <Content Include="Views\Sugestao\Blumenau.cshtml" />
     <Content Include="Views\Perfil\Index.cshtml" />
-    <Content Include="Views\Home\Indicação.cshtml" />
     <Content Include="Scripts\style.scss" />
     <Content Include="Views\Sugestao\Florianopolis.cshtml" />
     <Content Include="Views\Sugestao\PortoBelo.cshtml" />
@@ -11021,6 +11021,7 @@
     <Content Include="Views\Login\Cadastro.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Hotel\Index.cshtml" />
+    <Content Include="Views\Contato\Indicacao.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
