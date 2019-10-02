@@ -135,10 +135,10 @@
                                value="@ViewBag.Hotel.Complemento" placeholder="Digite um complemento" maxlength="50" autocomplete="off" required />
                     </div>
                 </div>
-                <input id="Imagem" type="file" name="file" title="Selecionar Imagem" />
             </div>
+            <input id="Imagem" type="file" name="file" title="Selecionar Imagem" />
             <button class="btn btn-outline-success float-right" type="submit">
-                <i class="fas fa-save"></i> Salvar
+                <i href="@Url.Action("Index","Hotel")" class="fas fa-save"></i> Salvar
             </button>
         </div>
     </div>

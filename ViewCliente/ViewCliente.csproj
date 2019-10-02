@@ -187,6 +187,7 @@
     <Content Include="Content\js\Layout.js" />
     <Content Include="Content\js\Teste\teste.js" />
     <Content Include="Content\melhoresHoteis\0004_HotelCosteiro_fotoHome1.jpg" />
+    <Content Include="Content\melhoresHoteis\Amon.jpg" />
     <Content Include="Content\melhoresHoteis\home-slide-05.jpg" />
     <Content Include="Content\melhoresHoteis\hoteis-brasileiros-1.jpg" />
     <Content Include="Content\js\Teste01.js" />
@@ -197,6 +198,7 @@
     <Content Include="Content\melhoresHoteis\noite03.jpg" />
     <Content Include="Content\melhoresHoteis\BelaVista.jpg" />
     <Content Include="Content\melhoresHoteis\LaMassion.jpg" />
+    <Content Include="Content\melhoresHoteis\palace-praia.jpg" />
     <Content Include="Content\melhoresHoteis\PortoZarpaHotel-PraiadoForte-LitoralNorte.jpg" />
     <Content Include="Content\PortoBelo\piscina-com-bar-molhado.jpg" />
     <Content Include="Content\PortoBelo\ponta-do-estaleiro.jpg" />
@@ -11004,7 +11006,6 @@
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper.min.js.map" />
-    <Content Include="Views\MelhorHotel\Index.cshtml" />
     <Content Include="Views\SobreNos\Index.cshtml" />
     <Content Include="Views\Sugestao\Galeria.cshtml" />
     <Content Include="Views\Sugestao\Blumenau.cshtml" />
@@ -11032,7 +11033,6 @@
   <ItemGroup>
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
-    <Folder Include="Content\Uploads\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>

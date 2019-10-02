@@ -44,15 +44,29 @@ namespace View.Controllers
         [HttpPost, Route("cadastro")]
         public ActionResult Cadastro(Hotel hotel)
         {
+            //Suas validações ......
+            HttpPostedFileBase arquivo = Request.Files[0];
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+                arquivo.SaveAs(caminhoArquivo);
+
+                hotel.Imagem = nomeImagem;
+            }
             var id = repository.Inserir(hotel);
             return RedirectToAction("Index", new { id });
-
+          
         }
+
+    
 
         [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
         {
-            var hotel= repository.ObterPeloId(id);
+            var hotel = repository.ObterPeloId(id);
             ViewBag.Hotel = hotel;
             return View();
         }
@@ -60,7 +74,22 @@ namespace View.Controllers
         [HttpPost, Route("editar")]
         public ActionResult Editar(Hotel hotel)
         {
-            var alterado = repository.Alterar(hotel);
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+                arquivo.SaveAs(caminhoArquivo);
+
+                hotel.Imagem = nomeImagem;
+                var alterado = repository.Alterar(hotel);
+                return RedirectToAction("Index");
+            }
             return RedirectToAction("Index");
         }
 
