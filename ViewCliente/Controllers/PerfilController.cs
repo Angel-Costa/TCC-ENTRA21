@@ -9,17 +9,21 @@ using System.Web.Mvc;
 
 namespace ViewCliente.Controllers
 {
-    public class PerfilController : Controller
+    public class PerfilController : BaseController
     {
         private ClienteRepository repository;
 
         public PerfilController()
         {
-            ClienteRepository repositoryCliente = new ClienteRepository();
+            repository = new ClienteRepository();
         }
         // GET: Perfil
         public ActionResult Index()
         {
+            var clienteSessao = (Cliente)Session["Cliente"];
+            Cliente cliente = repository.ObterPeloId(clienteSessao.Id);
+
+            ViewBag.Cliente = cliente;
             return View();
         }
 
@@ -45,12 +49,12 @@ namespace ViewCliente.Controllers
 
                 arquivo.SaveAs(caminhoArquivo);
 
-                var usuarioLogado = (Administrador)Session["Usuario"];
+                var usuarioLogado = (Administrador)Session["Cliente"];
 
                 Cliente cliente = repository.ObterPeloId(usuarioLogado.Id);
                 cliente.Imagem = nomeImagem;
                 repository.Alterar(cliente);
-                Session["Usuario"] = cliente;
+                Session["Cliente"] = cliente;
             }
 
 
@@ -58,7 +62,13 @@ namespace ViewCliente.Controllers
             return RedirectToAction("EditarPerfil");
         }
 
-
+        public ActionResult Cliente()
+        {
+            ClienteRepository clienteRepository = new ClienteRepository();
+            List<Cliente> clientes = repository.ObterTodos();
+            ViewBag.Cliente = clientes;
+            return View();
+        }
 
     }
 }

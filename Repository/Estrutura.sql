@@ -6,7 +6,7 @@ CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
 
 	imagem VARCHAR (50),
-	celular VARCHAR(15),
+	celular VARCHAR(16),
 	estado VARCHAR(100),
 	cidade VARCHAR(100),
 	cep VARCHAR(10),
@@ -94,7 +94,7 @@ CREATE TABLE contatos(
 	id int PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR(100),
 	email VARCHAR(100),
-	celular VARCHAR(15),
+	celular VARCHAR(16),
 	mensagem VARCHAR(100),
 	registro_ativo BIT
 
@@ -136,22 +136,22 @@ INSERT INTO comodidades (id_hotel, nome, registro_ativo) VALUES
 (3, 'Karaoke', 3);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Loene', '12345678910' , 'loene@gmail.com', 'loene0504', 'cliente', 1);
+('Loene', '12345678910' , 'loene@gmail.com', 'loene0504', 1, 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Jorel', '356871545454' , 'Jorel@gmail.com', 'Jojo6987', 'cliente', 1);
+('Jorel', '356871545454' , 'Jorel@gmail.com', 'Jojo6987', 1, 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Angel', '32195461416' , 'angelcosta@gmail.com', 'fimose000', 'administrador', 1);
+('Angel', '32195461416' , 'angelcosta@gmail.com', 'fimose000', 1, 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Paulo','123.123.123-12', 'camargopaulohenrique2@gmail.com', 'paulin','administrador', 1);
+('Paulo','123.123.123-12', 'camargopaulohenrique2@gmail.com', 'paulin', 1, 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Loene','323.323.232-44', 'loene@gmail.com', 'loene', 'administrador' , 1);
+('Loene','323.323.232-44', 'loene@gmail.com', 'loene', 1 , 1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
-('Naiara', '111.111.111-21', 'naiara@gmail.com','naiara','administrador',1);
+('Naiara', '111.111.111-21', 'naiara@gmail.com','naiara', 1,1);
 
 INSERT INTO administradores(nome, cpf, login, senha, privilegio, registro_ativo) VALUES
 ('Nicollas', '555.555.555-45', 'nicollasleeribeiro@gmail.com', 'jhtjht','administrador', 1)
@@ -177,11 +177,12 @@ INSERT INTO sugestoes(nome, local, descricao, ponto_turistico, cidade, endereco)
 INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, numero, rua, complemento, cpf,rg) VALUES
 ('Jose','997857239', 'SC', 'Blumenau','67.130-170','josefreitas@gmail.com', 'jose123', 'itoupava central', '201','alex borchardt', 'proximo a weg', '123.456.789-10', '12.345.678-9');
 
-INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, numero, rua, complemento, cpf,rg) VALUES
-('Matheus','997965820', 'SC', 'Blumenau','00.208-325','matheus@gmail.com', '0504879', 'Vila Itoupava', '456','Rua Alwin Wachholz', 'Proximo ao Hospital Misericórdia', '803.484.620-18', '20.939.373-7');
+INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, numero, rua, complemento, cpf,rg, registro_ativo) VALUES
+('Matheus','997965820', 'SC', 'Blumenau','00.208-325','matheus@gmail.com', '123', 'Vila Itoupava', '456','Rua Alwin Wachholz', 'Proximo ao Hospital Misericórdia', '803.484.620-18', '20.939.373-7', 1);
 
 INSERT INTO clientes(nome, celular, estado, cidade, cep, login, senha, bairro, numero, rua, complemento, cpf,rg) VALUES
-('Camilly','324584321', 'SC', 'Balneário Camboriú','88336-015','camy@gmail.com', 'milly123', 'Nova Esperança', '397','Rua Belmiro Diogo Cordeiro', 'proximo a praia', '101.251.560-57', '24.608.995-7');
+('Camilly','324584321', 'SC', 'Balneário Camboriú','88336-015','camy@gmail.com', 'milly123', 'Nova Esperança', '397','Rua Belmiro Diogo Cordeiro', 'proximo a praia', '101.251.560-57', '24.608.995-7'),
+('Jeanderson', '998988989', 'Santa Catarina', 'Blumenau', '87899-123', 'jeanderson@gmail.com', 'ionion', 'Nova Esperança' , '987', 'Rua Alex Borchardt', 'Na frente do posto Petrobras','879.489.189-26','87.589.689-8');
 
 SELECT * FROM hoteis;
 SELECT * FROM comodidades;	
