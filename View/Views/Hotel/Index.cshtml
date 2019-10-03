@@ -4,14 +4,14 @@
 }
 <head>
 </head>
-<div class="page-header card" style="width: 1198px;">
+<div class="page-header card">
     <div class="row align-items-end">
         <div class="col-lg-8">
             <div class="page-header-title">
-                <i class="icofont icofont icofont icofont-hotel" style="background-color: #171d2b;"></i>
+                <i class="icofont icofont icofont icofont-hotel" style="background-color: #343a40;"></i>
                 <div class="d-inline">
                     <h4>Lista de Hoteis</h4>
-                  
+
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
 
             <ul class="breadcrumb-title">
                 <li>
-                    <a class="btn text-success float-left"
+                    <a class="btn text-success float-right"
                        href="@Url.Action("Cadastro")">
                         <i class="fas fa-plus"></i> Novo Hotel
                     </a>
@@ -30,30 +30,31 @@
 </div>
 
 
-<div class="form-group col-lg-12">
+<div class="page-body">
     <div class="row">
 
         @foreach (Model.Hotel hotel in ViewBag.Hoteis)
         {
-            <div class="card mr-3">
-                <div class="card-body">
-                    <div class=""></div>
-                    <div class="sub-title">Cadastro: @hotel.Id</div>
-                    <div class="sub-title">Nome: @hotel.Nome</div>
-                    <div class="sub-title">Valor: @hotel.ValorNoite</div>
-                    <div class="sub-title">Estado: @hotel.Estado</div>
-                    <div class="sub-title">Cidade: @hotel.Cidade</div>
-                    <div class="row">
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class=""></div>
+                        <div class="sub-title">Nome: @hotel.Nome</div>
+                        <div class="sub-title">Valor: @hotel.ValorNoite</div>
+                        <div class="sub-title">Estado: @hotel.Estado</div>
+                        <div class="sub-title">Cidade: @hotel.Cidade</div>
+                        <div class="row">
 
-                        <a href="@Url.Action("Apagar", new {id = hotel.Id})"
-                           class="btn text-danger float-right">
-                            <i class="fas fa-trash"></i> Apagar
-                        </a>
+                            <a href="@Url.Action("Apagar", new {id = hotel.Id})"
+                               class="btn text-danger float-right">
+                                <i class="fas fa-trash"></i> Apagar
+                            </a>
 
-                        <a href="@Url.Action("Editar", new { id = hotel.Id })"
-                           class="btn text-primary float-right">
-                            <i class="fas fa-pen"></i> Editar
-                        </a>
+                            <a href="@Url.Action("Editar", new { id = hotel.Id })"
+                               class="btn text-primary float-right">
+                                <i class="fas fa-pen"></i> Editar
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

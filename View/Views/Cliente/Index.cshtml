@@ -7,19 +7,18 @@
     <div class="row align-items-end">
         <div class="col-lg-8">
             <div class="page-header-title">
-                <i class="icofont icofont icofont icofont-user-alt-3" style="background-color: #171d2b;"></i>
+                <i class="icofont icofont icofont icofont-user-alt-3" style="background-color: #343a40;"></i>
                 <div class="d-inline">
                     <h4>Lista de Clientes</h4>
-                 
+
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
-            
+
             <ul class="breadcrumb-title">
                 <li>
                     <a class="btn text-success float-right"
-                      
                        href="@Url.Action("Cadastro")">
                         <i class="fas fa-plus"></i> Novo Cliente
                     </a>
@@ -29,30 +28,30 @@
     </div>
 </div>
 
-<div class="form-group col-lg-12">
+<div class="page-body">
     <div class="row">
 
         @foreach (Model.Cliente cliente in ViewBag.Clientes)
         {
-            <div class="card mr-3">
-                <div class="card-body ">
-                    <div class="sub-title">Cadastro: @cliente.Id</div>
-                    <div class="sub-title">Nome: @cliente.Nome</div>
-                    <div class="sub-title">Estado: @cliente.Estado</div>
-                    <div class="sub-title">Cidade: @cliente.Cidade</div>
-                    <div class="sub-title">Login: @cliente.Login</div>
-                    <div class="sub-title">Senha: @cliente.Senha</div>
-                    <div class="row">
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-body">                       
+                        <div class="sub-title">Nome: @cliente.Nome</div>
+                        <div class="sub-title">Estado: @cliente.Estado</div>
+                        <div class="sub-title">Cidade: @cliente.Cidade</div>
+                        <div class="sub-title">Login: @cliente.Login</div>
+                        <div class="row">
 
-                        <a href="@Url.Action("Apagar", new {id = cliente.Id})"
-                           class="btn text-danger float-right">
-                            <i class="fas fa-trash"></i> Apagar
-                        </a>
+                            <a href="@Url.Action("Apagar", new {id = cliente.Id})"
+                               class="btn text-danger float-right">
+                                <i class="fas fa-trash"></i> Apagar
+                            </a>
 
-                        <a href="@Url.Action("Editar", new { id = cliente.Id })"
-                           class="btn text-primary float-right">
-                            <i class="fas fa-pen"></i> Editar
-                        </a>
+                            <a href="@Url.Action("Editar", new { id = cliente.Id })"
+                               class="btn text-primary float-right">
+                                <i class="fas fa-pen"></i> Editar
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
