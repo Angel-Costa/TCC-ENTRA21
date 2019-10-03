@@ -19,7 +19,7 @@
 
 <div class="card" style="background-color: #343a40;">
     <div class="card-header">
-        <h5 class="card-header-text" style="color: white;">Sobre Mim</h5>
+        <h5 class="card-header-text" style="color: white;">Informações pessoais</h5>
 
     </div>
     <div class="card-block" style="background-color: #343a40;">
@@ -44,14 +44,7 @@
                                                 <th scope="row">Login</th>
                                                 <td>@ViewBag.Cliente.Login</td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">Estado</th>
-                                                <td>@ViewBag.Cliente.Estado</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Cidade</th>
-                                                <td>@ViewBag.Cliente.Cidade</td>
-                                            </tr>
+                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -62,17 +55,16 @@
                                     <table class="table">
                                         <tbody>
                                             <tr>
-                                                <th scope="row">Email</th>
-                                                <td>angel.gabriel.costa31@gmail.com</td>
+                                                <th scope="row">Estado</th>
+                                                <td>@ViewBag.Cliente.Estado</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Celular</th>
-                                                <td>(47) 99151-0533</td>
+                                                <th scope="row">Cidade</th>
+                                                <td>@ViewBag.Cliente.Cidade</td>
                                             </tr>
-
                                         </tbody>
                                     </table>
-                                    <a href="@Url.Action("Editar","Perfil", new { id = ViewBag.Cliente.Id})" class="btn btn-outline-primary">Editar</a>
+                                            <a href="@Url.Action("Editar","Perfil", new { id = ViewBag.Cliente.Id})" class="btn btn-outline-primary">Editar</a>
                                 </div>
                             </div>
                             <!-- end of table col-lg-6 -->

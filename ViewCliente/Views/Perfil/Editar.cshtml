@@ -3,18 +3,18 @@
     ViewBag.Title = "Editar";
 }
 
-    <div class="page-header card">
-        <div class="row align-items-end">
-            <div class="col-lg-8">
-                <div class="page-header-title">
-                    <i class="icofont icofont icofont icofont-user-alt-3" style="background-color: #171d2b;"></i>
-                    <div class="d-inline">
-                        <h4 style="text-transform: capitalize">Editar informações do perfil</h4>
-                    </div>
+<div class="page-header card">
+    <div class="row align-items-end">
+        <div class="col-lg-8">
+            <div class="page-header-title">
+                <i class="icofont icofont icofont icofont-user-alt-3" style="background-color: #171d2b;"></i>
+                <div class="d-inline">
+                    <h4 style="text-transform: capitalize">Editar informações do perfil</h4>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
 <form action="@Url.Action("Editar")" method="post">
@@ -23,31 +23,27 @@
             <div class="row">
                 <div class="col-sm-12 col-xl-5 m-b-30">
                     <h4 class="sub-title">Nome Completo</h4>
-                    <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome completo" maxlength="70" autocomplete="off" required />
+                    <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome completo" maxlength="70" autocomplete="off" required value="@ViewBag.Cliente.Nome"/>
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
-                    <h4 class="sub-title">Gênero</h4>
-                    <input id="campo-genero" class="form-control" type="text" name="genero" placeholder="Digite o seu gênero" autocomplete="off" required />
-                </div>
-                <div class="col-sm-12 col-xl-3 m-b-30">
-                    <h4 class="sub-title">Estado Civil</h4>
-                    <input id="campo-estado-civil" class="form-control" type="text" name="estadoCivil" placeholder="Digite o seu estado civil" autocomplete="off" required />
+                    <h4 class="sub-title">Estado</h4>
+                    <input id="campo-estado" class="form-control" type="text" name="estado" placeholder="Digite o nome do seu Estado" autocomplete="off" required value="@ViewBag.Cliente.Estado"/>
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
-                    <h4 class="sub-title">Localização</h4>
-                    <input id="campo-localizacao" class="form-control" type="text" name="localizacao" placeholder="Digite a sua localização" autocomplete="off" required />
+                    <h4 class="sub-title">Cidade</h4>
+                    <input id="campo-localizacao" class="form-control" type="text" name="localizacao" placeholder="Digite a sua localização" autocomplete="off" required value="@ViewBag.Cliente.Cidade"/>
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
                     <h4 class="sub-title">Email</h4>
-                    <input id="campo-email" class="form-control" type="text" name="email" placeholder="Digite o seu email" autocomplete="off" required />
+                    <input id="campo-email" class="form-control" type="text" name="email" placeholder="Digite o seu email" autocomplete="off" required value="@ViewBag.Cliente.Login"/>
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
                     <h4 class="sub-title">Celular</h4>
-                    <input id="campo-celular" class="form-control" type="text" name="celular" placeholder="Digite o seu celular" autocomplete="off" required />
+                    <input id="campo-celular" class="form-control" type="text" name="celular" placeholder="Digite o seu celular" autocomplete="off" required value="@ViewBag.Cliente.Celular"/>
                 </div>
                 <div class="col-sm-12 col-xl-2 m-b-30">
-                    <a href="@Url.Action("")" class="btn btn-outline-primary">Salvar</a>
-                </div>
+                    <button class="btn btn-outline-primary" type="submit">Salvar</button>
+                </div>  
             </div>
         </div>
     </div>

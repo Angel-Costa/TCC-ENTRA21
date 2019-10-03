@@ -27,9 +27,21 @@ namespace ViewCliente.Controllers
             return View();
         }
 
-        public ActionResult Editar()
+        [HttpGet, Route("editar")]
+        public ActionResult Editar(int id)
         {
+            var cliente = repository.ObterPeloId(id);
+            ViewBag.Cliente = cliente;
             return View();
+        }
+
+        [HttpPost, Route("editar")]
+        public ActionResult Editar(Cliente cliente)
+        {
+            List<Cliente> clientes = repository.ObterTodos();
+            ViewBag.Clientes = clientes;
+            var alterado = repository.Alterar(cliente);
+            return RedirectToAction("Index", new { id = cliente.Id });
         }
 
         public ActionResult Upload()
