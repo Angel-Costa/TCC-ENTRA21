@@ -2,6 +2,7 @@
 using Repository.Repositories;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -11,7 +12,7 @@ namespace View.Controllers
     [Route("sugestao")]
     public class SugestaoController : Controller
     {
-        private SugestaoRepository repository;
+        private SugestaoRepository repository;  
 
         public SugestaoController()
         {
