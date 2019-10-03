@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 using Model;
 using Repository.Interfaces;
@@ -11,12 +12,13 @@ namespace View.Controllers
     public class LoginController : Controller
     {
         private AdministradorRepository repositoryAdministrador;
-        private ClienteRepository reositoryCliente;
+        private ClienteRepository repositoryCliente;
+        
 
         public LoginController()
         {
             repositoryAdministrador = new AdministradorRepository();
-            reositoryCliente = new ClienteRepository();
+            repositoryCliente = new ClienteRepository();
 
         }
 
@@ -37,7 +39,7 @@ namespace View.Controllers
             var administrador = repositoryAdministrador.VerificarLoginSenha(login, senha);
             if (administrador == null)
             {
-                var usuario = reositoryCliente.VerificarLoginSenha(login, senha);
+                var usuario = repositoryCliente.VerificarLoginSenha(login, senha);
                 // if (usuario == null)
                 // enviar mensagem para o usuário que a senha ou login incorreto
                 if (usuario == null)
@@ -61,7 +63,7 @@ namespace View.Controllers
         [HttpPost]
         public ActionResult Cadastro(Cliente cliente)
         {
-            reositoryCliente.Cadastro(cliente);
+            repositoryCliente.Cadastro(cliente);
             return RedirectToAction("Index");
         }
 
