@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace ViewCliente.Controllers
 {
-    public class MelhorHotelController : Controller
+    public class MelhorHotelController : BaseController
     {
         // GET: MelhorHotel
         public ActionResult Index()

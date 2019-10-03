@@ -35,7 +35,7 @@ namespace ViewCliente.Controllers
             mail.To.Add("gerenciamentolux@gmail.com"); // para
             mail.IsBodyHtml = true;
             mail.Subject = "Feedback"; // assunto
-            mail.Body = "Seu email foi enviado com sucesso!"; // mensagem
+            mail.Body = (contato.Mensagem); // mensagem
 
             using (var smtp = new SmtpClient("smtp.gmail.com"))
             {
