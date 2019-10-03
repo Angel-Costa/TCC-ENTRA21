@@ -6,7 +6,7 @@ CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1),
 
 	imagem VARCHAR (50),
-	celular VARCHAR(15),
+	celular VARCHAR(16),
 	estado VARCHAR(100),
 	cidade VARCHAR(100),
 	cep VARCHAR(10),
@@ -94,7 +94,7 @@ CREATE TABLE contatos(
 	id int PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR(100),
 	email VARCHAR(100),
-	celular VARCHAR(15),
+	celular VARCHAR(16),
 	mensagem VARCHAR(100),
 	registro_ativo BIT
 
