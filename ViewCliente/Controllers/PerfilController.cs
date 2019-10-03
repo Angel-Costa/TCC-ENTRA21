@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace ViewCliente.Controllers
 {
-    public class PerfilController : Controller
+    public class PerfilController : BaseController
     {
         private ClienteRepository repository;
 

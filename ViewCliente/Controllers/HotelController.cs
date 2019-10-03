@@ -8,11 +8,12 @@ using System.Web.Mvc;
 using Model;
 using Repository.Interfaces;
 using Repository.Repositories;
+using ViewCliente.Controllers;
 
 namespace View.Controllers
 {
     [Route("hotel")]
-    public class HotelController : Controller
+    public class HotelController : BaseController
     {
         private HotelRepository repository;
 

@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using Model;
 using Repository.Interfaces;
 using Repository.Repositories;
+using ViewCliente.Controllers;
 
 namespace View.Controllers
 {
