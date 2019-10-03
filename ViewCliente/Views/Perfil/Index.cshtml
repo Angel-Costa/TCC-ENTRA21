@@ -7,13 +7,15 @@
 
     <style>
 
-        .row{
+        .row {
             color: white;
         }
-
     </style>
 
 </head>
+
+
+
 
 <div class="card" style="background-color: #343a40;">
     <div class="card-header">
@@ -32,15 +34,23 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Nome Completo</th>
-                                                <td>Angel Gabriel Costa</td>
+                                                <td>@ViewBag.Cliente.Nome</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Data de Nascimento</th>
-                                                <td>31 de março de 2003</td>
+                                                <th scope="row">Celular</th>
+                                                <td>@ViewBag.Cliente.Celular</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Endereço</th>
-                                                <td>Blumenau, BRA</td>
+                                                <th scope="row">Login</th>
+                                                <td>@ViewBag.Cliente.Login</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Estado</th>
+                                                <td>@ViewBag.Cliente.Estado</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Cidade</th>
+                                                <td>@ViewBag.Cliente.Cidade</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -59,10 +69,10 @@
                                                 <th scope="row">Celular</th>
                                                 <td>(47) 99151-0533</td>
                                             </tr>
-                                          
+
                                         </tbody>
                                     </table>
-                                    <a href="@Url.Action("Editar","Perfil")" class="btn btn-outline-primary">Editar</a>
+                                    <a href="@Url.Action("Editar","Perfil", new { id = ViewBag.Cliente.Id})" class="btn btn-outline-primary">Editar</a>
                                 </div>
                             </div>
                             <!-- end of table col-lg-6 -->
@@ -78,4 +88,3 @@
         <!-- end of view-info -->
     </div>
 </div>
-
