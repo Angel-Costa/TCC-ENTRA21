@@ -44,7 +44,7 @@ namespace View.Controllers
         [HttpPost, Route("cadastro")]
         public ActionResult Cadastro(Sugestao sugestao)
         {
-          
+
             HttpPostedFileBase arquivo = Request.Files[0];
 
             //Suas validações ......
@@ -62,13 +62,13 @@ namespace View.Controllers
 
             }
 
-            
-//            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
+
+            //            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
 
 
             var id = repository.Cadastro(sugestao);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Galeria");
         }
 
         [HttpGet, Route("editar")]
@@ -83,16 +83,16 @@ namespace View.Controllers
         public ActionResult Editar(Sugestao sugestao)
         {
             var alterado = repository.Alterar(sugestao);
-            return RedirectToAction("Index");
+            return RedirectToAction("Galeria");
         }
 
         [HttpGet, Route("apagar")]
         public ActionResult Apagar(int id)
         {
             var apagou = repository.Apagar(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("Galeria");
         }
 
-        
+
     }
 }

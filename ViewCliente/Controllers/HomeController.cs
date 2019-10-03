@@ -16,13 +16,6 @@ namespace ViewCliente.Controllers
             return View();
         }
 
-        public ActionResult Indicação()
-        {
-            return View();
-        }
-
-        
-
         public ActionResult Florianopolis()
         {
             HotelRepository hotelRepository = new HotelRepository();

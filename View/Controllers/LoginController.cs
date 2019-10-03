@@ -47,20 +47,7 @@ namespace View.Controllers
                     Console.WriteLine("Senha ou login está errado");
                 }
 
-                //if (privilegio == true)
-                // {
-                //     return RedirectoAction("Index" , "Home");
-                // }
-                // 
-                // if (privilegio == false)
-                // {
-                //      return RedirectToAction("Index", "Home", "ViewCliente")
-                var cookie = new HttpCookie("Usuario", usuario.Id.ToString());
-                cookie.Domain = "localhost:44389";
-                Response.SetCookie(cookie);
-                Response.Redirect("http://localhost:44389");
-                return Redirect("http://localhost:44389");
-                
+                    return RedirectToAction("Index","Home");
             }
 
             Session["Usuario"] = administrador;
