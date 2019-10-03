@@ -26,16 +26,12 @@
                     <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite o nome completo" maxlength="70" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
-                    <h4 class="sub-title">Gênero</h4>
-                    <input id="campo-genero" class="form-control" type="text" name="genero" placeholder="Digite o seu gênero" autocomplete="off" required />
-                </div>
-                <div class="col-sm-12 col-xl-3 m-b-30">
-                    <h4 class="sub-title">Estado Civil</h4>
-                    <input id="campo-estado-civil" class="form-control" type="text" name="estadoCivil" placeholder="Digite o seu estado civil" autocomplete="off" required />
+                    <h4 class="sub-title">Data de nascimento</h4>
+                    <input id="campo-data" class="form-control date" type="text" name="data" placeholder="Data de nascimento" data-mask="99/99/9999" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
-                    <h4 class="sub-title">Localização</h4>
-                    <input id="campo-localizacao" class="form-control" type="text" name="localizacao" placeholder="Digite a sua localização" autocomplete="off" required />
+                    <h4 class="sub-title">Endereço</h4>
+                    <input id="campo-localizacao" class="form-control" type="text" name="localizacao" placeholder="Digite seu endereço" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
                     <h4 class="sub-title">Email</h4>
@@ -43,7 +39,7 @@
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
                     <h4 class="sub-title">Celular</h4>
-                    <input id="campo-celular" class="form-control" type="text" name="celular" placeholder="Digite o seu celular" autocomplete="off" required />
+                    <input id="campo-celular" class="form-control telphone_with_code" type="text" name="celular" placeholder="Digite o seu celular" data-mask="(00) 0-00000-0000" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-2 m-b-30">
                     <a href="@Url.Action("")" class="btn btn-outline-primary">Salvar</a>
