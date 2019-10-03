@@ -34,21 +34,15 @@ namespace View.Controllers
         [HttpPost]
         public ActionResult Login(string login, string senha)
         {
-            var administrador = repositoryAdministrador.VerificarLoginSenha(login, senha);
-            if (administrador == null)
+            var cliente = reositoryCliente.VerificarLoginSenha(login, senha);
+            // if (usuario == null)
+            // enviar mensagem para o usuário que a senha ou login incorreto
+            if (cliente == null)
             {
-                var usuario = reositoryCliente.VerificarLoginSenha(login, senha);
-                // if (usuario == null)
-                // enviar mensagem para o usuário que a senha ou login incorreto
-                if (usuario == null)
-                {
-                    Console.WriteLine("Senha ou login está errado");
-                }
+                return RedirectToAction("Index", "Login");
 
-                    return RedirectToAction("Index","Home");
             }
-
-            Session["Usuario"] = administrador;
+            Session["Cliente"] = cliente;
             return RedirectToAction("Index", "Home");
         }
 
