@@ -6,11 +6,12 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ViewCliente.Controllers;
 
 namespace View.Controllers
 {
     [Route("sugestao")]
-    public class SugestaoController : Controller
+    public class SugestaoController : BaseController
     {
         private SugestaoRepository repository;  
 

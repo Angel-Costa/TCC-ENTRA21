@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace ViewCliente.Controllers
 {
-    public class SobreNosController : Controller
+    public class SobreNosController : BaseController
     {
         // GET: SobreNos
         public ActionResult Index()

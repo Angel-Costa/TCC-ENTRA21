@@ -182,7 +182,8 @@
         <input type="text" id="login" placeholder="Email" name="login" maxlength="50" autocomplete="off" required>
 
         <p style="color: white">CPF</p>
-        <input type="text" placeholder="CPF" onkeypress="$(this).mask('000.000.000-00');" maxlength="11" name="cpf" autocomplete="off" required>
+        <input type="text" id="campo-cpf" placeholder="CPF" class="form-control ip"
+               data-mask="999.999.999.99"  maxlength="14" name="cpf" autocomplete="off"  data-mask-selectonfocus="true" required>
 
         <p style="color: white">Senha</p>
         <input type="password" id="senha" placeholder="Senha" name="senha" autocomplete="off" required>

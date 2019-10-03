@@ -27,11 +27,8 @@
         <div class="col-sm-12">
             <!-- Bootstrap slider card start -->
             <div class="card">
-                <div class="card-header">
-                    <h5 style="color: white; font-size: 30px;">Blumenau</h5>
-                    <div class="card-header-right"><i class="icofont icofont-spinner-alt-5"></i></div>
-                </div>
-                <div class="card-block" style="height: 500px;">
+
+                <div class="card-block" style="height: 650px;">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -39,7 +36,7 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                         </ol>
-                        <div class="carousel-inner" role="listbox" style="height: 475px;">
+                        <div class="carousel-inner" role="listbox" style="height: 610px;">
                             <div class="carousel-item active">
                                 <img class="d-block img-fluid w-100" src="~/Content/imagem/Blumenau/Parque Ramiro Ruediguer.jpg" alt="First slide">
                             </div>
@@ -68,15 +65,15 @@
     </div>
 </div>
 
+<div class="page-body">
+    <div class="row">
 
+        @foreach (Model.Hotel hotel in ViewBag.Hoteis)
+        {
+            if (hotel.Cidade == "Blumenau")
+            {
 
-@foreach (Model.Hotel hotel in ViewBag.Hoteis)
-{
-    if (hotel.Cidade == "Blumenau")
-    {
-        <div class="page-body">
-            <div class="row">
-                <div class="col-md-6">
+                <div class="col-xl-6">
                     <!-- Product detail page start -->
                     <div class="card product-detail-page">
                         <div class="card-block">
@@ -121,9 +118,7 @@
                     </div>
                     <!-- Product detail page end -->
                 </div>
-            </div>
-        </div>
-
-
-    }
-}
+            }
+        }
+    </div>
+</div>

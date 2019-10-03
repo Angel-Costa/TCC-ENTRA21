@@ -19,6 +19,7 @@
         p {
             color: white;
         }
+
     </style>
 
 </head>
@@ -28,11 +29,8 @@
         <div class="col-sm-12">
             <!-- Bootstrap slider card start -->
             <div class="card">
-                <div class="card-header">
-                    <h5 style="color: white; font-size: 30px;">Florianópolis</h5>
-                    <div class="card-header-right"><i class="icofont icofont-spinner-alt-5"></i></div>
-                </div>
-                <div class="card-block" style="height: 500px;">
+
+                <div class="card-block" style="height: 650px;">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -40,7 +38,7 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                         </ol>
-                        <div class="carousel-inner" role="listbox" style="height: 475px;">
+                        <div class="carousel-inner" role="listbox" style="height: 610px;">
                             <div class="carousel-item active">
                                 <img class="d-block img-fluid w-100" src="~/Content/imagem/Florianopolis/Lagoinha-do-Leste-Florianópolis.jpg" alt="First slide">
                             </div>
@@ -69,15 +67,14 @@
     </div>
 </div>
 
+<div class="page-body">
+    <div class="row">
 
-
-@foreach (Model.Hotel hotel in ViewBag.Hoteis)
-{
-    if (hotel.Cidade == "Florianópolis")
-    {
-        <div class="page-body">
-            <div class="row">
-                <div class="col-md-6">
+        @foreach (Model.Hotel hotel in ViewBag.Hoteis)
+        {
+            if (hotel.Cidade == "Florianopolis")
+            {
+                <div class="col-xl-6">
                     <!-- Product detail page start -->
                     <div class="card product-detail-page">
                         <div class="card-block">
@@ -98,15 +95,12 @@
                                     <div class="row">
                                         <div>
                                             <div class="col-lg-12">
+                                                <span class="txt-muted d-inline-block" style="color: white;">Estado:<a href="#!" style="color: white;"> @hotel.Estado</a></span>
+                                                <span class="f-right" style="color: white;">Cidade:<a href="#!" style="color: white;"> @hotel.Cidade</a> </span>
+                                            </div>
+                                            <div class="col-lg-12">
                                                 <h4 class="pro-desc" style="color: white;">@hotel.Nome</h4>
                                             </div>
-                                            <div class="col-lg-12">
-                                                <span class="pro-desc" style="color: white;">Estado: @hotel.Estado</span>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <span class="pro-desc" style="color: white;">Cidade: @hotel.Cidade</span>
-                                            </div>
-
                                             <div class="col-lg-12">
                                                 <span class="text-primary product-price"><i class="icofont icofont-cur-dollar"></i>@hotel.ValorNoite</span>
                                                 <hr>
@@ -122,10 +116,9 @@
                     </div>
                     <!-- Product detail page end -->
                 </div>
-            </div>
-        </div>
+            }
+        }
+    </div>
+</div>
 
-
-    }
-}
 

@@ -11032,6 +11032,7 @@
     <Folder Include="Content\tema\assets\pages\ckeditor\samples\toolbarconfigurator\lib\" />
     <Folder Include="Content\tema\assets\pages\j-pro\form_files\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
