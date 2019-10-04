@@ -9,7 +9,8 @@ namespace ViewCliente
     {
         public static string ObterCaminhoImagem()
         {
-            return "https://localhost:44315/Content";  
+            return "http://lux-system.azurewebsites.net/Content";
+            //return "https://localhost:44315/Content";  
         }
     }
 }
