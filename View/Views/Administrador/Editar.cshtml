@@ -25,13 +25,13 @@
                 <div class="col-sm-12 col-xl-8 m-b-30">
                     <div class="form-group">
                         <input type="hidden" id="campo-id" value="@ViewBag.Administrador.Id" />
-                        <h4 class="sub-title">Nome</h4>
+                        <h4 class="sub-title">Nome<strong>*</strong></h4>
                         <input class="form-control" type="text" name="nome"
                                id="campo-nome" value="@ViewBag.Administrador.Nome" maxlength="50" autocomplete="off" required />
                     </div>
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
-                    <h4 class="sub-title">CPF</h4>
+                    <h4 class="sub-title">CPF<strong>*</strong></h4>
                     <input type="text" name="cpf"
                            class="form-control"
                            data-mask="000.000.000-00"
@@ -42,11 +42,11 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-xl-7 m-b-30">
-                    <h4 class="sub-title">Login</h4>
+                    <h4 class="sub-title">Login<strong>*</strong></h4>
                     <input type="text" name="login" id="campo-login" autocomplete="off" class="form-control" value="@ViewBag.Administrador.Login" />
                 </div>
                 <div class="col-sm-12 col-xl-5 m-b-30">
-                    <h4 class="sub-title">Senha</h4>
+                    <h4 class="sub-title">Senha<strong>*</strong></h4>
                     <input type="text"
                            class="form-control"
                            placeholder="Senha deve conter 6 caracteres"
