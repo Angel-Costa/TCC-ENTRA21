@@ -10661,8 +10661,6 @@
     <Content Include="front\bower_components\lightgallery\fonts\lg.eot" />
     <Content Include="front\bower_components\lightgallery\fonts\lg.ttf" />
     <Content Include="front\bower_components\lightgallery\fonts\lg.woff" />
-    <None Include="Properties\PublishProfiles\lux-cliente - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\lux-cliente - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
