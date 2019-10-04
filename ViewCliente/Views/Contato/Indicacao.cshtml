@@ -63,22 +63,22 @@
             <form action="/Contato/Cadastro" method="post">
                 <div class="row"></div>
                 <div class="form-group col-4 offset-4 mt-3">
-                    <h4 class="sub-title">Nome</h4>
+                    <h4 class="sub-title">Nome <strong>*</strong></h4>
                     <input type="text" class="form-control" id="Qual seu nome completo" name="Nome" placeholder="Digite seu nome completo" required>
                 </div>
 
                 <div class="form-group col-4 offset-4">
-                    <h4 class="sub-title">Digite seu e-mail</h4>
+                    <h4 class="sub-title">Digite seu e-mail <strong>*</strong></h4>
                     <input type="text" class="form-control" id="Email" name="Email" placeholder="E-mail" required>
                 </div>
                 <div class="form-group col-4 offset-4">
-                    <h4 class="sub-title">Telefone para contato</h4>
+                    <h4 class="sub-title">Telefone para contato <strong>*</strong></h4>
                     <input type="text" class="form-control telphone_with_code" id="Telefone" name="Telefone" placeholder="Digite o DDD e telefone" data-mask="(00) 0-00000-0000" maxlength="18" required>
                 </div>
 
                 <div class="form-group col-4 offset-4">
-                    <h4 class="sub-title">Digite aqui sua mensagem</h4>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" name="mensagem"  rows="8"></textarea>
+                    <h4 class="sub-title">Digite aqui sua mensagem <strong>*</strong></h4>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="mensagem" rows="8" required></textarea>
                 </div>
 
                 <button onclick = "myFunction()" type="submit" class="btn btn-outline-success float-none">Enviar</button>

@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-sm-12 col-xl-5 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Nome</h4>
+                        <h4 class="sub-title">Nome <strong>*</strong></h4>
                         <input type="text" name="nome"
                                class="form-control"
                                id="campo-nome"
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-sm-12 col-xl-5 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Descrição</h4>
+                        <h4 class="sub-title">Descrição <strong>*</strong></h4>
                         <textarea type="text" name="descricao"
                                   class="form-control"
                                   id="campo-descricao"
@@ -43,21 +43,21 @@
                 </div>
                 <div class="col-sm-12 col-xl-2 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Valor por noite</h4>
-                        <input type="text" name="valor-noite" id="valor-noite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="R$000,00"
+                        <h4 class="sub-title">Valor por noite <strong>*</strong></h4>
+                        <input type="text" name="ValorNoite" id="Valor-Noite" placeholder="Valor por Noite" class="form-control autonumber" data-a-sign="$"
                                value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 col-xl-3 m-b-30">
-                    <h4 class="sub-title">Estado</h4>
+                    <h4 class="sub-title">Estado <strong>*</strong></h4>
                     <select class="form-control" id="estado" name="estado" autocomplete="off" required>
                         <option value="SC">Santa Catarina</option>
                     </select>
                 </div>
                 <div class="col-sm-12 col-xl-6 m-b-30">
-                    <h4 class="sub-title">Cidade</h4>
+                    <h4 class="sub-title">Cidade <strong>*</strong></h4>
                     <input type="text" name="cidade"
                            class="form-control"
                            id="campo-cidade"
@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-sm-12 col-xl-3 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">CEP</h4>
+                        <h4 class="sub-title">CEP <strong>*</strong></h4>
                         <input type="text" name="cep"
                                class="form-control telphone_whith_code" data-mask="00000-000"
                                id="campo-cep"
@@ -75,14 +75,14 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-xl-6 m-b-30">
-                    <h4 class="sub-title">Bairro</h4>
+                    <h4 class="sub-title">Bairro <strong>*</strong></h4>
                     <input type="text" name="bairro"
                            class="form-control"
                            id="campo-bairro"
                            value="@ViewBag.Hotel.Bairro" placeholder="Digite o bairro" maxlength="50" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-2 m-b-30">
-                    <h4 class="sub-title">Número</h4>
+                    <h4 class="sub-title">Número <strong>*</strong></h4>
                     <input type="text" name="numero"
                            class="form-control"
                            id="campo-numero"
@@ -91,7 +91,7 @@
 
                 <div class="col-sm-12 col-xl-4 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Rua</h4>
+                        <h4 class="sub-title">Rua <strong>*</strong></h4>
                         <input type="text" name="rua"
                                class="form-control"
                                id="campo-rua"
@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-sm-12 col-xl-4 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Complemento</h4>
+                        <h4 class="sub-title">Complemento <strong>*</strong></h4>
                         <input type="text" name="complemento"
                                class="form-control"
                                id="campo-complemento"
