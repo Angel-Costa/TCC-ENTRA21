@@ -90,6 +90,8 @@ namespace View.Controllers
                 var alterado = repository.Alterar(hotel);
                 return RedirectToAction("Index");
             }
+
+            var alterado = repository.Alterar(hotel);
             return RedirectToAction("Index");
         }
 
