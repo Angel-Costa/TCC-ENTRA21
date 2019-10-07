@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes, contatos;
+﻿ DROP TABLE IF EXISTS administradores, comodidades, hoteis , avaliacoes, clientes, sugestoes, contatos;
 
 DROP TABLE IF EXISTS hoteis;
 
