@@ -108,7 +108,6 @@
     </Content>
     <Content Include="Content\css\Login\Login.css" />
     <Content Include="Content\css\Perfil\Index.css" />
-    <Content Include="Content\css\Teste\teste.css" />
     <Content Include="Content\imagem\Administradores\Angel-2.jpg" />
     <Content Include="Content\imagem\Administradores\Lee.png" />
     <Content Include="Content\imagem\Administradores\Loene..jpg" />
@@ -117,6 +116,8 @@
     <Content Include="Content\imagem\Administradores\Nicollas %281%29.jpg" />
     <Content Include="Content\imagem\Administradores\Paulo.jpg" />
     <Content Include="Content\imagem\Balneario\morro do careca.jpg" />
+    <Content Include="Content\imagem\Login\4k-wallpaper-clouds-cloudy-1668246.jpg" />
+    <Content Include="Content\imagem\Login\FundoLogin.jpeg" />
     <Content Include="Content\imagem\Login\man-user %281%29.png" />
     <Content Include="Content\imagem\Nova Trento\Nova Trento.jpg" />
     <Content Include="Content\imagem\Home\sugestoes\1.jpg" />
