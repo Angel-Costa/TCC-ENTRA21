@@ -16,16 +16,18 @@ namespace View.Controllers
     public class HotelController : BaseController
     {
         private HotelRepository repository;
+        private SugestaoRepository sugestaoRepository;
 
         public HotelController()
         {
             repository = new HotelRepository();
+            sugestaoRepository = new SugestaoRepository();
         }
 
         public ActionResult Index()
         {
-            List<Hotel> hoteis = repository.ObterTodos();
-            ViewBag.Hoteis = hoteis;
+            List<Sugestao> sugestoes = sugestaoRepository.ObterTodos();
+            ViewBag.Sugestoes = sugestoes;
             return View();
         }
         /* CategoriaRepository categoriaRepository = new CategoriaRepository();

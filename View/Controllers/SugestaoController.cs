@@ -36,7 +36,7 @@ namespace View.Controllers
         public ActionResult Cadastro()
         {
             SugestaoRepository sugestaoRepository = new SugestaoRepository();
-            List<Sugestao> sugestoes = repository.ObterTodos();
+            List<Sugestao> sugestoes = sugestaoRepository.ObterTodos();
             ViewBag.Sugestao = sugestoes;
             return View();
         }
@@ -66,9 +66,9 @@ namespace View.Controllers
             //            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
 
 
-            var id = repository.Cadastro(sugestao);
+            var id = repository.Inserir(sugestao);
 
-            return RedirectToAction("Galeria");
+            return RedirectToAction("Galeria", new { id });
         }
 
         [HttpGet, Route("editar")]
