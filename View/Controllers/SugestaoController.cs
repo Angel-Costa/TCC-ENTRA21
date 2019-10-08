@@ -82,6 +82,20 @@ namespace View.Controllers
         [HttpPost, Route("editar")]
         public ActionResult Editar(Sugestao sugestao)
         {
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+                arquivo.SaveAs(caminhoArquivo);
+
+                sugestao.Imagem = nomeImagem;
+                var alterado2 = repository.Alterar(sugestao);
+                return RedirectToAction("Galeria");
+            }
+
             var alterado = repository.Alterar(sugestao);
             return RedirectToAction("Galeria");
         }
@@ -93,6 +107,34 @@ namespace View.Controllers
             return RedirectToAction("Galeria");
         }
 
+        public ActionResult Upload()
+        {
 
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+
+                arquivo.SaveAs(caminhoArquivo);
+
+                var usuarioLogado = (Hotel)Session["Usuario"];
+
+                Sugestao sugestao = repository.ObterPeloId(usuarioLogado.Id);
+                sugestao.Imagem = nomeImagem;
+                repository.Alterar(sugestao);
+                Session["Usuario"] = sugestao;
+            }
+
+
+            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
+            return RedirectToAction("cadastro");
+        }
     }
 }

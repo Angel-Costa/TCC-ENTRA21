@@ -13,9 +13,9 @@ body {
 body:before {
 	content: '';
 	position: fixed;
+    background-image: url(/Content/imagem/Login/prague-3010407.jpg);
 	width: 100vw;
 	height: 100vh;
-	background-image: url("/Content//imagem/TeladeLogin/como-planejar-uma-viagem.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

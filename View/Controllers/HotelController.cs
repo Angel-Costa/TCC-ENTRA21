@@ -44,6 +44,8 @@ namespace View.Controllers
         [HttpPost, Route("cadastro")]
         public ActionResult Cadastro(Hotel hotel)
         {
+            string texto = Request.Form.Get("ValorNoite").Replace(",", "").Replace(".", ",");
+            hotel.ValorNoite = Convert.ToDecimal(texto);
             //Suas validações ......
             HttpPostedFileBase arquivo = Request.Files[0];
             //Salva o arquivo
@@ -87,9 +89,11 @@ namespace View.Controllers
                 arquivo.SaveAs(caminhoArquivo);
 
                 hotel.Imagem = nomeImagem;
-                var alterado = repository.Alterar(hotel);
+                var alterado2 = repository.Alterar(hotel);
                 return RedirectToAction("Index");
             }
+
+            var alterado = repository.Alterar(hotel);
             return RedirectToAction("Index");
         }
 

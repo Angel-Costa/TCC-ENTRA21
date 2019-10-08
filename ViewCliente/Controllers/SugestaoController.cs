@@ -129,5 +129,35 @@ namespace View.Controllers
             ViewBag.Hoteis = hoteis;
             return View();
         }
+
+        public ActionResult Upload()
+        {
+
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+
+                arquivo.SaveAs(caminhoArquivo);
+
+                var usuarioLogado = (Administrador)Session["Usuario"];
+
+                Sugestao sugestao = repository.ObterPeloId(usuarioLogado.Id);
+                sugestao.Imagem = nomeImagem;
+                repository.Alterar(sugestao);
+                Session["Usuario"] = sugestao;
+            }
+
+
+            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
+            return RedirectToAction("EditarPerfil");
+        }
     }
 }
