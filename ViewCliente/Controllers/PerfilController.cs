@@ -38,8 +38,6 @@ namespace ViewCliente.Controllers
         [HttpPost, Route("editar")]
         public ActionResult Editar(Cliente cliente)
         {
-            List<Cliente> clientes = repository.ObterTodos();
-            ViewBag.Clientes = clientes;
             var alterado = repository.Alterar(cliente);
             return RedirectToAction("Index", new { id = cliente.Id });
         }
