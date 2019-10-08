@@ -87,7 +87,7 @@ namespace View.Controllers
                 arquivo.SaveAs(caminhoArquivo);
 
                 hotel.Imagem = nomeImagem;
-                var alterado = repository.Alterar(hotel);
+                var alterado2 = repository.Alterar(hotel);
                 return RedirectToAction("Index");
             }
 
