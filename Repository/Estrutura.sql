@@ -100,23 +100,56 @@ CREATE TABLE contatos(
 
 );
 
-INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Filipinas','QUEM NÃO GOSTA DE UMA VISTA INCRÍVEL PARA A PRAIA? COM UM CONFORTO E UM LOCAL FORA DE SÉRIE.',250.0,'Santa Catarina', 'Florianopolis','33658-445','Meia Praia','321','Builin 63','Final da praia', 1 );
+
+/*Florianópols*/
 
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
-('Fransisco','Uma ótima hospedagem com um preço bom, ótima experiencias para se passar aqui.',70.0,'Santa Catarina', 'São Francisco','65589-712','Fernandão','3664','Fransisco','Geral', 1 );
+('Hotel Sete Ilhas','Apartamentos e suítes à beira-mar, além de piscina coberta, café da manhã gratuito e acesso direto à praia.', 356.0,'Santa Catarina', 'Florianopolis','88053-600','Jurerê','105','Jorn. Haroldo Calado','Próximo a beira-mar', 1 );
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Hotel Boutique Quinta das Videiras','Elegante hotel boutique com quartos e suítes cheios de antiguidades, além de piscina externa e spa.', 633.0,'Santa Catarina', 'Florianopolis','88062-070','Lagoa da Conceição','113','Afonso Luís Borba','Próximo ao Monumento à Rendeira', 1 );
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Hotel Majestic Palace','Quartos e suítes elegantes com vista para a cidade ou para a baía, restaurante/bar luxuoso e piscina externa.', 361.0,'Santa Catarina', 'Florianopolis','88015-702','Centro','2746','Jorn. Rubéns de Arruda Ramos','Próximo ao Instituto Vittorino Padre Pozzo', 1 );
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Villas Jurerê Hotel Boutique','Quartos coloridos com varanda em um tranquilo hotel boutique colonial espanhol perto da praia.', 335.0,'Santa Catarina', 'Florianopolis','33658-445','Meia Praia','321','Builin 63','Final da praia', 1 );
+
+
+/*São Francisco*/
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Hotel VillaReal São Francisco do Sul','Acomodações elegantes em moderno hotel na baía com piscinas externa e coberta, academia e restaurante.', 289.0,'Santa Catarina', 'São Francisco','89240-000','Do Paulas','1135','Francisco Machado de Souza','Próximo ao bar do Sid.', 1 );
+
+INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
+('Hotel Zibamba','Hotel informal à beira-mar que oferece café da manhã gratuito, restaurante casual e piscina externa.', 227.0,'Santa Catarina', 'São Francisco','89240-000','Centro Histórico','27','Fernandes Dias','Próximo ao Mercado Municipal', 1 );
+
+
+/*Nova Trento*/
 
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
 ('New','PARA PASSAR COM A FAMÍLIA, UM LUGAR TRANQUILO LONGE DE QUALQUER ESTRESSE DO DIA-DIA.',120.0,'Santa Catarina', 'Nova Trento','65487-321','Trento','985','Nova','Fazenda', 1 );
 
+
+/*Balneário Camboriú*/
+
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
 ('Amon',' UM ÓTIMO HOTEL PARA PASSAR COM SUA COMPANHEIRA (O) UM LUGAR PERFEITO PARA RELAXAR E CONSTRUIR MEMÓRIAS.',150.0,'Santa Catarina', 'Balneário Camboriú','89110-456','Stande 65','654','Palmeiras ','interior', 1 );
+
+
+/*Blumenau*/
 
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
 ('Dallas','PERFEITO PARA PASSAR SUAS FÉRIAS, PARA TOMAR UM ÓTIMO BANHO DE PISCINA COM ACOMODAÇÕES PERFEITAS PARA O CONFORTO.',200.0,'Santa Catarina', 'Blumenau','89884-562','Pioneiros','963','Regular','Geral', 1 );
 
+
+/*Garopaba*/
+
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
 ('Garou',' UM LUGAR PERFEITO PARA FICAR COM OS AMIGOS E CONSTRUIR HISTÓRIAS INCRÍVEIS!',200.0,'Santa Catarina', 'Garopaba','65423-165','Synai','654','piexes','Perto da costa', 1 );
+
+
+/*Porto Belo*/
 
 INSERT INTO hoteis (nome, descricao , valor_noite , estado, cidade, cep, bairro, numero ,rua, complemento, registro_ativo) VALUES
 ('Toomy','PARA QUEM NÃO GOSTA DE PASSAR AS FÉRIAS SOZINHO, AQUI É UM ÓTIMO LUGAR PARA SE HOSPEDAR COM QUEM DESEJAR!',90.0,'Santa Catarina', 'Porto Belo','78862-465','Belo','1112','Porto','Ao lado de um porto', 1 );
