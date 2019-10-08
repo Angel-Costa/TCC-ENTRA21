@@ -44,6 +44,8 @@ namespace View.Controllers
         [HttpPost, Route("cadastro")]
         public ActionResult Cadastro(Hotel hotel)
         {
+            string texto = Request.Form.Get("ValorNoite").Replace(",", "").Replace(".", ",");
+            hotel.ValorNoite = Convert.ToDecimal(texto);
             //Suas validações ......
             HttpPostedFileBase arquivo = Request.Files[0];
             //Salva o arquivo
