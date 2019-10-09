@@ -23,14 +23,14 @@
         <div class="card-body ">
             <div class="row">
                 <div class="col-sm-12 col-xl-5 m-b-30">
-                    <h4 class="sub-title">Nome <strong>*</strong></h4>
+                    <h4 class="sub-title">Nome <strong style="color:red">*</strong></h4>
                     <input type="text" name="nome"
                            class="form-control"
                            id="campo-nome"
                            value="@ViewBag.Cliente.Nome" placeholder="Digite seu nome completo" maxlength="50" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-3 m-b-30">
-                    <h4 class="sub-title">Estado <strong>*</strong></h4>
+                    <h4 class="sub-title">Estado <strong style="color:red">*</strong></h4>
                     <select class="form-control" id="estado" name="estado" autocomplete="off" required>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -62,7 +62,7 @@
                     </select>
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
-                    <h4 class="sub-title">Cidade <strong>*</strong></h4>
+                    <h4 class="sub-title">Cidade <strong style="color:red">*</strong></h4>
                     <input type="text" name="cidade"
                            class="form-control"
                            id="campo-cidade" value="@ViewBag.Cliente.Cidade" placeholder="Digite a cidade" maxlength="60" autocomplete="off" required />
@@ -71,7 +71,7 @@
 
             <div class="row">
                 <div class="col-sm-12 col-xl-3 m-b-30">
-                    <h4 class="sub-title">CEP <strong>*</strong></h4>
+                    <h4 class="sub-title">CEP <strong style="color:red">*</strong></h4>
                     <input type="text" name="cep"
                            class="form-control telphone_whith_code" data-mask="00000-000" placeholder="Digite o CEP"
                            id="campo-cep" value="@ViewBag.Cliente.Cep" autocomplete="off" required />
@@ -79,13 +79,13 @@
 
 
                 <div class="col-sm-12 col-xl-7 m-b-30">
-                    <h4 class="sub-title">Bairro <strong>*</strong></h4>
+                    <h4 class="sub-title">Bairro <strong style="color:red">*</strong></h4>
                     <input type="text" name="bairro"
                            class="form-control"
                            id="campo-bairro" value="@ViewBag.Cliente.Bairro" maxlength="50" placeholder="Digite o bairro" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-2 m-b-30">
-                    <h4 class="sub-title">Número <strong>*</strong></h4>
+                    <h4 class="sub-title">Número <strong style="color:red">*</strong></h4>
                     <input type="text" name="numero"
                            class="form-control" id="campo-numero" value="@ViewBag.Cliente.Numero" maxlength="20" placeholder="Digite o número" autocomplete="off" required />
                 </div>
@@ -93,13 +93,13 @@
 
             <div class="row">
                 <div class="col-sm-12 col-xl-5 m-b-30">
-                    <h4 class="sub-title">Nome da Rua <strong>*</strong></h4>
+                    <h4 class="sub-title">Nome da Rua <strong style="color:red">*</strong></h4>
                     <input type="text" name="rua"
                            class="form-control"
                            id="campo-rua" value="@ViewBag.Cliente.Rua" placeholder="Digite o nome da rua" maxlength="50" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-7 m-b-30">
-                    <h4 class="sub-title">Complemento <strong>*</strong></h4>
+                    <h4 class="sub-title">Complemento <strong style="color:red">*</strong></h4>
                     <input type="text" name="complemento"
                            class="form-control"
                            id="campo-complemento" value="@ViewBag.Cliente.Complemento" placeholder="Digite um complemento" maxlength="50" autocomplete="off" required />
@@ -108,13 +108,13 @@
 
             <div class="row">
                 <div class="col-sm-12 col-xl-7 m-b-30">
-                    <h4 class="sub-title">Login <strong>*</strong></h4>
+                    <h4 class="sub-title">Login <strong style="color:red">*</strong></h4>
                     <input type="text" name="login"
                            class="form-control"
                            id="campo-login" value="@ViewBag.Cliente.Login" maxlength="50" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-5 m-b-30">
-                    <h4 class="sub-title">Senha <strong>*</strong></h4>
+                    <h4 class="sub-title">Senha <strong style="color:red">*</strong></h4>
                     <input type="password"
                            class="form-control"
                            placeholder="Senha deve conter 6 caracteres"

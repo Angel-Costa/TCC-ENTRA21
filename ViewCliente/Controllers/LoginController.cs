@@ -9,10 +9,12 @@ using ViewCliente.Controllers;
 
 namespace View.Controllers
 {
+    [Route("login")]
     public class LoginController : Controller
     {
         private AdministradorRepository repositoryAdministrador;
         private ClienteRepository reositoryCliente;
+
 
         public LoginController()
         {
@@ -20,7 +22,6 @@ namespace View.Controllers
             reositoryCliente = new ClienteRepository();
 
         }
-
 
         public ActionResult Index()
         {
