@@ -34,6 +34,7 @@ namespace Repository.Repositories
             hotelOriginal.Numero = hotel.Numero;
             hotelOriginal.Rua = hotel.Rua;
             hotelOriginal.Complemento = hotel.Complemento;
+            hotelOriginal.Imagem = hotel.Imagem;
             context.SaveChanges();
             return true;
         }

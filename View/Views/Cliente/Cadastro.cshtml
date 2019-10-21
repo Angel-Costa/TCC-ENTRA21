@@ -7,7 +7,7 @@
     <div class="row align-items-end">
         <div class="col-lg-8">
             <div class="page-header-title">
-                <i class="icofont icofont icofont icofont-user-alt-3" style="background-color: #171d2b;"></i>
+                <i class="icofont icofont icofont icofont-user-alt-3" style="background-color: #343a40;"></i>
                 <div class="d-inline">
                     <h4 style="text-transform: capitalize">Cadastro de cliente</h4>
                 </div>
@@ -23,12 +23,12 @@
         <div class="card-body ">
             <div class="row">
                 <div class="col-sm-12 col-xl-5 m-b-30">
-                    <h4 class="sub-title">Nome</h4>
+                    <h4 class="sub-title">Nome <strong style="color:red">*</strong></h4>
                     <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite seu nome completo" maxlength="50" autocomplete="off" required />
                 </div>
 
                 <div class="col-sm-12 col-xl-3 m-b-30">
-                    <h4 class="sub-title">Estado</h4>
+                    <h4 class="sub-title">Estado <strong style="color:red">*</strong></h4>
                     <select class="form-control" id="estado" name="estado" autocomplete="off" required>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -60,33 +60,33 @@
                     </select>
                 </div>
                 <div class="col-sm-12 col-xl-4 m-b-30">
-                    <h4 class="sub-title">Cidade</h4>
+                    <h4 class="sub-title">Cidade <strong style="color:red">*</strong></h4>
                     <input id="campo-cidade" class="form-control" name="cidade" type="text" placeholder="Digite a cidade" maxlength="60" autocomplete="off" required />
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-12 col-xl-3 m-b-30">              
-                        <h4 class="sub-title">CEP</h4>
-                        <input type="text" name="campocep" id="campocep" class="form-control telphone_whith_code" data-mask="99999-999" placeholder="Digite o CEP" autocomplete="off" required />
+                <div class="col-sm-12 col-xl-3 m-b-30">
+                    <h4 class="sub-title">CEP <strong style="color:red">*</strong></h4>
+                    <input type="text" name="campo-cep" id="campo-cep" class="form-control ip" data-mask="99.999.999" placeholder="Digite o CEP" maxlength="10" autocomplete="off" required />
                 </div>
-                <div class="col-sm-12 col-xl-7 m-b-30">
-                    <h4 class="sub-title">Bairro</h4>
+                <div class="col-sm-12 col-xl-7 m-b-30"> 
+                    <h4 class="sub-title">Bairro <strong style="color:red">*</strong></h4>
                     <input id="campo-bairro" class="form-control" type="text" placeholder="Digite o bairro" maxlength="50" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-2 m-b-30">
-                    <h4 class="sub-title">Número</h4>
+                    <h4 class="sub-title">Número <strong style="color:red">*</strong></h4>
                     <input id="campo-numero" class="form-control" type="text" placeholder="Digite o número" maxlength="20" autocomplete="off" required />
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-sm-12 col-xl-5 m-b-30">
-                    <h4 class="sub-title">Nome da Rua</h4>
+                    <h4 class="sub-title">Nome da Rua <strong style="color:red">*</strong></h4>
                     <input id="campo-nome-rua" class="form-control" type="text" placeholder="Digite o nome da rua" maxlength="50" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-7 m-b-30">
-                    <h4 class="sub-title">Complemento</h4>
+                    <h4 class="sub-title">Complemento <strong style="color:red">*</strong></h4>
                     <input id="campo-complemento" class="form-control" type="text" placeholder="Digite um complemento" maxlength="50" autocomplete="off" required />
                 </div>
 
@@ -94,13 +94,13 @@
 
             <div class="row">
                 <div class="col-sm-12 col-xl-7 m-b-30">
-                    <h4 class="sub-title">Login</h4>
+                    <h4 class="sub-title">Login <strong style="color:red">*</strong></h4>
                     <input type="text" name="login"
                            class="form-control"
                            id="campo-login" placeholder="Usuário" maxlength="50" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-5 m-b-30">
-                    <h4 class="sub-title">Senha</h4>
+                    <h4 class="sub-title">Senha <strong style="color:red">*</strong></h4>
                     <input type="password"
                            class="form-control"
                            placeholder="Senha deve conter 6 caracteres"

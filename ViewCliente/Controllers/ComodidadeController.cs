@@ -6,11 +6,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ViewCliente.Controllers;
 
 namespace View.Controllers
 {
     [Route("comodidade")]
-    public class ComodidadeController : Controller
+    public class ComodidadeController : BaseController
     {
         private ComodidadeRepository repository;
 

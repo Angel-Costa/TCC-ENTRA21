@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Mvc;
 using Model;
 using Repository.Interfaces;
@@ -42,15 +44,31 @@ namespace View.Controllers
         [HttpPost, Route("cadastro")]
         public ActionResult Cadastro(Hotel hotel)
         {
+            string texto = Request.Form.Get("ValorNoite").Replace(",", "").Replace(".", ",");
+            hotel.ValorNoite = Convert.ToDecimal(texto);
+            //Suas validações ......
+            HttpPostedFileBase arquivo = Request.Files[0];
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+                arquivo.SaveAs(caminhoArquivo);
+
+                hotel.Imagem = nomeImagem;
+            }
             var id = repository.Inserir(hotel);
             return RedirectToAction("Index", new { id });
-
+          
         }
+
+    
 
         [HttpGet, Route("editar")]
         public ActionResult Editar(int id)
         {
-            var hotel= repository.ObterPeloId(id);
+            var hotel = repository.ObterPeloId(id);
             ViewBag.Hotel = hotel;
             return View();
         }
@@ -58,6 +76,23 @@ namespace View.Controllers
         [HttpPost, Route("editar")]
         public ActionResult Editar(Hotel hotel)
         {
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+                arquivo.SaveAs(caminhoArquivo);
+
+                hotel.Imagem = nomeImagem;
+                var alterado2 = repository.Alterar(hotel);
+                return RedirectToAction("Index");
+            }
+
             var alterado = repository.Alterar(hotel);
             return RedirectToAction("Index");
         }
@@ -68,6 +103,36 @@ namespace View.Controllers
             var apagou = repository.Apagar(id);
 
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Upload()
+        {
+
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+
+                arquivo.SaveAs(caminhoArquivo);
+
+                var usuarioLogado = (Hotel)Session["Usuario"];
+
+                Hotel hotel = repository.ObterPeloId(usuarioLogado.Id);
+                hotel.Imagem = nomeImagem;
+                repository.Alterar(hotel);
+                Session["Usuario"] = hotel;
+            }
+
+
+            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
+            return RedirectToAction("cadastro");
         }
     }
 }

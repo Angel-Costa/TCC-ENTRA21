@@ -3,13 +3,6 @@
     ViewBag.Title = "Galeria";
 }
 
-
-
-@{
-    ViewBag.Title = "Galeria";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
 <div class="pcoded-inner-content">
     <div class="main-body">
         <div class="page-wrapper">
@@ -17,35 +10,20 @@
                 <div class="row align-items-end">
                     <div class="col-lg-8">
                         <div class="page-header-title">
-                            <i class="icofont icofont-image" style="background-color: #171d2b;"></i>
+                            <i class="icofont icofont-hotel-alt" style="background-color: #1A2930; color: white;"></i>
                             <div class="d-inline">
-                                <h4>Sugestões de destino</h4>
+                                <h4>Sugestões de Destino</h4>
 
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="page-header-breadcrumb">    
-                            <ul class="breadcrumb-title">
-                                <li class="breadcrumb-item">
-                                    <a href="/home">
-                                        <i class="icofont icofont-home"></i>
-                                    </a>
-                                </li>
-                                <li class="breadcrumb-item">
-                                    <a href="#!">Galeria</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
+                    </div>                   
                 </div>
             </div>
-
+            
             <div class="card">
                 <div class="card-header">
                     <h5></h5>
-                    <p>Explore com as melhores fotos e descubra para a onde quer ir!</p>
+                    <p style="color: black; font-size: 20px;">Nós ajudamos você a descobrir para onde quer ir!</p>
                     <div class="card-header-right">
                         <i class="icofont icofont-spinner-alt-5"></i>
                     </div>
@@ -67,7 +45,7 @@
                                     </figcaption>
                                 </figure>
                                 <figure class="effect-julia">
-                                    <img src="~/Content/imagem/SaoFrancisco/vista-de-dentro-do-barco.jpg" alt="img21" class="img-fluid" />
+                                    <img src="~/Content/imagem/SaoFrancisco/CentroSF.jpeg" alt="img21" class="img-fluid" />
                                     <figcaption>
                                         <h2>São Fransisco do Sul <span></span></h2>
                                         <div>
@@ -79,27 +57,27 @@
                                     </figcaption>
                                 </figure>
                                 <figure class="effect-julia">
-                                    <img src="~/Content/imagem/Serra do Rio do rastro/serra.jpg" alt="img21" class="img-fluid" />
+                                    <img src="~/Content/imagem/Nova Trento/Nova Trento.jpg" alt="img21" class="img-fluid" />
                                     <figcaption>
-                                        <h2>Serra do rio do rastro<span></span></h2>
+                                        <h2>Nova Trento<span></span></h2>
                                         <div>
                                             <p>Sempre buscando o melhor</p>
                                             <p>Se inspire!</p>
                                             <p>Melhor que isso, faça a sua viajem!</p>
                                         </div>
-                                        <a href="#">Ver mais</a>
+                                        <a href="@Url.Action("NovaTrento", "Sugestao")">Ver mais</a>
                                     </figcaption>
                                 </figure>
                                 <figure class="effect-julia">
                                     <img src="~/Content/imagem/Balneario/balneario.jpg" alt="img21" class="img-fluid" />
                                     <figcaption>
-                                        <h2>Balneário Camburiú<span></span></h2>
+                                        <h2>Balneário Camboriú<span></span></h2>
                                         <div>
                                             <p>Sempre buscando o melhor</p>
                                             <p>Se inspire!</p>
                                             <p>Melhor que isso, faça a sua viajem!</p>
                                         </div>
-                                        <a href="#">Ver mais</a>
+                                        <a href="@Url.Action("Balneario")"></a>
                                     </figcaption>
                                 </figure>
                                 <figure class="effect-julia">
@@ -123,7 +101,7 @@
                                             <p>Se inspire!</p>
                                             <p>Melhor que isso, faça a sua viajem!</p>
                                         </div>
-                                        <a href="#">Ver mais</a>
+                                        <a href="@Url.Action("Garopaba", "Sugestao")">Ver mais</a>
                                     </figcaption>
                                 </figure>
                                 <figure class="effect-julia">
@@ -147,7 +125,7 @@
                                             <p>Se inspire!</p>
                                             <p>Melhor que isso, faça a sua viajem!</p>
                                         </div>
-                                        <a href="#">Ver mais</a>
+                                        <a href="@Url.Action("PraiaDoRosa", "Sugestao")">Ver mais</a>
                                     </figcaption>
                                 </figure>
                             </div>

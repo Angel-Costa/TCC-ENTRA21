@@ -31,6 +31,8 @@ namespace Repository.Repositories
             sugestaoOriginal.Local = sugestao.Local;
             sugestaoOriginal.Cidade = sugestao.Cidade;
             sugestaoOriginal.Endereco = sugestao.Endereco;
+            sugestaoOriginal.Imagem = sugestao.Imagem;
+
             context.SaveChanges();
             return true;
         }

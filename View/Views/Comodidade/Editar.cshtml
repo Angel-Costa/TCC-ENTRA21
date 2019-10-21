@@ -8,7 +8,7 @@
     <div class="row align-items-end">
         <div class="col-lg-8">
             <div class="page-header-title">
-                <i class="icofont icofont icofont icofont-hotel-boy-alt" style="background-color: #171d2b;"></i>
+                <i class="icofont icofont icofont icofont-hotel-boy-alt" style="background-color: #343a40;"></i>
                 <div class="d-inline">
                     <h4 style="text-transform: capitalize">Editar serviços</h4>
                 </div>
@@ -23,12 +23,12 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-sm-12 col-xl-4 m-b-30">
-                    <h4 class="sub-title">Serviço</h4>
+                    <h4 class="sub-title">Serviço <strong style="color:red">*</strong></h4>
                     <input class="form-control" type="text" name="nome" id="campo-nome" placeholder="Digite aqui o serviço" maxlength="40" value="@ViewBag.Comodidade.Nome" autocomplete="off" required />
                 </div>
 
                 <div class="col-sm-12 col-xl-8 m-b-30">
-                    <h4 class="sub-title">Hotel</h4>
+                    <h4 class="sub-title">Hotel <strong style="color:red">*</strong></h4>
                     <select class="form-control" name="idHotel" autocomplete="off" required>
                         <option disabled="disabled" selected="selected">Selecione um Hotel</option>
                         @foreach (Model.Hotel hotel in ViewBag.Hoteis)

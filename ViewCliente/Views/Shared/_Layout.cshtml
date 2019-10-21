@@ -6,16 +6,16 @@
 
 
     <title>Lux - Seu sonho, nosso compromisso</title>
-    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and  IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 10]>
+    <!--[if lt IE 10]>Respond.js
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="#">
     <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="#">
@@ -57,7 +57,16 @@
     <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/jquery-bar-rating/css/css-stars.css">
     <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/jquery-bar-rating/css/fontawesome-stars-o.css">
 
-    
+
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/pages/advance-elements/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/bootstrap-daterangepicker/css/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/datedropper/css/datedropper.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/tema/assets/icon/icofont/css/icofont.css">
+
 
     @RenderSection("css", false)
 
@@ -94,9 +103,9 @@
         <div class="pcoded-container">
 
             <!-- Menu header start -->
-            <nav class="navbar header-navbar pcoded-header" style="height: 80px;">
+            <nav class="navbar header-navbar pcoded-header" style="height: 80px; background-color: #1a2930;">
                 <div class="navbar-wrapper">
-                    <div class="navbar-logo offset-6">
+                    <div class="navbar-logo" style="background-color: #1a2930; margin: unset; float: none; margin-bottom: 10px">
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
                             <i class="ti-menu"></i>
                         </a>
@@ -104,7 +113,7 @@
                             <i class="ti-search"></i>
                         </a>
                         <a href="@Url.Action("Index","Home")">
-                            <img class="img-fluid" src="https://img.icons8.com/ios/50/ffffff/around-the-globe.png"> Lux
+                            <img class="img-fluid" src="https://img.icons8.com/ios/50/ffffff/around-the-globe.png" alt="Theme-Logo"> Lux
                         </a>
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -115,37 +124,46 @@
 
             <!-- Menu header end -->
 
+
+
+
             <div class="pcoded-main-container">
-                <nav class="pcoded-navbar" style="background-color: #0b7f8f;">
+                <nav class="pcoded-navbar" style="background-color: white;">
                     <div class="pcoded-inner-navbar">
                         <ul class="pcoded-item">
                             <li class="pcoded-hasmenu pcoded-left-item">
-                                <a href="@Url.Action("Index","MelhorHotel")">
-                                    <span class="pcoded-micon" style="background-color: #303548;"><b>H</b></span>
-                                    <span class="pcoded-mtext" style="color: black;">Hotéis</span>
+                                <a href="@Url.Action("Index","Hotel")">
+                                    <span class="pcoded-micon" style="background-color: #1A2930;"><i class="icofont icofont icofont icofont-image"></i></span>
+                                    <span style="font-size: 14px; color: black;">Galeria</span>
                                 </a>
                             </li>
                             <li class="pcoded-hasmenu pcoded-left-item">
                                 <a href="@Url.Action("Galeria","Sugestao")">
-                                    <span class="pcoded-micon" style="background-color: #303548;"><b>SD</b></span>
-                                    <span class="pcoded-mtext" style="color: black;">Sugestões de destinos</span>
+                                    <span class="pcoded-micon" style="background-color: #1A2930;"><i class="icofont icofont icofont icofont-hotel"></i></span>
+                                    <span style="font-size: 14px; color: black;">Sugestões de destino</span>
                                 </a>
                             </li>
                             <li class="pcoded-hasmenu pcoded-left-item">
                                 <a href="@Url.Action("Index","SobreNos")">
-                                    <span class="pcoded-micon" style="background-color: #303548;"><b>SB</b></span>
-                                    <span class="pcoded-mtext" style="color: black;">Sobre Nós</span>
+                                    <span class="pcoded-micon" style="background-color: #1A2930;"><i class="icofont icofont icofont icofont-users"></i></span>
+                                    <span style="font-size: 14px; color:black;">Sobre nós</span>
                                 </a>
                             </li>
                             <li class="pcoded-hasmenu pcoded-left-item">
-                                <a href="@Url.Action("Indicação","Home")">
-                                    <span class="pcoded-micon" style="background-color: #303548;"><b>IND</b></span>
-                                    <span class="pcoded-mtext" style="color: black;">Indicações</span>
+                                <a href="@Url.Action("Indicacao","Contato")">
+                                    <span class="pcoded-micon" style="background-color: #1A2930;"><i class="icofont icofont icofont icofont-ui-messaging"></i></span>
+                                    <span style="font-size: 14px; color: black;">Contato</span>
+                                </a>
+                            </li>
+                            <li class="pcoded-hasmenu float-right">
+                                <a href="~/Login/sair">
+                                    <span class="pcoded-micon" style="background-color: #1A2930;"><b>S</b></span>
+                                    <span class="pcoded-mtext" style="color: black;">Sair</span>
                                 </a>
                             </li>
                             <li class="pcoded-hasmenu float-right">
                                 <a href="@Url.Action("Index","Perfil")">
-                                    <span class="pcoded-micon" style="background-color: #303548;"><b>LUX</b></span>
+                                    <span class="pcoded-micon" style="background-color: #1A2930;"><b>P</b></span>
                                     <span class="pcoded-mtext" style="color: black;">Perfil</span>
                                 </a>
                             </li>
@@ -162,8 +180,6 @@
                                     <div class="page-body m-t-40">
                                         @RenderBody()
                                     </div>
-                                </div>
-                                <div id="styleSelector">
                                 </div>
                             </div>
                         </div>
@@ -269,6 +285,31 @@
 
     <script type="text/javascript" src="~/Content/tema/bower_components/jquery-bar-rating/js/jquery.barrating.js"></script>
     <script type="text/javascript" src="~/Content/tema/assets/js/rating.js"></script>
+
+    <!-- Date js -->
+    <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap-daterangepicker/js/daterangepicker.js"></script>
+    <script type="text/javascript" src="~/Content/tema/bower_components/datedropper/js/datedropper.min.js"></script>
+
+    <script type="text/javascript" src="~/Content/tema/assets/pages/advance-elements/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="~/Content/tema/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="~/Content/tema/assets/pages/advance-elements/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="~/Content/tema/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/Content/tema/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/front/assets/scss/partials/"></script>
+
+
+    <script src="~/Content/tema/assets/pages/ckeditor/ckeditor.js"></script>
+    <!-- Masksjs -->
+
+    <script src="~/Content/tema/assets/pages/form-masking/inputmask.js"></script>
+    <script src="~/Content/tema/assets/pages/form-masking/jquery.inputmask.js"></script>
+    <script src="~/Content/tema/assets/pages/form-masking/autoNumeric.js"></script>
+    <script src="assets/pages/form-masking/form-mask.js"></script>
+    <script src="~/Content/tema/assets/pages/form-masking/form-mask.js"></script>
+
 
     @RenderSection("scripts", false)
 </body>

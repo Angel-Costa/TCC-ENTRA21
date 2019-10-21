@@ -1,58 +1,56 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
-    Layout = null;
+	ViewBag.Title = "Index";
+	Layout = null;
 }
 
-    <img src="~/Content/imagem/Tela de login/KombiLaranjaTraz.jpg" alt="Alternate Text" />  
+
+
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
-    <!--Made with love by Mutiullah Samim -->
-    <!--Bootsrap 4 CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Login Page</title>
 
-    <!--Fontawesome CDN-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <!--Custom styles-->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="~/Content/css/login.css">
-    <link href="//amaxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--Made with love by Mutiullah Samim -->
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/css/login.css">
+	<link href="//amaxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <form action="@Url.Action("Login")" method="post" />
-    <div class="contact-form">
+	<form action="@Url.Action("Login")" method="post" />
+	<div class="contact-form">
 
-        <img src="~/Content/imagem/Tela de login/man-user (1).png" class="avatar" style="color: white;" />
+        <img src="~/Content/imagem/TeladeLogin/man-user (1).png" class="avatar" style="color: white;" />
 
-        <h2 style="color: white;">LOGIN</h2>
+		<h2 style="color: white;">LOGIN</h2>
 
-        <p style="color: white;">Email</p>
-        <input type="text" name="login" placeholder="Email" autocomplete="off" required>
+		<p style="color: white;">Email</p>
+		<input type="text" name="login" placeholder="Email" autocomplete="off" required autofocus>
 
-        <p style="color: white;">Senha</p>
-        <input type="password" name="senha" placeholder="Senha" autocomplete="off" required>
+		<p style="color: white;">Senha</p>
+		<input type="password" name="senha" placeholder="Senha" autocomplete="off" required />
 
-        <div>
-            <div>
-                <a href="/login/esquecisenha" style="margin-right:90px;" float="top">Esqueceu sua senha?</a>
-            </div>
-        </div>
+		<div>
+			<div>
+				<a href="/login/esquecisenha" style="margin-right:90px;" float="top">Esqueceu sua senha?</a>
+			</div>
+		</div>
 
-        <input class="Entrar" type="submit" name="" value="Entrar">
+		<input class="Entrar" type="submit" name="" value="Entrar">
 
-        <div class="card-footer">
-            <div class="d-flex justify-content-center links" style="color: white;">
-                Não tem uma conta? <a href="/login/cadastro" style="color: #007f8f; font-size: 15px ; margin-left: 5px"> Cadastrar-se</a>
-            </div>
-        </div>
-    </div>
+	</div>
 
 </body>
 </html>

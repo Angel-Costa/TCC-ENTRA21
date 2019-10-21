@@ -5,11 +5,11 @@
 
 
 
-<div class="page-header card" style="width: 1220px;">
+<div class="page-header card">
     <div class="row align-items-end">
         <div class="col-lg-8">
             <div class="page-header-title">
-                <i class="icofont icofont icofont icofont-hotel-boy-alt" style="background-color: #171d2b;"></i>
+                <i class="icofont icofont icofont icofont-hotel-boy-alt" style="background-color: #343a40;"></i>
                 <div class="d-inline">
                     <h4>Lista de serviços oferecido pelo Hotel</h4>
                     <span></span>
@@ -30,27 +30,29 @@
     </div>
 </div>
 
-<div class="form-group col-lg-12">
+<div class="page-body">
     <div class="row">
 
         @foreach (Model.Comodidade comodidade in ViewBag.Comodidades)
         {
-            <div class="card mr-3">
-                <div class="card-body ">
-                    <div class="sub-title">Cadastro: @comodidade.Id</div>
-                    <div class="sub-title">Serviço: @comodidade.Nome</div>
-                    <div class="sub-title">Hotel: @comodidade.Hotel.Nome</div>
-                    <div class="row">
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-body ">
+                        <div class="sub-title">Cadastro: @comodidade.Id</div>
+                        <div class="sub-title">Serviço: @comodidade.Nome</div>
+                        <div class="sub-title">Hotel: @comodidade.Hotel.Nome</div>
+                        <div class="row">
 
-                        <a href="@Url.Action("Apagar", new {id = comodidade.Id})"
-                           class="btn text-danger float-right">
-                            <i class="fas fa-trash"></i> Apagar
-                        </a>
+                            <a href="@Url.Action("Apagar", new {id = comodidade.Id})"
+                               class="btn text-danger float-right">
+                                <i class="fas fa-trash"></i> Apagar
+                            </a>
 
-                        <a href="@Url.Action("Editar", new { id = comodidade.Id })"
-                           class="btn text-primary float-right">
-                            <i class="fas fa-pen"></i> Editar
-                        </a>
+                            <a href="@Url.Action("Editar", new { id = comodidade.Id })"
+                               class="btn text-primary float-right">
+                                <i class="fas fa-pen"></i> Editar
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

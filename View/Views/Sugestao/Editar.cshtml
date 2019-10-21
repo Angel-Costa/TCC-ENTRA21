@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="@Url.Action("Editar","Sugestao")" method="post" enctype="multipart/form-data">
+    <div>
+        <div class="row">
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Nome <strong>*</strong></h4>
+                <input id="campo-nome" class="form-control" type="text" name="nome" placeholder="Digite seu nome"
+                       maxlength="50" autocomplete="off" required />
+            </div>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Descrição <strong>*</strong></h4>
+                <input id="campo-descricao" class="form-control" type="text" name="descricao" placeholder="Faça aqui sua descrição"
+                       maxlength="100" autocomplete="off" required />
+            </div>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Ponto Turístico <strong>*</strong></h4>
+                <input id="campo-ponto-turistico" class="form-control" type="text" placeholder="Descreva pontos turísticos"
+                       maxlength="100" autocomplete="off" required />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Local <strong>*</strong></h4>
+                <input id="campo-local" class="form-control" type="text" placeholder="Digite o local"
+                       autocomplete="off" required />
+            </div>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Cidade <strong>*</strong></h4>
+                <input id="campo-cidade" class="form-control" type="text" placeholder="Digite a cidade"
+                       autocomplete="off" required />
+            </div>
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Endereço <strong>*</strong></h4>
+                <input id="campo-endereco" class="form-control" type="text" placeholder="Digite o endereço"
+                       autocomplete="off" required />
+            </div>
+        </div>
+        <input id="Imagem" type="file" name="file" title="Selecionar imagem" />
+
+        <button class="btn btn-outline-success float-right mt-4 mr-4" type="submit">
+            <i href="@Url.Action("Cadastro","Sugestao")" class="fas fa-save"></i> Salvar
+        </button>
+    </div>
+
+</form>
+
+<a href="@Url.Action("Apagar","Sugestao", new {id = @ViewBag.Sugestao.Id})"
+   class="btn btn-outline-danger float-right mr-3 ">
+    <i class="fas fa-trash"></i> Apagar
+</a>
+

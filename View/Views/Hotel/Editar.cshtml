@@ -7,7 +7,7 @@
     <div class="row align-items-end">
         <div class="col-lg-8">
             <div class="page-header-title">
-                <i class="icofont icofont icofont icofont-hotel" style="background-color: #171d2b;"></i>
+                <i class="icofont icofont icofont icofont-hotel" style="background-color: #343a40;"></i>
                 <div class="d-inline">
                     <h4 style="text-transform: capitalize">Editar informações do hotel</h4>
                 </div>
@@ -17,7 +17,7 @@
 </div>
 
 
-<form action="@Url.Action("Editar")" method="post">
+<form action="@Url.Action("Editar")" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="@ViewBag.Hotel.Id" />
 
     <div class="card">
@@ -25,64 +25,39 @@
             <div class="row">
                 <div class="col-sm-12 col-xl-5 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Nome</h4>
+                        <h4 class="sub-title">Nome <strong>*</strong></h4>
                         <input type="text" name="nome"
                                class="form-control"
                                id="campo-nome"
-                               value="@ViewBag.Hotel.Nome" placeholder="Digite o nome do hotel" maxlength="40" autocomplete="off" required />
+                               value="@ViewBag.Hotel.Nome" placeholder="Digite o nome do hotel" maxlength="40" autocomplete="off" required />   
                     </div>
                 </div>
                 <div class="col-sm-12 col-xl-5 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Descrição</h4>
+                        <h4 class="sub-title">Descrição <strong>*</strong></h4>
                         <textarea type="text" name="descricao"
                                   class="form-control"
                                   id="campo-descricao"
-                                  value="@ViewBag.Hotel.Descricao" placeholder="Faça aqui sua descrição" rows="7" cols="40" maxlength="500" autocomplete="off" required></textarea>
+                                  value="@ViewBag.Hotel.Descricao" placeholder="Faça aqui sua descrição" rows="7" cols="40" maxlength="500" autocomplete="off" required>@ViewBag.Hotel.Descricao</textarea>
                     </div>
                 </div>
                 <div class="col-sm-12 col-xl-2 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Valor por noite</h4>
-                        <input type="text" name="valor-noite" id="valor-noite" placeholder="Valor por Noite" class="form-control telphone_whith_code" data-mask="R$9999.999.99" value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
+                        <h4 class="sub-title">Valor por noite <strong style="color:red">*</strong></h4>
+                        <input type="text" name="ValorNoite" id="Valor-Noite" placeholder="Valor por Noite" class="form-control autonumber" data-a-sign="$"
+                               value="@ViewBag.Hotel.ValorNoite" autocomplete="off" required />
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 col-xl-3 m-b-30">
-                    <h4 class="sub-title">Estado</h4>
+                    <h4 class="sub-title">Estado <strong style="color:red">*</strong></h4>
                     <select class="form-control" id="estado" name="estado" autocomplete="off" required>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
                         <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
                     </select>
                 </div>
                 <div class="col-sm-12 col-xl-6 m-b-30">
-                    <h4 class="sub-title">Cidade</h4>
+                    <h4 class="sub-title">Cidade <strong>*</strong></h4>
                     <input type="text" name="cidade"
                            class="form-control"
                            id="campo-cidade"
@@ -90,7 +65,7 @@
                 </div>
                 <div class="col-sm-12 col-xl-3 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">CEP</h4>
+                        <h4 class="sub-title">CEP <strong style="color:red">*</strong></h4>
                         <input type="text" name="cep"
                                class="form-control telphone_whith_code" data-mask="00000-000"
                                id="campo-cep"
@@ -100,14 +75,14 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-xl-6 m-b-30">
-                    <h4 class="sub-title">Bairro</h4>
+                    <h4 class="sub-title">Bairro <strong style="color:red">*</strong></h4>
                     <input type="text" name="bairro"
                            class="form-control"
                            id="campo-bairro"
                            value="@ViewBag.Hotel.Bairro" placeholder="Digite o bairro" maxlength="50" autocomplete="off" required />
                 </div>
                 <div class="col-sm-12 col-xl-2 m-b-30">
-                    <h4 class="sub-title">Número</h4>
+                    <h4 class="sub-title">Número <strong style="color:red">*</strong></h4>
                     <input type="text" name="numero"
                            class="form-control"
                            id="campo-numero"
@@ -116,7 +91,7 @@
 
                 <div class="col-sm-12 col-xl-4 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Rua</h4>
+                        <h4 class="sub-title">Rua <strong style="color:red">*</strong></h4>
                         <input type="text" name="rua"
                                class="form-control"
                                id="campo-rua"
@@ -128,7 +103,7 @@
             <div class="row">
                 <div class="col-sm-12 col-xl-4 m-b-30">
                     <div class="form-group">
-                        <h4 class="sub-title">Complemento</h4>
+                        <h4 class="sub-title">Complemento <strong style="color:red">*</strong></h4>
                         <input type="text" name="complemento"
                                class="form-control"
                                id="campo-complemento"
@@ -136,8 +111,9 @@
                     </div>
                 </div>
             </div>
+            <input id="Imagem" type="file" name="file" title="Selecionar Imagem" />
             <button class="btn btn-outline-success float-right" type="submit">
-                <i class="fas fa-save"></i> Salvar
+                <i href="@Url.Action("Index","Hotel")" class="fas fa-save"></i> Salvar
             </button>
         </div>
     </div>

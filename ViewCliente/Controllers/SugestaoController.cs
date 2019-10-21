@@ -2,16 +2,18 @@
 using Repository.Repositories;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ViewCliente.Controllers;
 
 namespace View.Controllers
 {
     [Route("sugestao")]
-    public class SugestaoController : Controller
+    public class SugestaoController : BaseController
     {
-        private SugestaoRepository repository;
+        private SugestaoRepository repository;  
 
         public SugestaoController()
         {
@@ -97,6 +99,65 @@ namespace View.Controllers
             List<Hotel> hoteis = hotelRepository.ObterTodos();
             ViewBag.Hoteis = hoteis;
             return View();
+        }
+
+        public ActionResult Balneario()
+        {
+            HotelRepository hotelrepository = new HotelRepository();
+            List<Hotel> hoteis = hotelrepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
+        public ActionResult Garopaba()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
+        public ActionResult PraiaDoRosa()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
+        public ActionResult NovaTrento()
+        {
+            HotelRepository hotelRepository = new HotelRepository();
+            List<Hotel> hoteis = hotelRepository.ObterTodos();
+            ViewBag.Hoteis = hoteis;
+            return View();
+        }
+
+        public ActionResult Upload()
+        {
+
+            HttpPostedFileBase arquivo = Request.Files[0];
+
+            //Suas validações ......
+
+            //Salva o arquivo
+            if (arquivo.ContentLength > 0)
+            {
+                var uploadPath = Server.MapPath("~/Content/Uploads");
+                var nomeImagem = Path.GetFileName(arquivo.FileName);
+
+                string caminhoArquivo = Path.Combine(@uploadPath, nomeImagem);
+
+                arquivo.SaveAs(caminhoArquivo);
+
+                var usuarioLogado = (Administrador)Session["Usuario"];
+
+                Sugestao sugestao = repository.ObterPeloId(usuarioLogado.Id);
+                sugestao.Imagem = nomeImagem;
+                repository.Alterar(sugestao);
+                Session["Usuario"] = sugestao;
+            }
+
+
+            ViewData["Message"] = String.Format(" arquivo(s) salvo(s) com sucesso.");
+            return RedirectToAction("EditarPerfil");
         }
     }
 }
